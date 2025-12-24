@@ -1,0 +1,236 @@
+[0.009s] Invoking command in '/home/andre/ros2_ws/src/build/kortex_api': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/ros2_kortex/kortex_api -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/src/install/kortex_api
+[0.026s] [33mCMake Warning (dev) at /usr/share/cmake-3.28/Modules/FetchContent.cmake:1331 (message):
+[0.026s]   The DOWNLOAD_EXTRACT_TIMESTAMP option was not given and policy CMP0135 is
+[0.026s]   not set.  The policy's OLD behavior will be used.  When using a URL
+[0.026s]   download, the timestamps of extracted files should preferably be that of
+[0.026s]   the time of extraction, otherwise code that depends on the extracted
+[0.026s]   contents might not be rebuilt if the URL changes.  The OLD behavior
+[0.027s]   preserves the timestamps from the archive instead, but this is usually not
+[0.027s]   what you want.  Update your project to the NEW behavior or specify the
+[0.027s]   DOWNLOAD_EXTRACT_TIMESTAMP option with a value of true to avoid this
+[0.027s]   robustness issue.
+[0.027s] Call Stack (most recent call first):
+[0.027s]   CMakeLists.txt:4 (FetchContent_Declare)
+[0.027s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.027s] [0m
+[19.590s] -- The C compiler identification is GNU 13.3.0
+[19.771s] -- The CXX compiler identification is GNU 13.3.0
+[19.819s] -- Detecting C compiler ABI info
+[20.023s] -- Detecting C compiler ABI info - done
+[20.039s] -- Check for working C compiler: /usr/bin/cc - skipped
+[20.040s] -- Detecting C compile features
+[20.040s] -- Detecting C compile features - done
+[20.053s] -- Detecting CXX compiler ABI info
+[20.186s] -- Detecting CXX compiler ABI info - done
+[20.201s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[20.202s] -- Detecting CXX compile features
+[20.203s] -- Detecting CXX compile features - done
+[20.209s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[20.434s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[20.753s] -- Configuring done (20.7s)
+[20.757s] -- Generating done (0.0s)
+[20.760s] -- Build files have been written to: /home/andre/ros2_ws/src/build/kortex_api
+[20.772s] Invoked command in '/home/andre/ros2_ws/src/build/kortex_api' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/ros2_kortex/kortex_api -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/src/install/kortex_api
+[20.772s] Invoking command in '/home/andre/ros2_ws/src/build/kortex_api': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/src/build/kortex_api -- -j4 -l4
+[20.839s] Invoked command in '/home/andre/ros2_ws/src/build/kortex_api' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/src/build/kortex_api -- -j4 -l4
+[20.840s] Invoking command in '/home/andre/ros2_ws/src/build/kortex_api': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/src/build/kortex_api
+[20.853s] -- Install configuration: "Release"
+[20.853s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api
+[20.854s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/FrameHandler.h
+[20.854s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/RouterClient.h
+[20.855s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/IRouterClient.h
+[20.855s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/ITransportClient.h
+[20.856s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/NotificationHandler.h
+[20.856s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/version.h
+[20.856s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/SessionManager.h
+[20.857s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/TransportClientTcp.h
+[20.857s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/TransportClientUdp.h
+[20.857s] -- Up-to-date: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api
+[20.858s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/KDetailedException.h
+[20.858s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/HeaderInfo.h
+[20.858s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/TransportBridgeDummy.h
+[20.859s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/KBasicException.h
+[20.859s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/KError.h
+[20.859s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/Frame.h
+[20.860s] -- Up-to-date: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/version.h
+[20.860s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/KinovaTcpUtilities.h
+[20.860s] -- Up-to-date: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api
+[20.861s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/InterconnectConfig.pb.h
+[20.861s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/Test.pb.h
+[20.861s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/Errors.pb.h
+[20.862s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/DeviceManager.pb.h
+[20.862s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/VisionConfig.pb.h
+[20.862s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/ControlConfig.pb.h
+[20.863s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/GripperCyclicMessage.pb.h
+[20.863s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/InterconnectCyclicMessage.pb.h
+[20.864s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/Common.pb.h
+[20.864s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/GripperCyclic.pb.h
+[20.864s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/BaseCyclic.pb.h
+[20.865s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/InterconnectCyclic.pb.h
+[20.865s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/GripperConfig.pb.h
+[20.866s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/Frame.pb.h
+[20.866s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/DeviceConfig.pb.h
+[20.866s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/ActuatorConfig.pb.h
+[20.867s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/ActuatorCyclic.pb.h
+[20.867s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/ProductConfiguration.pb.h
+[20.867s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/Session.pb.h
+[20.868s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/Base.pb.h
+[20.870s] -- Up-to-date: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api
+[20.870s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/InterconnectCyclicClientRpc.h
+[20.870s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/VisionConfigClientRpc.h
+[20.871s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/BaseCyclicClientRpc.h
+[20.871s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/DeviceConfigClientRpc.h
+[20.871s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/InterconnectConfigClientRpc.h
+[20.872s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/SessionClientRpc.h
+[20.872s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/DeviceManagerClientRpc.h
+[20.873s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/ActuatorConfigClientRpc.h
+[20.873s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/GripperCyclicClientRpc.h
+[20.873s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/TestClientRpc.h
+[20.874s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/BaseClientRpc.h
+[20.874s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/ActuatorCyclicClientRpc.h
+[20.874s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/ControlConfigClientRpc.h
+[20.874s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf
+[20.875s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/api.pb.h
+[20.875s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/timestamp.pb.h
+[20.875s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/source_context.pb.h
+[20.876s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/map_field_inl.h
+[20.876s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/service.h
+[20.876s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/extension_set.h
+[20.877s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs
+[20.877s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/atomicops_internals_generic_c11_atomic.h
+[20.877s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/port.h
+[20.878s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/atomicops_internals_power.h
+[20.878s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/atomicops.h
+[20.878s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/atomicops_internals_solaris.h
+[20.879s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/type_traits.h
+[20.879s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/stl_util.h
+[20.880s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/atomicops_internals_x86_gcc.h
+[20.880s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/atomicops_internals_arm_gcc.h
+[20.880s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/fastmem.h
+[20.881s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/macros.h
+[20.881s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/mutex.h
+[20.881s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/singleton.h
+[20.882s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/casts.h
+[20.884s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/atomicops_internals_ppc_gcc.h
+[20.884s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/atomicops_internals_tsan.h
+[20.884s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/atomicops_internals_x86_msvc.h
+[20.884s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/callback.h
+[20.884s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/template_util.h
+[20.884s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/platform_macros.h
+[20.885s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/hash.h
+[20.885s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/bytestream.h
+[20.885s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/atomic_sequence_num.h
+[20.885s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/shared_ptr.h
+[20.885s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/status.h
+[20.885s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/atomicops_internals_generic_gcc.h
+[20.885s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/logging.h
+[20.885s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/common.h
+[20.885s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/stringpiece.h
+[20.885s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/once.h
+[20.885s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/atomicops_internals_arm64_gcc.h
+[20.886s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/atomicops_internals_arm_qnx.h
+[20.886s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/atomicops_internals_mips_gcc.h
+[20.886s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/stubs/scoped_ptr.h
+[20.886s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/repeated_field.h
+[20.887s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/generated_message_table_driven.h
+[20.887s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/map_entry.h
+[20.888s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/reflection.h
+[20.888s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/any.h
+[20.888s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/arena_impl.h
+[20.889s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/map_field_lite.h
+[20.889s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/arenastring.h
+[20.889s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/wire_format.h
+[20.890s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/generated_enum_util.h
+[20.890s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/has_bits.h
+[20.890s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/text_format.h
+[20.891s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/struct.pb.h
+[20.891s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/io
+[20.892s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/io/tokenizer.h
+[20.892s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/io/zero_copy_stream_impl_lite.h
+[20.892s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/io/zero_copy_stream.h
+[20.892s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/io/zero_copy_stream_impl.h
+[20.893s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/io/coded_stream.h
+[20.893s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/io/printer.h
+[20.893s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/io/gzip_stream.h
+[20.894s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/io/strtod.h
+[20.894s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/wire_format_lite_inl.h
+[20.894s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/duration.pb.h
+[20.895s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/wire_format_lite.h
+[20.895s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/field_mask.pb.h
+[20.896s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/dynamic_message.h
+[20.896s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/descriptor.h
+[20.896s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/metadata_lite.h
+[20.897s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/map_type_handler.h
+[20.897s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/reflection_ops.h
+[20.897s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/descriptor.pb.h
+[20.898s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/map_field.h
+[20.898s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/map_entry_lite.h
+[20.899s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/generated_message_util.h
+[20.899s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/any.pb.h
+[20.899s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/empty.pb.h
+[20.900s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/unknown_field_set.h
+[20.900s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/generated_enum_reflection.h
+[20.900s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/util
+[20.901s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/util/type_resolver_util.h
+[20.901s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/util/message_differencer.h
+[20.901s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/util/time_util.h
+[20.902s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/util/field_comparator.h
+[20.902s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/util/field_mask_util.h
+[20.902s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/util/type_resolver.h
+[20.903s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/util/json_util.h
+[20.903s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/util/delimited_message_util.h
+[20.903s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/type.pb.h
+[20.904s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/map.h
+[20.904s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/arena.h
+[20.904s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/message_lite.h
+[20.905s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler
+[20.905s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/command_line_interface.h
+[20.905s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/importer.h
+[20.906s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/python
+[20.906s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/python/python_generator.h
+[20.906s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/ruby
+[20.907s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/ruby/ruby_generator.h
+[20.907s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/code_generator.h
+[20.907s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/objectivec
+[20.908s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/objectivec/objectivec_helpers.h
+[20.908s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/objectivec/objectivec_generator.h
+[20.908s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/cpp
+[20.909s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/cpp/cpp_generator.h
+[20.909s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/csharp
+[20.909s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/csharp/csharp_names.h
+[20.910s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/csharp/csharp_generator.h
+[20.910s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/plugin.h
+[20.910s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/js
+[20.910s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/js/js_generator.h
+[20.911s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/js/well_known_types_embed.h
+[20.911s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/java
+[20.911s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/java/java_generator.h
+[20.912s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/java/java_names.h
+[20.912s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/plugin.pb.h
+[20.912s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/javanano
+[20.913s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/javanano/javanano_generator.h
+[20.913s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/php
+[20.913s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/php/php_generator.h
+[20.914s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/compiler/parser.h
+[20.914s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/generated_message_reflection.h
+[20.914s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/wrappers.pb.h
+[20.915s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/descriptor_database.h
+[20.915s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/message.h
+[20.915s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/include/kortex_api/google/protobuf/metadata.h
+[20.916s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/share/ament_index/resource_index/package_run_dependencies/kortex_api
+[20.917s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/share/ament_index/resource_index/parent_prefix_path/kortex_api
+[20.917s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/share/kortex_api/environment/ament_prefix_path.sh
+[20.917s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/share/kortex_api/environment/ament_prefix_path.dsv
+[20.918s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/share/kortex_api/environment/path.sh
+[20.918s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/share/kortex_api/environment/path.dsv
+[20.919s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/share/kortex_api/local_setup.bash
+[20.919s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/share/kortex_api/local_setup.sh
+[20.919s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/share/kortex_api/local_setup.zsh
+[20.920s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/share/kortex_api/local_setup.dsv
+[20.920s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/share/kortex_api/package.dsv
+[20.921s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/share/ament_index/resource_index/packages/kortex_api
+[20.921s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/share/kortex_api/cmake/ament_cmake_export_include_directories-extras.cmake
+[20.921s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/share/kortex_api/cmake/kortex_apiConfig.cmake
+[20.922s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/share/kortex_api/cmake/kortex_apiConfig-version.cmake
+[20.922s] -- Installing: /home/andre/ros2_ws/src/install/kortex_api/share/kortex_api/package.xml
+[20.927s] Invoked command in '/home/andre/ros2_ws/src/build/kortex_api' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/src/build/kortex_api

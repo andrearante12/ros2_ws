@@ -1,0 +1,64 @@
+[0.011s] Invoking command in '/home/andre/ros2_ws/src/build/robotic_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/urdf_tutorial_r2d2:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/robotic_arm -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/src/install/robotic_arm
+[0.068s] -- The C compiler identification is GNU 13.3.0
+[0.127s] -- The CXX compiler identification is GNU 13.3.0
+[0.141s] -- Detecting C compiler ABI info
+[0.227s] -- Detecting C compiler ABI info - done
+[0.239s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.239s] -- Detecting C compile features
+[0.239s] -- Detecting C compile features - done
+[0.248s] -- Detecting CXX compiler ABI info
+[0.339s] -- Detecting CXX compiler ABI info - done
+[0.350s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.350s] -- Detecting CXX compile features
+[0.350s] -- Detecting CXX compile features - done
+[0.353s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.490s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.589s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.689s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.689s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.690s] -- Added test 'lint_cmake' to check CMake code style
+[0.691s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.692s] -- Added test 'xmllint' to check XML markup files
+[0.694s] -- Configuring done (0.7s)
+[0.696s] -- Generating done (0.0s)
+[0.698s] -- Build files have been written to: /home/andre/ros2_ws/src/build/robotic_arm
+[0.703s] Invoked command in '/home/andre/ros2_ws/src/build/robotic_arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/urdf_tutorial_r2d2:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/robotic_arm -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/src/install/robotic_arm
+[0.704s] Invoking command in '/home/andre/ros2_ws/src/build/robotic_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/urdf_tutorial_r2d2:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/src/build/robotic_arm -- -j4 -l4
+[0.740s] Invoked command in '/home/andre/ros2_ws/src/build/robotic_arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/urdf_tutorial_r2d2:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/src/build/robotic_arm -- -j4 -l4
+[0.750s] Invoking command in '/home/andre/ros2_ws/src/build/robotic_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/urdf_tutorial_r2d2:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/src/build/robotic_arm
+[0.758s] -- Install configuration: ""
+[0.758s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/config
+[0.758s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/launch
+[0.758s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/launch/robotic_arm.launch.py
+[0.758s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/maps
+[0.758s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/meshes
+[0.759s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/meshes/Link_5.STL
+[0.759s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/meshes/Link_2.STL
+[0.759s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/meshes/Link_1.STL
+[0.759s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/meshes/Link_6.STL
+[0.760s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/meshes/Link_4.STL
+[0.760s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/meshes/Link_3.STL
+[0.760s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/models
+[0.761s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/params
+[0.761s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/rviz
+[0.761s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/rviz/rviz_basic_settings.rviz
+[0.761s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/src
+[0.761s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/urdf
+[0.761s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/urdf/robotic_arm.urdf
+[0.761s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/worlds
+[0.761s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/ament_index/resource_index/package_run_dependencies/robotic_arm
+[0.761s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/ament_index/resource_index/parent_prefix_path/robotic_arm
+[0.762s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/environment/ament_prefix_path.sh
+[0.762s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/environment/ament_prefix_path.dsv
+[0.762s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/environment/path.sh
+[0.762s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/environment/path.dsv
+[0.762s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/local_setup.bash
+[0.762s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/local_setup.sh
+[0.762s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/local_setup.zsh
+[0.762s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/local_setup.dsv
+[0.763s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/package.dsv
+[0.763s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/ament_index/resource_index/packages/robotic_arm
+[0.763s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/cmake/robotic_armConfig.cmake
+[0.763s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/cmake/robotic_armConfig-version.cmake
+[0.763s] -- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/package.xml
+[0.765s] Invoked command in '/home/andre/ros2_ws/src/build/robotic_arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/urdf_tutorial_r2d2:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/src/build/robotic_arm

@@ -1,0 +1,122 @@
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found moveit_common: 2.14.1 (/home/andre/ros2_ws/src/install/moveit_common/share/moveit_common/cmake)
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found moveit_core: 2.14.1 (/home/andre/ros2_ws/src/install/moveit_core/share/moveit_core/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+-- Found parameter_traits: 0.5.0 (/opt/ros/jazzy/share/parameter_traits/cmake)
+-- Found rclcpp_lifecycle: 28.1.13 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem 
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found warehouse_ros: 2.0.5 (/opt/ros/jazzy/share/warehouse_ros/cmake)
+-- Found moveit_ros_planning: 2.14.1 (/home/andre/ros2_ws/src/install/moveit_ros_planning/share/moveit_ros_planning/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options 
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Configuring done (3.4s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/andre/ros2_ws/src/build/moveit_ros_warehouse
+[  5%] [32mBuilding CXX object CMakeFiles/moveit_warehouse.dir/src/moveit_message_storage.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/moveit_warehouse.dir/src/planning_scene_world_storage.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/moveit_warehouse.dir/src/planning_scene_storage.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/moveit_warehouse.dir/src/constraints_storage.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/moveit_warehouse.dir/src/warehouse_connector.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/moveit_warehouse.dir/src/state_storage.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/moveit_warehouse.dir/src/trajectory_constraints_storage.cpp.o[0m
+[ 40%] [32m[1mLinking CXX shared library libmoveit_warehouse.so[0m
+[ 40%] Built target moveit_warehouse
+[ 45%] [32mBuilding CXX object CMakeFiles/moveit_warehouse_broadcast.dir/src/broadcast.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable moveit_warehouse_broadcast[0m
+[ 50%] Built target moveit_warehouse_broadcast
+[ 55%] [32mBuilding CXX object CMakeFiles/moveit_warehouse_save_as_text.dir/src/save_as_text.cpp.o[0m
+[ 60%] [32m[1mLinking CXX executable moveit_warehouse_save_as_text[0m
+[ 60%] Built target moveit_warehouse_save_as_text
+[ 65%] [32mBuilding CXX object CMakeFiles/moveit_init_demo_warehouse.dir/src/initialize_demo_db.cpp.o[0m
+[ 70%] [32m[1mLinking CXX executable moveit_init_demo_warehouse[0m
+[ 70%] Built target moveit_init_demo_warehouse
+[ 75%] [32mBuilding CXX object CMakeFiles/moveit_warehouse_services.dir/src/warehouse_services.cpp.o[0m
+[ 80%] [32m[1mLinking CXX executable moveit_warehouse_services[0m
+[ 80%] Built target moveit_warehouse_services
+[ 85%] [32mBuilding CXX object CMakeFiles/moveit_warehouse_import_from_text.dir/src/import_from_text.cpp.o[0m
+[ 90%] [32m[1mLinking CXX executable moveit_warehouse_import_from_text[0m
+[ 90%] Built target moveit_warehouse_import_from_text
+[ 95%] [32mBuilding CXX object CMakeFiles/moveit_save_to_warehouse.dir/src/save_to_warehouse.cpp.o[0m
+[100%] [32m[1mLinking CXX executable moveit_save_to_warehouse[0m
+[100%] Built target moveit_save_to_warehouse
+-- Install configuration: "Release"
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_save_to_warehouse
+-- Set non-toolchain portion of runtime path of "/home/andre/ros2_ws/src/install/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_save_to_warehouse" to ""
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_warehouse_broadcast
+-- Set non-toolchain portion of runtime path of "/home/andre/ros2_ws/src/install/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_warehouse_broadcast" to ""
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_warehouse_import_from_text
+-- Set non-toolchain portion of runtime path of "/home/andre/ros2_ws/src/install/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_warehouse_import_from_text" to ""
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_warehouse_save_as_text
+-- Set non-toolchain portion of runtime path of "/home/andre/ros2_ws/src/install/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_warehouse_save_as_text" to ""
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_init_demo_warehouse
+-- Set non-toolchain portion of runtime path of "/home/andre/ros2_ws/src/install/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_init_demo_warehouse" to ""
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_warehouse_services
+-- Set non-toolchain portion of runtime path of "/home/andre/ros2_ws/src/install/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_warehouse_services" to ""
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/include/moveit_ros_warehouse
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/constraints_storage.hpp
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/planning_scene_world_storage.h
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/moveit_message_storage.h
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/warehouse_connector.h
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/warehouse_connector.hpp
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/planning_scene_storage.h
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/trajectory_constraints_storage.h
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/planning_scene_storage.hpp
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/planning_scene_world_storage.hpp
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/state_storage.hpp
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/trajectory_constraints_storage.hpp
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/constraints_storage.h
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/moveit_message_storage.hpp
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit/warehouse/state_storage.h
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/include/moveit_ros_warehouse/moveit_warehouse_export.h
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/lib/libmoveit_warehouse.so.2.14.1
+-- Set non-toolchain portion of runtime path of "/home/andre/ros2_ws/src/install/moveit_ros_warehouse/lib/libmoveit_warehouse.so.2.14.1" to ""
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/lib/libmoveit_warehouse.so
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/moveit_ros_warehouse/environment/library_path.sh
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/moveit_ros_warehouse/environment/library_path.dsv
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/ament_index/resource_index/package_run_dependencies/moveit_ros_warehouse
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/ament_index/resource_index/parent_prefix_path/moveit_ros_warehouse
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/moveit_ros_warehouse/environment/ament_prefix_path.sh
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/moveit_ros_warehouse/environment/ament_prefix_path.dsv
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/moveit_ros_warehouse/environment/path.sh
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/moveit_ros_warehouse/environment/path.dsv
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/moveit_ros_warehouse/local_setup.bash
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/moveit_ros_warehouse/local_setup.sh
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/moveit_ros_warehouse/local_setup.zsh
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/moveit_ros_warehouse/local_setup.dsv
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/moveit_ros_warehouse/package.dsv
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/ament_index/resource_index/packages/moveit_ros_warehouse
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/moveit_ros_warehouse/cmake/moveit_ros_warehouseTargetsExport.cmake
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/moveit_ros_warehouse/cmake/moveit_ros_warehouseTargetsExport-release.cmake
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/moveit_ros_warehouse/cmake/ConfigExtras.cmake
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/moveit_ros_warehouse/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/moveit_ros_warehouse/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/moveit_ros_warehouse/cmake/moveit_ros_warehouseConfig.cmake
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/moveit_ros_warehouse/cmake/moveit_ros_warehouseConfig-version.cmake
+-- Installing: /home/andre/ros2_ws/src/install/moveit_ros_warehouse/share/moveit_ros_warehouse/package.xml

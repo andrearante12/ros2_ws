@@ -1,0 +1,53 @@
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/andre/ros2_ws/src/build/robotic_arm
+-- Install configuration: "Release"
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/config
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/launch
+-- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/launch/robotic_arm.launch.py
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/maps
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/meshes
+-- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/meshes/Link_5.STL
+-- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/meshes/Link_2.STL
+-- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/meshes/base_link.STL
+-- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/meshes/Link_1.STL
+-- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/meshes/end_effector.STL
+-- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/meshes/Link_6.STL
+-- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/meshes/link_2.STL
+-- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/meshes/Link_4.STL
+-- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/meshes/Link_3.STL
+-- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/meshes/link_3.STL
+-- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/meshes/link_1.STL
+-- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/meshes/link_4.STL
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/models
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/params
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/rviz
+-- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/rviz/rviz_basic_settings.rviz
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/src
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/urdf
+-- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/urdf/robotic_arm.urdf
+-- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/urdf/robotic_arm_model.csv
+-- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/urdf/temp.urdf
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/worlds
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/ament_index/resource_index/package_run_dependencies/robotic_arm
+-- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/ament_index/resource_index/parent_prefix_path/robotic_arm
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/environment/ament_prefix_path.sh
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/environment/path.sh
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/environment/path.dsv
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/local_setup.bash
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/local_setup.sh
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/local_setup.zsh
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/local_setup.dsv
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/package.dsv
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/ament_index/resource_index/packages/robotic_arm
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/cmake/robotic_armConfig.cmake
+-- Up-to-date: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/cmake/robotic_armConfig-version.cmake
+-- Installing: /home/andre/ros2_ws/src/install/robotic_arm/share/robotic_arm/package.xml
