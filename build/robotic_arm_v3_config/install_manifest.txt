@@ -18,6 +18,8 @@
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/launch/warehouse_db.launch.py
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/launch/move_group.launch.py
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/launch/demo.launch.py
+/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/launch/spawn_moveit
+/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/launch/demo_with_controllers.launch.py
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/launch/setup_assistant.launch.py
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/launch/rsp.launch.py
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/launch/static_virtual_joint_tfs.launch.py

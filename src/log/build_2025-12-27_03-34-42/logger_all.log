@@ -1,0 +1,221 @@
+[0.185s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'pose_printer']
+[0.185s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['pose_printer'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x710f0e3e98e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x710f0e3e9550>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x710f0e3e9550>>, mixin_verb=('build',))
+[0.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.250s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/andre/ros2_ws/src'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub) by extension 'ignore_ament_install'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub) by extensions ['colcon_pkg']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub) by extension 'colcon_pkg'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub) by extensions ['colcon_meta']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub) by extension 'colcon_meta'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub) by extensions ['ros']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub) by extension 'ros'
+[0.284s] DEBUG:colcon.colcon_core.package_identification:Package 'cpp_pubsub' with type 'ros.ament_cmake' and name 'cpp_pubsub'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo) by extension 'ignore'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo) by extension 'ignore_ament_install'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo) by extensions ['colcon_pkg']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo) by extension 'colcon_pkg'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo) by extensions ['colcon_meta']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo) by extension 'colcon_meta'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo) by extensions ['ros']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo) by extension 'ros'
+[0.286s] DEBUG:colcon.colcon_core.package_identification:Package 'gazebo' with type 'ros.ament_cmake' and name 'gazebo'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit) by extensions ['ignore', 'ignore_ament_install']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit) by extension 'ignore'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit) by extension 'ignore_ament_install'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit) by extensions ['colcon_pkg']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit) by extension 'colcon_pkg'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit) by extensions ['colcon_meta']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit) by extension 'colcon_meta'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit) by extensions ['ros']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(hello_moveit) by extension 'ros'
+[0.287s] DEBUG:colcon.colcon_core.package_identification:Package 'hello_moveit' with type 'ros.ament_cmake' and name 'hello_moveit'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(pose_printer) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(pose_printer) by extension 'ignore'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(pose_printer) by extension 'ignore_ament_install'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(pose_printer) by extensions ['colcon_pkg']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(pose_printer) by extension 'colcon_pkg'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(pose_printer) by extensions ['colcon_meta']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(pose_printer) by extension 'colcon_meta'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(pose_printer) by extensions ['ros']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(pose_printer) by extension 'ros'
+[0.289s] DEBUG:colcon.colcon_core.package_identification:Found ROS schema reference in package manifest in 'pose_printer'
+[0.289s] WARNING:colcon.colcon_core.package_identification:Failed to parse ROS package manifest in 'pose_printer': Error(s) in package 'pose_printer/package.xml':
+Error(s):
+- The generic dependency on 'rclpy' is redundant with: build_depend, build_export_depend, exec_depend
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(pose_printer) by extensions ['cmake', 'python']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(pose_printer) by extension 'cmake'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(pose_printer) by extension 'python'
+[0.290s] DEBUG:colcon.colcon_core.package_identification:Python package in 'pose_printer' passes arguments to the setup() function which requires a different identification extension than 'python'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(pose_printer) by extensions ['python_setup_py']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(pose_printer) by extension 'python_setup_py'
+[0.610s] DEBUG:colcon.colcon_core.package_identification:Package 'pose_printer' with type 'python' and name 'pose_printer'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm) by extensions ['ignore', 'ignore_ament_install']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm) by extension 'ignore'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm) by extension 'ignore_ament_install'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm) by extensions ['colcon_pkg']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm) by extension 'colcon_pkg'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm) by extensions ['colcon_meta']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm) by extension 'colcon_meta'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm) by extensions ['ros']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm) by extension 'ros'
+[0.614s] DEBUG:colcon.colcon_core.package_identification:Package 'robotic_arm' with type 'ros.ament_cmake' and name 'robotic_arm'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_config) by extensions ['ignore', 'ignore_ament_install']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_config) by extension 'ignore'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_config) by extension 'ignore_ament_install'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_config) by extensions ['colcon_pkg']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_config) by extension 'colcon_pkg'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_config) by extensions ['colcon_meta']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_config) by extension 'colcon_meta'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_config) by extensions ['ros']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_config) by extension 'ros'
+[0.617s] DEBUG:colcon.colcon_core.package_identification:Package 'robotic_arm_config' with type 'ros.ament_cmake' and name 'robotic_arm_config'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_model_v3) by extensions ['ignore', 'ignore_ament_install']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_model_v3) by extension 'ignore'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_model_v3) by extension 'ignore_ament_install'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_model_v3) by extensions ['colcon_pkg']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_model_v3) by extension 'colcon_pkg'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_model_v3) by extensions ['colcon_meta']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_model_v3) by extension 'colcon_meta'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_model_v3) by extensions ['ros']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_model_v3) by extension 'ros'
+[0.618s] DEBUG:colcon.colcon_core.package_identification:Package 'robotic_arm_model_v3' with type 'ros.ament_cmake' and name 'robotic_arm_model_v3'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_moveit) by extensions ['ignore', 'ignore_ament_install']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_moveit) by extension 'ignore'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_moveit) by extension 'ignore_ament_install'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_moveit) by extensions ['colcon_pkg']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_moveit) by extension 'colcon_pkg'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_moveit) by extensions ['colcon_meta']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_moveit) by extension 'colcon_meta'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_moveit) by extensions ['ros']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_moveit) by extension 'ros'
+[0.622s] DEBUG:colcon.colcon_core.package_identification:Package 'robotic_arm_moveit' with type 'ros.ament_cmake' and name 'robotic_arm_moveit'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_v3_config) by extensions ['ignore', 'ignore_ament_install']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_v3_config) by extension 'ignore'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_v3_config) by extension 'ignore_ament_install'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_v3_config) by extensions ['colcon_pkg']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_v3_config) by extension 'colcon_pkg'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_v3_config) by extensions ['colcon_meta']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_v3_config) by extension 'colcon_meta'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_v3_config) by extensions ['ros']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(robotic_arm_v3_config) by extension 'ros'
+[0.623s] DEBUG:colcon.colcon_core.package_identification:Package 'robotic_arm_v3_config' with type 'ros.ament_cmake' and name 'robotic_arm_v3_config'
+[0.623s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.623s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.624s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.624s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.624s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.706s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'cpp_pubsub' in 'cpp_pubsub'
+[0.706s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'gazebo' in 'gazebo'
+[0.706s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'hello_moveit' in 'hello_moveit'
+[0.706s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'robotic_arm_model_v3' in 'robotic_arm_model_v3'
+[0.706s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'robotic_arm_moveit' in 'robotic_arm_moveit'
+[0.706s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'robotic_arm' in 'robotic_arm'
+[0.706s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'robotic_arm_v3_config' in 'robotic_arm_v3_config'
+[0.706s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'robotic_arm_config' in 'robotic_arm_config'
+[0.707s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.707s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.709s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/andre/ros2_ws/src/install/robotic_arm_v3_config' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.710s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/andre/ros2_ws/src/install/robotic_arm_moveit' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.710s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/andre/ros2_ws/src/install/robotic_arm_model_v3' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.710s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/andre/ros2_ws/src/install/robotic_arm_config' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.710s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/andre/ros2_ws/src/install/robotic_arm' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.710s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/andre/ros2_ws/src/install/hello_moveit' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.710s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/andre/ros2_ws/src/install/gazebo' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.710s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/andre/ros2_ws/src/install/cpp_pubsub' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.710s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/andre/ros2_ws/src/install/robotic_arm_v3_config' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.710s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/andre/ros2_ws/src/install/robotic_arm_moveit' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.710s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/andre/ros2_ws/src/install/robotic_arm_model_v3' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.710s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/andre/ros2_ws/src/install/robotic_arm_config' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.710s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/andre/ros2_ws/src/install/robotic_arm' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.710s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/andre/ros2_ws/src/install/hello_moveit' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.710s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/andre/ros2_ws/src/install/gazebo' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.711s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/andre/ros2_ws/src/install/cpp_pubsub' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.714s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /home/andre/ros2_ws/install
+[0.714s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/andre/ros2_ws/src/install
+[0.721s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 428 installed packages in /opt/ros/jazzy
+[0.724s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.922s] Level 5:colcon.colcon_core.verb:set package 'pose_printer' build argument 'cmake_args' from command line to 'None'
+[0.923s] Level 5:colcon.colcon_core.verb:set package 'pose_printer' build argument 'cmake_target' from command line to 'None'
+[0.923s] Level 5:colcon.colcon_core.verb:set package 'pose_printer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.923s] Level 5:colcon.colcon_core.verb:set package 'pose_printer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.923s] Level 5:colcon.colcon_core.verb:set package 'pose_printer' build argument 'cmake_clean_first' from command line to 'False'
+[0.923s] Level 5:colcon.colcon_core.verb:set package 'pose_printer' build argument 'cmake_force_configure' from command line to 'False'
+[0.923s] Level 5:colcon.colcon_core.verb:set package 'pose_printer' build argument 'ament_cmake_args' from command line to 'None'
+[0.923s] Level 5:colcon.colcon_core.verb:set package 'pose_printer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.923s] Level 5:colcon.colcon_core.verb:set package 'pose_printer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.923s] DEBUG:colcon.colcon_core.verb:Building package 'pose_printer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andre/ros2_ws/src/build/pose_printer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andre/ros2_ws/src/install/pose_printer', 'merge_install': False, 'path': '/home/andre/ros2_ws/src/pose_printer', 'symlink_install': False, 'test_result_base': None}
+[0.923s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.924s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.924s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/andre/ros2_ws/src/pose_printer'
+[0.942s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.943s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.943s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.574s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/src/pose_printer': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andre/ros2_ws/src/build/pose_printer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/src/install/pose_printer/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/pose_printer build --build-base /home/andre/ros2_ws/src/build/pose_printer/build install --record /home/andre/ros2_ws/src/build/pose_printer/install.log --single-version-externally-managed install_data
+[3.477s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/src/pose_printer' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andre/ros2_ws/src/build/pose_printer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/src/install/pose_printer/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/pose_printer build --build-base /home/andre/ros2_ws/src/build/pose_printer/build install --record /home/andre/ros2_ws/src/build/pose_printer/install.log --single-version-externally-managed install_data
+[3.483s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/src/install/pose_printer' for CMake module files
+[3.484s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/src/install/pose_printer' for CMake config files
+[3.484s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/src/install/pose_printer/lib'
+[3.485s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/src/install/pose_printer/bin'
+[3.485s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/src/install/pose_printer/lib/pkgconfig/pose_printer.pc'
+[3.485s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/src/install/pose_printer/lib/python3.12/site-packages'
+[3.485s] Level 1:colcon.colcon_core.shell:create_environment_hook('pose_printer', 'pythonpath')
+[3.485s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/src/install/pose_printer/share/pose_printer/hook/pythonpath.ps1'
+[3.486s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/src/install/pose_printer/share/pose_printer/hook/pythonpath.dsv'
+[3.487s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/src/install/pose_printer/share/pose_printer/hook/pythonpath.sh'
+[3.488s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/src/install/pose_printer/bin'
+[3.488s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pose_printer)
+[3.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/src/install/pose_printer/share/pose_printer/package.ps1'
+[3.489s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/src/install/pose_printer/share/pose_printer/package.dsv'
+[3.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/src/install/pose_printer/share/pose_printer/package.sh'
+[3.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/src/install/pose_printer/share/pose_printer/package.bash'
+[3.491s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/src/install/pose_printer/share/pose_printer/package.zsh'
+[3.492s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/src/install/pose_printer/share/colcon-core/packages/pose_printer)
+[3.492s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.492s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.492s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.493s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.523s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.523s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.523s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.541s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.542s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andre/ros2_ws/src/install/local_setup.ps1'
+[3.545s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/andre/ros2_ws/src/install/_local_setup_util_ps1.py'
+[3.549s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andre/ros2_ws/src/install/setup.ps1'
+[3.555s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andre/ros2_ws/src/install/local_setup.sh'
+[3.558s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/andre/ros2_ws/src/install/_local_setup_util_sh.py'
+[3.562s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andre/ros2_ws/src/install/setup.sh'
+[3.566s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andre/ros2_ws/src/install/local_setup.bash'
+[3.572s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andre/ros2_ws/src/install/setup.bash'
+[3.576s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andre/ros2_ws/src/install/local_setup.zsh'
+[3.578s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andre/ros2_ws/src/install/setup.zsh'

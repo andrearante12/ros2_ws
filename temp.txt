@@ -1,0 +1,1 @@
+ros2 launch robotic_arm_v3_config demo_with_controllers.launch.py

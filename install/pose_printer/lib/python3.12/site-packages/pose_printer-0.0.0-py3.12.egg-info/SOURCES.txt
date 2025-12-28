@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/pose_printer/pose_printer.egg-info/PKG-INFO
+../../build/pose_printer/pose_printer.egg-info/SOURCES.txt
+../../build/pose_printer/pose_printer.egg-info/dependency_links.txt
+../../build/pose_printer/pose_printer.egg-info/entry_points.txt
+../../build/pose_printer/pose_printer.egg-info/requires.txt
+../../build/pose_printer/pose_printer.egg-info/top_level.txt
+../../build/pose_printer/pose_printer.egg-info/zip-safe
+pose_printer/__init__.py
+pose_printer/pose_printer_node.py
+resource/pose_printer
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

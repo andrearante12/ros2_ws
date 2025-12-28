@@ -1,9 +1,0 @@
-/home/andre/ros2_ws/src/build/kortex_bringup/CMakeFiles/uninstall.dir
-/home/andre/ros2_ws/src/build/kortex_bringup/CMakeFiles/kortex_bringup_uninstall.dir
-/home/andre/ros2_ws/src/build/kortex_bringup/CMakeFiles/test.dir
-/home/andre/ros2_ws/src/build/kortex_bringup/CMakeFiles/edit_cache.dir
-/home/andre/ros2_ws/src/build/kortex_bringup/CMakeFiles/rebuild_cache.dir
-/home/andre/ros2_ws/src/build/kortex_bringup/CMakeFiles/list_install_components.dir
-/home/andre/ros2_ws/src/build/kortex_bringup/CMakeFiles/install.dir
-/home/andre/ros2_ws/src/build/kortex_bringup/CMakeFiles/install/local.dir
-/home/andre/ros2_ws/src/build/kortex_bringup/CMakeFiles/install/strip.dir

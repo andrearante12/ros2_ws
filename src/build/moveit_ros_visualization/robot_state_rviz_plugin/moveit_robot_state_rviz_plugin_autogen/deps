@@ -1,4 +1,0 @@
-moveit_robot_state_rviz_plugin_autogen/timestamp: \
-	/home/andre/ros2_ws/src/moveit2/moveit_ros/visualization/robot_state_rviz_plugin/CMakeLists.txt \
-	/home/andre/ros2_ws/src/moveit2/moveit_ros/visualization/robot_state_rviz_plugin/src/plugin_init.cpp \
-	/usr/bin/cmake

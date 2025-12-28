@@ -1,0 +1,656 @@
+[0.177s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.177s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x733192fedd30>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x733192fed970>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x733192fed970>>, mixin_verb=('build',))
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.243s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/andre/ros2_ws'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pubsub) by extensions ['ignore', 'ignore_ament_install']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pubsub) by extension 'ignore'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pubsub) by extension 'ignore_ament_install'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pubsub) by extensions ['colcon_pkg']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pubsub) by extension 'colcon_pkg'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pubsub) by extensions ['colcon_meta']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pubsub) by extension 'colcon_meta'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pubsub) by extensions ['ros']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pubsub) by extension 'ros'
+[0.276s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cpp_pubsub' with type 'ros.ament_cmake' and name 'cpp_pubsub'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo) by extension 'ignore'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo) by extension 'ignore_ament_install'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo) by extensions ['colcon_pkg']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo) by extension 'colcon_pkg'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo) by extensions ['colcon_meta']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo) by extension 'colcon_meta'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo) by extensions ['ros']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo) by extension 'ros'
+[0.278s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gazebo' with type 'ros.ament_cmake' and name 'gazebo'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/hello_moveit) by extensions ['ignore', 'ignore_ament_install']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/hello_moveit) by extension 'ignore'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/hello_moveit) by extension 'ignore_ament_install'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/hello_moveit) by extensions ['colcon_pkg']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/hello_moveit) by extension 'colcon_pkg'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/hello_moveit) by extensions ['colcon_meta']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/hello_moveit) by extension 'colcon_meta'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/hello_moveit) by extensions ['ros']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/hello_moveit) by extension 'ros'
+[0.280s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hello_moveit' with type 'ros.ament_cmake' and name 'hello_moveit'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/pose_printer) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/pose_printer) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/pose_printer) by extension 'ignore_ament_install'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/pose_printer) by extensions ['colcon_pkg']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/pose_printer) by extension 'colcon_pkg'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/pose_printer) by extensions ['colcon_meta']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/pose_printer) by extension 'colcon_meta'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/pose_printer) by extensions ['ros']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/pose_printer) by extension 'ros'
+[0.282s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pose_printer' with type 'ros.ament_python' and name 'pose_printer'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm) by extensions ['ignore', 'ignore_ament_install']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm) by extension 'ignore'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm) by extension 'ignore_ament_install'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm) by extensions ['colcon_pkg']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm) by extension 'colcon_pkg'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm) by extensions ['colcon_meta']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm) by extension 'colcon_meta'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm) by extensions ['ros']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm) by extension 'ros'
+[0.283s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robotic_arm' with type 'ros.ament_cmake' and name 'robotic_arm'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_config) by extensions ['ignore', 'ignore_ament_install']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_config) by extension 'ignore'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_config) by extension 'ignore_ament_install'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_config) by extensions ['colcon_pkg']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_config) by extension 'colcon_pkg'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_config) by extensions ['colcon_meta']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_config) by extension 'colcon_meta'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_config) by extensions ['ros']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_config) by extension 'ros'
+[0.284s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robotic_arm_config' with type 'ros.ament_cmake' and name 'robotic_arm_config'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_model_v3) by extensions ['ignore', 'ignore_ament_install']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_model_v3) by extension 'ignore'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_model_v3) by extension 'ignore_ament_install'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_model_v3) by extensions ['colcon_pkg']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_model_v3) by extension 'colcon_pkg'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_model_v3) by extensions ['colcon_meta']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_model_v3) by extension 'colcon_meta'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_model_v3) by extensions ['ros']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_model_v3) by extension 'ros'
+[0.285s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robotic_arm_model_v3' with type 'ros.ament_cmake' and name 'robotic_arm_model_v3'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_moveit) by extensions ['ignore', 'ignore_ament_install']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_moveit) by extension 'ignore'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_moveit) by extension 'ignore_ament_install'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_moveit) by extensions ['colcon_pkg']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_moveit) by extension 'colcon_pkg'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_moveit) by extensions ['colcon_meta']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_moveit) by extension 'colcon_meta'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_moveit) by extensions ['ros']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_moveit) by extension 'ros'
+[0.287s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robotic_arm_moveit' with type 'ros.ament_cmake' and name 'robotic_arm_moveit'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_v3_config) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_v3_config) by extension 'ignore'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_v3_config) by extension 'ignore_ament_install'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_v3_config) by extensions ['colcon_pkg']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_v3_config) by extension 'colcon_pkg'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_v3_config) by extensions ['colcon_meta']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_v3_config) by extension 'colcon_meta'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_v3_config) by extensions ['ros']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_v3_config) by extension 'ros'
+[0.289s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robotic_arm_v3_config' with type 'ros.ament_cmake' and name 'robotic_arm_v3_config'
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.319s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/andre/ros2_ws/install/pose_printer' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.320s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/andre/ros2_ws/install
+[0.323s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/andre/ros2_ws/src/install
+[0.325s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 428 installed packages in /opt/ros/jazzy
+[0.326s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'cpp_pubsub' build argument 'cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'cpp_pubsub' build argument 'cmake_target' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'cpp_pubsub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'cpp_pubsub' build argument 'cmake_clean_cache' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'cpp_pubsub' build argument 'cmake_clean_first' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'cpp_pubsub' build argument 'cmake_force_configure' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'cpp_pubsub' build argument 'ament_cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'cpp_pubsub' build argument 'catkin_cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'cpp_pubsub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.388s] DEBUG:colcon.colcon_core.verb:Building package 'cpp_pubsub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andre/ros2_ws/build/cpp_pubsub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andre/ros2_ws/install/cpp_pubsub', 'merge_install': False, 'path': '/home/andre/ros2_ws/src/cpp_pubsub', 'symlink_install': False, 'test_result_base': None}
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'gazebo' build argument 'cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'gazebo' build argument 'cmake_target' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.388s] DEBUG:colcon.colcon_core.verb:Building package 'gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andre/ros2_ws/build/gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andre/ros2_ws/install/gazebo', 'merge_install': False, 'path': '/home/andre/ros2_ws/src/gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit' build argument 'cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit' build argument 'cmake_target' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit' build argument 'cmake_clean_cache' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit' build argument 'cmake_clean_first' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit' build argument 'cmake_force_configure' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit' build argument 'ament_cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit' build argument 'catkin_cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.388s] DEBUG:colcon.colcon_core.verb:Building package 'hello_moveit' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andre/ros2_ws/build/hello_moveit', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andre/ros2_ws/install/hello_moveit', 'merge_install': False, 'path': '/home/andre/ros2_ws/src/hello_moveit', 'symlink_install': False, 'test_result_base': None}
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'pose_printer' build argument 'cmake_args' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'pose_printer' build argument 'cmake_target' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'pose_printer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'pose_printer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'pose_printer' build argument 'cmake_clean_first' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'pose_printer' build argument 'cmake_force_configure' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'pose_printer' build argument 'ament_cmake_args' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'pose_printer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'pose_printer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.389s] DEBUG:colcon.colcon_core.verb:Building package 'pose_printer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andre/ros2_ws/build/pose_printer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andre/ros2_ws/install/pose_printer', 'merge_install': False, 'path': '/home/andre/ros2_ws/src/pose_printer', 'symlink_install': False, 'test_result_base': None}
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_model_v3' build argument 'cmake_args' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_model_v3' build argument 'cmake_target' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_model_v3' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_model_v3' build argument 'cmake_clean_cache' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_model_v3' build argument 'cmake_clean_first' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_model_v3' build argument 'cmake_force_configure' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_model_v3' build argument 'ament_cmake_args' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_model_v3' build argument 'catkin_cmake_args' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_model_v3' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.389s] DEBUG:colcon.colcon_core.verb:Building package 'robotic_arm_model_v3' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andre/ros2_ws/build/robotic_arm_model_v3', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andre/ros2_ws/install/robotic_arm_model_v3', 'merge_install': False, 'path': '/home/andre/ros2_ws/src/robotic_arm_model_v3', 'symlink_install': False, 'test_result_base': None}
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_moveit' build argument 'cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_moveit' build argument 'cmake_target' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_moveit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_moveit' build argument 'cmake_clean_cache' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_moveit' build argument 'cmake_clean_first' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_moveit' build argument 'cmake_force_configure' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_moveit' build argument 'ament_cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_moveit' build argument 'catkin_cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_moveit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.390s] DEBUG:colcon.colcon_core.verb:Building package 'robotic_arm_moveit' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andre/ros2_ws/build/robotic_arm_moveit', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andre/ros2_ws/install/robotic_arm_moveit', 'merge_install': False, 'path': '/home/andre/ros2_ws/src/robotic_arm_moveit', 'symlink_install': False, 'test_result_base': None}
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm' build argument 'cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm' build argument 'cmake_target' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm' build argument 'cmake_clean_cache' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm' build argument 'cmake_clean_first' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm' build argument 'cmake_force_configure' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm' build argument 'ament_cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm' build argument 'catkin_cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.390s] DEBUG:colcon.colcon_core.verb:Building package 'robotic_arm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andre/ros2_ws/build/robotic_arm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andre/ros2_ws/install/robotic_arm', 'merge_install': False, 'path': '/home/andre/ros2_ws/src/robotic_arm', 'symlink_install': False, 'test_result_base': None}
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_v3_config' build argument 'cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_v3_config' build argument 'cmake_target' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_v3_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_v3_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_v3_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_v3_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_v3_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_v3_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_v3_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.391s] DEBUG:colcon.colcon_core.verb:Building package 'robotic_arm_v3_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andre/ros2_ws/build/robotic_arm_v3_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andre/ros2_ws/install/robotic_arm_v3_config', 'merge_install': False, 'path': '/home/andre/ros2_ws/src/robotic_arm_v3_config', 'symlink_install': False, 'test_result_base': None}
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_config' build argument 'cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_config' build argument 'cmake_target' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'robotic_arm_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.391s] DEBUG:colcon.colcon_core.verb:Building package 'robotic_arm_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andre/ros2_ws/build/robotic_arm_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andre/ros2_ws/install/robotic_arm_config', 'merge_install': False, 'path': '/home/andre/ros2_ws/src/robotic_arm_config', 'symlink_install': False, 'test_result_base': None}
+[0.391s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.392s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.392s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/andre/ros2_ws/src/gazebo' with build type 'ament_cmake'
+[0.392s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/andre/ros2_ws/src/gazebo'
+[0.399s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.399s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.399s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.404s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/andre/ros2_ws/src/robotic_arm_model_v3' with build type 'ament_cmake'
+[0.404s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/andre/ros2_ws/src/robotic_arm_model_v3'
+[0.405s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.405s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.409s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/andre/ros2_ws/src/cpp_pubsub' with build type 'ament_cmake'
+[0.409s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/andre/ros2_ws/src/cpp_pubsub'
+[0.409s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.409s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.414s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/andre/ros2_ws/src/hello_moveit' with build type 'ament_cmake'
+[0.414s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/andre/ros2_ws/src/hello_moveit'
+[0.415s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.415s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.424s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/gazebo -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/gazebo
+[0.426s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/robotic_arm_model_v3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/robotic_arm_model_v3 -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/robotic_arm_model_v3
+[0.428s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/cpp_pubsub
+[0.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/hello_moveit -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/hello_moveit
+[1.795s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/robotic_arm_model_v3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/robotic_arm_model_v3 -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/robotic_arm_model_v3
+[1.796s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/robotic_arm_model_v3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/robotic_arm_model_v3 -- -j4 -l4
+[1.843s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/robotic_arm_model_v3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/robotic_arm_model_v3 -- -j4 -l4
+[1.856s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/robotic_arm_model_v3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/robotic_arm_model_v3
+[1.883s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotic_arm_model_v3)
+[1.884s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/robotic_arm_model_v3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/robotic_arm_model_v3
+[1.889s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_model_v3' for CMake module files
+[1.890s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_model_v3' for CMake config files
+[1.890s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotic_arm_model_v3', 'cmake_prefix_path')
+[1.890s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/hook/cmake_prefix_path.ps1'
+[1.891s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/hook/cmake_prefix_path.dsv'
+[1.892s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/hook/cmake_prefix_path.sh'
+[1.893s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_model_v3/bin'
+[1.893s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_model_v3/lib/pkgconfig/robotic_arm_model_v3.pc'
+[1.893s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_model_v3/lib/python3.12/site-packages'
+[1.894s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_model_v3/bin'
+[1.894s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/package.ps1'
+[1.895s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/package.dsv'
+[1.895s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/package.sh'
+[1.896s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/package.bash'
+[1.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/package.zsh'
+[1.898s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/install/robotic_arm_model_v3/share/colcon-core/packages/robotic_arm_model_v3)
+[1.899s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotic_arm_model_v3)
+[1.899s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_model_v3' for CMake module files
+[1.900s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_model_v3' for CMake config files
+[1.900s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotic_arm_model_v3', 'cmake_prefix_path')
+[1.900s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/hook/cmake_prefix_path.ps1'
+[1.901s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/hook/cmake_prefix_path.dsv'
+[1.901s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/hook/cmake_prefix_path.sh'
+[1.902s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_model_v3/bin'
+[1.902s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_model_v3/lib/pkgconfig/robotic_arm_model_v3.pc'
+[1.902s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_model_v3/lib/python3.12/site-packages'
+[1.903s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_model_v3/bin'
+[1.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/package.ps1'
+[1.907s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/package.dsv'
+[1.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/package.sh'
+[1.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/package.bash'
+[1.909s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/package.zsh'
+[1.909s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/install/robotic_arm_model_v3/share/colcon-core/packages/robotic_arm_model_v3)
+[1.910s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/andre/ros2_ws/src/pose_printer' with build type 'ament_python'
+[1.910s] Level 1:colcon.colcon_core.shell:create_environment_hook('pose_printer', 'ament_prefix_path')
+[1.910s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/pose_printer/share/pose_printer/hook/ament_prefix_path.ps1'
+[1.910s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/pose_printer/share/pose_printer/hook/ament_prefix_path.dsv'
+[1.911s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/pose_printer/share/pose_printer/hook/ament_prefix_path.sh'
+[1.912s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.912s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.267s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/andre/ros2_ws/src/pose_printer'
+[2.267s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.267s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/cpp_pubsub
+[2.471s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/cpp_pubsub -- -j4 -l4
+[3.865s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/src/pose_printer': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andre/ros2_ws/build/pose_printer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/install/pose_printer/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pose_printer build --build-base /home/andre/ros2_ws/build/pose_printer/build install --record /home/andre/ros2_ws/build/pose_printer/install.log --single-version-externally-managed install_data
+[4.648s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/hello_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/hello_moveit -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/hello_moveit
+[4.649s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/hello_moveit -- -j4 -l4
+[5.268s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/pose_printer' for CMake module files
+[5.269s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/src/pose_printer' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andre/ros2_ws/build/pose_printer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/install/pose_printer/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pose_printer build --build-base /home/andre/ros2_ws/build/pose_printer/build install --record /home/andre/ros2_ws/build/pose_printer/install.log --single-version-externally-managed install_data
+[5.270s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/pose_printer' for CMake config files
+[5.271s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/pose_printer/lib'
+[5.272s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/pose_printer/bin'
+[5.272s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/pose_printer/lib/pkgconfig/pose_printer.pc'
+[5.272s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/pose_printer/lib/python3.12/site-packages'
+[5.272s] Level 1:colcon.colcon_core.shell:create_environment_hook('pose_printer', 'pythonpath')
+[5.272s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/pose_printer/share/pose_printer/hook/pythonpath.ps1'
+[5.273s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/pose_printer/share/pose_printer/hook/pythonpath.dsv'
+[5.273s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/pose_printer/share/pose_printer/hook/pythonpath.sh'
+[5.274s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/pose_printer/bin'
+[5.274s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pose_printer)
+[5.275s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/pose_printer/share/pose_printer/package.ps1'
+[5.275s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/install/pose_printer/share/pose_printer/package.dsv'
+[5.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/pose_printer/share/pose_printer/package.sh'
+[5.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/pose_printer/share/pose_printer/package.bash'
+[5.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/pose_printer/share/pose_printer/package.zsh'
+[5.277s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/install/pose_printer/share/colcon-core/packages/pose_printer)
+[5.281s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/andre/ros2_ws/src/robotic_arm_moveit' with build type 'ament_cmake'
+[5.281s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/andre/ros2_ws/src/robotic_arm_moveit'
+[5.281s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.281s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.291s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/robotic_arm_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/robotic_arm_moveit -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/robotic_arm_moveit
+[5.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/gazebo -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/gazebo
+[5.446s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/gazebo -- -j4 -l4
+[5.510s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/gazebo -- -j4 -l4
+[5.513s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/gazebo
+[5.542s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gazebo)
+[5.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/gazebo
+[5.543s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/gazebo' for CMake module files
+[5.544s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/gazebo' for CMake config files
+[5.544s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo', 'cmake_prefix_path')
+[5.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/gazebo/share/gazebo/hook/cmake_prefix_path.ps1'
+[5.545s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/gazebo/share/gazebo/hook/cmake_prefix_path.dsv'
+[5.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/gazebo/share/gazebo/hook/cmake_prefix_path.sh'
+[5.548s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/gazebo/bin'
+[5.548s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/gazebo/lib/pkgconfig/gazebo.pc'
+[5.549s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/gazebo/lib/python3.12/site-packages'
+[5.549s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/gazebo/bin'
+[5.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/gazebo/share/gazebo/package.ps1'
+[5.550s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/install/gazebo/share/gazebo/package.dsv'
+[5.551s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/gazebo/share/gazebo/package.sh'
+[5.551s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/gazebo/share/gazebo/package.bash'
+[5.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/gazebo/share/gazebo/package.zsh'
+[5.552s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/install/gazebo/share/colcon-core/packages/gazebo)
+[5.553s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gazebo)
+[5.553s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/gazebo' for CMake module files
+[5.558s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/gazebo' for CMake config files
+[5.558s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo', 'cmake_prefix_path')
+[5.559s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/gazebo/share/gazebo/hook/cmake_prefix_path.ps1'
+[5.563s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/gazebo/share/gazebo/hook/cmake_prefix_path.dsv'
+[5.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/gazebo/share/gazebo/hook/cmake_prefix_path.sh'
+[5.567s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/gazebo/bin'
+[5.567s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/gazebo/lib/pkgconfig/gazebo.pc'
+[5.567s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/gazebo/lib/python3.12/site-packages'
+[5.568s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/gazebo/bin'
+[5.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/gazebo/share/gazebo/package.ps1'
+[5.569s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/install/gazebo/share/gazebo/package.dsv'
+[5.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/gazebo/share/gazebo/package.sh'
+[5.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/gazebo/share/gazebo/package.bash'
+[5.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/gazebo/share/gazebo/package.zsh'
+[5.572s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/install/gazebo/share/colcon-core/packages/gazebo)
+[5.575s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/andre/ros2_ws/src/robotic_arm' with build type 'ament_cmake'
+[5.575s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/andre/ros2_ws/src/robotic_arm'
+[5.576s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.576s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.592s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/robotic_arm': AMENT_PREFIX_PATH=/home/andre/ros2_ws/install/gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/robotic_arm -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/robotic_arm
+[6.921s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/robotic_arm' returned '0': AMENT_PREFIX_PATH=/home/andre/ros2_ws/install/gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/robotic_arm -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/robotic_arm
+[6.923s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/robotic_arm': AMENT_PREFIX_PATH=/home/andre/ros2_ws/install/gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/robotic_arm -- -j4 -l4
+[6.996s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/robotic_arm' returned '0': AMENT_PREFIX_PATH=/home/andre/ros2_ws/install/gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/robotic_arm -- -j4 -l4
+[6.996s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/robotic_arm': AMENT_PREFIX_PATH=/home/andre/ros2_ws/install/gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/robotic_arm
+[7.056s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotic_arm)
+[7.056s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm' for CMake module files
+[7.057s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm' for CMake config files
+[7.057s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotic_arm', 'cmake_prefix_path')
+[7.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/robotic_arm/share/robotic_arm/hook/cmake_prefix_path.ps1'
+[7.060s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/robotic_arm/share/robotic_arm/hook/cmake_prefix_path.dsv'
+[7.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/robotic_arm/share/robotic_arm/hook/cmake_prefix_path.sh'
+[7.062s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm/bin'
+[7.062s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm/lib/pkgconfig/robotic_arm.pc'
+[7.062s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm/lib/python3.12/site-packages'
+[7.063s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm/bin'
+[7.061s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/robotic_arm' returned '0': AMENT_PREFIX_PATH=/home/andre/ros2_ws/install/gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/robotic_arm
+[7.066s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm/share/robotic_arm/package.ps1'
+[7.067s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/install/robotic_arm/share/robotic_arm/package.dsv'
+[7.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm/share/robotic_arm/package.sh'
+[7.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm/share/robotic_arm/package.bash'
+[7.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm/share/robotic_arm/package.zsh'
+[7.071s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/install/robotic_arm/share/colcon-core/packages/robotic_arm)
+[7.074s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotic_arm)
+[7.074s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm' for CMake module files
+[7.075s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm' for CMake config files
+[7.075s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotic_arm', 'cmake_prefix_path')
+[7.078s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/robotic_arm/share/robotic_arm/hook/cmake_prefix_path.ps1'
+[7.079s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/robotic_arm/share/robotic_arm/hook/cmake_prefix_path.dsv'
+[7.080s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/robotic_arm/share/robotic_arm/hook/cmake_prefix_path.sh'
+[7.080s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm/bin'
+[7.081s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm/lib/pkgconfig/robotic_arm.pc'
+[7.081s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm/lib/python3.12/site-packages'
+[7.084s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm/bin'
+[7.085s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm/share/robotic_arm/package.ps1'
+[7.086s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/install/robotic_arm/share/robotic_arm/package.dsv'
+[7.086s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm/share/robotic_arm/package.sh'
+[7.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm/share/robotic_arm/package.bash'
+[7.091s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm/share/robotic_arm/package.zsh'
+[7.091s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/install/robotic_arm/share/colcon-core/packages/robotic_arm)
+[7.092s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/andre/ros2_ws/src/robotic_arm_v3_config' with build type 'ament_cmake'
+[7.092s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/andre/ros2_ws/src/robotic_arm_v3_config'
+[7.092s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.093s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.115s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/robotic_arm_v3_config': AMENT_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm_model_v3:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm_model_v3:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/robotic_arm_v3_config -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/robotic_arm_v3_config
+[8.699s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/robotic_arm_v3_config' returned '0': AMENT_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm_model_v3:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm_model_v3:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/robotic_arm_v3_config -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/robotic_arm_v3_config
+[8.700s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/robotic_arm_v3_config': AMENT_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm_model_v3:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm_model_v3:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/robotic_arm_v3_config -- -j4 -l4
+[8.814s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/robotic_arm_v3_config' returned '0': AMENT_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm_model_v3:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm_model_v3:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/robotic_arm_v3_config -- -j4 -l4
+[8.814s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/robotic_arm_v3_config': AMENT_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm_model_v3:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm_model_v3:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/robotic_arm_v3_config
+[8.859s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotic_arm_v3_config)
+[8.860s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_v3_config' for CMake module files
+[8.860s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/robotic_arm_v3_config' returned '0': AMENT_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm_model_v3:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm_model_v3:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/robotic_arm_v3_config
+[8.861s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_v3_config' for CMake config files
+[8.861s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotic_arm_v3_config', 'cmake_prefix_path')
+[8.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/hook/cmake_prefix_path.ps1'
+[8.862s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/hook/cmake_prefix_path.dsv'
+[8.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/hook/cmake_prefix_path.sh'
+[8.866s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_v3_config/bin'
+[8.866s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_v3_config/lib/pkgconfig/robotic_arm_v3_config.pc'
+[8.866s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_v3_config/lib/python3.12/site-packages'
+[8.866s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_v3_config/bin'
+[8.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/package.ps1'
+[8.867s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/package.dsv'
+[8.868s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/package.sh'
+[8.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/package.bash'
+[8.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/package.zsh'
+[8.873s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/install/robotic_arm_v3_config/share/colcon-core/packages/robotic_arm_v3_config)
+[8.874s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotic_arm_v3_config)
+[8.874s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_v3_config' for CMake module files
+[8.878s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_v3_config' for CMake config files
+[8.878s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotic_arm_v3_config', 'cmake_prefix_path')
+[8.878s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/hook/cmake_prefix_path.ps1'
+[8.879s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/hook/cmake_prefix_path.dsv'
+[8.880s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/hook/cmake_prefix_path.sh'
+[8.883s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_v3_config/bin'
+[8.884s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_v3_config/lib/pkgconfig/robotic_arm_v3_config.pc'
+[8.884s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_v3_config/lib/python3.12/site-packages'
+[8.884s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_v3_config/bin'
+[8.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/package.ps1'
+[8.885s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/package.dsv'
+[8.889s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/package.sh'
+[8.890s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/package.bash'
+[8.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/package.zsh'
+[8.891s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/install/robotic_arm_v3_config/share/colcon-core/packages/robotic_arm_v3_config)
+[8.895s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/andre/ros2_ws/src/robotic_arm_config' with build type 'ament_cmake'
+[8.895s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/andre/ros2_ws/src/robotic_arm_config'
+[8.895s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.896s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.920s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/robotic_arm_config': AMENT_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm:/home/andre/ros2_ws/install/gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm:/home/andre/ros2_ws/install/gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/robotic_arm_config -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/robotic_arm_config
+[9.794s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/robotic_arm_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/robotic_arm_moveit -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/robotic_arm_moveit
+[9.799s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/robotic_arm_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/robotic_arm_moveit -- -j4 -l4
+[10.347s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/robotic_arm_config' returned '0': AMENT_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm:/home/andre/ros2_ws/install/gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm:/home/andre/ros2_ws/install/gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/robotic_arm_config -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/robotic_arm_config
+[10.348s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/robotic_arm_config': AMENT_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm:/home/andre/ros2_ws/install/gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm:/home/andre/ros2_ws/install/gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/robotic_arm_config -- -j4 -l4
+[10.401s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/robotic_arm_config' returned '0': AMENT_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm:/home/andre/ros2_ws/install/gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm:/home/andre/ros2_ws/install/gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/robotic_arm_config -- -j4 -l4
+[10.404s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/robotic_arm_config': AMENT_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm:/home/andre/ros2_ws/install/gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm:/home/andre/ros2_ws/install/gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/robotic_arm_config
+[10.433s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotic_arm_config)
+[10.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/robotic_arm_config' returned '0': AMENT_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm:/home/andre/ros2_ws/install/gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/robotic_arm:/home/andre/ros2_ws/install/gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/robotic_arm_config
+[10.434s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_config' for CMake module files
+[10.435s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_config' for CMake config files
+[10.435s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotic_arm_config', 'cmake_prefix_path')
+[10.435s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/hook/cmake_prefix_path.ps1'
+[10.436s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/hook/cmake_prefix_path.dsv'
+[10.436s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/hook/cmake_prefix_path.sh'
+[10.437s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_config/bin'
+[10.437s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_config/lib/pkgconfig/robotic_arm_config.pc'
+[10.438s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_config/lib/python3.12/site-packages'
+[10.438s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_config/bin'
+[10.438s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/package.ps1'
+[10.439s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/package.dsv'
+[10.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/package.sh'
+[10.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/package.bash'
+[10.441s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/package.zsh'
+[10.441s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/install/robotic_arm_config/share/colcon-core/packages/robotic_arm_config)
+[10.442s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotic_arm_config)
+[10.442s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_config' for CMake module files
+[10.446s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_config' for CMake config files
+[10.447s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotic_arm_config', 'cmake_prefix_path')
+[10.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/hook/cmake_prefix_path.ps1'
+[10.448s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/hook/cmake_prefix_path.dsv'
+[10.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/hook/cmake_prefix_path.sh'
+[10.449s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_config/bin'
+[10.449s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_config/lib/pkgconfig/robotic_arm_config.pc'
+[10.450s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_config/lib/python3.12/site-packages'
+[10.450s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_config/bin'
+[10.450s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/package.ps1'
+[10.451s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/package.dsv'
+[10.452s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/package.sh'
+[10.453s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/package.bash'
+[10.453s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/package.zsh'
+[10.454s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/install/robotic_arm_config/share/colcon-core/packages/robotic_arm_config)
+[13.517s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/cpp_pubsub -- -j4 -l4
+[13.518s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/cpp_pubsub
+[13.537s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cpp_pubsub)
+[13.537s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/cpp_pubsub' for CMake module files
+[13.537s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/cpp_pubsub
+[13.538s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/cpp_pubsub' for CMake config files
+[13.538s] Level 1:colcon.colcon_core.shell:create_environment_hook('cpp_pubsub', 'cmake_prefix_path')
+[13.538s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/hook/cmake_prefix_path.ps1'
+[13.539s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/hook/cmake_prefix_path.dsv'
+[13.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/hook/cmake_prefix_path.sh'
+[13.540s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/cpp_pubsub/lib'
+[13.540s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/cpp_pubsub/bin'
+[13.540s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/cpp_pubsub/lib/pkgconfig/cpp_pubsub.pc'
+[13.541s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/cpp_pubsub/lib/python3.12/site-packages'
+[13.541s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/cpp_pubsub/bin'
+[13.541s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.ps1'
+[13.542s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.dsv'
+[13.542s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.sh'
+[13.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.bash'
+[13.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.zsh'
+[13.543s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/install/cpp_pubsub/share/colcon-core/packages/cpp_pubsub)
+[13.544s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cpp_pubsub)
+[13.544s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/cpp_pubsub' for CMake module files
+[13.545s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/cpp_pubsub' for CMake config files
+[13.545s] Level 1:colcon.colcon_core.shell:create_environment_hook('cpp_pubsub', 'cmake_prefix_path')
+[13.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/hook/cmake_prefix_path.ps1'
+[13.546s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/hook/cmake_prefix_path.dsv'
+[13.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/hook/cmake_prefix_path.sh'
+[13.547s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/cpp_pubsub/lib'
+[13.547s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/cpp_pubsub/bin'
+[13.547s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/cpp_pubsub/lib/pkgconfig/cpp_pubsub.pc'
+[13.547s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/cpp_pubsub/lib/python3.12/site-packages'
+[13.548s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/cpp_pubsub/bin'
+[13.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.ps1'
+[13.549s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.dsv'
+[13.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.sh'
+[13.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.bash'
+[13.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.zsh'
+[13.551s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/install/cpp_pubsub/share/colcon-core/packages/cpp_pubsub)
+[16.223s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/hello_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/hello_moveit -- -j4 -l4
+[16.224s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/hello_moveit
+[16.238s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hello_moveit)
+[16.238s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/hello_moveit' for CMake module files
+[16.239s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/hello_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/hello_moveit
+[16.239s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/hello_moveit' for CMake config files
+[16.239s] Level 1:colcon.colcon_core.shell:create_environment_hook('hello_moveit', 'cmake_prefix_path')
+[16.240s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/hello_moveit/share/hello_moveit/hook/cmake_prefix_path.ps1'
+[16.240s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/hello_moveit/share/hello_moveit/hook/cmake_prefix_path.dsv'
+[16.240s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/hello_moveit/share/hello_moveit/hook/cmake_prefix_path.sh'
+[16.241s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/hello_moveit/lib'
+[16.241s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/hello_moveit/bin'
+[16.241s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/hello_moveit/lib/pkgconfig/hello_moveit.pc'
+[16.242s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/hello_moveit/lib/python3.12/site-packages'
+[16.242s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/hello_moveit/bin'
+[16.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/hello_moveit/share/hello_moveit/package.ps1'
+[16.243s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/install/hello_moveit/share/hello_moveit/package.dsv'
+[16.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/hello_moveit/share/hello_moveit/package.sh'
+[16.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/hello_moveit/share/hello_moveit/package.bash'
+[16.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/hello_moveit/share/hello_moveit/package.zsh'
+[16.244s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/install/hello_moveit/share/colcon-core/packages/hello_moveit)
+[16.245s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hello_moveit)
+[16.245s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/hello_moveit' for CMake module files
+[16.245s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/hello_moveit' for CMake config files
+[16.245s] Level 1:colcon.colcon_core.shell:create_environment_hook('hello_moveit', 'cmake_prefix_path')
+[16.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/hello_moveit/share/hello_moveit/hook/cmake_prefix_path.ps1'
+[16.246s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/hello_moveit/share/hello_moveit/hook/cmake_prefix_path.dsv'
+[16.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/hello_moveit/share/hello_moveit/hook/cmake_prefix_path.sh'
+[16.247s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/hello_moveit/lib'
+[16.247s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/hello_moveit/bin'
+[16.247s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/hello_moveit/lib/pkgconfig/hello_moveit.pc'
+[16.247s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/hello_moveit/lib/python3.12/site-packages'
+[16.248s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/hello_moveit/bin'
+[16.248s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/hello_moveit/share/hello_moveit/package.ps1'
+[16.249s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/install/hello_moveit/share/hello_moveit/package.dsv'
+[16.249s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/hello_moveit/share/hello_moveit/package.sh'
+[16.250s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/hello_moveit/share/hello_moveit/package.bash'
+[16.250s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/hello_moveit/share/hello_moveit/package.zsh'
+[16.251s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/install/hello_moveit/share/colcon-core/packages/hello_moveit)
+[18.596s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/robotic_arm_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/robotic_arm_moveit -- -j4 -l4
+[18.597s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andre/ros2_ws/build/robotic_arm_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/robotic_arm_moveit
+[18.610s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotic_arm_moveit)
+[18.610s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_moveit' for CMake module files
+[18.611s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andre/ros2_ws/build/robotic_arm_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/robotic_arm_moveit
+[18.611s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_moveit' for CMake config files
+[18.611s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotic_arm_moveit', 'cmake_prefix_path')
+[18.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/robotic_arm_moveit/share/robotic_arm_moveit/hook/cmake_prefix_path.ps1'
+[18.612s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/robotic_arm_moveit/share/robotic_arm_moveit/hook/cmake_prefix_path.dsv'
+[18.612s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/robotic_arm_moveit/share/robotic_arm_moveit/hook/cmake_prefix_path.sh'
+[18.613s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_moveit/lib'
+[18.613s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_moveit/bin'
+[18.613s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_moveit/lib/pkgconfig/robotic_arm_moveit.pc'
+[18.614s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_moveit/lib/python3.12/site-packages'
+[18.614s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_moveit/bin'
+[18.615s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_moveit/share/robotic_arm_moveit/package.ps1'
+[18.615s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/install/robotic_arm_moveit/share/robotic_arm_moveit/package.dsv'
+[18.616s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_moveit/share/robotic_arm_moveit/package.sh'
+[18.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_moveit/share/robotic_arm_moveit/package.bash'
+[18.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_moveit/share/robotic_arm_moveit/package.zsh'
+[18.617s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/install/robotic_arm_moveit/share/colcon-core/packages/robotic_arm_moveit)
+[18.618s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotic_arm_moveit)
+[18.619s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_moveit' for CMake module files
+[18.620s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_moveit' for CMake config files
+[18.620s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotic_arm_moveit', 'cmake_prefix_path')
+[18.621s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/robotic_arm_moveit/share/robotic_arm_moveit/hook/cmake_prefix_path.ps1'
+[18.621s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andre/ros2_ws/install/robotic_arm_moveit/share/robotic_arm_moveit/hook/cmake_prefix_path.dsv'
+[18.622s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andre/ros2_ws/install/robotic_arm_moveit/share/robotic_arm_moveit/hook/cmake_prefix_path.sh'
+[18.623s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_moveit/lib'
+[18.623s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_moveit/bin'
+[18.623s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_moveit/lib/pkgconfig/robotic_arm_moveit.pc'
+[18.623s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_moveit/lib/python3.12/site-packages'
+[18.623s] Level 1:colcon.colcon_core.environment:checking '/home/andre/ros2_ws/install/robotic_arm_moveit/bin'
+[18.624s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_moveit/share/robotic_arm_moveit/package.ps1'
+[18.624s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andre/ros2_ws/install/robotic_arm_moveit/share/robotic_arm_moveit/package.dsv'
+[18.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_moveit/share/robotic_arm_moveit/package.sh'
+[18.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_moveit/share/robotic_arm_moveit/package.bash'
+[18.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/andre/ros2_ws/install/robotic_arm_moveit/share/robotic_arm_moveit/package.zsh'
+[18.626s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andre/ros2_ws/install/robotic_arm_moveit/share/colcon-core/packages/robotic_arm_moveit)
+[18.626s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[18.626s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[18.626s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[18.626s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[18.639s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[18.639s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[18.639s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[18.656s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[18.657s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andre/ros2_ws/install/local_setup.ps1'
+[18.658s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/andre/ros2_ws/install/_local_setup_util_ps1.py'
+[18.660s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andre/ros2_ws/install/setup.ps1'
+[18.662s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andre/ros2_ws/install/local_setup.sh'
+[18.663s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/andre/ros2_ws/install/_local_setup_util_sh.py'
+[18.663s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andre/ros2_ws/install/setup.sh'
+[18.665s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andre/ros2_ws/install/local_setup.bash'
+[18.666s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andre/ros2_ws/install/setup.bash'
+[18.667s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andre/ros2_ws/install/local_setup.zsh'
+[18.668s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andre/ros2_ws/install/setup.zsh'

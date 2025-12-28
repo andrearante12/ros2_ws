@@ -1,4 +1,0 @@
-source;share/robotic_arm/local_setup.bash
-source;share/robotic_arm/local_setup.dsv
-source;share/robotic_arm/local_setup.sh
-source;share/robotic_arm/local_setup.zsh
