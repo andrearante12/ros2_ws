@@ -14,7 +14,7 @@ class PosePrinter(Node):
         super().__init__('pose_printer')
 
         # ===== Serial setup =====
-        self.serial_port = '/dev/ttyUSB1'  # change if needed
+        self.serial_port = '/dev/ttyUSB0'  # change if needed
         self.baud_rate = 9600
 
         try:

@@ -1,0 +1,137 @@
+[0.000000] (-) TimerEvent: {}
+[0.000388] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.000717] (-) JobUnselected: {'identifier': 'gazebo'}
+[0.000782] (-) JobUnselected: {'identifier': 'hello_moveit'}
+[0.000806] (-) JobUnselected: {'identifier': 'moveit_controls'}
+[0.000827] (-) JobUnselected: {'identifier': 'pose_printer'}
+[0.000847] (-) JobUnselected: {'identifier': 'robotic_arm'}
+[0.000865] (-) JobUnselected: {'identifier': 'robotic_arm_config'}
+[0.000882] (-) JobUnselected: {'identifier': 'robotic_arm_model_v3'}
+[0.000899] (-) JobUnselected: {'identifier': 'robotic_arm_moveit'}
+[0.000917] (-) JobUnselected: {'identifier': 'robotic_arm_v3_config'}
+[0.000935] (-) JobUnselected: {'identifier': 'ros_gz'}
+[0.000960] (-) JobUnselected: {'identifier': 'ros_gz_bridge'}
+[0.000981] (-) JobUnselected: {'identifier': 'ros_gz_image'}
+[0.000999] (-) JobUnselected: {'identifier': 'ros_gz_interfaces'}
+[0.001017] (-) JobUnselected: {'identifier': 'ros_gz_sim'}
+[0.001035] (-) JobUnselected: {'identifier': 'ros_gz_sim_demos'}
+[0.001053] (-) JobUnselected: {'identifier': 'test_ros_gz_bridge'}
+[0.001074] (move_program) JobQueued: {'identifier': 'move_program', 'dependencies': OrderedDict()}
+[0.001099] (move_program) JobStarted: {'identifier': 'move_program'}
+[0.011569] (move_program) JobProgress: {'identifier': 'move_program', 'progress': 'cmake'}
+[0.012210] (move_program) JobProgress: {'identifier': 'move_program', 'progress': 'build'}
+[0.012865] (move_program) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/andre/ros2_ws/build/move_program', '--', '-j4', '-l4'], 'cwd': '/home/andre/ros2_ws/build/move_program', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'andre', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/andre', 'OLDPWD': '/home/andre/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3010', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/andre/ros2_ws/install:/home/andre/ros2_ws/src/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'andre', 'SUMO_HOME': '/usr/share/sumo', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'andre', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/andre/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/nucbox:@/tmp/.ICE-unix/2976,unix/nucbox:/tmp/.ICE-unix/2976', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/293e16d7_3c8b_4b8d_bddc_eb09aa7d998f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.KLBBI3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.104', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/andre/ros2_ws/install/robotic_arm_v3_config:/home/andre/ros2_ws/install/robotic_arm_model_v3:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/moveit_controls:/home/andre/ros2_ws/install/move_program:/home/andre/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/andre/ros2_ws/build/move_program', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/andre/ros2_ws/install/pose_printer/lib/python3.12/site-packages:/home/andre/ros2_ws/install/moveit_controls/lib/python3.12/site-packages:/home/andre/ros2_ws/src/install/pose_printer/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/andre/ros2_ws/install/robotic_arm_v3_config:/home/andre/ros2_ws/install/robotic_arm_model_v3:/home/andre/ros2_ws/install/move_program:/home/andre/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/moveit_controls:/opt/ros/jazzy'}), 'shell': False}
+[0.098652] (move_program) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/move_program.dir/src/move_program.cpp.o\x1b[0m\n'}
+[0.099712] (-) TimerEvent: {}
+[0.199947] (-) TimerEvent: {}
+[0.300229] (-) TimerEvent: {}
+[0.400477] (-) TimerEvent: {}
+[0.500763] (-) TimerEvent: {}
+[0.601015] (-) TimerEvent: {}
+[0.701285] (-) TimerEvent: {}
+[0.801548] (-) TimerEvent: {}
+[0.901802] (-) TimerEvent: {}
+[1.002050] (-) TimerEvent: {}
+[1.102307] (-) TimerEvent: {}
+[1.202602] (-) TimerEvent: {}
+[1.302871] (-) TimerEvent: {}
+[1.403178] (-) TimerEvent: {}
+[1.503462] (-) TimerEvent: {}
+[1.603728] (-) TimerEvent: {}
+[1.703993] (-) TimerEvent: {}
+[1.804268] (-) TimerEvent: {}
+[1.904543] (-) TimerEvent: {}
+[2.006411] (-) TimerEvent: {}
+[2.106686] (-) TimerEvent: {}
+[2.206954] (-) TimerEvent: {}
+[2.307271] (-) TimerEvent: {}
+[2.407523] (-) TimerEvent: {}
+[2.508662] (-) TimerEvent: {}
+[2.608928] (-) TimerEvent: {}
+[2.709186] (-) TimerEvent: {}
+[2.809460] (-) TimerEvent: {}
+[2.909725] (-) TimerEvent: {}
+[3.009993] (-) TimerEvent: {}
+[3.110259] (-) TimerEvent: {}
+[3.210523] (-) TimerEvent: {}
+[3.310823] (-) TimerEvent: {}
+[3.411117] (-) TimerEvent: {}
+[3.511364] (-) TimerEvent: {}
+[3.611637] (-) TimerEvent: {}
+[3.711908] (-) TimerEvent: {}
+[3.812170] (-) TimerEvent: {}
+[3.912447] (-) TimerEvent: {}
+[4.012709] (-) TimerEvent: {}
+[4.112980] (-) TimerEvent: {}
+[4.213265] (-) TimerEvent: {}
+[4.313544] (-) TimerEvent: {}
+[4.413831] (-) TimerEvent: {}
+[4.514099] (-) TimerEvent: {}
+[4.614384] (-) TimerEvent: {}
+[4.714653] (-) TimerEvent: {}
+[4.814936] (-) TimerEvent: {}
+[4.915184] (-) TimerEvent: {}
+[5.015492] (-) TimerEvent: {}
+[5.115753] (-) TimerEvent: {}
+[5.216019] (-) TimerEvent: {}
+[5.316316] (-) TimerEvent: {}
+[5.416578] (-) TimerEvent: {}
+[5.516838] (-) TimerEvent: {}
+[5.617103] (-) TimerEvent: {}
+[5.717785] (-) TimerEvent: {}
+[5.818150] (-) TimerEvent: {}
+[5.918437] (-) TimerEvent: {}
+[6.018710] (-) TimerEvent: {}
+[6.118975] (-) TimerEvent: {}
+[6.219252] (-) TimerEvent: {}
+[6.319537] (-) TimerEvent: {}
+[6.419994] (-) TimerEvent: {}
+[6.520290] (-) TimerEvent: {}
+[6.620547] (-) TimerEvent: {}
+[6.720809] (-) TimerEvent: {}
+[6.821078] (-) TimerEvent: {}
+[6.921470] (-) TimerEvent: {}
+[7.021745] (-) TimerEvent: {}
+[7.122040] (-) TimerEvent: {}
+[7.222295] (-) TimerEvent: {}
+[7.322548] (-) TimerEvent: {}
+[7.422818] (-) TimerEvent: {}
+[7.523108] (-) TimerEvent: {}
+[7.623412] (-) TimerEvent: {}
+[7.723672] (-) TimerEvent: {}
+[7.823963] (-) TimerEvent: {}
+[7.924304] (-) TimerEvent: {}
+[8.024568] (-) TimerEvent: {}
+[8.124823] (-) TimerEvent: {}
+[8.225046] (-) TimerEvent: {}
+[8.325341] (-) TimerEvent: {}
+[8.337271] (move_program) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable move_program\x1b[0m\n'}
+[8.425478] (-) TimerEvent: {}
+[8.525749] (-) TimerEvent: {}
+[8.626035] (-) TimerEvent: {}
+[8.717044] (move_program) StdoutLine: {'line': b'[100%] Built target move_program\n'}
+[8.726132] (-) TimerEvent: {}
+[8.731594] (move_program) CommandEnded: {'returncode': 0}
+[8.732281] (move_program) JobProgress: {'identifier': 'move_program', 'progress': 'install'}
+[8.742521] (move_program) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/andre/ros2_ws/build/move_program'], 'cwd': '/home/andre/ros2_ws/build/move_program', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'andre', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/andre', 'OLDPWD': '/home/andre/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3010', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/andre/ros2_ws/install:/home/andre/ros2_ws/src/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'andre', 'SUMO_HOME': '/usr/share/sumo', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'andre', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/andre/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/nucbox:@/tmp/.ICE-unix/2976,unix/nucbox:/tmp/.ICE-unix/2976', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/293e16d7_3c8b_4b8d_bddc_eb09aa7d998f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.KLBBI3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.104', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/andre/ros2_ws/install/robotic_arm_v3_config:/home/andre/ros2_ws/install/robotic_arm_model_v3:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/moveit_controls:/home/andre/ros2_ws/install/move_program:/home/andre/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/andre/ros2_ws/build/move_program', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/andre/ros2_ws/install/pose_printer/lib/python3.12/site-packages:/home/andre/ros2_ws/install/moveit_controls/lib/python3.12/site-packages:/home/andre/ros2_ws/src/install/pose_printer/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/andre/ros2_ws/install/robotic_arm_v3_config:/home/andre/ros2_ws/install/robotic_arm_model_v3:/home/andre/ros2_ws/install/move_program:/home/andre/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/moveit_controls:/opt/ros/jazzy'}), 'shell': False}
+[8.752468] (move_program) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.752700] (move_program) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/move_program/lib/move_program/move_program\n'}
+[8.753574] (move_program) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/andre/ros2_ws/install/move_program/lib/move_program/move_program" to ""\n'}
+[8.753717] (move_program) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/move_program/share/ament_index/resource_index/package_run_dependencies/move_program\n'}
+[8.753834] (move_program) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/move_program/share/ament_index/resource_index/parent_prefix_path/move_program\n'}
+[8.753981] (move_program) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/environment/ament_prefix_path.sh\n'}
+[8.754073] (move_program) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/environment/ament_prefix_path.dsv\n'}
+[8.754199] (move_program) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/environment/path.sh\n'}
+[8.754423] (move_program) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/environment/path.dsv\n'}
+[8.754516] (move_program) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.bash\n'}
+[8.754605] (move_program) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.sh\n'}
+[8.754686] (move_program) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.zsh\n'}
+[8.754766] (move_program) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.dsv\n'}
+[8.754845] (move_program) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/package.dsv\n'}
+[8.754924] (move_program) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/move_program/share/ament_index/resource_index/packages/move_program\n'}
+[8.755002] (move_program) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/cmake/move_programConfig.cmake\n'}
+[8.755080] (move_program) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/cmake/move_programConfig-version.cmake\n'}
+[8.755159] (move_program) StdoutLine: {'line': b'-- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/package.xml\n'}
+[8.756131] (move_program) CommandEnded: {'returncode': 0}
+[8.772226] (move_program) JobEnded: {'identifier': 'move_program', 'rc': 0}
+[8.773099] (-) EventReactorShutdown: {}
