@@ -6,6 +6,9 @@
 #include <cmath>
 #include <iostream>
 #include <string>
+#include <fcntl.h>
+#include <unistd.h>
+#include <termios.h>
 
 class GradientDescentIK {
 private:
@@ -96,6 +99,94 @@ public:
     }
 };
 
+class SerialPort {
+private:
+    int fd_;
+    rclcpp::Logger logger_;
+    
+public:
+    SerialPort(const std::string& port, int baudrate) 
+        : fd_(-1), logger_(rclcpp::get_logger("serial_port")) {
+        
+        fd_ = open(port.c_str(), O_RDWR | O_NOCTTY);
+        
+        if (fd_ < 0) {
+            RCLCPP_ERROR(logger_, "Failed to open serial port: %s", port.c_str());
+            return;
+        }
+        
+        struct termios tty;
+        if (tcgetattr(fd_, &tty) != 0) {
+            RCLCPP_ERROR(logger_, "Error getting serial attributes");
+            close(fd_);
+            fd_ = -1;
+            return;
+        }
+        
+        // Set baud rate
+        speed_t baud = B9600;
+        if (baudrate == 115200) baud = B115200;
+        else if (baudrate == 57600) baud = B57600;
+        else if (baudrate == 38400) baud = B38400;
+        else if (baudrate == 19200) baud = B19200;
+        
+        cfsetospeed(&tty, baud);
+        cfsetispeed(&tty, baud);
+        
+        // 8N1 mode
+        tty.c_cflag &= ~PARENB;
+        tty.c_cflag &= ~CSTOPB;
+        tty.c_cflag &= ~CSIZE;
+        tty.c_cflag |= CS8;
+        tty.c_cflag &= ~CRTSCTS;
+        tty.c_cflag |= CREAD | CLOCAL;
+        
+        tty.c_lflag &= ~ICANON;
+        tty.c_lflag &= ~ECHO;
+        tty.c_lflag &= ~ECHOE;
+        tty.c_lflag &= ~ECHONL;
+        tty.c_lflag &= ~ISIG;
+        
+        tty.c_iflag &= ~(IXON | IXOFF | IXANY);
+        tty.c_iflag &= ~(IGNBRK | BRKINT | PARMRK | ISTRIP | INLCR | IGNCR | ICRNL);
+        
+        tty.c_oflag &= ~OPOST;
+        tty.c_oflag &= ~ONLCR;
+        
+        tty.c_cc[VTIME] = 10;
+        tty.c_cc[VMIN] = 0;
+        
+        if (tcsetattr(fd_, TCSANOW, &tty) != 0) {
+            RCLCPP_ERROR(logger_, "Error setting serial attributes");
+            close(fd_);
+            fd_ = -1;
+            return;
+        }
+        
+        sleep(2); // Allow Arduino reset
+        RCLCPP_INFO(logger_, "Connected to %s at %d baud", port.c_str(), baudrate);
+    }
+    
+    ~SerialPort() {
+        if (fd_ >= 0) {
+            close(fd_);
+        }
+    }
+    
+    bool isOpen() const {
+        return fd_ >= 0;
+    }
+    
+    bool write(const std::string& data) {
+        if (fd_ < 0) return false;
+        
+        ssize_t bytes_written = ::write(fd_, data.c_str(), data.length());
+        tcdrain(fd_); // Wait for data to be transmitted (like flush)
+        
+        return bytes_written == static_cast<ssize_t>(data.length());
+    }
+};
+
 int main(int argc, char * argv[]) 
 {
     rclcpp::init(argc, argv);
@@ -130,6 +221,12 @@ int main(int argc, char * argv[])
 
     RCLCPP_INFO(logger, "Target Position Received: X: %.3f, Y: %.3f, Z: %.3f", target_x, target_y, target_z);
 
+    // ===== Serial setup =====
+    SerialPort serial("/dev/ttyUSB0", 9600);
+    if (!serial.isOpen()) {
+        RCLCPP_WARN(logger, "Serial port not available, will only print to console");
+    }
+
     // Load Robot Model
     robot_model_loader::RobotModelLoader robot_model_loader(node);
     const moveit::core::RobotModelPtr& robot_model = robot_model_loader.getModel();
@@ -146,17 +243,23 @@ int main(int argc, char * argv[])
 
     // Solve IK
     if (gd_ik.solveIK(target_position, joint_solution)) {
-        RCLCPP_INFO(logger, "IK Solution found! Planning motion...");
+        RCLCPP_INFO(logger, "IK Solution found!");
         
-        move_group.setJointValueTarget(joint_solution);
-        moveit::planning_interface::MoveGroupInterface::Plan my_plan;
-        
-        if (static_cast<bool>(move_group.plan(my_plan))) {
-            move_group.execute(my_plan);
-            RCLCPP_INFO(logger, "Motion successful.");
-        } else {
-            RCLCPP_ERROR(logger, "Planning failed.");
+        // Send serial commands immediately
+        for (size_t i = 0; i < joint_solution.size() - 1; i++) {
+            int angle = static_cast<int>(std::round(joint_solution[i] * 180.0 / M_PI));
+            std::string command = "servo" + std::to_string(i) + "=" + std::to_string(angle) + "\n";
+            
+            // Print to console
+            std::cout << command;
+            
+            // Send over serial
+            if (serial.isOpen()) {
+                serial.write(command);
+            }
         }
+        
+        RCLCPP_INFO(logger, "Serial commands sent. Exiting without robot motion.");
     } else {
         RCLCPP_ERROR(logger, "IK solver failed to find a valid solution.");
     }
