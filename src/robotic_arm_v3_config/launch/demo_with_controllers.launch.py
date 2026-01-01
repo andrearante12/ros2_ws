@@ -101,6 +101,18 @@ def generate_launch_description():
         parameters=[moveit_config.to_dict(), moveit_config.robot_description_kinematics],
         output="screen",
     )
+    
+    # Add this NEW node
+    move_program_node = Node(
+        package="move_program",
+        executable="move_program",
+        output="screen",
+        parameters=[
+            moveit_config.robot_description,
+            moveit_config.robot_description_semantic,
+            moveit_config.robot_description_kinematics,
+        ],
+    )
 
     rviz_node = Node(
         package="rviz2",
@@ -124,5 +136,6 @@ def generate_launch_description():
         joint_state_broadcaster_spawner,
         arm_controller_spawner,
         move_group,
+        move_program_node,
         rviz_node,
     ])

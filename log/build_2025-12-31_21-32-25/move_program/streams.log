@@ -1,0 +1,25 @@
+[0.013s] Invoking command in '/home/andre/ros2_ws/build/move_program': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/move_program -- -j4 -l4
+[0.086s] [ 50%] [32mBuilding CXX object CMakeFiles/move_program.dir/src/move_program.cpp.o[0m
+[6.612s] [100%] [32m[1mLinking CXX executable move_program[0m
+[6.930s] [100%] Built target move_program
+[6.941s] Invoked command in '/home/andre/ros2_ws/build/move_program' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/move_program -- -j4 -l4
+[6.952s] Invoking command in '/home/andre/ros2_ws/build/move_program': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/move_program
+[6.968s] -- Install configuration: ""
+[6.968s] -- Installing: /home/andre/ros2_ws/install/move_program/lib/move_program/move_program
+[6.970s] -- Set non-toolchain portion of runtime path of "/home/andre/ros2_ws/install/move_program/lib/move_program/move_program" to ""
+[6.971s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/ament_index/resource_index/package_run_dependencies/move_program
+[6.972s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/ament_index/resource_index/parent_prefix_path/move_program
+[6.972s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/environment/ament_prefix_path.sh
+[6.972s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/environment/ament_prefix_path.dsv
+[6.972s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/environment/path.sh
+[6.972s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/environment/path.dsv
+[6.973s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.bash
+[6.973s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.sh
+[6.973s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.zsh
+[6.973s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.dsv
+[6.974s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/package.dsv
+[6.974s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/ament_index/resource_index/packages/move_program
+[6.974s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/cmake/move_programConfig.cmake
+[6.976s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/cmake/move_programConfig-version.cmake
+[6.978s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/package.xml
+[6.978s] Invoked command in '/home/andre/ros2_ws/build/move_program' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/move_program
