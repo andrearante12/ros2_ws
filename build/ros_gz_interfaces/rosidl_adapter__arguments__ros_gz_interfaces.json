@@ -1,0 +1,30 @@
+{
+  "package_name": "ros_gz_interfaces",
+  "non_idl_tuples": [
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/Altimeter.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/Contact.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/Contacts.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/Dataframe.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/Entity.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/EntityFactory.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/EntityWrench.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/Float32Array.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/GuiCamera.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/JointWrench.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/Light.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/LogicalCameraImage.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/LogicalCameraImageModel.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/MaterialColor.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/ParamVec.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/SensorNoise.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/StringVec.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/TrackVisual.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/VideoRecord.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/WorldControl.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:msg/WorldReset.msg",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:srv/ControlWorld.srv",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:srv/DeleteEntity.srv",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:srv/SetEntityPose.srv",
+    "/home/andre/ros2_ws/src/ros_gz/ros_gz_interfaces:srv/SpawnEntity.srv"
+  ]
+}

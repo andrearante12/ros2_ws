@@ -23,8 +23,10 @@
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/launch/setup_assistant.launch.py
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/launch/rsp.launch.py
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/launch/static_virtual_joint_tfs.launch.py
+/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/config/bridge.yaml
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/config/pilz_cartesian_limits.yaml
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/config/initial_positions.yaml
+/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/config/ros_gz_bridge.yaml
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/config/moveit_controllers.yaml
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/config/robotic_arm_model_v3.srdf
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/config/robotic_arm_model_v3.ros2_control.xacro

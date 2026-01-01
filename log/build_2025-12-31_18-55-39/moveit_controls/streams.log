@@ -1,0 +1,35 @@
+[2.242s] Invoking command in '/home/andre/ros2_ws/src/moveit_controls': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andre/ros2_ws/build/moveit_controls/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/install/moveit_controls/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/moveit_controls build --build-base /home/andre/ros2_ws/build/moveit_controls/build install --record /home/andre/ros2_ws/build/moveit_controls/install.log --single-version-externally-managed install_data
+[2.940s] running egg_info
+[2.943s] creating ../../build/moveit_controls/moveit_controls.egg-info
+[3.017s] writing ../../build/moveit_controls/moveit_controls.egg-info/PKG-INFO
+[3.017s] writing dependency_links to ../../build/moveit_controls/moveit_controls.egg-info/dependency_links.txt
+[3.017s] writing entry points to ../../build/moveit_controls/moveit_controls.egg-info/entry_points.txt
+[3.017s] writing requirements to ../../build/moveit_controls/moveit_controls.egg-info/requires.txt
+[3.017s] writing top-level names to ../../build/moveit_controls/moveit_controls.egg-info/top_level.txt
+[3.017s] writing manifest file '../../build/moveit_controls/moveit_controls.egg-info/SOURCES.txt'
+[3.132s] reading manifest file '../../build/moveit_controls/moveit_controls.egg-info/SOURCES.txt'
+[3.133s] writing manifest file '../../build/moveit_controls/moveit_controls.egg-info/SOURCES.txt'
+[3.136s] running build
+[3.136s] running build_py
+[3.136s] creating /home/andre/ros2_ws/build/moveit_controls/build
+[3.136s] creating /home/andre/ros2_ws/build/moveit_controls/build/lib
+[3.136s] creating /home/andre/ros2_ws/build/moveit_controls/build/lib/moveit_controls
+[3.136s] copying moveit_controls/__init__.py -> /home/andre/ros2_ws/build/moveit_controls/build/lib/moveit_controls
+[3.136s] running install
+[3.143s] running install_lib
+[3.210s] creating /home/andre/ros2_ws/install/moveit_controls/lib/python3.12/site-packages/moveit_controls
+[3.211s] copying /home/andre/ros2_ws/build/moveit_controls/build/lib/moveit_controls/__init__.py -> /home/andre/ros2_ws/install/moveit_controls/lib/python3.12/site-packages/moveit_controls
+[3.212s] byte-compiling /home/andre/ros2_ws/install/moveit_controls/lib/python3.12/site-packages/moveit_controls/__init__.py to __init__.cpython-312.pyc
+[3.216s] running install_data
+[3.216s] creating /home/andre/ros2_ws/install/moveit_controls/share/ament_index
+[3.216s] creating /home/andre/ros2_ws/install/moveit_controls/share/ament_index/resource_index
+[3.216s] creating /home/andre/ros2_ws/install/moveit_controls/share/ament_index/resource_index/packages
+[3.216s] copying resource/moveit_controls -> /home/andre/ros2_ws/install/moveit_controls/share/ament_index/resource_index/packages
+[3.216s] copying package.xml -> /home/andre/ros2_ws/install/moveit_controls/share/moveit_controls
+[3.217s] running install_egg_info
+[3.262s] Copying ../../build/moveit_controls/moveit_controls.egg-info to /home/andre/ros2_ws/install/moveit_controls/lib/python3.12/site-packages/moveit_controls-0.0.0-py3.12.egg-info
+[3.267s] running install_scripts
+[3.615s] Installing move_to_xyz script to /home/andre/ros2_ws/install/moveit_controls/lib/moveit_controls
+[3.616s] Installing target_listener script to /home/andre/ros2_ws/install/moveit_controls/lib/moveit_controls
+[3.616s] writing list of installed files to '/home/andre/ros2_ws/build/moveit_controls/install.log'
+[3.683s] Invoked command in '/home/andre/ros2_ws/src/moveit_controls' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andre/ros2_ws/build/moveit_controls/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/install/moveit_controls/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/moveit_controls build --build-base /home/andre/ros2_ws/build/moveit_controls/build install --record /home/andre/ros2_ws/build/moveit_controls/install.log --single-version-externally-managed install_data

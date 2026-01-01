@@ -1,0 +1,3 @@
+[console_scripts]
+move_to_xyz = moveit_controls.move_to_xyz:main
+target_listener = moveit_controls.target_listener:main

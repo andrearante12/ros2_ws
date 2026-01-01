@@ -1,0 +1,65 @@
+[0.012s] Invoking command in '/home/andre/ros2_ws/build/move_program': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/move_program -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/move_program
+[0.080s] -- The C compiler identification is GNU 13.3.0
+[0.149s] -- The CXX compiler identification is GNU 13.3.0
+[0.169s] -- Detecting C compiler ABI info
+[0.277s] -- Detecting C compiler ABI info - done
+[0.289s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.290s] -- Detecting C compile features
+[0.290s] -- Detecting C compile features - done
+[0.301s] -- Detecting CXX compiler ABI info
+[0.441s] -- Detecting CXX compiler ABI info - done
+[0.459s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.459s] -- Detecting CXX compile features
+[0.460s] -- Detecting CXX compile features - done
+[0.465s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.705s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.877s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.074s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.102s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.131s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.168s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.298s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.304s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.514s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.547s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.601s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.768s] -- Found moveit_ros_planning_interface: 2.12.3 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)
+[1.980s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread 
+[2.601s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[2.763s] -- Found parameter_traits: 0.5.0 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[2.806s] -- Found rclcpp_lifecycle: 28.1.13 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[2.898s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem 
+[3.060s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.060s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.425s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono 
+[3.562s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options 
+[3.616s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread 
+[3.854s] -- Configuring done (3.8s)
+[3.887s] -- Generating done (0.0s)
+[3.895s] -- Build files have been written to: /home/andre/ros2_ws/build/move_program
+[3.920s] Invoked command in '/home/andre/ros2_ws/build/move_program' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/move_program -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/move_program
+[3.921s] Invoking command in '/home/andre/ros2_ws/build/move_program': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/move_program -- -j4 -l4
+[4.001s] [ 50%] [32mBuilding CXX object CMakeFiles/move_program.dir/src/move_program.cpp.o[0m
+[16.956s] [100%] [32m[1mLinking CXX executable move_program[0m
+[17.597s] [100%] Built target move_program
+[17.614s] Invoked command in '/home/andre/ros2_ws/build/move_program' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/move_program -- -j4 -l4
+[17.616s] Invoking command in '/home/andre/ros2_ws/build/move_program': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/move_program
+[17.643s] -- Install configuration: ""
+[17.643s] -- Installing: /home/andre/ros2_ws/install/move_program/lib/move_program/move_program
+[17.645s] -- Set non-toolchain portion of runtime path of "/home/andre/ros2_ws/install/move_program/lib/move_program/move_program" to ""
+[17.645s] -- Installing: /home/andre/ros2_ws/install/move_program/share/ament_index/resource_index/package_run_dependencies/move_program
+[17.649s] -- Installing: /home/andre/ros2_ws/install/move_program/share/ament_index/resource_index/parent_prefix_path/move_program
+[17.649s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/environment/ament_prefix_path.sh
+[17.650s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/environment/ament_prefix_path.dsv
+[17.650s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/environment/path.sh
+[17.650s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/environment/path.dsv
+[17.650s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.bash
+[17.650s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.sh
+[17.650s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.zsh
+[17.650s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.dsv
+[17.650s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/package.dsv
+[17.658s] -- Installing: /home/andre/ros2_ws/install/move_program/share/ament_index/resource_index/packages/move_program
+[17.658s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/cmake/move_programConfig.cmake
+[17.658s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/cmake/move_programConfig-version.cmake
+[17.658s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/package.xml
+[17.660s] Invoked command in '/home/andre/ros2_ws/build/move_program' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/move_program
