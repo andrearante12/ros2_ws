@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andre/ros2_ws/src/robotic_arm_moveit
+CMAKE_SOURCE_DIR = /home/bot/ros2_ws/src/robotic_arm_moveit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andre/ros2_ws/build/robotic_arm_moveit
+CMAKE_BINARY_DIR = /home/bot/ros2_ws/build/robotic_arm_moveit
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andre/ros2_ws/build/robotic_arm_moveit/CMakeFiles /home/andre/ros2_ws/build/robotic_arm_moveit//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bot/ros2_ws/build/robotic_arm_moveit/CMakeFiles /home/bot/ros2_ws/build/robotic_arm_moveit//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andre/ros2_ws/build/robotic_arm_moveit/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bot/ros2_ws/build/robotic_arm_moveit/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

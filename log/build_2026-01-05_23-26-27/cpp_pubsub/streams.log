@@ -1,0 +1,61 @@
+[0.130s] Invoking command in '/home/bot/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/bot/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/bot/ros2_ws/install/cpp_pubsub
+[1.580s] -- The C compiler identification is GNU 13.3.0
+[2.551s] -- The CXX compiler identification is GNU 13.3.0
+[2.693s] -- Detecting C compiler ABI info
+[3.693s] -- Detecting C compiler ABI info - done
+[3.755s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.759s] -- Detecting C compile features
+[3.763s] -- Detecting C compile features - done
+[3.896s] -- Detecting CXX compiler ABI info
+[4.801s] -- Detecting CXX compiler ABI info - done
+[4.857s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.859s] -- Detecting CXX compile features
+[4.866s] -- Detecting CXX compile features - done
+[4.969s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[6.585s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[8.026s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[8.895s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[9.103s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[9.390s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.685s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.995s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[11.100s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[12.196s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[12.361s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[12.504s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[13.232s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[13.927s] -- Configuring done (13.7s)
+[14.032s] -- Generating done (0.1s)
+[14.062s] -- Build files have been written to: /home/bot/ros2_ws/build/cpp_pubsub
+[14.124s] Invoked command in '/home/bot/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/bot/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/bot/ros2_ws/install/cpp_pubsub
+[14.125s] Invoking command in '/home/bot/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bot/ros2_ws/build/cpp_pubsub -- -j4 -l4
+[14.550s] [ 25%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_lambda_function.cpp.o[0m
+[14.557s] [ 50%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_lambda_function.cpp.o[0m
+[67.803s] [ 75%] [32m[1mLinking CXX executable talker[0m
+[70.621s] [ 75%] Built target talker
+[80.372s] [100%] [32m[1mLinking CXX executable listener[0m
+[82.346s] [100%] Built target listener
+[82.430s] Invoked command in '/home/bot/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bot/ros2_ws/build/cpp_pubsub -- -j4 -l4
+[82.442s] Invoking command in '/home/bot/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bot/ros2_ws/build/cpp_pubsub
+[82.495s] -- Install configuration: ""
+[82.496s] -- Installing: /home/bot/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/talker
+[82.508s] -- Set non-toolchain portion of runtime path of "/home/bot/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/talker" to ""
+[82.509s] -- Installing: /home/bot/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/listener
+[82.558s] -- Set non-toolchain portion of runtime path of "/home/bot/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/listener" to ""
+[82.559s] -- Up-to-date: /home/bot/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/talker
+[82.562s] -- Installing: /home/bot/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[82.571s] -- Installing: /home/bot/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[82.575s] -- Installing: /home/bot/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[82.577s] -- Installing: /home/bot/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv
+[82.579s] -- Installing: /home/bot/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[82.581s] -- Installing: /home/bot/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv
+[82.584s] -- Installing: /home/bot/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[82.586s] -- Installing: /home/bot/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[82.589s] -- Installing: /home/bot/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[82.591s] -- Installing: /home/bot/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv
+[82.593s] -- Installing: /home/bot/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.dsv
+[82.596s] -- Installing: /home/bot/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[82.598s] -- Installing: /home/bot/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[82.600s] -- Installing: /home/bot/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[82.603s] -- Installing: /home/bot/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[82.614s] Invoked command in '/home/bot/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bot/ros2_ws/build/cpp_pubsub

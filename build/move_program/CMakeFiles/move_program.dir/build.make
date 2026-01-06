@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andre/ros2_ws/src/move_program
+CMAKE_SOURCE_DIR = /home/bot/ros2_ws/src/move_program
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andre/ros2_ws/build/move_program
+CMAKE_BINARY_DIR = /home/bot/ros2_ws/build/move_program
 
 # Include any dependencies generated for this target.
 include CMakeFiles/move_program.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/move_program.dir/progress.make
 include CMakeFiles/move_program.dir/flags.make
 
 CMakeFiles/move_program.dir/src/move_program.cpp.o: CMakeFiles/move_program.dir/flags.make
-CMakeFiles/move_program.dir/src/move_program.cpp.o: /home/andre/ros2_ws/src/move_program/src/move_program.cpp
+CMakeFiles/move_program.dir/src/move_program.cpp.o: /home/bot/ros2_ws/src/move_program/src/move_program.cpp
 CMakeFiles/move_program.dir/src/move_program.cpp.o: CMakeFiles/move_program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andre/ros2_ws/build/move_program/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/move_program.dir/src/move_program.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/move_program.dir/src/move_program.cpp.o -MF CMakeFiles/move_program.dir/src/move_program.cpp.o.d -o CMakeFiles/move_program.dir/src/move_program.cpp.o -c /home/andre/ros2_ws/src/move_program/src/move_program.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bot/ros2_ws/build/move_program/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/move_program.dir/src/move_program.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/move_program.dir/src/move_program.cpp.o -MF CMakeFiles/move_program.dir/src/move_program.cpp.o.d -o CMakeFiles/move_program.dir/src/move_program.cpp.o -c /home/bot/ros2_ws/src/move_program/src/move_program.cpp
 
 CMakeFiles/move_program.dir/src/move_program.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/move_program.dir/src/move_program.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andre/ros2_ws/src/move_program/src/move_program.cpp > CMakeFiles/move_program.dir/src/move_program.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bot/ros2_ws/src/move_program/src/move_program.cpp > CMakeFiles/move_program.dir/src/move_program.cpp.i
 
 CMakeFiles/move_program.dir/src/move_program.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/move_program.dir/src/move_program.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andre/ros2_ws/src/move_program/src/move_program.cpp -o CMakeFiles/move_program.dir/src/move_program.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bot/ros2_ws/src/move_program/src/move_program.cpp -o CMakeFiles/move_program.dir/src/move_program.cpp.s
 
 # Object files for target move_program
 move_program_OBJECTS = \
@@ -138,10 +138,10 @@ move_program: /opt/ros/jazzy/lib/libcomposition_interfaces__rosidl_generator_py.
 move_program: /opt/ros/jazzy/lib/libcomposition_interfaces__rosidl_typesupport_c.so
 move_program: /opt/ros/jazzy/lib/libcomposition_interfaces__rosidl_generator_c.so
 move_program: /opt/ros/jazzy/lib/libmoveit_collision_detection_bullet.so.2.12.3
-move_program: /usr/lib/x86_64-linux-gnu/libBulletDynamics.so
-move_program: /usr/lib/x86_64-linux-gnu/libBulletCollision.so
-move_program: /usr/lib/x86_64-linux-gnu/libLinearMath.so
-move_program: /usr/lib/x86_64-linux-gnu/libBulletSoftBody.so
+move_program: /usr/lib/aarch64-linux-gnu/libBulletDynamics.so
+move_program: /usr/lib/aarch64-linux-gnu/libBulletCollision.so
+move_program: /usr/lib/aarch64-linux-gnu/libLinearMath.so
+move_program: /usr/lib/aarch64-linux-gnu/libBulletSoftBody.so
 move_program: /opt/ros/jazzy/lib/libmoveit_collision_distance_field.so.2.12.3
 move_program: /opt/ros/jazzy/lib/libmoveit_constraint_samplers.so.2.12.3
 move_program: /opt/ros/jazzy/lib/libmoveit_distance_field.so.2.12.3
@@ -163,12 +163,12 @@ move_program: /opt/ros/jazzy/lib/libmoveit_robot_model.so.2.12.3
 move_program: /opt/ros/jazzy/lib/libmoveit_exceptions.so.2.12.3
 move_program: /opt/ros/jazzy/lib/libsrdfdom.so.2.0.7
 move_program: /opt/ros/jazzy/lib/liburdf.so
-move_program: /opt/ros/jazzy/lib/x86_64-linux-gnu/libruckig.so
+move_program: /opt/ros/jazzy/lib/aarch64-linux-gnu/libruckig.so
 move_program: /opt/ros/jazzy/lib/libmoveit_transforms.so.2.12.3
-move_program: /opt/ros/jazzy/lib/x86_64-linux-gnu/liburdfdom_sensor.so.4.0
-move_program: /opt/ros/jazzy/lib/x86_64-linux-gnu/liburdfdom_model_state.so.4.0
-move_program: /opt/ros/jazzy/lib/x86_64-linux-gnu/liburdfdom_model.so.4.0
-move_program: /opt/ros/jazzy/lib/x86_64-linux-gnu/liburdfdom_world.so.4.0
+move_program: /opt/ros/jazzy/lib/aarch64-linux-gnu/liburdfdom_sensor.so.4.0
+move_program: /opt/ros/jazzy/lib/aarch64-linux-gnu/liburdfdom_model_state.so.4.0
+move_program: /opt/ros/jazzy/lib/aarch64-linux-gnu/liburdfdom_model.so.4.0
+move_program: /opt/ros/jazzy/lib/aarch64-linux-gnu/liburdfdom_world.so.4.0
 move_program: /opt/ros/jazzy/lib/libgeometric_shapes.so.2.3.2
 move_program: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_typesupport_fastrtps_c.so
 move_program: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -178,11 +178,11 @@ move_program: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_typesupport_cpp.s
 move_program: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_generator_py.so
 move_program: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_typesupport_c.so
 move_program: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_generator_c.so
-move_program: /usr/lib/x86_64-linux-gnu/libfcl.so.0.7.0
-move_program: /usr/lib/x86_64-linux-gnu/libccd.so.2.0
-move_program: /usr/lib/x86_64-linux-gnu/libm.so
-move_program: /opt/ros/jazzy/lib/x86_64-linux-gnu/liboctomap.so.1.10.0
-move_program: /opt/ros/jazzy/lib/x86_64-linux-gnu/liboctomath.so.1.10.0
+move_program: /usr/lib/aarch64-linux-gnu/libfcl.so.0.7.0
+move_program: /usr/lib/aarch64-linux-gnu/libccd.so.2.0
+move_program: /usr/lib/aarch64-linux-gnu/libm.so
+move_program: /usr/lib/aarch64-linux-gnu/liboctomap.so.1.9.7
+move_program: /usr/lib/aarch64-linux-gnu/liboctomath.so.1.9.7
 move_program: /opt/ros/jazzy/lib/libresource_retriever.so
 move_program: /opt/ros/jazzy/lib/librandom_numbers.so
 move_program: /opt/ros/jazzy/lib/libmoveit_utils.so.2.12.3
@@ -233,22 +233,22 @@ move_program: /opt/ros/jazzy/lib/libshape_msgs__rosidl_generator_c.so
 move_program: /opt/ros/jazzy/lib/libtrajectory_msgs__rosidl_typesupport_c.so
 move_program: /opt/ros/jazzy/lib/libtrajectory_msgs__rosidl_generator_c.so
 move_program: /opt/ros/jazzy/lib/librsl.so
-move_program: /usr/lib/x86_64-linux-gnu/libfmt.so.9.1.0
-move_program: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.83.0
-move_program: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.83.0
-move_program: /usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0
-move_program: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.83.0
-move_program: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.83.0
-move_program: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0
-move_program: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.83.0
-move_program: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.83.0
-move_program: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.83.0
-move_program: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.83.0
+move_program: /usr/lib/aarch64-linux-gnu/libfmt.so.9.1.0
+move_program: /usr/lib/aarch64-linux-gnu/libboost_chrono.so.1.83.0
+move_program: /usr/lib/aarch64-linux-gnu/libboost_iostreams.so.1.83.0
+move_program: /usr/lib/aarch64-linux-gnu/libboost_serialization.so.1.83.0
+move_program: /usr/lib/aarch64-linux-gnu/libboost_thread.so.1.83.0
+move_program: /usr/lib/aarch64-linux-gnu/libboost_system.so.1.83.0
+move_program: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so.1.83.0
+move_program: /usr/lib/aarch64-linux-gnu/libboost_atomic.so.1.83.0
+move_program: /usr/lib/aarch64-linux-gnu/libboost_date_time.so.1.83.0
+move_program: /usr/lib/aarch64-linux-gnu/libboost_program_options.so.1.83.0
+move_program: /usr/lib/aarch64-linux-gnu/libboost_regex.so.1.83.0
 move_program: /opt/ros/jazzy/lib/libwarehouse_ros.so
 move_program: /opt/ros/jazzy/lib/libstatic_transform_broadcaster_node.so
 move_program: /opt/ros/jazzy/lib/libclass_loader.so
-move_program: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
-move_program: /usr/lib/x86_64-linux-gnu/libtinyxml2.so.10.0.0
+move_program: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.1.0
+move_program: /usr/lib/aarch64-linux-gnu/libtinyxml2.so.10.0.0
 move_program: /opt/ros/jazzy/lib/libtf2_ros.so
 move_program: /opt/ros/jazzy/lib/libmessage_filters.so
 move_program: /opt/ros/jazzy/lib/librclcpp_action.so
@@ -360,10 +360,10 @@ move_program: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so
 move_program: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 move_program: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 move_program: /opt/ros/jazzy/lib/librcutils.so
-move_program: /usr/lib/x86_64-linux-gnu/liborocos-kdl.so
-move_program: /usr/lib/x86_64-linux-gnu/libcrypto.so
+move_program: /usr/lib/aarch64-linux-gnu/liborocos-kdl.so
+move_program: /usr/lib/aarch64-linux-gnu/libcrypto.so
 move_program: CMakeFiles/move_program.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/andre/ros2_ws/build/move_program/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable move_program"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bot/ros2_ws/build/move_program/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable move_program"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/move_program.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -375,6 +375,6 @@ CMakeFiles/move_program.dir/clean:
 .PHONY : CMakeFiles/move_program.dir/clean
 
 CMakeFiles/move_program.dir/depend:
-	cd /home/andre/ros2_ws/build/move_program && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andre/ros2_ws/src/move_program /home/andre/ros2_ws/src/move_program /home/andre/ros2_ws/build/move_program /home/andre/ros2_ws/build/move_program /home/andre/ros2_ws/build/move_program/CMakeFiles/move_program.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/bot/ros2_ws/build/move_program && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bot/ros2_ws/src/move_program /home/bot/ros2_ws/src/move_program /home/bot/ros2_ws/build/move_program /home/bot/ros2_ws/build/move_program /home/bot/ros2_ws/build/move_program/CMakeFiles/move_program.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/move_program.dir/depend
 
