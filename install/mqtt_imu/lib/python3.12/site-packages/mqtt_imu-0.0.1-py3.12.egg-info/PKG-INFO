@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: mqtt-imu
+Version: 0.0.1
+Summary: MQTT to ROS2 IMU bridge
+Maintainer: andre

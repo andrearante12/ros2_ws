@@ -1,0 +1,25 @@
+[0.127s] Invoking command in '/home/bot/ros2_ws/build/imu_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bot/ros2_ws/build/imu_controller -- -j4 -l4
+[0.745s] [ 50%] [32mBuilding CXX object CMakeFiles/imu_controller.dir/src/imu_controller.cpp.o[0m
+[93.821s] [100%] [32m[1mLinking CXX executable imu_controller[0m
+[106.483s] [100%] Built target imu_controller
+[106.636s] Invoked command in '/home/bot/ros2_ws/build/imu_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bot/ros2_ws/build/imu_controller -- -j4 -l4
+[106.877s] Invoking command in '/home/bot/ros2_ws/build/imu_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bot/ros2_ws/build/imu_controller
+[106.976s] -- Install configuration: ""
+[106.989s] -- Installing: /home/bot/ros2_ws/install/imu_controller/lib/imu_controller/imu_controller
+[107.048s] -- Set non-toolchain portion of runtime path of "/home/bot/ros2_ws/install/imu_controller/lib/imu_controller/imu_controller" to ""
+[107.058s] -- Up-to-date: /home/bot/ros2_ws/install/imu_controller/share/ament_index/resource_index/package_run_dependencies/imu_controller
+[107.065s] -- Up-to-date: /home/bot/ros2_ws/install/imu_controller/share/ament_index/resource_index/parent_prefix_path/imu_controller
+[107.081s] -- Up-to-date: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/environment/ament_prefix_path.sh
+[107.083s] -- Up-to-date: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/environment/ament_prefix_path.dsv
+[107.085s] -- Up-to-date: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/environment/path.sh
+[107.087s] -- Up-to-date: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/environment/path.dsv
+[107.088s] -- Up-to-date: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/local_setup.bash
+[107.091s] -- Up-to-date: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/local_setup.sh
+[107.093s] -- Up-to-date: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/local_setup.zsh
+[107.100s] -- Up-to-date: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/local_setup.dsv
+[107.101s] -- Installing: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/package.dsv
+[107.104s] -- Up-to-date: /home/bot/ros2_ws/install/imu_controller/share/ament_index/resource_index/packages/imu_controller
+[107.104s] -- Up-to-date: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/cmake/imu_controllerConfig.cmake
+[107.105s] -- Up-to-date: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/cmake/imu_controllerConfig-version.cmake
+[107.107s] -- Up-to-date: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/package.xml
+[107.116s] Invoked command in '/home/bot/ros2_ws/build/imu_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bot/ros2_ws/build/imu_controller

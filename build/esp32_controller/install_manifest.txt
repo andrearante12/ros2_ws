@@ -1,0 +1,16 @@
+/home/bot/ros2_ws/install/esp32_controller/lib/esp32_controller/esp32_controller
+/home/bot/ros2_ws/install/esp32_controller/share/ament_index/resource_index/package_run_dependencies/esp32_controller
+/home/bot/ros2_ws/install/esp32_controller/share/ament_index/resource_index/parent_prefix_path/esp32_controller
+/home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/environment/ament_prefix_path.sh
+/home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/environment/ament_prefix_path.dsv
+/home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/environment/path.sh
+/home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/environment/path.dsv
+/home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.bash
+/home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.sh
+/home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.zsh
+/home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.dsv
+/home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/package.dsv
+/home/bot/ros2_ws/install/esp32_controller/share/ament_index/resource_index/packages/esp32_controller
+/home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/cmake/esp32_controllerConfig.cmake
+/home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/cmake/esp32_controllerConfig-version.cmake
+/home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/package.xml

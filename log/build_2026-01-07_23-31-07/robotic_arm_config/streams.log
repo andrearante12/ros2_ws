@@ -1,0 +1,60 @@
+[0.067s] Invoking command in '/home/bot/ros2_ws/build/robotic_arm_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/bot/ros2_ws/src/robotic_arm_config -DCMAKE_INSTALL_PREFIX=/home/bot/ros2_ws/install/robotic_arm_config
+[0.960s] -- The C compiler identification is GNU 13.3.0
+[1.684s] -- The CXX compiler identification is GNU 13.3.0
+[1.910s] -- Detecting C compiler ABI info
+[2.693s] -- Detecting C compiler ABI info - done
+[2.797s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.802s] -- Detecting C compile features
+[2.802s] -- Detecting C compile features - done
+[2.867s] -- Detecting CXX compiler ABI info
+[3.877s] -- Detecting CXX compiler ABI info - done
+[3.945s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.956s] -- Detecting CXX compile features
+[3.970s] -- Detecting CXX compile features - done
+[4.038s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[6.485s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[9.370s] -- Configuring done (9.2s)
+[9.394s] -- Generating done (0.0s)
+[9.406s] -- Build files have been written to: /home/bot/ros2_ws/build/robotic_arm_config
+[9.437s] Invoked command in '/home/bot/ros2_ws/build/robotic_arm_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/bot/ros2_ws/src/robotic_arm_config -DCMAKE_INSTALL_PREFIX=/home/bot/ros2_ws/install/robotic_arm_config
+[9.444s] Invoking command in '/home/bot/ros2_ws/build/robotic_arm_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bot/ros2_ws/build/robotic_arm_config -- -j4 -l4
+[9.842s] Invoked command in '/home/bot/ros2_ws/build/robotic_arm_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bot/ros2_ws/build/robotic_arm_config -- -j4 -l4
+[9.851s] Invoking command in '/home/bot/ros2_ws/build/robotic_arm_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bot/ros2_ws/build/robotic_arm_config
+[9.963s] -- Install configuration: ""
+[9.966s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/ament_index/resource_index/package_run_dependencies/robotic_arm_config
+[9.969s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/ament_index/resource_index/parent_prefix_path/robotic_arm_config
+[9.974s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/environment/ament_prefix_path.sh
+[9.979s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/environment/ament_prefix_path.dsv
+[9.987s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/environment/path.sh
+[9.990s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/environment/path.dsv
+[9.991s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/local_setup.bash
+[9.995s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/local_setup.sh
+[9.996s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/local_setup.zsh
+[10.000s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/local_setup.dsv
+[10.003s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/package.dsv
+[10.005s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/ament_index/resource_index/packages/robotic_arm_config
+[10.009s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/cmake/robotic_arm_configConfig.cmake
+[10.011s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/cmake/robotic_arm_configConfig-version.cmake
+[10.015s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/package.xml
+[10.016s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/launch
+[10.024s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/launch/moveit_rviz.launch.py
+[10.028s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/launch/static_virtual_joint_tfs.launch.py
+[10.031s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/launch/setup_assistant.launch.py
+[10.034s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/launch/move_group.launch.py
+[10.037s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/launch/rsp.launch.py
+[10.040s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/launch/warehouse_db.launch.py
+[10.042s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/launch/spawn_controllers.launch.py
+[10.044s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/launch/demo.launch.py
+[10.055s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/config
+[10.064s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/config/robotic_arm.srdf
+[10.065s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/config/joint_limits.yaml
+[10.102s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/config/kinematics.yaml
+[10.103s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/config/initial_positions.yaml
+[10.104s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/config/robotic_arm.urdf.xacro
+[10.110s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/config/moveit_controllers.yaml
+[10.112s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/config/ros2_controllers.yaml
+[10.113s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/config/pilz_cartesian_limits.yaml
+[10.113s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/config/robotic_arm.ros2_control.xacro
+[10.121s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/config/moveit.rviz
+[10.122s] -- Installing: /home/bot/ros2_ws/install/robotic_arm_config/share/robotic_arm_config/.setup_assistant
+[10.138s] Invoked command in '/home/bot/ros2_ws/build/robotic_arm_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bot/ros2_ws/build/robotic_arm_config

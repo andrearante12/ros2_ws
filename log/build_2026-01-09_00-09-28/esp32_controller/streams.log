@@ -1,0 +1,24 @@
+[0.068s] Invoking command in '/home/bot/ros2_ws/build/esp32_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bot/ros2_ws/build/esp32_controller -- -j4 -l4
+[0.495s] [ 50%] [32mBuilding CXX object CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o[0m
+[26.030s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[26.031s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[26.031s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[26.033s]                  from [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:6[m[K:
+[26.034s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:[m[K In member function ‘[01m[Kvoid Esp32Controller::[01;32m[KimuCallback[m[K(sensor_msgs::msg::Imu_<std::allocator<void> >::SharedPtr)[m[K’:
+[26.035s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:416:17:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%zu[m[K’ expects argument of type ‘[01m[Ksize_t[m[K’, but argument 5 has type ‘[01m[Kunsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[26.035s]   416 |                 [01;35m[K"Invalid joint count. Expected %zu joints for 'arm' group, got %zu total joints"[m[K,
+[26.036s]       |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.036s]   417 |                 [32m[Kjmg->getVariableCount()[m[K, joints.size()
+[26.037s]       |                 [32m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.037s]       |                                      [32m[K|[m[K
+[26.038s]       |                                      [32m[Kunsigned int[m[K
+[26.038s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:416:50:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[26.039s]   416 |                 "Invalid joint count. Expected [01;36m[K%zu[m[K joints for 'arm' group, got %zu total joints",
+[26.040s]       |                                                [01;36m[K~~^[m[K
+[26.040s]       |                                                  [01;36m[K|[m[K
+[26.042s]       |                                                  [01;36m[Klong unsigned int[m[K
+[26.043s]       |                                                [32m[K%u[m[K
+[63.977s] gmake[2]: *** [CMakeFiles/esp32_controller.dir/build.make:76: CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o] Interrupt
+[63.981s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/esp32_controller.dir/all] Interrupt
+[63.982s] gmake: *** [Makefile:146: all] Interrupt
+[63.988s] Invoked command in '/home/bot/ros2_ws/build/esp32_controller' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bot/ros2_ws/build/esp32_controller -- -j4 -l4

@@ -1,0 +1,150 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o[0m
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:[m[K In constructor ‘[01m[KSerialPort::[01;32m[KSerialPort[m[K(const std::string&, int)[m[K’:
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:110:34:[m[K [01;31m[Kerror: [m[K‘[01m[KO_RDWR[m[K’ was not declared in this scope
+  110 |         fd_ = open(port.c_str(), [01;31m[KO_RDWR[m[K | O_NOCTTY);
+      |                                  [01;31m[K^~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:110:43:[m[K [01;31m[Kerror: [m[K‘[01m[KO_NOCTTY[m[K’ was not declared in this scope; did you mean ‘[01m[KENOTTY[m[K’?
+  110 |         fd_ = open(port.c_str(), O_RDWR | [01;31m[KO_NOCTTY[m[K);
+      |                                           [01;31m[K^~~~~~~~[m[K
+      |                                           [32m[KENOTTY[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:110:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kopen[m[K’ was not declared in this scope; did you mean ‘[01m[Kpopen[m[K’?
+  110 |         fd_ = [01;31m[Kopen[m[K(port.c_str(), O_RDWR | O_NOCTTY);
+      |               [01;31m[K^~~~[m[K
+      |               [32m[Kpopen[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:117:24:[m[K [01;31m[Kerror: [m[Kaggregate ‘[01m[KSerialPort::SerialPort(const std::string&, int)::termios tty[m[K’ has incomplete type and cannot be defined
+  117 |         struct termios [01;31m[Ktty[m[K;
+      |                        [01;31m[K^~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:118:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktcgetattr[m[K’ was not declared in this scope
+  118 |         if ([01;31m[Ktcgetattr[m[K(fd_, &tty) != 0) {
+      |             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:126:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed_t[m[K’ was not declared in this scope
+  126 |         [01;31m[Kspeed_t[m[K baud = B9600;
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:127:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kbaud[m[K’ was not declared in this scope
+  127 |         if (baudrate == 115200) [01;31m[Kbaud[m[K = B115200;
+      |                                 [01;31m[K^~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:127:40:[m[K [01;31m[Kerror: [m[K‘[01m[KB115200[m[K’ was not declared in this scope
+  127 |         if (baudrate == 115200) baud = [01;31m[KB115200[m[K;
+      |                                        [01;31m[K^~~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:128:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kbaud[m[K’ was not declared in this scope
+  128 |         else if (baudrate == 57600) [01;31m[Kbaud[m[K = B57600;
+      |                                     [01;31m[K^~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:128:44:[m[K [01;31m[Kerror: [m[K‘[01m[KB57600[m[K’ was not declared in this scope
+  128 |         else if (baudrate == 57600) baud = [01;31m[KB57600[m[K;
+      |                                            [01;31m[K^~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:129:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kbaud[m[K’ was not declared in this scope
+  129 |         else if (baudrate == 38400) [01;31m[Kbaud[m[K = B38400;
+      |                                     [01;31m[K^~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:129:44:[m[K [01;31m[Kerror: [m[K‘[01m[KB38400[m[K’ was not declared in this scope
+  129 |         else if (baudrate == 38400) baud = [01;31m[KB38400[m[K;
+      |                                            [01;31m[K^~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:130:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kbaud[m[K’ was not declared in this scope
+  130 |         else if (baudrate == 19200) [01;31m[Kbaud[m[K = B19200;
+      |                                     [01;31m[K^~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:130:44:[m[K [01;31m[Kerror: [m[K‘[01m[KB19200[m[K’ was not declared in this scope
+  130 |         else if (baudrate == 19200) baud = [01;31m[KB19200[m[K;
+      |                                            [01;31m[K^~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:132:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kbaud[m[K’ was not declared in this scope
+  132 |         cfsetospeed(&tty, [01;31m[Kbaud[m[K);
+      |                           [01;31m[K^~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:132:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcfsetospeed[m[K’ was not declared in this scope
+  132 |         [01;31m[Kcfsetospeed[m[K(&tty, baud);
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:133:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcfsetispeed[m[K’ was not declared in this scope
+  133 |         [01;31m[Kcfsetispeed[m[K(&tty, baud);
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:136:25:[m[K [01;31m[Kerror: [m[K‘[01m[KPARENB[m[K’ was not declared in this scope
+  136 |         tty.c_cflag &= ~[01;31m[KPARENB[m[K;
+      |                         [01;31m[K^~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:137:25:[m[K [01;31m[Kerror: [m[K‘[01m[KCSTOPB[m[K’ was not declared in this scope
+  137 |         tty.c_cflag &= ~[01;31m[KCSTOPB[m[K;
+      |                         [01;31m[K^~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:138:25:[m[K [01;31m[Kerror: [m[K‘[01m[KCSIZE[m[K’ was not declared in this scope
+  138 |         tty.c_cflag &= ~[01;31m[KCSIZE[m[K;
+      |                         [01;31m[K^~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:139:24:[m[K [01;31m[Kerror: [m[K‘[01m[KCS8[m[K’ was not declared in this scope
+  139 |         tty.c_cflag |= [01;31m[KCS8[m[K;
+      |                        [01;31m[K^~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:140:25:[m[K [01;31m[Kerror: [m[K‘[01m[KCRTSCTS[m[K’ was not declared in this scope
+  140 |         tty.c_cflag &= ~[01;31m[KCRTSCTS[m[K;
+      |                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:141:24:[m[K [01;31m[Kerror: [m[K‘[01m[KCREAD[m[K’ was not declared in this scope
+  141 |         tty.c_cflag |= [01;31m[KCREAD[m[K | CLOCAL;
+      |                        [01;31m[K^~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:141:32:[m[K [01;31m[Kerror: [m[K‘[01m[KCLOCAL[m[K’ was not declared in this scope; did you mean ‘[01m[KRCL_LOCAL[m[K’?
+  141 |         tty.c_cflag |= CREAD | [01;31m[KCLOCAL[m[K;
+      |                                [01;31m[K^~~~~~[m[K
+      |                                [32m[KRCL_LOCAL[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:143:25:[m[K [01;31m[Kerror: [m[K‘[01m[KICANON[m[K’ was not declared in this scope
+  143 |         tty.c_lflag &= ~[01;31m[KICANON[m[K;
+      |                         [01;31m[K^~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:144:25:[m[K [01;31m[Kerror: [m[K‘[01m[KECHO[m[K’ was not declared in this scope
+  144 |         tty.c_lflag &= ~[01;31m[KECHO[m[K;
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:145:25:[m[K [01;31m[Kerror: [m[K‘[01m[KECHOE[m[K’ was not declared in this scope
+  145 |         tty.c_lflag &= ~[01;31m[KECHOE[m[K;
+      |                         [01;31m[K^~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:146:25:[m[K [01;31m[Kerror: [m[K‘[01m[KECHONL[m[K’ was not declared in this scope; did you mean ‘[01m[KECHRNG[m[K’?
+  146 |         tty.c_lflag &= ~[01;31m[KECHONL[m[K;
+      |                         [01;31m[K^~~~~~[m[K
+      |                         [32m[KECHRNG[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:147:25:[m[K [01;31m[Kerror: [m[K‘[01m[KISIG[m[K’ was not declared in this scope; did you mean ‘[01m[KNSIG[m[K’?
+  147 |         tty.c_lflag &= ~[01;31m[KISIG[m[K;
+      |                         [01;31m[K^~~~[m[K
+      |                         [32m[KNSIG[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:149:26:[m[K [01;31m[Kerror: [m[K‘[01m[KIXON[m[K’ was not declared in this scope
+  149 |         tty.c_iflag &= ~([01;31m[KIXON[m[K | IXOFF | IXANY);
+      |                          [01;31m[K^~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:149:33:[m[K [01;31m[Kerror: [m[K‘[01m[KIXOFF[m[K’ was not declared in this scope
+  149 |         tty.c_iflag &= ~(IXON | [01;31m[KIXOFF[m[K | IXANY);
+      |                                 [01;31m[K^~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:149:41:[m[K [01;31m[Kerror: [m[K‘[01m[KIXANY[m[K’ was not declared in this scope
+  149 |         tty.c_iflag &= ~(IXON | IXOFF | [01;31m[KIXANY[m[K);
+      |                                         [01;31m[K^~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:150:26:[m[K [01;31m[Kerror: [m[K‘[01m[KIGNBRK[m[K’ was not declared in this scope
+  150 |         tty.c_iflag &= ~([01;31m[KIGNBRK[m[K | BRKINT | PARMRK | ISTRIP | INLCR | IGNCR | ICRNL);
+      |                          [01;31m[K^~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:150:35:[m[K [01;31m[Kerror: [m[K‘[01m[KBRKINT[m[K’ was not declared in this scope
+  150 |         tty.c_iflag &= ~(IGNBRK | [01;31m[KBRKINT[m[K | PARMRK | ISTRIP | INLCR | IGNCR | ICRNL);
+      |                                   [01;31m[K^~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:150:44:[m[K [01;31m[Kerror: [m[K‘[01m[KPARMRK[m[K’ was not declared in this scope
+  150 |         tty.c_iflag &= ~(IGNBRK | BRKINT | [01;31m[KPARMRK[m[K | ISTRIP | INLCR | IGNCR | ICRNL);
+      |                                            [01;31m[K^~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:150:53:[m[K [01;31m[Kerror: [m[K‘[01m[KISTRIP[m[K’ was not declared in this scope
+  150 |         tty.c_iflag &= ~(IGNBRK | BRKINT | PARMRK | [01;31m[KISTRIP[m[K | INLCR | IGNCR | ICRNL);
+      |                                                     [01;31m[K^~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:150:62:[m[K [01;31m[Kerror: [m[K‘[01m[KINLCR[m[K’ was not declared in this scope
+  150 |         tty.c_iflag &= ~(IGNBRK | BRKINT | PARMRK | ISTRIP | [01;31m[KINLCR[m[K | IGNCR | ICRNL);
+      |                                                              [01;31m[K^~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:150:70:[m[K [01;31m[Kerror: [m[K‘[01m[KIGNCR[m[K’ was not declared in this scope
+  150 |         tty.c_iflag &= ~(IGNBRK | BRKINT | PARMRK | ISTRIP | INLCR | [01;31m[KIGNCR[m[K | ICRNL);
+      |                                                                      [01;31m[K^~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:150:78:[m[K [01;31m[Kerror: [m[K‘[01m[KICRNL[m[K’ was not declared in this scope
+  150 |         tty.c_iflag &= ~(IGNBRK | BRKINT | PARMRK | ISTRIP | INLCR | IGNCR | [01;31m[KICRNL[m[K);
+      |                                                                              [01;31m[K^~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:152:25:[m[K [01;31m[Kerror: [m[K‘[01m[KOPOST[m[K’ was not declared in this scope
+  152 |         tty.c_oflag &= ~[01;31m[KOPOST[m[K;
+      |                         [01;31m[K^~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:153:25:[m[K [01;31m[Kerror: [m[K‘[01m[KONLCR[m[K’ was not declared in this scope
+  153 |         tty.c_oflag &= ~[01;31m[KONLCR[m[K;
+      |                         [01;31m[K^~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:155:18:[m[K [01;31m[Kerror: [m[K‘[01m[KVTIME[m[K’ was not declared in this scope; did you mean ‘[01m[KETIME[m[K’?
+  155 |         tty.c_cc[[01;31m[KVTIME[m[K] = 10;
+      |                  [01;31m[K^~~~~[m[K
+      |                  [32m[KETIME[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:156:18:[m[K [01;31m[Kerror: [m[K‘[01m[KVMIN[m[K’ was not declared in this scope
+  156 |         tty.c_cc[[01;31m[KVMIN[m[K] = 0;
+      |                  [01;31m[K^~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:158:28:[m[K [01;31m[Kerror: [m[K‘[01m[KTCSANOW[m[K’ was not declared in this scope
+  158 |         if (tcsetattr(fd_, [01;31m[KTCSANOW[m[K, &tty) != 0) {
+      |                            [01;31m[K^~~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:158:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktcsetattr[m[K’ was not declared in this scope
+  158 |         if ([01;31m[Ktcsetattr[m[K(fd_, TCSANOW, &tty) != 0) {
+      |             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:[m[K In member function ‘[01m[Kbool SerialPort::[01;32m[Kwrite[m[K(const std::string&)[m[K’:
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:183:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktcdrain[m[K’ was not declared in this scope
+  183 |         [01;31m[Ktcdrain[m[K(fd_); // Wait for data to be transmitted (like flush)
+      |         [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/esp32_controller.dir/build.make:76: CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/esp32_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

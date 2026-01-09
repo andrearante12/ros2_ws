@@ -1,0 +1,37 @@
+[6.494s] Invoking command in '/home/bot/ros2_ws/src/pose_printer': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/bot/ros2_ws/build/pose_printer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/ros2_ws/install/pose_printer/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pose_printer build --build-base /home/bot/ros2_ws/build/pose_printer/build install --record /home/bot/ros2_ws/build/pose_printer/install.log --single-version-externally-managed install_data
+[9.646s] running egg_info
+[9.654s] creating ../../build/pose_printer/pose_printer.egg-info
+[10.019s] writing ../../build/pose_printer/pose_printer.egg-info/PKG-INFO
+[10.027s] writing dependency_links to ../../build/pose_printer/pose_printer.egg-info/dependency_links.txt
+[10.028s] writing entry points to ../../build/pose_printer/pose_printer.egg-info/entry_points.txt
+[10.031s] writing requirements to ../../build/pose_printer/pose_printer.egg-info/requires.txt
+[10.032s] writing top-level names to ../../build/pose_printer/pose_printer.egg-info/top_level.txt
+[10.037s] writing manifest file '../../build/pose_printer/pose_printer.egg-info/SOURCES.txt'
+[10.964s] reading manifest file '../../build/pose_printer/pose_printer.egg-info/SOURCES.txt'
+[10.969s] writing manifest file '../../build/pose_printer/pose_printer.egg-info/SOURCES.txt'
+[10.972s] running build
+[10.973s] running build_py
+[10.975s] creating /home/bot/ros2_ws/build/pose_printer/build
+[10.976s] creating /home/bot/ros2_ws/build/pose_printer/build/lib
+[10.983s] creating /home/bot/ros2_ws/build/pose_printer/build/lib/pose_printer
+[10.984s] copying pose_printer/__init__.py -> /home/bot/ros2_ws/build/pose_printer/build/lib/pose_printer
+[10.985s] copying pose_printer/pose_printer_node.py -> /home/bot/ros2_ws/build/pose_printer/build/lib/pose_printer
+[10.988s] running install
+[11.064s] running install_lib
+[11.490s] creating /home/bot/ros2_ws/install/pose_printer/lib/python3.12/site-packages/pose_printer
+[11.493s] copying /home/bot/ros2_ws/build/pose_printer/build/lib/pose_printer/__init__.py -> /home/bot/ros2_ws/install/pose_printer/lib/python3.12/site-packages/pose_printer
+[11.493s] copying /home/bot/ros2_ws/build/pose_printer/build/lib/pose_printer/pose_printer_node.py -> /home/bot/ros2_ws/install/pose_printer/lib/python3.12/site-packages/pose_printer
+[11.500s] byte-compiling /home/bot/ros2_ws/install/pose_printer/lib/python3.12/site-packages/pose_printer/__init__.py to __init__.cpython-312.pyc
+[11.501s] byte-compiling /home/bot/ros2_ws/install/pose_printer/lib/python3.12/site-packages/pose_printer/pose_printer_node.py to pose_printer_node.cpython-312.pyc
+[11.516s] running install_data
+[11.518s] creating /home/bot/ros2_ws/install/pose_printer/share/ament_index
+[11.530s] creating /home/bot/ros2_ws/install/pose_printer/share/ament_index/resource_index
+[11.533s] creating /home/bot/ros2_ws/install/pose_printer/share/ament_index/resource_index/packages
+[11.534s] copying resource/pose_printer -> /home/bot/ros2_ws/install/pose_printer/share/ament_index/resource_index/packages
+[11.536s] copying package.xml -> /home/bot/ros2_ws/install/pose_printer/share/pose_printer
+[11.536s] running install_egg_info
+[11.920s] Copying ../../build/pose_printer/pose_printer.egg-info to /home/bot/ros2_ws/install/pose_printer/lib/python3.12/site-packages/pose_printer-0.0.0-py3.12.egg-info
+[11.935s] running install_scripts
+[13.890s] Installing pose_printer script to /home/bot/ros2_ws/install/pose_printer/lib/pose_printer
+[13.897s] writing list of installed files to '/home/bot/ros2_ws/build/pose_printer/install.log'
+[14.292s] Invoked command in '/home/bot/ros2_ws/src/pose_printer' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/bot/ros2_ws/build/pose_printer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/ros2_ws/install/pose_printer/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pose_printer build --build-base /home/bot/ros2_ws/build/pose_printer/build install --record /home/bot/ros2_ws/build/pose_printer/install.log --single-version-externally-managed install_data

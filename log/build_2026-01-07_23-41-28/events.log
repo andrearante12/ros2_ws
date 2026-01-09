@@ -1,0 +1,877 @@
+[0.000000] (-) TimerEvent: {}
+[0.007196] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.007564] (-) JobUnselected: {'identifier': 'move_program'}
+[0.007730] (-) JobUnselected: {'identifier': 'moveit_controls'}
+[0.007825] (-) JobUnselected: {'identifier': 'mqtt_imu'}
+[0.007900] (-) JobUnselected: {'identifier': 'pose_printer'}
+[0.007971] (-) JobUnselected: {'identifier': 'robotic_arm_config'}
+[0.008035] (-) JobUnselected: {'identifier': 'robotic_arm_model_v3'}
+[0.008095] (-) JobUnselected: {'identifier': 'robotic_arm_moveit'}
+[0.008170] (-) JobUnselected: {'identifier': 'robotic_arm_v3_config'}
+[0.008248] (imu_controller) JobQueued: {'identifier': 'imu_controller', 'dependencies': OrderedDict()}
+[0.008340] (imu_controller) JobStarted: {'identifier': 'imu_controller'}
+[0.102337] (-) TimerEvent: {}
+[0.127978] (imu_controller) JobProgress: {'identifier': 'imu_controller', 'progress': 'cmake'}
+[0.136651] (imu_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/bot/ros2_ws/src/imu_controller', '-DCMAKE_INSTALL_PREFIX=/home/bot/ros2_ws/install/imu_controller'], 'cwd': '/home/bot/ros2_ws/build/imu_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bot', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bot', 'OLDPWD': '/home/bot/ros2_ws/src/imu_controller', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2617', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/bot/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bot', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/bot-desktop:@/tmp/.ICE-unix/2576,unix/bot-desktop:/tmp/.ICE-unix/2576', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3af69af4_558a_455a_946d_9d2d672ef67b', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.VZBUI3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.138', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/robotic_arm_v3_config:/home/bot/ros2_ws/install/robotic_arm_moveit:/home/bot/ros2_ws/install/robotic_arm_model_v3:/home/bot/ros2_ws/install/robotic_arm_config:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/home/bot/ros2_ws/install/move_program:/home/bot/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bot/ros2_ws/build/imu_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages:/home/bot/ros2_ws/install/pose_printer/lib/python3.12/site-packages:/home/bot/ros2_ws/install/moveit_controls/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/bot/ros2_ws/install/robotic_arm_v3_config:/home/bot/ros2_ws/install/robotic_arm_moveit:/home/bot/ros2_ws/install/robotic_arm_model_v3:/home/bot/ros2_ws/install/robotic_arm_config:/home/bot/ros2_ws/install/move_program:/home/bot/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy'}), 'shell': False}
+[0.202711] (-) TimerEvent: {}
+[0.308023] (-) TimerEvent: {}
+[0.409819] (-) TimerEvent: {}
+[0.510706] (-) TimerEvent: {}
+[0.612076] (-) TimerEvent: {}
+[0.715684] (-) TimerEvent: {}
+[0.757838] (imu_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.817980] (-) TimerEvent: {}
+[0.921635] (-) TimerEvent: {}
+[1.022631] (-) TimerEvent: {}
+[1.124678] (-) TimerEvent: {}
+[1.144415] (imu_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.225834] (-) TimerEvent: {}
+[1.313211] (imu_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.326040] (-) TimerEvent: {}
+[1.426800] (-) TimerEvent: {}
+[1.527609] (-) TimerEvent: {}
+[1.628314] (-) TimerEvent: {}
+[1.728989] (-) TimerEvent: {}
+[1.829634] (-) TimerEvent: {}
+[1.833229] (imu_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.868935] (imu_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.870680] (imu_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.873076] (imu_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.925389] (imu_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.929799] (-) TimerEvent: {}
+[2.030529] (-) TimerEvent: {}
+[2.132642] (-) TimerEvent: {}
+[2.244049] (-) TimerEvent: {}
+[2.344928] (-) TimerEvent: {}
+[2.445631] (-) TimerEvent: {}
+[2.543417] (imu_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.545738] (-) TimerEvent: {}
+[2.582135] (imu_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.583347] (imu_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.586612] (imu_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.641602] (imu_controller) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[2.645899] (-) TimerEvent: {}
+[2.746546] (-) TimerEvent: {}
+[2.847174] (-) TimerEvent: {}
+[2.947754] (-) TimerEvent: {}
+[3.048286] (-) TimerEvent: {}
+[3.148935] (-) TimerEvent: {}
+[3.250577] (-) TimerEvent: {}
+[3.353977] (-) TimerEvent: {}
+[3.454801] (-) TimerEvent: {}
+[3.558352] (-) TimerEvent: {}
+[3.659118] (-) TimerEvent: {}
+[3.678874] (imu_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.759286] (-) TimerEvent: {}
+[3.861613] (-) TimerEvent: {}
+[3.962187] (-) TimerEvent: {}
+[4.064642] (-) TimerEvent: {}
+[4.166358] (-) TimerEvent: {}
+[4.267011] (-) TimerEvent: {}
+[4.367709] (-) TimerEvent: {}
+[4.468373] (-) TimerEvent: {}
+[4.569067] (-) TimerEvent: {}
+[4.669967] (-) TimerEvent: {}
+[4.770593] (-) TimerEvent: {}
+[4.777865] (imu_controller) StdoutLine: {'line': b'-- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[4.875717] (-) TimerEvent: {}
+[4.977178] (-) TimerEvent: {}
+[5.077940] (-) TimerEvent: {}
+[5.178634] (-) TimerEvent: {}
+[5.279330] (-) TimerEvent: {}
+[5.380015] (-) TimerEvent: {}
+[5.450088] (imu_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[5.480191] (-) TimerEvent: {}
+[5.580800] (-) TimerEvent: {}
+[5.629782] (imu_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[5.680970] (-) TimerEvent: {}
+[5.781601] (-) TimerEvent: {}
+[5.839309] (imu_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.881769] (-) TimerEvent: {}
+[5.982440] (-) TimerEvent: {}
+[6.050306] (imu_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.082610] (-) TimerEvent: {}
+[6.183228] (-) TimerEvent: {}
+[6.283858] (-) TimerEvent: {}
+[6.384553] (-) TimerEvent: {}
+[6.485174] (-) TimerEvent: {}
+[6.585814] (-) TimerEvent: {}
+[6.686384] (-) TimerEvent: {}
+[6.731526] (imu_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[6.777255] (imu_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.786578] (-) TimerEvent: {}
+[6.887152] (-) TimerEvent: {}
+[6.987808] (-) TimerEvent: {}
+[7.088525] (-) TimerEvent: {}
+[7.189255] (-) TimerEvent: {}
+[7.289968] (-) TimerEvent: {}
+[7.390743] (-) TimerEvent: {}
+[7.439486] (imu_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[7.490919] (-) TimerEvent: {}
+[7.548915] (imu_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[7.591107] (-) TimerEvent: {}
+[7.654252] (imu_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.691258] (-) TimerEvent: {}
+[7.791875] (-) TimerEvent: {}
+[7.892499] (-) TimerEvent: {}
+[7.993132] (-) TimerEvent: {}
+[8.093836] (-) TimerEvent: {}
+[8.182410] (imu_controller) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[8.193961] (-) TimerEvent: {}
+[8.294596] (-) TimerEvent: {}
+[8.395216] (-) TimerEvent: {}
+[8.495939] (-) TimerEvent: {}
+[8.565934] (imu_controller) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.12.3 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)\n'}
+[8.596107] (-) TimerEvent: {}
+[8.696691] (-) TimerEvent: {}
+[8.797283] (-) TimerEvent: {}
+[8.897912] (-) TimerEvent: {}
+[8.998559] (-) TimerEvent: {}
+[9.099202] (-) TimerEvent: {}
+[9.199917] (-) TimerEvent: {}
+[9.300609] (-) TimerEvent: {}
+[9.401207] (-) TimerEvent: {}
+[9.501935] (-) TimerEvent: {}
+[9.526551] (imu_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread \n'}
+[9.602102] (-) TimerEvent: {}
+[9.702762] (-) TimerEvent: {}
+[9.803392] (-) TimerEvent: {}
+[9.904059] (-) TimerEvent: {}
+[10.004778] (-) TimerEvent: {}
+[10.105404] (-) TimerEvent: {}
+[10.206099] (-) TimerEvent: {}
+[10.306723] (-) TimerEvent: {}
+[10.407325] (-) TimerEvent: {}
+[10.508017] (-) TimerEvent: {}
+[10.608933] (-) TimerEvent: {}
+[10.709583] (-) TimerEvent: {}
+[10.810156] (-) TimerEvent: {}
+[10.871183] (imu_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[10.910317] (-) TimerEvent: {}
+[11.010953] (-) TimerEvent: {}
+[11.111566] (-) TimerEvent: {}
+[11.212145] (-) TimerEvent: {}
+[11.312773] (-) TimerEvent: {}
+[11.413371] (-) TimerEvent: {}
+[11.514510] (-) TimerEvent: {}
+[11.591035] (imu_controller) StdoutLine: {'line': b'-- Found parameter_traits: 0.5.0 (/opt/ros/jazzy/share/parameter_traits/cmake)\n'}
+[11.614638] (-) TimerEvent: {}
+[11.715205] (-) TimerEvent: {}
+[11.769686] (imu_controller) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 28.1.13 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)\n'}
+[11.815357] (-) TimerEvent: {}
+[11.915970] (-) TimerEvent: {}
+[12.004618] (imu_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem \n'}
+[12.016148] (-) TimerEvent: {}
+[12.116757] (-) TimerEvent: {}
+[12.217364] (-) TimerEvent: {}
+[12.317996] (-) TimerEvent: {}
+[12.418595] (-) TimerEvent: {}
+[12.519180] (-) TimerEvent: {}
+[12.553380] (imu_controller) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[12.554126] (imu_controller) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[12.619368] (-) TimerEvent: {}
+[12.719987] (-) TimerEvent: {}
+[12.820589] (-) TimerEvent: {}
+[12.921228] (-) TimerEvent: {}
+[13.021906] (-) TimerEvent: {}
+[13.122530] (-) TimerEvent: {}
+[13.223131] (-) TimerEvent: {}
+[13.323770] (-) TimerEvent: {}
+[13.424383] (-) TimerEvent: {}
+[13.525134] (-) TimerEvent: {}
+[13.625874] (-) TimerEvent: {}
+[13.726585] (-) TimerEvent: {}
+[13.827245] (-) TimerEvent: {}
+[13.842676] (imu_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono \n'}
+[13.927530] (-) TimerEvent: {}
+[14.028195] (-) TimerEvent: {}
+[14.083480] (imu_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options \n'}
+[14.128380] (-) TimerEvent: {}
+[14.229106] (-) TimerEvent: {}
+[14.255503] (imu_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread \n'}
+[14.329294] (-) TimerEvent: {}
+[14.430037] (-) TimerEvent: {}
+[14.480613] (imu_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[14.530220] (-) TimerEvent: {}
+[14.631032] (-) TimerEvent: {}
+[14.731724] (-) TimerEvent: {}
+[14.832319] (-) TimerEvent: {}
+[14.935997] (-) TimerEvent: {}
+[15.037000] (-) TimerEvent: {}
+[15.137576] (-) TimerEvent: {}
+[15.238204] (-) TimerEvent: {}
+[15.265329] (imu_controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[15.266053] (imu_controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[15.266405] (imu_controller) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[15.272229] (imu_controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[15.281343] (imu_controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[15.281905] (imu_controller) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[15.286271] (imu_controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[15.297580] (imu_controller) StdoutLine: {'line': b'-- Configuring done (15.0s)\n'}
+[15.338364] (-) TimerEvent: {}
+[15.438992] (-) TimerEvent: {}
+[15.476181] (imu_controller) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[15.502614] (imu_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/bot/ros2_ws/build/imu_controller\n'}
+[15.539324] (-) TimerEvent: {}
+[15.573238] (imu_controller) CommandEnded: {'returncode': 0}
+[15.575269] (imu_controller) JobProgress: {'identifier': 'imu_controller', 'progress': 'build'}
+[15.577824] (imu_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bot/ros2_ws/build/imu_controller', '--', '-j4', '-l4'], 'cwd': '/home/bot/ros2_ws/build/imu_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bot', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bot', 'OLDPWD': '/home/bot/ros2_ws/src/imu_controller', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2617', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/bot/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bot', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/bot-desktop:@/tmp/.ICE-unix/2576,unix/bot-desktop:/tmp/.ICE-unix/2576', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3af69af4_558a_455a_946d_9d2d672ef67b', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.VZBUI3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.138', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/robotic_arm_v3_config:/home/bot/ros2_ws/install/robotic_arm_moveit:/home/bot/ros2_ws/install/robotic_arm_model_v3:/home/bot/ros2_ws/install/robotic_arm_config:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/home/bot/ros2_ws/install/move_program:/home/bot/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bot/ros2_ws/build/imu_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages:/home/bot/ros2_ws/install/pose_printer/lib/python3.12/site-packages:/home/bot/ros2_ws/install/moveit_controls/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/bot/ros2_ws/install/robotic_arm_v3_config:/home/bot/ros2_ws/install/robotic_arm_moveit:/home/bot/ros2_ws/install/robotic_arm_model_v3:/home/bot/ros2_ws/install/robotic_arm_config:/home/bot/ros2_ws/install/move_program:/home/bot/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy'}), 'shell': False}
+[15.639491] (-) TimerEvent: {}
+[15.740139] (-) TimerEvent: {}
+[15.840877] (-) TimerEvent: {}
+[15.907860] (imu_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/imu_controller.dir/src/imu_controller.cpp.o\x1b[0m\n'}
+[15.941101] (-) TimerEvent: {}
+[16.041864] (-) TimerEvent: {}
+[16.142490] (-) TimerEvent: {}
+[16.243109] (-) TimerEvent: {}
+[16.343788] (-) TimerEvent: {}
+[16.444559] (-) TimerEvent: {}
+[16.545181] (-) TimerEvent: {}
+[16.645914] (-) TimerEvent: {}
+[16.746567] (-) TimerEvent: {}
+[16.847147] (-) TimerEvent: {}
+[16.947769] (-) TimerEvent: {}
+[17.048360] (-) TimerEvent: {}
+[17.149036] (-) TimerEvent: {}
+[17.249660] (-) TimerEvent: {}
+[17.350277] (-) TimerEvent: {}
+[17.450963] (-) TimerEvent: {}
+[17.551590] (-) TimerEvent: {}
+[17.652205] (-) TimerEvent: {}
+[17.752818] (-) TimerEvent: {}
+[17.853499] (-) TimerEvent: {}
+[17.954146] (-) TimerEvent: {}
+[18.054873] (-) TimerEvent: {}
+[18.155509] (-) TimerEvent: {}
+[18.256099] (-) TimerEvent: {}
+[18.356847] (-) TimerEvent: {}
+[18.457606] (-) TimerEvent: {}
+[18.558284] (-) TimerEvent: {}
+[18.658928] (-) TimerEvent: {}
+[18.759559] (-) TimerEvent: {}
+[18.860189] (-) TimerEvent: {}
+[18.960800] (-) TimerEvent: {}
+[19.061380] (-) TimerEvent: {}
+[19.162027] (-) TimerEvent: {}
+[19.262617] (-) TimerEvent: {}
+[19.363248] (-) TimerEvent: {}
+[19.463885] (-) TimerEvent: {}
+[19.564513] (-) TimerEvent: {}
+[19.665249] (-) TimerEvent: {}
+[19.766072] (-) TimerEvent: {}
+[19.866907] (-) TimerEvent: {}
+[19.967759] (-) TimerEvent: {}
+[20.068548] (-) TimerEvent: {}
+[20.169245] (-) TimerEvent: {}
+[20.269923] (-) TimerEvent: {}
+[20.370570] (-) TimerEvent: {}
+[20.471208] (-) TimerEvent: {}
+[20.571966] (-) TimerEvent: {}
+[20.672587] (-) TimerEvent: {}
+[20.773180] (-) TimerEvent: {}
+[20.873856] (-) TimerEvent: {}
+[20.974523] (-) TimerEvent: {}
+[21.075114] (-) TimerEvent: {}
+[21.175741] (-) TimerEvent: {}
+[21.276518] (-) TimerEvent: {}
+[21.377114] (-) TimerEvent: {}
+[21.477748] (-) TimerEvent: {}
+[21.578333] (-) TimerEvent: {}
+[21.679032] (-) TimerEvent: {}
+[21.779911] (-) TimerEvent: {}
+[21.880732] (-) TimerEvent: {}
+[21.981340] (-) TimerEvent: {}
+[22.082100] (-) TimerEvent: {}
+[22.182804] (-) TimerEvent: {}
+[22.283534] (-) TimerEvent: {}
+[22.384214] (-) TimerEvent: {}
+[22.484951] (-) TimerEvent: {}
+[22.585634] (-) TimerEvent: {}
+[22.686277] (-) TimerEvent: {}
+[22.786993] (-) TimerEvent: {}
+[22.887648] (-) TimerEvent: {}
+[22.988359] (-) TimerEvent: {}
+[23.089373] (-) TimerEvent: {}
+[23.190149] (-) TimerEvent: {}
+[23.290900] (-) TimerEvent: {}
+[23.394654] (-) TimerEvent: {}
+[23.495339] (-) TimerEvent: {}
+[23.596060] (-) TimerEvent: {}
+[23.696847] (-) TimerEvent: {}
+[23.797613] (-) TimerEvent: {}
+[23.898309] (-) TimerEvent: {}
+[23.999046] (-) TimerEvent: {}
+[24.099763] (-) TimerEvent: {}
+[24.200517] (-) TimerEvent: {}
+[24.301219] (-) TimerEvent: {}
+[24.401986] (-) TimerEvent: {}
+[24.502643] (-) TimerEvent: {}
+[24.603284] (-) TimerEvent: {}
+[24.703997] (-) TimerEvent: {}
+[24.804742] (-) TimerEvent: {}
+[24.905414] (-) TimerEvent: {}
+[25.006135] (-) TimerEvent: {}
+[25.106844] (-) TimerEvent: {}
+[25.207535] (-) TimerEvent: {}
+[25.308182] (-) TimerEvent: {}
+[25.408948] (-) TimerEvent: {}
+[25.509617] (-) TimerEvent: {}
+[25.610273] (-) TimerEvent: {}
+[25.711001] (-) TimerEvent: {}
+[25.811806] (-) TimerEvent: {}
+[25.912518] (-) TimerEvent: {}
+[26.013210] (-) TimerEvent: {}
+[26.113929] (-) TimerEvent: {}
+[26.214604] (-) TimerEvent: {}
+[26.315257] (-) TimerEvent: {}
+[26.415998] (-) TimerEvent: {}
+[26.516682] (-) TimerEvent: {}
+[26.617384] (-) TimerEvent: {}
+[26.718126] (-) TimerEvent: {}
+[26.818861] (-) TimerEvent: {}
+[26.919633] (-) TimerEvent: {}
+[27.020287] (-) TimerEvent: {}
+[27.121067] (-) TimerEvent: {}
+[27.221920] (-) TimerEvent: {}
+[27.322611] (-) TimerEvent: {}
+[27.423267] (-) TimerEvent: {}
+[27.524141] (-) TimerEvent: {}
+[27.624912] (-) TimerEvent: {}
+[27.725617] (-) TimerEvent: {}
+[27.826345] (-) TimerEvent: {}
+[27.927415] (-) TimerEvent: {}
+[28.028114] (-) TimerEvent: {}
+[28.128845] (-) TimerEvent: {}
+[28.229561] (-) TimerEvent: {}
+[28.330250] (-) TimerEvent: {}
+[28.430989] (-) TimerEvent: {}
+[28.531748] (-) TimerEvent: {}
+[28.632409] (-) TimerEvent: {}
+[28.733107] (-) TimerEvent: {}
+[28.833818] (-) TimerEvent: {}
+[28.934559] (-) TimerEvent: {}
+[29.035220] (-) TimerEvent: {}
+[29.135933] (-) TimerEvent: {}
+[29.236607] (-) TimerEvent: {}
+[29.337248] (-) TimerEvent: {}
+[29.437963] (-) TimerEvent: {}
+[29.538656] (-) TimerEvent: {}
+[29.639312] (-) TimerEvent: {}
+[29.740035] (-) TimerEvent: {}
+[29.840754] (-) TimerEvent: {}
+[29.941417] (-) TimerEvent: {}
+[30.044782] (-) TimerEvent: {}
+[30.145919] (-) TimerEvent: {}
+[30.246763] (-) TimerEvent: {}
+[30.349586] (-) TimerEvent: {}
+[30.450304] (-) TimerEvent: {}
+[30.551059] (-) TimerEvent: {}
+[30.651739] (-) TimerEvent: {}
+[30.752432] (-) TimerEvent: {}
+[30.853185] (-) TimerEvent: {}
+[30.953944] (-) TimerEvent: {}
+[31.054799] (-) TimerEvent: {}
+[31.155491] (-) TimerEvent: {}
+[31.256138] (-) TimerEvent: {}
+[31.356908] (-) TimerEvent: {}
+[31.457565] (-) TimerEvent: {}
+[31.558202] (-) TimerEvent: {}
+[31.658919] (-) TimerEvent: {}
+[31.759601] (-) TimerEvent: {}
+[31.860309] (-) TimerEvent: {}
+[31.961038] (-) TimerEvent: {}
+[32.061809] (-) TimerEvent: {}
+[32.162514] (-) TimerEvent: {}
+[32.263162] (-) TimerEvent: {}
+[32.363869] (-) TimerEvent: {}
+[32.464569] (-) TimerEvent: {}
+[32.565263] (-) TimerEvent: {}
+[32.665972] (-) TimerEvent: {}
+[32.766662] (-) TimerEvent: {}
+[32.867392] (-) TimerEvent: {}
+[32.968105] (-) TimerEvent: {}
+[33.068872] (-) TimerEvent: {}
+[33.169598] (-) TimerEvent: {}
+[33.270256] (-) TimerEvent: {}
+[33.371021] (-) TimerEvent: {}
+[33.472099] (-) TimerEvent: {}
+[33.572896] (-) TimerEvent: {}
+[33.673601] (-) TimerEvent: {}
+[33.774272] (-) TimerEvent: {}
+[33.874996] (-) TimerEvent: {}
+[33.975644] (-) TimerEvent: {}
+[34.076340] (-) TimerEvent: {}
+[34.177102] (-) TimerEvent: {}
+[34.278034] (-) TimerEvent: {}
+[34.379643] (-) TimerEvent: {}
+[34.480561] (-) TimerEvent: {}
+[34.583131] (-) TimerEvent: {}
+[34.684980] (-) TimerEvent: {}
+[34.788965] (-) TimerEvent: {}
+[34.889660] (-) TimerEvent: {}
+[34.990308] (-) TimerEvent: {}
+[35.091214] (-) TimerEvent: {}
+[35.192104] (-) TimerEvent: {}
+[35.293142] (-) TimerEvent: {}
+[35.393945] (-) TimerEvent: {}
+[35.494630] (-) TimerEvent: {}
+[35.595315] (-) TimerEvent: {}
+[35.696057] (-) TimerEvent: {}
+[35.796752] (-) TimerEvent: {}
+[35.897417] (-) TimerEvent: {}
+[35.998198] (-) TimerEvent: {}
+[36.099019] (-) TimerEvent: {}
+[36.199846] (-) TimerEvent: {}
+[36.300565] (-) TimerEvent: {}
+[36.401251] (-) TimerEvent: {}
+[36.502031] (-) TimerEvent: {}
+[36.602722] (-) TimerEvent: {}
+[36.703385] (-) TimerEvent: {}
+[36.804118] (-) TimerEvent: {}
+[36.904847] (-) TimerEvent: {}
+[37.005577] (-) TimerEvent: {}
+[37.106261] (-) TimerEvent: {}
+[37.207046] (-) TimerEvent: {}
+[37.307759] (-) TimerEvent: {}
+[37.408406] (-) TimerEvent: {}
+[37.509124] (-) TimerEvent: {}
+[37.609820] (-) TimerEvent: {}
+[37.710561] (-) TimerEvent: {}
+[37.811222] (-) TimerEvent: {}
+[37.911995] (-) TimerEvent: {}
+[38.012655] (-) TimerEvent: {}
+[38.113306] (-) TimerEvent: {}
+[38.214007] (-) TimerEvent: {}
+[38.314713] (-) TimerEvent: {}
+[38.415415] (-) TimerEvent: {}
+[38.516197] (-) TimerEvent: {}
+[38.619864] (-) TimerEvent: {}
+[38.720573] (-) TimerEvent: {}
+[38.821280] (-) TimerEvent: {}
+[38.921998] (-) TimerEvent: {}
+[39.022650] (-) TimerEvent: {}
+[39.123315] (-) TimerEvent: {}
+[39.224042] (-) TimerEvent: {}
+[39.324794] (-) TimerEvent: {}
+[39.425522] (-) TimerEvent: {}
+[39.526287] (-) TimerEvent: {}
+[39.627208] (-) TimerEvent: {}
+[39.728027] (-) TimerEvent: {}
+[39.828788] (-) TimerEvent: {}
+[39.929544] (-) TimerEvent: {}
+[40.030257] (-) TimerEvent: {}
+[40.131046] (-) TimerEvent: {}
+[40.231825] (-) TimerEvent: {}
+[40.332825] (-) TimerEvent: {}
+[40.436883] (-) TimerEvent: {}
+[40.537637] (-) TimerEvent: {}
+[40.638343] (-) TimerEvent: {}
+[40.739113] (-) TimerEvent: {}
+[40.839877] (-) TimerEvent: {}
+[40.940584] (-) TimerEvent: {}
+[41.041232] (-) TimerEvent: {}
+[41.141955] (-) TimerEvent: {}
+[41.242680] (-) TimerEvent: {}
+[41.343495] (-) TimerEvent: {}
+[41.444247] (-) TimerEvent: {}
+[41.544948] (-) TimerEvent: {}
+[41.645577] (-) TimerEvent: {}
+[41.746236] (-) TimerEvent: {}
+[41.846975] (-) TimerEvent: {}
+[41.947628] (-) TimerEvent: {}
+[42.048286] (-) TimerEvent: {}
+[42.149058] (-) TimerEvent: {}
+[42.249810] (-) TimerEvent: {}
+[42.350571] (-) TimerEvent: {}
+[42.451279] (-) TimerEvent: {}
+[42.552016] (-) TimerEvent: {}
+[42.652773] (-) TimerEvent: {}
+[42.753547] (-) TimerEvent: {}
+[42.854244] (-) TimerEvent: {}
+[42.954983] (-) TimerEvent: {}
+[43.055791] (-) TimerEvent: {}
+[43.159518] (-) TimerEvent: {}
+[43.260395] (-) TimerEvent: {}
+[43.361223] (-) TimerEvent: {}
+[43.461988] (-) TimerEvent: {}
+[43.562683] (-) TimerEvent: {}
+[43.664657] (-) TimerEvent: {}
+[43.766071] (-) TimerEvent: {}
+[43.866780] (-) TimerEvent: {}
+[43.967659] (-) TimerEvent: {}
+[44.068401] (-) TimerEvent: {}
+[44.169216] (-) TimerEvent: {}
+[44.269968] (-) TimerEvent: {}
+[44.370690] (-) TimerEvent: {}
+[44.471366] (-) TimerEvent: {}
+[44.572074] (-) TimerEvent: {}
+[44.672795] (-) TimerEvent: {}
+[44.773555] (-) TimerEvent: {}
+[44.874323] (-) TimerEvent: {}
+[44.975041] (-) TimerEvent: {}
+[45.076032] (-) TimerEvent: {}
+[45.177387] (-) TimerEvent: {}
+[45.278537] (-) TimerEvent: {}
+[45.379809] (-) TimerEvent: {}
+[45.483701] (-) TimerEvent: {}
+[45.584390] (-) TimerEvent: {}
+[45.685215] (-) TimerEvent: {}
+[45.788852] (-) TimerEvent: {}
+[45.889565] (-) TimerEvent: {}
+[45.990309] (-) TimerEvent: {}
+[46.091040] (-) TimerEvent: {}
+[46.191732] (-) TimerEvent: {}
+[46.292398] (-) TimerEvent: {}
+[46.393095] (-) TimerEvent: {}
+[46.493806] (-) TimerEvent: {}
+[46.594547] (-) TimerEvent: {}
+[46.695184] (-) TimerEvent: {}
+[46.795919] (-) TimerEvent: {}
+[46.896592] (-) TimerEvent: {}
+[46.999834] (-) TimerEvent: {}
+[47.100598] (-) TimerEvent: {}
+[47.201327] (-) TimerEvent: {}
+[47.302072] (-) TimerEvent: {}
+[47.402829] (-) TimerEvent: {}
+[47.503577] (-) TimerEvent: {}
+[47.604309] (-) TimerEvent: {}
+[47.705187] (-) TimerEvent: {}
+[47.805906] (-) TimerEvent: {}
+[47.906583] (-) TimerEvent: {}
+[48.007226] (-) TimerEvent: {}
+[48.107945] (-) TimerEvent: {}
+[48.208635] (-) TimerEvent: {}
+[48.309417] (-) TimerEvent: {}
+[48.410231] (-) TimerEvent: {}
+[48.511056] (-) TimerEvent: {}
+[48.611733] (-) TimerEvent: {}
+[48.712391] (-) TimerEvent: {}
+[48.813183] (-) TimerEvent: {}
+[48.914009] (-) TimerEvent: {}
+[49.018080] (-) TimerEvent: {}
+[49.118826] (-) TimerEvent: {}
+[49.219694] (-) TimerEvent: {}
+[49.320493] (-) TimerEvent: {}
+[49.423631] (-) TimerEvent: {}
+[49.526808] (-) TimerEvent: {}
+[49.627517] (-) TimerEvent: {}
+[49.728171] (-) TimerEvent: {}
+[49.828938] (-) TimerEvent: {}
+[49.929601] (-) TimerEvent: {}
+[50.030271] (-) TimerEvent: {}
+[50.131032] (-) TimerEvent: {}
+[50.231748] (-) TimerEvent: {}
+[50.332429] (-) TimerEvent: {}
+[50.433176] (-) TimerEvent: {}
+[50.533879] (-) TimerEvent: {}
+[50.634585] (-) TimerEvent: {}
+[50.735243] (-) TimerEvent: {}
+[50.836000] (-) TimerEvent: {}
+[50.936747] (-) TimerEvent: {}
+[51.037580] (-) TimerEvent: {}
+[51.138223] (-) TimerEvent: {}
+[51.238969] (-) TimerEvent: {}
+[51.339640] (-) TimerEvent: {}
+[51.440302] (-) TimerEvent: {}
+[51.541030] (-) TimerEvent: {}
+[51.641803] (-) TimerEvent: {}
+[51.742544] (-) TimerEvent: {}
+[51.843183] (-) TimerEvent: {}
+[51.943906] (-) TimerEvent: {}
+[52.044620] (-) TimerEvent: {}
+[52.145340] (-) TimerEvent: {}
+[52.246184] (-) TimerEvent: {}
+[52.346997] (-) TimerEvent: {}
+[52.447757] (-) TimerEvent: {}
+[52.548545] (-) TimerEvent: {}
+[52.649252] (-) TimerEvent: {}
+[52.749991] (-) TimerEvent: {}
+[52.850784] (-) TimerEvent: {}
+[52.951569] (-) TimerEvent: {}
+[53.052230] (-) TimerEvent: {}
+[53.152957] (-) TimerEvent: {}
+[53.253635] (-) TimerEvent: {}
+[53.354298] (-) TimerEvent: {}
+[53.455072] (-) TimerEvent: {}
+[53.555879] (-) TimerEvent: {}
+[53.656594] (-) TimerEvent: {}
+[53.757258] (-) TimerEvent: {}
+[53.858031] (-) TimerEvent: {}
+[53.958727] (-) TimerEvent: {}
+[54.059437] (-) TimerEvent: {}
+[54.160162] (-) TimerEvent: {}
+[54.260903] (-) TimerEvent: {}
+[54.361630] (-) TimerEvent: {}
+[54.462327] (-) TimerEvent: {}
+[54.563103] (-) TimerEvent: {}
+[54.663843] (-) TimerEvent: {}
+[54.775089] (-) TimerEvent: {}
+[54.877814] (-) TimerEvent: {}
+[54.978509] (-) TimerEvent: {}
+[55.079155] (-) TimerEvent: {}
+[55.179927] (-) TimerEvent: {}
+[55.280610] (-) TimerEvent: {}
+[55.381278] (-) TimerEvent: {}
+[55.481985] (-) TimerEvent: {}
+[55.582610] (-) TimerEvent: {}
+[55.683270] (-) TimerEvent: {}
+[55.784062] (-) TimerEvent: {}
+[55.884836] (-) TimerEvent: {}
+[55.985503] (-) TimerEvent: {}
+[56.086125] (-) TimerEvent: {}
+[56.186818] (-) TimerEvent: {}
+[56.287519] (-) TimerEvent: {}
+[56.388169] (-) TimerEvent: {}
+[56.488895] (-) TimerEvent: {}
+[56.589558] (-) TimerEvent: {}
+[56.690193] (-) TimerEvent: {}
+[56.790920] (-) TimerEvent: {}
+[56.891606] (-) TimerEvent: {}
+[56.992243] (-) TimerEvent: {}
+[57.093029] (-) TimerEvent: {}
+[57.193743] (-) TimerEvent: {}
+[57.294413] (-) TimerEvent: {}
+[57.395197] (-) TimerEvent: {}
+[57.496013] (-) TimerEvent: {}
+[57.596655] (-) TimerEvent: {}
+[57.697421] (-) TimerEvent: {}
+[57.798233] (-) TimerEvent: {}
+[57.898891] (-) TimerEvent: {}
+[57.999533] (-) TimerEvent: {}
+[58.100198] (-) TimerEvent: {}
+[58.200884] (-) TimerEvent: {}
+[58.301609] (-) TimerEvent: {}
+[58.402298] (-) TimerEvent: {}
+[58.503024] (-) TimerEvent: {}
+[58.603709] (-) TimerEvent: {}
+[58.704420] (-) TimerEvent: {}
+[58.805154] (-) TimerEvent: {}
+[58.905985] (-) TimerEvent: {}
+[59.006674] (-) TimerEvent: {}
+[59.107560] (-) TimerEvent: {}
+[59.208352] (-) TimerEvent: {}
+[59.309052] (-) TimerEvent: {}
+[59.409812] (-) TimerEvent: {}
+[59.510577] (-) TimerEvent: {}
+[59.611255] (-) TimerEvent: {}
+[59.712010] (-) TimerEvent: {}
+[59.812779] (-) TimerEvent: {}
+[59.913432] (-) TimerEvent: {}
+[60.014254] (-) TimerEvent: {}
+[60.128233] (-) TimerEvent: {}
+[60.229648] (-) TimerEvent: {}
+[60.330309] (-) TimerEvent: {}
+[60.431030] (-) TimerEvent: {}
+[60.531757] (-) TimerEvent: {}
+[60.632612] (-) TimerEvent: {}
+[60.733580] (-) TimerEvent: {}
+[60.834391] (-) TimerEvent: {}
+[60.935315] (-) TimerEvent: {}
+[61.036063] (-) TimerEvent: {}
+[61.136779] (-) TimerEvent: {}
+[61.237437] (-) TimerEvent: {}
+[61.338120] (-) TimerEvent: {}
+[61.438837] (-) TimerEvent: {}
+[61.539584] (-) TimerEvent: {}
+[61.640242] (-) TimerEvent: {}
+[61.740969] (-) TimerEvent: {}
+[61.841629] (-) TimerEvent: {}
+[61.942328] (-) TimerEvent: {}
+[62.043132] (-) TimerEvent: {}
+[62.143873] (-) TimerEvent: {}
+[62.244557] (-) TimerEvent: {}
+[62.345235] (-) TimerEvent: {}
+[62.445945] (-) TimerEvent: {}
+[62.546670] (-) TimerEvent: {}
+[62.647378] (-) TimerEvent: {}
+[62.748104] (-) TimerEvent: {}
+[62.848870] (-) TimerEvent: {}
+[62.949620] (-) TimerEvent: {}
+[63.050291] (-) TimerEvent: {}
+[63.151122] (-) TimerEvent: {}
+[63.251844] (-) TimerEvent: {}
+[63.352576] (-) TimerEvent: {}
+[63.453266] (-) TimerEvent: {}
+[63.554010] (-) TimerEvent: {}
+[63.654781] (-) TimerEvent: {}
+[63.755511] (-) TimerEvent: {}
+[63.856194] (-) TimerEvent: {}
+[63.957030] (-) TimerEvent: {}
+[64.057712] (-) TimerEvent: {}
+[64.158369] (-) TimerEvent: {}
+[64.259108] (-) TimerEvent: {}
+[64.359876] (-) TimerEvent: {}
+[64.460606] (-) TimerEvent: {}
+[64.561281] (-) TimerEvent: {}
+[64.662023] (-) TimerEvent: {}
+[64.762701] (-) TimerEvent: {}
+[64.863387] (-) TimerEvent: {}
+[64.964101] (-) TimerEvent: {}
+[65.064832] (-) TimerEvent: {}
+[65.165556] (-) TimerEvent: {}
+[65.266211] (-) TimerEvent: {}
+[65.366889] (-) TimerEvent: {}
+[65.467544] (-) TimerEvent: {}
+[65.568235] (-) TimerEvent: {}
+[65.668953] (-) TimerEvent: {}
+[65.769628] (-) TimerEvent: {}
+[65.870294] (-) TimerEvent: {}
+[65.970993] (-) TimerEvent: {}
+[66.071649] (-) TimerEvent: {}
+[66.172304] (-) TimerEvent: {}
+[66.273060] (-) TimerEvent: {}
+[66.373722] (-) TimerEvent: {}
+[66.474385] (-) TimerEvent: {}
+[66.575091] (-) TimerEvent: {}
+[66.675801] (-) TimerEvent: {}
+[66.776506] (-) TimerEvent: {}
+[66.877207] (-) TimerEvent: {}
+[66.977946] (-) TimerEvent: {}
+[67.078590] (-) TimerEvent: {}
+[67.179250] (-) TimerEvent: {}
+[67.279974] (-) TimerEvent: {}
+[67.380624] (-) TimerEvent: {}
+[67.481285] (-) TimerEvent: {}
+[67.582019] (-) TimerEvent: {}
+[67.682721] (-) TimerEvent: {}
+[67.783353] (-) TimerEvent: {}
+[67.884078] (-) TimerEvent: {}
+[67.984794] (-) TimerEvent: {}
+[68.085505] (-) TimerEvent: {}
+[68.186227] (-) TimerEvent: {}
+[68.286926] (-) TimerEvent: {}
+[68.387601] (-) TimerEvent: {}
+[68.488246] (-) TimerEvent: {}
+[68.588967] (-) TimerEvent: {}
+[68.689625] (-) TimerEvent: {}
+[68.790303] (-) TimerEvent: {}
+[68.891074] (-) TimerEvent: {}
+[68.991785] (-) TimerEvent: {}
+[69.092503] (-) TimerEvent: {}
+[69.193304] (-) TimerEvent: {}
+[69.294044] (-) TimerEvent: {}
+[69.394768] (-) TimerEvent: {}
+[69.495426] (-) TimerEvent: {}
+[69.596128] (-) TimerEvent: {}
+[69.696830] (-) TimerEvent: {}
+[69.797550] (-) TimerEvent: {}
+[69.898183] (-) TimerEvent: {}
+[69.998902] (-) TimerEvent: {}
+[70.099613] (-) TimerEvent: {}
+[70.200250] (-) TimerEvent: {}
+[70.300946] (-) TimerEvent: {}
+[70.401630] (-) TimerEvent: {}
+[70.502264] (-) TimerEvent: {}
+[70.603097] (-) TimerEvent: {}
+[70.703850] (-) TimerEvent: {}
+[70.804640] (-) TimerEvent: {}
+[70.905347] (-) TimerEvent: {}
+[71.006049] (-) TimerEvent: {}
+[71.106724] (-) TimerEvent: {}
+[71.208777] (-) TimerEvent: {}
+[71.309754] (-) TimerEvent: {}
+[71.410705] (-) TimerEvent: {}
+[71.511816] (-) TimerEvent: {}
+[71.612594] (-) TimerEvent: {}
+[71.713353] (-) TimerEvent: {}
+[71.814639] (-) TimerEvent: {}
+[71.915659] (-) TimerEvent: {}
+[72.016948] (-) TimerEvent: {}
+[72.118149] (-) TimerEvent: {}
+[72.219252] (-) TimerEvent: {}
+[72.320598] (-) TimerEvent: {}
+[72.421348] (-) TimerEvent: {}
+[72.522247] (-) TimerEvent: {}
+[72.623767] (-) TimerEvent: {}
+[72.726327] (-) TimerEvent: {}
+[72.827927] (-) TimerEvent: {}
+[72.928650] (-) TimerEvent: {}
+[73.034714] (-) TimerEvent: {}
+[73.143035] (-) TimerEvent: {}
+[73.246994] (-) TimerEvent: {}
+[73.348642] (-) TimerEvent: {}
+[73.452071] (-) TimerEvent: {}
+[73.552980] (-) TimerEvent: {}
+[73.653647] (-) TimerEvent: {}
+[73.754306] (-) TimerEvent: {}
+[73.855185] (-) TimerEvent: {}
+[74.082606] (-) TimerEvent: {}
+[74.183277] (-) TimerEvent: {}
+[74.283986] (-) TimerEvent: {}
+[74.384771] (-) TimerEvent: {}
+[74.487643] (-) TimerEvent: {}
+[74.588609] (-) TimerEvent: {}
+[74.689325] (-) TimerEvent: {}
+[74.790124] (-) TimerEvent: {}
+[74.890931] (-) TimerEvent: {}
+[74.991689] (-) TimerEvent: {}
+[75.065335] (imu_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable imu_controller\x1b[0m\n'}
+[75.091895] (-) TimerEvent: {}
+[75.192605] (-) TimerEvent: {}
+[75.293285] (-) TimerEvent: {}
+[75.394222] (-) TimerEvent: {}
+[75.495144] (-) TimerEvent: {}
+[75.595977] (-) TimerEvent: {}
+[75.696806] (-) TimerEvent: {}
+[75.797587] (-) TimerEvent: {}
+[75.898419] (-) TimerEvent: {}
+[75.999298] (-) TimerEvent: {}
+[76.100970] (-) TimerEvent: {}
+[76.202176] (-) TimerEvent: {}
+[76.303016] (-) TimerEvent: {}
+[76.403951] (-) TimerEvent: {}
+[76.505081] (-) TimerEvent: {}
+[76.606012] (-) TimerEvent: {}
+[76.707208] (-) TimerEvent: {}
+[76.808072] (-) TimerEvent: {}
+[76.909166] (-) TimerEvent: {}
+[77.010142] (-) TimerEvent: {}
+[77.110991] (-) TimerEvent: {}
+[77.211971] (-) TimerEvent: {}
+[77.312960] (-) TimerEvent: {}
+[77.413885] (-) TimerEvent: {}
+[77.515217] (-) TimerEvent: {}
+[77.616352] (-) TimerEvent: {}
+[77.717915] (-) TimerEvent: {}
+[77.819267] (-) TimerEvent: {}
+[77.920024] (-) TimerEvent: {}
+[78.020754] (-) TimerEvent: {}
+[78.121490] (-) TimerEvent: {}
+[78.222317] (-) TimerEvent: {}
+[78.323087] (-) TimerEvent: {}
+[78.424042] (-) TimerEvent: {}
+[78.524701] (-) TimerEvent: {}
+[78.625426] (-) TimerEvent: {}
+[78.726301] (-) TimerEvent: {}
+[78.827019] (-) TimerEvent: {}
+[78.927622] (-) TimerEvent: {}
+[79.028345] (-) TimerEvent: {}
+[79.077320] (imu_controller) StdoutLine: {'line': b'[100%] Built target imu_controller\n'}
+[79.128566] (-) TimerEvent: {}
+[79.146148] (imu_controller) CommandEnded: {'returncode': 0}
+[79.148404] (imu_controller) JobProgress: {'identifier': 'imu_controller', 'progress': 'install'}
+[79.206813] (imu_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bot/ros2_ws/build/imu_controller'], 'cwd': '/home/bot/ros2_ws/build/imu_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bot', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bot', 'OLDPWD': '/home/bot/ros2_ws/src/imu_controller', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2617', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/bot/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bot', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/bot-desktop:@/tmp/.ICE-unix/2576,unix/bot-desktop:/tmp/.ICE-unix/2576', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3af69af4_558a_455a_946d_9d2d672ef67b', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.VZBUI3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.138', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/robotic_arm_v3_config:/home/bot/ros2_ws/install/robotic_arm_moveit:/home/bot/ros2_ws/install/robotic_arm_model_v3:/home/bot/ros2_ws/install/robotic_arm_config:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/home/bot/ros2_ws/install/move_program:/home/bot/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bot/ros2_ws/build/imu_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages:/home/bot/ros2_ws/install/pose_printer/lib/python3.12/site-packages:/home/bot/ros2_ws/install/moveit_controls/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/bot/ros2_ws/install/robotic_arm_v3_config:/home/bot/ros2_ws/install/robotic_arm_moveit:/home/bot/ros2_ws/install/robotic_arm_model_v3:/home/bot/ros2_ws/install/robotic_arm_config:/home/bot/ros2_ws/install/move_program:/home/bot/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy'}), 'shell': False}
+[79.228741] (-) TimerEvent: {}
+[79.262619] (imu_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[79.272395] (imu_controller) StdoutLine: {'line': b'-- Installing: /home/bot/ros2_ws/install/imu_controller/lib/imu_controller/imu_controller\n'}
+[79.309634] (imu_controller) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bot/ros2_ws/install/imu_controller/lib/imu_controller/imu_controller" to ""\n'}
+[79.310715] (imu_controller) StdoutLine: {'line': b'-- Installing: /home/bot/ros2_ws/install/imu_controller/share/ament_index/resource_index/package_run_dependencies/imu_controller\n'}
+[79.312622] (imu_controller) StdoutLine: {'line': b'-- Installing: /home/bot/ros2_ws/install/imu_controller/share/ament_index/resource_index/parent_prefix_path/imu_controller\n'}
+[79.314204] (imu_controller) StdoutLine: {'line': b'-- Installing: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/environment/ament_prefix_path.sh\n'}
+[79.315324] (imu_controller) StdoutLine: {'line': b'-- Installing: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/environment/ament_prefix_path.dsv\n'}
+[79.316612] (imu_controller) StdoutLine: {'line': b'-- Installing: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/environment/path.sh\n'}
+[79.318596] (imu_controller) StdoutLine: {'line': b'-- Installing: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/environment/path.dsv\n'}
+[79.319689] (imu_controller) StdoutLine: {'line': b'-- Installing: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/local_setup.bash\n'}
+[79.320869] (imu_controller) StdoutLine: {'line': b'-- Installing: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/local_setup.sh\n'}
+[79.322116] (imu_controller) StdoutLine: {'line': b'-- Installing: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/local_setup.zsh\n'}
+[79.323247] (imu_controller) StdoutLine: {'line': b'-- Installing: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/local_setup.dsv\n'}
+[79.325151] (imu_controller) StdoutLine: {'line': b'-- Installing: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/package.dsv\n'}
+[79.327080] (imu_controller) StdoutLine: {'line': b'-- Installing: /home/bot/ros2_ws/install/imu_controller/share/ament_index/resource_index/packages/imu_controller\n'}
+[79.328498] (imu_controller) StdoutLine: {'line': b'-- Installing: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/cmake/imu_controllerConfig.cmake\n'}
+[79.328981] (-) TimerEvent: {}
+[79.329592] (imu_controller) StdoutLine: {'line': b'-- Installing: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/cmake/imu_controllerConfig-version.cmake\n'}
+[79.330981] (imu_controller) StdoutLine: {'line': b'-- Installing: /home/bot/ros2_ws/install/imu_controller/share/imu_controller/package.xml\n'}
+[79.340144] (imu_controller) CommandEnded: {'returncode': 0}
+[79.429165] (-) TimerEvent: {}
+[79.504625] (imu_controller) JobEnded: {'identifier': 'imu_controller', 'rc': 0}
+[79.511925] (-) EventReactorShutdown: {}

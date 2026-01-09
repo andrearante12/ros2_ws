@@ -1,0 +1,136 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found moveit_ros_planning_interface: 2.12.3 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)
+-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread 
+-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+-- Found parameter_traits: 0.5.0 (/opt/ros/jazzy/share/parameter_traits/cmake)
+-- Found rclcpp_lifecycle: 28.1.13 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem 
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono 
+-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options 
+-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread 
+-- Configuring done (26.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/bot/ros2_ws/build/esp32_controller
+[ 50%] [32mBuilding CXX object CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o[0m
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:148:21:[m[K [01;31m[Kerror: [m[K‘[01m[KGradientDescentIK[m[K’ was not declared in this scope
+  148 |     std::unique_ptr<[01;31m[KGradientDescentIK[m[K> gd_ik_;
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:148:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  148 |     std::unique_ptr<GradientDescentIK[01;31m[K>[m[K gd_ik_;
+      |                                      [01;31m[K^[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:148:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:149:21:[m[K [01;31m[Kerror: [m[K‘[01m[KSerialPort[m[K’ was not declared in this scope
+  149 |     std::unique_ptr<[01;31m[KSerialPort[m[K> serial_;
+      |                     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:149:31:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  149 |     std::unique_ptr<SerialPort[01;31m[K>[m[K serial_;
+      |                               [01;31m[K^[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:149:31:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:[m[K In member function ‘[01m[Kvoid Esp32Controller::[01;32m[Kinit[m[K()[m[K’:
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:37:36:[m[K [01;31m[Kerror: [m[K‘[01m[KSerialPort[m[K’ was not declared in this scope
+   37 |         serial_ = std::make_unique<[01;31m[KSerialPort[m[K>("/dev/ttyUSB0", 9600);
+      |                                    [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:37:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<<expression error> >(const char [13], int)[m[K’
+   37 |         serial_ = [01;31m[Kstd::make_unique<SerialPort>("/dev/ttyUSB0", 9600)[m[K;
+      |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/13/memory:78[m[K,
+                 from [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:1[m[K:
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:1069:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::__detail::__unique_ptr_t<_Tp> std::[01;32m[Kmake_unique[m[K(_Args&& ...)[m[K’
+ 1069 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:1069:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:37:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   37 |         serial_ = [01;31m[Kstd::make_unique<SerialPort>("/dev/ttyUSB0", 9600)[m[K;
+      |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:1084:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::__detail::__unique_ptr_array_t<_Tp> std::[01;32m[Kmake_unique[m[K(size_t)[m[K’
+ 1084 |     [01;36m[Kmake_unique[m[K(size_t __num)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:1084:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:1094:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::__detail::__invalid_make_unique_t<_Tp> std::[01;32m[Kmake_unique[m[K(_Args&& ...)[m[K’ (deleted)
+ 1094 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:1094:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:37:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   37 |         serial_ = [01;31m[Kstd::make_unique<SerialPort>("/dev/ttyUSB0", 9600)[m[K;
+      |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:38:21:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+   38 |         if (!serial_[01;31m[K->[m[KisOpen()) {
+      |                     [01;31m[K^~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:64:35:[m[K [01;31m[Kerror: [m[K‘[01m[KGradientDescentIK[m[K’ was not declared in this scope
+   64 |         gd_ik_ = std::make_unique<[01;31m[KGradientDescentIK[m[K>(
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:64:53:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<<expression error> >(moveit::core::RobotModelPtr&, const char [4], std::string&)[m[K’
+   64 |         gd_ik_ = [01;31m[Kstd::make_unique<GradientDescentIK>([m[K
+      |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   65 | [01;31m[K            robot_model_, "arm", ee_link_)[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K           
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:1069:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::__detail::__unique_ptr_t<_Tp> std::[01;32m[Kmake_unique[m[K(_Args&& ...)[m[K’
+ 1069 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:1069:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:64:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   64 |         gd_ik_ = [01;31m[Kstd::make_unique<GradientDescentIK>([m[K
+      |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   65 | [01;31m[K            robot_model_, "arm", ee_link_)[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K           
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:1084:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::__detail::__unique_ptr_array_t<_Tp> std::[01;32m[Kmake_unique[m[K(size_t)[m[K’
+ 1084 |     [01;36m[Kmake_unique[m[K(size_t __num)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:1084:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:1094:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::__detail::__invalid_make_unique_t<_Tp> std::[01;32m[Kmake_unique[m[K(_Args&& ...)[m[K’ (deleted)
+ 1094 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:1094:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:64:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   64 |         gd_ik_ = [01;31m[Kstd::make_unique<GradientDescentIK>([m[K
+      |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   65 | [01;31m[K            robot_model_, "arm", ee_link_)[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K           
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:[m[K In member function ‘[01m[Kvoid Esp32Controller::[01;32m[KimuCallback[m[K(sensor_msgs::msg::Imu_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:84:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kgx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   84 |         double [01;35m[Kgx[m[K = msg->angular_velocity.x;
+      |                [01;35m[K^~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:85:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kgy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   85 |         double [01;35m[Kgy[m[K = msg->angular_velocity.y;
+      |                [01;35m[K^~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:86:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kgz[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   86 |         double [01;35m[Kgz[m[K = msg->angular_velocity.z;
+      |                [01;35m[K^~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:88:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kax[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   88 |         double [01;35m[Kax[m[K = msg->linear_acceleration.x;
+      |                [01;35m[K^~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:89:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kay[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   89 |         double [01;35m[Kay[m[K = msg->linear_acceleration.y;
+      |                [01;35m[K^~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:90:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kaz[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   90 |         double [01;35m[Kaz[m[K = msg->linear_acceleration.z;
+      |                [01;35m[K^~[m[K
+gmake[2]: *** [CMakeFiles/esp32_controller.dir/build.make:76: CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/esp32_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
