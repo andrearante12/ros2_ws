@@ -1,0 +1,43 @@
+[0.069s] Invoking command in '/home/bot/ros2_ws/build/esp32_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bot/ros2_ws/build/esp32_controller -- -j4 -l4
+[0.517s] [ 50%] [32mBuilding CXX object CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o[0m
+[24.901s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[24.902s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[24.902s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[24.903s]                  from [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:8[m[K:
+[24.904s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:[m[K In member function ‘[01m[Kvoid Esp32Controller::[01;32m[KimuCallback[m[K(sensor_msgs::msg::Imu_<std::allocator<void> >::SharedPtr)[m[K’:
+[24.904s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:435:17:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%zu[m[K’ expects argument of type ‘[01m[Ksize_t[m[K’, but argument 5 has type ‘[01m[Kunsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[24.905s]   435 |                 [01;35m[K"Invalid joint count. Expected %zu joints for 'arm' group, got %zu total joints"[m[K,
+[24.906s]       |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[24.906s]   436 |                 [32m[Kjmg->getVariableCount()[m[K, joints.size()
+[24.907s]       |                 [32m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[24.907s]       |                                      [32m[K|[m[K
+[24.908s]       |                                      [32m[Kunsigned int[m[K
+[24.908s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:435:50:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[24.909s]   435 |                 "Invalid joint count. Expected [01;36m[K%zu[m[K joints for 'arm' group, got %zu total joints",
+[24.909s]       |                                                [01;36m[K~~^[m[K
+[24.910s]       |                                                  [01;36m[K|[m[K
+[24.910s]       |                                                  [01;36m[Klong unsigned int[m[K
+[24.911s]       |                                                [32m[K%u[m[K
+[63.835s] [100%] [32m[1mLinking CXX executable esp32_controller[0m
+[68.187s] [100%] Built target esp32_controller
+[68.247s] Invoked command in '/home/bot/ros2_ws/build/esp32_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bot/ros2_ws/build/esp32_controller -- -j4 -l4
+[68.303s] Invoking command in '/home/bot/ros2_ws/build/esp32_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bot/ros2_ws/build/esp32_controller
+[68.348s] -- Install configuration: ""
+[68.350s] -- Installing: /home/bot/ros2_ws/install/esp32_controller/lib/esp32_controller/esp32_controller
+[68.423s] -- Set non-toolchain portion of runtime path of "/home/bot/ros2_ws/install/esp32_controller/lib/esp32_controller/esp32_controller" to ""
+[68.424s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/ament_index/resource_index/package_run_dependencies/esp32_controller
+[68.424s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/ament_index/resource_index/parent_prefix_path/esp32_controller
+[68.425s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/environment/ament_prefix_path.sh
+[68.426s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/environment/ament_prefix_path.dsv
+[68.427s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/environment/path.sh
+[68.427s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/environment/path.dsv
+[68.428s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.bash
+[68.428s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.sh
+[68.430s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.zsh
+[68.431s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.dsv
+[68.431s] -- Installing: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/package.dsv
+[68.433s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/ament_index/resource_index/packages/esp32_controller
+[68.435s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/cmake/esp32_controllerConfig.cmake
+[68.435s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/cmake/esp32_controllerConfig-version.cmake
+[68.436s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/package.xml
+[68.445s] Invoked command in '/home/bot/ros2_ws/build/esp32_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bot/ros2_ws/build/esp32_controller

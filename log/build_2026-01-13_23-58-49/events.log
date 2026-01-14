@@ -1,0 +1,114 @@
+[0.000000] (-) TimerEvent: {}
+[0.000977] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.001825] (-) JobUnselected: {'identifier': 'esp32_controller'}
+[0.002332] (-) JobUnselected: {'identifier': 'imu_controller'}
+[0.002411] (-) JobUnselected: {'identifier': 'move_program'}
+[0.002481] (-) JobUnselected: {'identifier': 'moveit_controls'}
+[0.002571] (-) JobUnselected: {'identifier': 'pose_printer'}
+[0.003097] (-) JobUnselected: {'identifier': 'robotic_arm_config'}
+[0.003261] (-) JobUnselected: {'identifier': 'robotic_arm_model_v3'}
+[0.003335] (-) JobUnselected: {'identifier': 'robotic_arm_moveit'}
+[0.003402] (-) JobUnselected: {'identifier': 'robotic_arm_v3_config'}
+[0.003479] (mqtt_imu) JobQueued: {'identifier': 'mqtt_imu', 'dependencies': OrderedDict()}
+[0.003589] (mqtt_imu) JobStarted: {'identifier': 'mqtt_imu'}
+[0.099179] (-) TimerEvent: {}
+[0.200007] (-) TimerEvent: {}
+[0.300844] (-) TimerEvent: {}
+[0.401414] (-) TimerEvent: {}
+[0.502154] (-) TimerEvent: {}
+[0.603429] (-) TimerEvent: {}
+[0.704090] (-) TimerEvent: {}
+[0.804689] (-) TimerEvent: {}
+[0.905257] (-) TimerEvent: {}
+[1.005886] (-) TimerEvent: {}
+[1.106585] (-) TimerEvent: {}
+[1.207647] (-) TimerEvent: {}
+[1.308383] (-) TimerEvent: {}
+[1.409101] (-) TimerEvent: {}
+[1.509735] (-) TimerEvent: {}
+[1.610358] (-) TimerEvent: {}
+[1.710981] (-) TimerEvent: {}
+[1.811596] (-) TimerEvent: {}
+[1.912210] (-) TimerEvent: {}
+[2.012829] (-) TimerEvent: {}
+[2.113387] (-) TimerEvent: {}
+[2.213993] (-) TimerEvent: {}
+[2.314695] (-) TimerEvent: {}
+[2.415419] (-) TimerEvent: {}
+[2.516258] (-) TimerEvent: {}
+[2.617046] (-) TimerEvent: {}
+[2.717976] (-) TimerEvent: {}
+[2.818982] (-) TimerEvent: {}
+[2.919618] (-) TimerEvent: {}
+[3.020271] (-) TimerEvent: {}
+[3.120889] (-) TimerEvent: {}
+[3.221502] (-) TimerEvent: {}
+[3.322290] (-) TimerEvent: {}
+[3.422991] (-) TimerEvent: {}
+[3.523629] (-) TimerEvent: {}
+[3.624463] (-) TimerEvent: {}
+[3.725079] (-) TimerEvent: {}
+[3.825635] (-) TimerEvent: {}
+[3.926628] (-) TimerEvent: {}
+[4.027215] (-) TimerEvent: {}
+[4.128037] (-) TimerEvent: {}
+[4.233004] (-) TimerEvent: {}
+[4.333654] (-) TimerEvent: {}
+[4.434473] (-) TimerEvent: {}
+[4.535235] (-) TimerEvent: {}
+[4.636010] (-) TimerEvent: {}
+[4.738143] (-) TimerEvent: {}
+[4.745016] (mqtt_imu) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/mqtt_imu', 'build', '--build-base', '/home/bot/ros2_ws/build/mqtt_imu/build', 'install', '--record', '/home/bot/ros2_ws/build/mqtt_imu/install.log', '--single-version-externally-managed'], 'cwd': '/home/bot/ros2_ws/src/mqtt_imu', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bot', 'SSH_CLIENT': '192.168.1.199 42860 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/bot/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/bot/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/bin/helpers/browser.sh', 'HOME': '/home/bot', 'TERM_PROGRAM_VERSION': '1.107.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-7b563d3b-861f-47f8-85ab-9f11d5e9df84.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/bot/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/bot/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/bot/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/home/bot/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-ac632f2b95.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/bot/ros2_ws/install/robotic_arm_v3_config:/home/bot/ros2_ws/install/robotic_arm_moveit:/home/bot/ros2_ws/install/robotic_arm_model_v3:/home/bot/ros2_ws/install/robotic_arm_config:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/home/bot/ros2_ws/install/move_program:/home/bot/ros2_ws/install/imu_controller:/home/bot/ros2_ws/install/esp32_controller:/home/bot/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/bot/ros2_ws/build/mqtt_imu', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.199 42860 192.168.1.224 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bot/ros2_ws/build/mqtt_imu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages:/home/bot/ros2_ws/install/pose_printer/lib/python3.12/site-packages:/home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages:/home/bot/ros2_ws/install/moveit_controls/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/bot/ros2_ws/install/robotic_arm_v3_config:/home/bot/ros2_ws/install/robotic_arm_moveit:/home/bot/ros2_ws/install/robotic_arm_model_v3:/home/bot/ros2_ws/install/robotic_arm_config:/home/bot/ros2_ws/install/move_program:/home/bot/ros2_ws/install/imu_controller:/home/bot/ros2_ws/install/esp32_controller:/home/bot/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[4.838350] (-) TimerEvent: {}
+[4.939073] (-) TimerEvent: {}
+[5.039739] (-) TimerEvent: {}
+[5.140336] (-) TimerEvent: {}
+[5.240969] (-) TimerEvent: {}
+[5.341626] (-) TimerEvent: {}
+[5.442195] (-) TimerEvent: {}
+[5.542812] (-) TimerEvent: {}
+[5.643390] (-) TimerEvent: {}
+[5.743999] (-) TimerEvent: {}
+[5.844601] (-) TimerEvent: {}
+[5.945178] (-) TimerEvent: {}
+[6.016032] (mqtt_imu) StdoutLine: {'line': b'running egg_info\n'}
+[6.045329] (-) TimerEvent: {}
+[6.122615] (mqtt_imu) StdoutLine: {'line': b'writing ../../build/mqtt_imu/mqtt_imu.egg-info/PKG-INFO\n'}
+[6.123912] (mqtt_imu) StdoutLine: {'line': b'writing dependency_links to ../../build/mqtt_imu/mqtt_imu.egg-info/dependency_links.txt\n'}
+[6.134509] (mqtt_imu) StdoutLine: {'line': b'writing entry points to ../../build/mqtt_imu/mqtt_imu.egg-info/entry_points.txt\n'}
+[6.140311] (mqtt_imu) StdoutLine: {'line': b'writing requirements to ../../build/mqtt_imu/mqtt_imu.egg-info/requires.txt\n'}
+[6.145499] (-) TimerEvent: {}
+[6.149004] (mqtt_imu) StdoutLine: {'line': b'writing top-level names to ../../build/mqtt_imu/mqtt_imu.egg-info/top_level.txt\n'}
+[6.245653] (-) TimerEvent: {}
+[6.346234] (-) TimerEvent: {}
+[6.376611] (mqtt_imu) StdoutLine: {'line': b"reading manifest file '../../build/mqtt_imu/mqtt_imu.egg-info/SOURCES.txt'\n"}
+[6.380313] (mqtt_imu) StdoutLine: {'line': b"writing manifest file '../../build/mqtt_imu/mqtt_imu.egg-info/SOURCES.txt'\n"}
+[6.381129] (mqtt_imu) StdoutLine: {'line': b'running build\n'}
+[6.381737] (mqtt_imu) StdoutLine: {'line': b'running build_py\n'}
+[6.382278] (mqtt_imu) StdoutLine: {'line': b'copying mqtt_imu/mqtt_imu_node.py -> /home/bot/ros2_ws/build/mqtt_imu/build/lib/mqtt_imu\n'}
+[6.383799] (mqtt_imu) StdoutLine: {'line': b'running install\n'}
+[6.410051] (mqtt_imu) StdoutLine: {'line': b'running install_lib\n'}
+[6.446382] (-) TimerEvent: {}
+[6.516787] (mqtt_imu) StdoutLine: {'line': b'copying /home/bot/ros2_ws/build/mqtt_imu/build/lib/mqtt_imu/mqtt_imu_node.py -> /home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages/mqtt_imu\n'}
+[6.520144] (mqtt_imu) StdoutLine: {'line': b'byte-compiling /home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages/mqtt_imu/mqtt_imu_node.py to mqtt_imu_node.cpython-312.pyc\n'}
+[6.527300] (mqtt_imu) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.546591] (-) TimerEvent: {}
+[6.637503] (mqtt_imu) StdoutLine: {'line': b"removing '/home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages/mqtt_imu-0.0.1-py3.12.egg-info' (and everything under it)\n"}
+[6.639621] (mqtt_imu) StdoutLine: {'line': b'Copying ../../build/mqtt_imu/mqtt_imu.egg-info to /home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages/mqtt_imu-0.0.1-py3.12.egg-info\n'}
+[6.646740] (-) TimerEvent: {}
+[6.647924] (mqtt_imu) StdoutLine: {'line': b'running install_scripts\n'}
+[6.746888] (-) TimerEvent: {}
+[6.847491] (-) TimerEvent: {}
+[6.948210] (-) TimerEvent: {}
+[7.048894] (-) TimerEvent: {}
+[7.149481] (-) TimerEvent: {}
+[7.250124] (-) TimerEvent: {}
+[7.350820] (-) TimerEvent: {}
+[7.430087] (mqtt_imu) StdoutLine: {'line': b'Installing mqtt_imu_node script to /home/bot/ros2_ws/install/mqtt_imu/lib/mqtt_imu\n'}
+[7.431690] (mqtt_imu) StdoutLine: {'line': b"writing list of installed files to '/home/bot/ros2_ws/build/mqtt_imu/install.log'\n"}
+[7.451110] (-) TimerEvent: {}
+[7.552188] (-) TimerEvent: {}
+[7.584825] (mqtt_imu) CommandEnded: {'returncode': 0}
+[7.653304] (-) TimerEvent: {}
+[7.675580] (mqtt_imu) JobEnded: {'identifier': 'mqtt_imu', 'rc': 0}
+[7.683120] (-) EventReactorShutdown: {}

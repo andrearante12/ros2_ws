@@ -92,7 +92,15 @@ esp32_controller_EXTERNAL_OBJECTS =
 
 esp32_controller: CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o
 esp32_controller: CMakeFiles/esp32_controller.dir/build.make
+esp32_controller: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so
+esp32_controller: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_fastrtps_cpp.so
+esp32_controller: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
+esp32_controller: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
+esp32_controller: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_cpp.so
+esp32_controller: /opt/ros/jazzy/lib/libnav_msgs__rosidl_generator_py.so
 esp32_controller: /opt/ros/jazzy/lib/libmoveit_move_group_interface.so.2.12.3
+esp32_controller: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_c.so
+esp32_controller: /opt/ros/jazzy/lib/libnav_msgs__rosidl_generator_c.so
 esp32_controller: /opt/ros/jazzy/lib/libmoveit_common_planning_interface_objects.so.2.12.3
 esp32_controller: /opt/ros/jazzy/lib/libmoveit_planning_scene_interface.so.2.12.3
 esp32_controller: /opt/ros/jazzy/lib/libmoveit_move_group_capabilities_base.so.2.12.3

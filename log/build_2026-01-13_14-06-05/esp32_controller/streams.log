@@ -1,0 +1,25 @@
+[0.069s] Invoking command in '/home/bot/ros2_ws/build/esp32_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bot/ros2_ws/build/esp32_controller -- -j4 -l4
+[0.537s] [ 50%] [32mBuilding CXX object CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o[0m
+[67.051s] [100%] [32m[1mLinking CXX executable esp32_controller[0m
+[71.651s] [100%] Built target esp32_controller
+[71.720s] Invoked command in '/home/bot/ros2_ws/build/esp32_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bot/ros2_ws/build/esp32_controller -- -j4 -l4
+[71.778s] Invoking command in '/home/bot/ros2_ws/build/esp32_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bot/ros2_ws/build/esp32_controller
+[71.825s] -- Install configuration: ""
+[71.826s] -- Installing: /home/bot/ros2_ws/install/esp32_controller/lib/esp32_controller/esp32_controller
+[71.893s] -- Set non-toolchain portion of runtime path of "/home/bot/ros2_ws/install/esp32_controller/lib/esp32_controller/esp32_controller" to ""
+[71.894s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/ament_index/resource_index/package_run_dependencies/esp32_controller
+[71.895s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/ament_index/resource_index/parent_prefix_path/esp32_controller
+[71.895s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/environment/ament_prefix_path.sh
+[71.896s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/environment/ament_prefix_path.dsv
+[71.897s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/environment/path.sh
+[71.897s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/environment/path.dsv
+[71.898s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.bash
+[71.899s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.sh
+[71.900s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.zsh
+[71.901s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.dsv
+[71.901s] -- Installing: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/package.dsv
+[71.901s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/ament_index/resource_index/packages/esp32_controller
+[71.903s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/cmake/esp32_controllerConfig.cmake
+[71.904s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/cmake/esp32_controllerConfig-version.cmake
+[71.904s] -- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/package.xml
+[71.909s] Invoked command in '/home/bot/ros2_ws/build/esp32_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bot/ros2_ws/build/esp32_controller

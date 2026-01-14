@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/mqtt_imu/mqtt_imu.egg-info/PKG-INFO
+writing dependency_links to ../../build/mqtt_imu/mqtt_imu.egg-info/dependency_links.txt
+writing entry points to ../../build/mqtt_imu/mqtt_imu.egg-info/entry_points.txt
+writing requirements to ../../build/mqtt_imu/mqtt_imu.egg-info/requires.txt
+writing top-level names to ../../build/mqtt_imu/mqtt_imu.egg-info/top_level.txt
+reading manifest file '../../build/mqtt_imu/mqtt_imu.egg-info/SOURCES.txt'
+writing manifest file '../../build/mqtt_imu/mqtt_imu.egg-info/SOURCES.txt'
+running build
+running build_py
+copying mqtt_imu/mqtt_imu_node.py -> /home/bot/ros2_ws/build/mqtt_imu/build/lib/mqtt_imu
+running install
+running install_lib
+copying /home/bot/ros2_ws/build/mqtt_imu/build/lib/mqtt_imu/mqtt_imu_node.py -> /home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages/mqtt_imu
+byte-compiling /home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages/mqtt_imu/mqtt_imu_node.py to mqtt_imu_node.cpython-312.pyc
+running install_egg_info
+removing '/home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages/mqtt_imu-0.0.1-py3.12.egg-info' (and everything under it)
+Copying ../../build/mqtt_imu/mqtt_imu.egg-info to /home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages/mqtt_imu-0.0.1-py3.12.egg-info
+running install_scripts
+Installing mqtt_imu_node script to /home/bot/ros2_ws/install/mqtt_imu/lib/mqtt_imu
+writing list of installed files to '/home/bot/ros2_ws/build/mqtt_imu/install.log'

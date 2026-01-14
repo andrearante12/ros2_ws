@@ -1,0 +1,52 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o[0m
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:8[m[K:
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:[m[K In destructor ‘[01m[Kvirtual Esp32Controller::[01;32m[K~Esp32Controller[m[K()[m[K’:
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:272:39:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  272 |             RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                                       [01;35m[K^~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:285:39:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  285 |             RCLCPP_INFO(get_logger(), [01;35m[K""[m[K);
+      |                                       [01;35m[K^~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:[m[K In member function ‘[01m[Kvoid Esp32Controller::[01;32m[KimuCallback[m[K(sensor_msgs::msg::Imu_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:439:17:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%zu[m[K’ expects argument of type ‘[01m[Ksize_t[m[K’, but argument 5 has type ‘[01m[Kunsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  439 |                 [01;35m[K"Invalid joint count. Expected %zu joints for 'arm' group, got %zu total joints"[m[K,
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  440 |                 [32m[Kjmg->getVariableCount()[m[K, joints.size()
+      |                 [32m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                      [32m[K|[m[K
+      |                                      [32m[Kunsigned int[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:439:50:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  439 |                 "Invalid joint count. Expected [01;36m[K%zu[m[K joints for 'arm' group, got %zu total joints",
+      |                                                [01;36m[K~~^[m[K
+      |                                                  [01;36m[K|[m[K
+      |                                                  [01;36m[Klong unsigned int[m[K
+      |                                                [32m[K%u[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:531:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktarget_y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  531 |         double [01;35m[Ktarget_y[m[K = imu_state_.y();
+      |                [01;35m[K^~~~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:532:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktarget_z[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  532 |         double [01;35m[Ktarget_z[m[K = imu_state_.z();
+      |                [01;35m[K^~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable esp32_controller[0m
+[100%] Built target esp32_controller
+-- Install configuration: ""
+-- Installing: /home/bot/ros2_ws/install/esp32_controller/lib/esp32_controller/esp32_controller
+-- Set non-toolchain portion of runtime path of "/home/bot/ros2_ws/install/esp32_controller/lib/esp32_controller/esp32_controller" to ""
+-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/ament_index/resource_index/package_run_dependencies/esp32_controller
+-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/ament_index/resource_index/parent_prefix_path/esp32_controller
+-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/environment/ament_prefix_path.sh
+-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/environment/path.sh
+-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/environment/path.dsv
+-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.bash
+-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.sh
+-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.zsh
+-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.dsv
+-- Installing: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/package.dsv
+-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/ament_index/resource_index/packages/esp32_controller
+-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/cmake/esp32_controllerConfig.cmake
+-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/cmake/esp32_controllerConfig-version.cmake
+-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/package.xml

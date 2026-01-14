@@ -16,6 +16,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # ===============================
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(nav_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(moveit_ros_planning_interface REQUIRED)
 
@@ -29,6 +30,7 @@ add_executable(esp32_controller
 ament_target_dependencies(esp32_controller
   rclcpp
   sensor_msgs
+  nav_msgs
   moveit_ros_planning_interface
 )
 
@@ -43,4 +45,3 @@ install(TARGETS esp32_controller
 # Package export
 # ===============================
 ament_package()
-

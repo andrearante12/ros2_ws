@@ -1,0 +1,23 @@
+[4.746s] Invoking command in '/home/bot/ros2_ws/src/mqtt_imu': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/bot/ros2_ws/build/mqtt_imu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mqtt_imu build --build-base /home/bot/ros2_ws/build/mqtt_imu/build install --record /home/bot/ros2_ws/build/mqtt_imu/install.log --single-version-externally-managed
+[6.013s] running egg_info
+[6.119s] writing ../../build/mqtt_imu/mqtt_imu.egg-info/PKG-INFO
+[6.121s] writing dependency_links to ../../build/mqtt_imu/mqtt_imu.egg-info/dependency_links.txt
+[6.131s] writing entry points to ../../build/mqtt_imu/mqtt_imu.egg-info/entry_points.txt
+[6.137s] writing requirements to ../../build/mqtt_imu/mqtt_imu.egg-info/requires.txt
+[6.146s] writing top-level names to ../../build/mqtt_imu/mqtt_imu.egg-info/top_level.txt
+[6.373s] reading manifest file '../../build/mqtt_imu/mqtt_imu.egg-info/SOURCES.txt'
+[6.377s] writing manifest file '../../build/mqtt_imu/mqtt_imu.egg-info/SOURCES.txt'
+[6.378s] running build
+[6.378s] running build_py
+[6.379s] copying mqtt_imu/mqtt_imu_node.py -> /home/bot/ros2_ws/build/mqtt_imu/build/lib/mqtt_imu
+[6.380s] running install
+[6.407s] running install_lib
+[6.513s] copying /home/bot/ros2_ws/build/mqtt_imu/build/lib/mqtt_imu/mqtt_imu_node.py -> /home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages/mqtt_imu
+[6.517s] byte-compiling /home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages/mqtt_imu/mqtt_imu_node.py to mqtt_imu_node.cpython-312.pyc
+[6.525s] running install_egg_info
+[6.634s] removing '/home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages/mqtt_imu-0.0.1-py3.12.egg-info' (and everything under it)
+[6.636s] Copying ../../build/mqtt_imu/mqtt_imu.egg-info to /home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages/mqtt_imu-0.0.1-py3.12.egg-info
+[6.645s] running install_scripts
+[7.427s] Installing mqtt_imu_node script to /home/bot/ros2_ws/install/mqtt_imu/lib/mqtt_imu
+[7.428s] writing list of installed files to '/home/bot/ros2_ws/build/mqtt_imu/install.log'
+[7.582s] Invoked command in '/home/bot/ros2_ws/src/mqtt_imu' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/bot/ros2_ws/build/mqtt_imu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mqtt_imu build --build-base /home/bot/ros2_ws/build/mqtt_imu/build install --record /home/bot/ros2_ws/build/mqtt_imu/install.log --single-version-externally-managed

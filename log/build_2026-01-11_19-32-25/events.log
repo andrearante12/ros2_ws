@@ -1,0 +1,802 @@
+[0.000000] (-) TimerEvent: {}
+[0.000949] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.001818] (-) JobUnselected: {'identifier': 'imu_controller'}
+[0.002367] (-) JobUnselected: {'identifier': 'move_program'}
+[0.002618] (-) JobUnselected: {'identifier': 'moveit_controls'}
+[0.003173] (-) JobUnselected: {'identifier': 'mqtt_imu'}
+[0.003857] (-) JobUnselected: {'identifier': 'pose_printer'}
+[0.004014] (-) JobUnselected: {'identifier': 'robotic_arm_config'}
+[0.004093] (-) JobUnselected: {'identifier': 'robotic_arm_model_v3'}
+[0.004162] (-) JobUnselected: {'identifier': 'robotic_arm_moveit'}
+[0.004228] (-) JobUnselected: {'identifier': 'robotic_arm_v3_config'}
+[0.004305] (esp32_controller) JobQueued: {'identifier': 'esp32_controller', 'dependencies': OrderedDict()}
+[0.004392] (esp32_controller) JobStarted: {'identifier': 'esp32_controller'}
+[0.055556] (esp32_controller) JobProgress: {'identifier': 'esp32_controller', 'progress': 'cmake'}
+[0.059459] (esp32_controller) JobProgress: {'identifier': 'esp32_controller', 'progress': 'build'}
+[0.063194] (esp32_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bot/ros2_ws/build/esp32_controller', '--', '-j4', '-l4'], 'cwd': '/home/bot/ros2_ws/build/esp32_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bot', 'SSH_CLIENT': '192.168.1.199 58508 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bot', 'OLDPWD': '/home/bot', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/bot/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/bot/ros2_ws/install/robotic_arm_v3_config:/home/bot/ros2_ws/install/robotic_arm_moveit:/home/bot/ros2_ws/install/robotic_arm_model_v3:/home/bot/ros2_ws/install/robotic_arm_config:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/home/bot/ros2_ws/install/move_program:/home/bot/ros2_ws/install/imu_controller:/home/bot/ros2_ws/install/esp32_controller:/home/bot/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/bot/ros2_ws/build/esp32_controller', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.199 58508 192.168.1.224 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bot/ros2_ws/install/pose_printer/lib/python3.12/site-packages:/home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages:/home/bot/ros2_ws/install/moveit_controls/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/bot/ros2_ws/install/robotic_arm_v3_config:/home/bot/ros2_ws/install/robotic_arm_moveit:/home/bot/ros2_ws/install/robotic_arm_model_v3:/home/bot/ros2_ws/install/robotic_arm_config:/home/bot/ros2_ws/install/move_program:/home/bot/ros2_ws/install/imu_controller:/home/bot/ros2_ws/install/esp32_controller:/home/bot/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy'}), 'shell': False}
+[0.099094] (-) TimerEvent: {}
+[0.200888] (-) TimerEvent: {}
+[0.301543] (-) TimerEvent: {}
+[0.402223] (-) TimerEvent: {}
+[0.503082] (-) TimerEvent: {}
+[0.528256] (esp32_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o\x1b[0m\n'}
+[0.603255] (-) TimerEvent: {}
+[0.703931] (-) TimerEvent: {}
+[0.804525] (-) TimerEvent: {}
+[0.905222] (-) TimerEvent: {}
+[1.005950] (-) TimerEvent: {}
+[1.106516] (-) TimerEvent: {}
+[1.207226] (-) TimerEvent: {}
+[1.307874] (-) TimerEvent: {}
+[1.408506] (-) TimerEvent: {}
+[1.509163] (-) TimerEvent: {}
+[1.609795] (-) TimerEvent: {}
+[1.710400] (-) TimerEvent: {}
+[1.811096] (-) TimerEvent: {}
+[1.911716] (-) TimerEvent: {}
+[2.012348] (-) TimerEvent: {}
+[2.113474] (-) TimerEvent: {}
+[2.214161] (-) TimerEvent: {}
+[2.314802] (-) TimerEvent: {}
+[2.415426] (-) TimerEvent: {}
+[2.516152] (-) TimerEvent: {}
+[2.616762] (-) TimerEvent: {}
+[2.717374] (-) TimerEvent: {}
+[2.818038] (-) TimerEvent: {}
+[2.918709] (-) TimerEvent: {}
+[3.019328] (-) TimerEvent: {}
+[3.120052] (-) TimerEvent: {}
+[3.220844] (-) TimerEvent: {}
+[3.321488] (-) TimerEvent: {}
+[3.422162] (-) TimerEvent: {}
+[3.523457] (-) TimerEvent: {}
+[3.624128] (-) TimerEvent: {}
+[3.724744] (-) TimerEvent: {}
+[3.825354] (-) TimerEvent: {}
+[3.925997] (-) TimerEvent: {}
+[4.026660] (-) TimerEvent: {}
+[4.127267] (-) TimerEvent: {}
+[4.227911] (-) TimerEvent: {}
+[4.328528] (-) TimerEvent: {}
+[4.429184] (-) TimerEvent: {}
+[4.529995] (-) TimerEvent: {}
+[4.630763] (-) TimerEvent: {}
+[4.731737] (-) TimerEvent: {}
+[4.832828] (-) TimerEvent: {}
+[4.934167] (-) TimerEvent: {}
+[5.035024] (-) TimerEvent: {}
+[5.135939] (-) TimerEvent: {}
+[5.236644] (-) TimerEvent: {}
+[5.337288] (-) TimerEvent: {}
+[5.437924] (-) TimerEvent: {}
+[5.538567] (-) TimerEvent: {}
+[5.639300] (-) TimerEvent: {}
+[5.739941] (-) TimerEvent: {}
+[5.840662] (-) TimerEvent: {}
+[5.941313] (-) TimerEvent: {}
+[6.042068] (-) TimerEvent: {}
+[6.142966] (-) TimerEvent: {}
+[6.243691] (-) TimerEvent: {}
+[6.344407] (-) TimerEvent: {}
+[6.445202] (-) TimerEvent: {}
+[6.545888] (-) TimerEvent: {}
+[6.646521] (-) TimerEvent: {}
+[6.747166] (-) TimerEvent: {}
+[6.848000] (-) TimerEvent: {}
+[6.948742] (-) TimerEvent: {}
+[7.049441] (-) TimerEvent: {}
+[7.150227] (-) TimerEvent: {}
+[7.251028] (-) TimerEvent: {}
+[7.351721] (-) TimerEvent: {}
+[7.452928] (-) TimerEvent: {}
+[7.553721] (-) TimerEvent: {}
+[7.654387] (-) TimerEvent: {}
+[7.755173] (-) TimerEvent: {}
+[7.855974] (-) TimerEvent: {}
+[7.956707] (-) TimerEvent: {}
+[8.057367] (-) TimerEvent: {}
+[8.158140] (-) TimerEvent: {}
+[8.258982] (-) TimerEvent: {}
+[8.359687] (-) TimerEvent: {}
+[8.460380] (-) TimerEvent: {}
+[8.561119] (-) TimerEvent: {}
+[8.661865] (-) TimerEvent: {}
+[8.762807] (-) TimerEvent: {}
+[8.864171] (-) TimerEvent: {}
+[8.964898] (-) TimerEvent: {}
+[9.065637] (-) TimerEvent: {}
+[9.166337] (-) TimerEvent: {}
+[9.267150] (-) TimerEvent: {}
+[9.367931] (-) TimerEvent: {}
+[9.468654] (-) TimerEvent: {}
+[9.569320] (-) TimerEvent: {}
+[9.670055] (-) TimerEvent: {}
+[9.770748] (-) TimerEvent: {}
+[9.871428] (-) TimerEvent: {}
+[9.972195] (-) TimerEvent: {}
+[10.073906] (-) TimerEvent: {}
+[10.174682] (-) TimerEvent: {}
+[10.275360] (-) TimerEvent: {}
+[10.376173] (-) TimerEvent: {}
+[10.476879] (-) TimerEvent: {}
+[10.577666] (-) TimerEvent: {}
+[10.678452] (-) TimerEvent: {}
+[10.779192] (-) TimerEvent: {}
+[10.879984] (-) TimerEvent: {}
+[10.980715] (-) TimerEvent: {}
+[11.081507] (-) TimerEvent: {}
+[11.182267] (-) TimerEvent: {}
+[11.283513] (-) TimerEvent: {}
+[11.384232] (-) TimerEvent: {}
+[11.484946] (-) TimerEvent: {}
+[11.585668] (-) TimerEvent: {}
+[11.686354] (-) TimerEvent: {}
+[11.787156] (-) TimerEvent: {}
+[11.887874] (-) TimerEvent: {}
+[11.988565] (-) TimerEvent: {}
+[12.089305] (-) TimerEvent: {}
+[12.190088] (-) TimerEvent: {}
+[12.290878] (-) TimerEvent: {}
+[12.391667] (-) TimerEvent: {}
+[12.492395] (-) TimerEvent: {}
+[12.593819] (-) TimerEvent: {}
+[12.694522] (-) TimerEvent: {}
+[12.795300] (-) TimerEvent: {}
+[12.896060] (-) TimerEvent: {}
+[12.996721] (-) TimerEvent: {}
+[13.097403] (-) TimerEvent: {}
+[13.198132] (-) TimerEvent: {}
+[13.298845] (-) TimerEvent: {}
+[13.399525] (-) TimerEvent: {}
+[13.500246] (-) TimerEvent: {}
+[13.600983] (-) TimerEvent: {}
+[13.701728] (-) TimerEvent: {}
+[13.802629] (-) TimerEvent: {}
+[13.903805] (-) TimerEvent: {}
+[14.004511] (-) TimerEvent: {}
+[14.105224] (-) TimerEvent: {}
+[14.205994] (-) TimerEvent: {}
+[14.306714] (-) TimerEvent: {}
+[14.407416] (-) TimerEvent: {}
+[14.508160] (-) TimerEvent: {}
+[14.608924] (-) TimerEvent: {}
+[14.709702] (-) TimerEvent: {}
+[14.810397] (-) TimerEvent: {}
+[14.911101] (-) TimerEvent: {}
+[15.011942] (-) TimerEvent: {}
+[15.112752] (-) TimerEvent: {}
+[15.213562] (-) TimerEvent: {}
+[15.314261] (-) TimerEvent: {}
+[15.415002] (-) TimerEvent: {}
+[15.515723] (-) TimerEvent: {}
+[15.616649] (-) TimerEvent: {}
+[15.717326] (-) TimerEvent: {}
+[15.818081] (-) TimerEvent: {}
+[15.918757] (-) TimerEvent: {}
+[16.019437] (-) TimerEvent: {}
+[16.120179] (-) TimerEvent: {}
+[16.220933] (-) TimerEvent: {}
+[16.321707] (-) TimerEvent: {}
+[16.422698] (-) TimerEvent: {}
+[16.524109] (-) TimerEvent: {}
+[16.624743] (-) TimerEvent: {}
+[16.725436] (-) TimerEvent: {}
+[16.826158] (-) TimerEvent: {}
+[16.926895] (-) TimerEvent: {}
+[17.027578] (-) TimerEvent: {}
+[17.128437] (-) TimerEvent: {}
+[17.229237] (-) TimerEvent: {}
+[17.330047] (-) TimerEvent: {}
+[17.430781] (-) TimerEvent: {}
+[17.531437] (-) TimerEvent: {}
+[17.632270] (-) TimerEvent: {}
+[17.733483] (-) TimerEvent: {}
+[17.834265] (-) TimerEvent: {}
+[17.935030] (-) TimerEvent: {}
+[18.035734] (-) TimerEvent: {}
+[18.136378] (-) TimerEvent: {}
+[18.237113] (-) TimerEvent: {}
+[18.337845] (-) TimerEvent: {}
+[18.438719] (-) TimerEvent: {}
+[18.539652] (-) TimerEvent: {}
+[18.640492] (-) TimerEvent: {}
+[18.741226] (-) TimerEvent: {}
+[18.841959] (-) TimerEvent: {}
+[18.943037] (-) TimerEvent: {}
+[19.043924] (-) TimerEvent: {}
+[19.144693] (-) TimerEvent: {}
+[19.245466] (-) TimerEvent: {}
+[19.346305] (-) TimerEvent: {}
+[19.447074] (-) TimerEvent: {}
+[19.547748] (-) TimerEvent: {}
+[19.648447] (-) TimerEvent: {}
+[19.749160] (-) TimerEvent: {}
+[19.849965] (-) TimerEvent: {}
+[19.950735] (-) TimerEvent: {}
+[20.051378] (-) TimerEvent: {}
+[20.152205] (-) TimerEvent: {}
+[20.253284] (-) TimerEvent: {}
+[20.354082] (-) TimerEvent: {}
+[20.454770] (-) TimerEvent: {}
+[20.555453] (-) TimerEvent: {}
+[20.656197] (-) TimerEvent: {}
+[20.757010] (-) TimerEvent: {}
+[20.858946] (-) TimerEvent: {}
+[20.959691] (-) TimerEvent: {}
+[21.060361] (-) TimerEvent: {}
+[21.161106] (-) TimerEvent: {}
+[21.261847] (-) TimerEvent: {}
+[21.363242] (-) TimerEvent: {}
+[21.465321] (-) TimerEvent: {}
+[21.566043] (-) TimerEvent: {}
+[21.666737] (-) TimerEvent: {}
+[21.767435] (-) TimerEvent: {}
+[21.868192] (-) TimerEvent: {}
+[21.968973] (-) TimerEvent: {}
+[22.069719] (-) TimerEvent: {}
+[22.170388] (-) TimerEvent: {}
+[22.271173] (-) TimerEvent: {}
+[22.371888] (-) TimerEvent: {}
+[22.473233] (-) TimerEvent: {}
+[22.573959] (-) TimerEvent: {}
+[22.674680] (-) TimerEvent: {}
+[22.775357] (-) TimerEvent: {}
+[22.876101] (-) TimerEvent: {}
+[22.976874] (-) TimerEvent: {}
+[23.077538] (-) TimerEvent: {}
+[23.178268] (-) TimerEvent: {}
+[23.279034] (-) TimerEvent: {}
+[23.379734] (-) TimerEvent: {}
+[23.480418] (-) TimerEvent: {}
+[23.581133] (-) TimerEvent: {}
+[23.681869] (-) TimerEvent: {}
+[23.782682] (-) TimerEvent: {}
+[23.883870] (-) TimerEvent: {}
+[23.984540] (-) TimerEvent: {}
+[24.085270] (-) TimerEvent: {}
+[24.185984] (-) TimerEvent: {}
+[24.286709] (-) TimerEvent: {}
+[24.387398] (-) TimerEvent: {}
+[24.488150] (-) TimerEvent: {}
+[24.588897] (-) TimerEvent: {}
+[24.689638] (-) TimerEvent: {}
+[24.790436] (-) TimerEvent: {}
+[24.891269] (-) TimerEvent: {}
+[24.992067] (-) TimerEvent: {}
+[25.093077] (-) TimerEvent: {}
+[25.193758] (-) TimerEvent: {}
+[25.294431] (-) TimerEvent: {}
+[25.395232] (-) TimerEvent: {}
+[25.495956] (-) TimerEvent: {}
+[25.596673] (-) TimerEvent: {}
+[25.697376] (-) TimerEvent: {}
+[25.798562] (-) TimerEvent: {}
+[25.899306] (-) TimerEvent: {}
+[26.000024] (-) TimerEvent: {}
+[26.041048] (esp32_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[26.041953] (esp32_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K,\n'}
+[26.043681] (esp32_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171\x1b[m\x1b[K,\n'}
+[26.044261] (esp32_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:8\x1b[m\x1b[K:\n'}
+[26.044779] (esp32_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:\x1b[m\x1b[K In destructor \xe2\x80\x98\x1b[01m\x1b[Kvirtual Esp32Controller::\x1b[01;32m\x1b[K~Esp32Controller\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[26.045284] (esp32_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:272:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kzero-length gnu_printf format string [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length\x07-Wformat-zero-length\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[26.045843] (esp32_controller) StderrLine: {'line': b'  272 |             RCLCPP_INFO(get_logger(), \x1b[01;35m\x1b[K""\x1b[m\x1b[K);\n'}
+[26.046356] (esp32_controller) StderrLine: {'line': b'      |                                       \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[26.051568] (esp32_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:285:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kzero-length gnu_printf format string [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length\x07-Wformat-zero-length\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[26.052891] (esp32_controller) StderrLine: {'line': b'  285 |             RCLCPP_INFO(get_logger(), \x1b[01;35m\x1b[K""\x1b[m\x1b[K);\n'}
+[26.053707] (esp32_controller) StderrLine: {'line': b'      |                                       \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[26.100213] (-) TimerEvent: {}
+[26.119737] (esp32_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Esp32Controller::\x1b[01;32m\x1b[KimuCallback\x1b[m\x1b[K(sensor_msgs::msg::Imu_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[26.120695] (esp32_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:481:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%zu\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[26.121503] (esp32_controller) StderrLine: {'line': b'  481 |                 \x1b[01;35m\x1b[K"Invalid joint count. Expected %zu joints for \'arm\' group, got %zu total joints"\x1b[m\x1b[K,\n'}
+[26.122067] (esp32_controller) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.124395] (esp32_controller) StderrLine: {'line': b'  482 |                 \x1b[32m\x1b[Kjmg->getVariableCount()\x1b[m\x1b[K, joints.size()\n'}
+[26.125046] (esp32_controller) StderrLine: {'line': b'      |                 \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.125541] (esp32_controller) StderrLine: {'line': b'      |                                      \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[26.126100] (esp32_controller) StderrLine: {'line': b'      |                                      \x1b[32m\x1b[Kunsigned int\x1b[m\x1b[K\n'}
+[26.126619] (esp32_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:481:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[26.127149] (esp32_controller) StderrLine: {'line': b'  481 |                 "Invalid joint count. Expected \x1b[01;36m\x1b[K%zu\x1b[m\x1b[K joints for \'arm\' group, got %zu total joints",\n'}
+[26.127643] (esp32_controller) StderrLine: {'line': b'      |                                                \x1b[01;36m\x1b[K~~^\x1b[m\x1b[K\n'}
+[26.128166] (esp32_controller) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[26.128629] (esp32_controller) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[Klong unsigned int\x1b[m\x1b[K\n'}
+[26.129159] (esp32_controller) StderrLine: {'line': b'      |                                                \x1b[32m\x1b[K%u\x1b[m\x1b[K\n'}
+[26.139182] (esp32_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:429:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kgx\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[26.140322] (esp32_controller) StderrLine: {'line': b'  429 |         double \x1b[01;35m\x1b[Kgx\x1b[m\x1b[K = msg->angular_velocity.x - gyro_bias_.x();\n'}
+[26.140948] (esp32_controller) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[26.141402] (esp32_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:430:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kgy\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[26.141915] (esp32_controller) StderrLine: {'line': b'  430 |         double \x1b[01;35m\x1b[Kgy\x1b[m\x1b[K = msg->angular_velocity.y - gyro_bias_.y();\n'}
+[26.142461] (esp32_controller) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[26.143260] (esp32_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:431:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kgz\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[26.144166] (esp32_controller) StderrLine: {'line': b'  431 |         double \x1b[01;35m\x1b[Kgz\x1b[m\x1b[K = msg->angular_velocity.z - gyro_bias_.z();\n'}
+[26.144732] (esp32_controller) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[26.145209] (esp32_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:586:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ktarget_y\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[26.145665] (esp32_controller) StderrLine: {'line': b'  586 |         double \x1b[01;35m\x1b[Ktarget_y\x1b[m\x1b[K = imu_state_.y();\n'}
+[26.146415] (esp32_controller) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[26.146959] (esp32_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:587:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ktarget_z\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[26.147431] (esp32_controller) StderrLine: {'line': b'  587 |         double \x1b[01;35m\x1b[Ktarget_z\x1b[m\x1b[K = imu_state_.z();\n'}
+[26.147979] (esp32_controller) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[26.148501] (esp32_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:601:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kx_direction_changed\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[26.149165] (esp32_controller) StderrLine: {'line': b'  601 |         bool \x1b[01;35m\x1b[Kx_direction_changed\x1b[m\x1b[K = (x_direction != prev_x_direction_);\n'}
+[26.149640] (esp32_controller) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.150145] (esp32_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:602:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ky_direction_changed\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[26.150665] (esp32_controller) StderrLine: {'line': b'  602 |         bool \x1b[01;35m\x1b[Ky_direction_changed\x1b[m\x1b[K = (y_direction != prev_y_direction_);\n'}
+[26.151210] (esp32_controller) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.151685] (esp32_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:603:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kmovement_stopped\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[26.152260] (esp32_controller) StderrLine: {'line': b'  603 |         bool \x1b[01;35m\x1b[Kmovement_stopped\x1b[m\x1b[K = (x_direction == 0 && y_direction == 0);\n'}
+[26.153301] (esp32_controller) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.200391] (-) TimerEvent: {}
+[26.301100] (-) TimerEvent: {}
+[26.401836] (-) TimerEvent: {}
+[26.502997] (-) TimerEvent: {}
+[26.603723] (-) TimerEvent: {}
+[26.704397] (-) TimerEvent: {}
+[26.805124] (-) TimerEvent: {}
+[26.905856] (-) TimerEvent: {}
+[27.006561] (-) TimerEvent: {}
+[27.107303] (-) TimerEvent: {}
+[27.208029] (-) TimerEvent: {}
+[27.308752] (-) TimerEvent: {}
+[27.409648] (-) TimerEvent: {}
+[27.510319] (-) TimerEvent: {}
+[27.611061] (-) TimerEvent: {}
+[27.711766] (-) TimerEvent: {}
+[27.812457] (-) TimerEvent: {}
+[27.913925] (-) TimerEvent: {}
+[28.014659] (-) TimerEvent: {}
+[28.115346] (-) TimerEvent: {}
+[28.216076] (-) TimerEvent: {}
+[28.316829] (-) TimerEvent: {}
+[28.417527] (-) TimerEvent: {}
+[28.518278] (-) TimerEvent: {}
+[28.619039] (-) TimerEvent: {}
+[28.719737] (-) TimerEvent: {}
+[28.820422] (-) TimerEvent: {}
+[28.921205] (-) TimerEvent: {}
+[29.021991] (-) TimerEvent: {}
+[29.123074] (-) TimerEvent: {}
+[29.223878] (-) TimerEvent: {}
+[29.324514] (-) TimerEvent: {}
+[29.425245] (-) TimerEvent: {}
+[29.525976] (-) TimerEvent: {}
+[29.626688] (-) TimerEvent: {}
+[29.727400] (-) TimerEvent: {}
+[29.828128] (-) TimerEvent: {}
+[29.928931] (-) TimerEvent: {}
+[30.029663] (-) TimerEvent: {}
+[30.130387] (-) TimerEvent: {}
+[30.231117] (-) TimerEvent: {}
+[30.331848] (-) TimerEvent: {}
+[30.433080] (-) TimerEvent: {}
+[30.533897] (-) TimerEvent: {}
+[30.634649] (-) TimerEvent: {}
+[30.735367] (-) TimerEvent: {}
+[30.836117] (-) TimerEvent: {}
+[30.936875] (-) TimerEvent: {}
+[31.037544] (-) TimerEvent: {}
+[31.138325] (-) TimerEvent: {}
+[31.239108] (-) TimerEvent: {}
+[31.339860] (-) TimerEvent: {}
+[31.440555] (-) TimerEvent: {}
+[31.541314] (-) TimerEvent: {}
+[31.642052] (-) TimerEvent: {}
+[31.742843] (-) TimerEvent: {}
+[31.843970] (-) TimerEvent: {}
+[31.944700] (-) TimerEvent: {}
+[32.045413] (-) TimerEvent: {}
+[32.146190] (-) TimerEvent: {}
+[32.246951] (-) TimerEvent: {}
+[32.347690] (-) TimerEvent: {}
+[32.448424] (-) TimerEvent: {}
+[32.549311] (-) TimerEvent: {}
+[32.650033] (-) TimerEvent: {}
+[32.750889] (-) TimerEvent: {}
+[32.852188] (-) TimerEvent: {}
+[32.953219] (-) TimerEvent: {}
+[33.053952] (-) TimerEvent: {}
+[33.154676] (-) TimerEvent: {}
+[33.255370] (-) TimerEvent: {}
+[33.356157] (-) TimerEvent: {}
+[33.456888] (-) TimerEvent: {}
+[33.557637] (-) TimerEvent: {}
+[33.658337] (-) TimerEvent: {}
+[33.759128] (-) TimerEvent: {}
+[33.860495] (-) TimerEvent: {}
+[33.961306] (-) TimerEvent: {}
+[34.062170] (-) TimerEvent: {}
+[34.164098] (-) TimerEvent: {}
+[34.264946] (-) TimerEvent: {}
+[34.365733] (-) TimerEvent: {}
+[34.466471] (-) TimerEvent: {}
+[34.567223] (-) TimerEvent: {}
+[34.667992] (-) TimerEvent: {}
+[34.768730] (-) TimerEvent: {}
+[34.869431] (-) TimerEvent: {}
+[34.970169] (-) TimerEvent: {}
+[35.070921] (-) TimerEvent: {}
+[35.171683] (-) TimerEvent: {}
+[35.272549] (-) TimerEvent: {}
+[35.373887] (-) TimerEvent: {}
+[35.474634] (-) TimerEvent: {}
+[35.575356] (-) TimerEvent: {}
+[35.676118] (-) TimerEvent: {}
+[35.776841] (-) TimerEvent: {}
+[35.877563] (-) TimerEvent: {}
+[35.978296] (-) TimerEvent: {}
+[36.079097] (-) TimerEvent: {}
+[36.179961] (-) TimerEvent: {}
+[36.280752] (-) TimerEvent: {}
+[36.381444] (-) TimerEvent: {}
+[36.482188] (-) TimerEvent: {}
+[36.583505] (-) TimerEvent: {}
+[36.684197] (-) TimerEvent: {}
+[36.784938] (-) TimerEvent: {}
+[36.886275] (-) TimerEvent: {}
+[36.987085] (-) TimerEvent: {}
+[37.087757] (-) TimerEvent: {}
+[37.188416] (-) TimerEvent: {}
+[37.289169] (-) TimerEvent: {}
+[37.389917] (-) TimerEvent: {}
+[37.490671] (-) TimerEvent: {}
+[37.591363] (-) TimerEvent: {}
+[37.692149] (-) TimerEvent: {}
+[37.793231] (-) TimerEvent: {}
+[37.894337] (-) TimerEvent: {}
+[37.995094] (-) TimerEvent: {}
+[38.095771] (-) TimerEvent: {}
+[38.196508] (-) TimerEvent: {}
+[38.297251] (-) TimerEvent: {}
+[38.398035] (-) TimerEvent: {}
+[38.498740] (-) TimerEvent: {}
+[38.599471] (-) TimerEvent: {}
+[38.700313] (-) TimerEvent: {}
+[38.801024] (-) TimerEvent: {}
+[38.901732] (-) TimerEvent: {}
+[39.002831] (-) TimerEvent: {}
+[39.103570] (-) TimerEvent: {}
+[39.204325] (-) TimerEvent: {}
+[39.305084] (-) TimerEvent: {}
+[39.405757] (-) TimerEvent: {}
+[39.506463] (-) TimerEvent: {}
+[39.607200] (-) TimerEvent: {}
+[39.707951] (-) TimerEvent: {}
+[39.808703] (-) TimerEvent: {}
+[39.909537] (-) TimerEvent: {}
+[40.010247] (-) TimerEvent: {}
+[40.111022] (-) TimerEvent: {}
+[40.211742] (-) TimerEvent: {}
+[40.313253] (-) TimerEvent: {}
+[40.414006] (-) TimerEvent: {}
+[40.514728] (-) TimerEvent: {}
+[40.615410] (-) TimerEvent: {}
+[40.716142] (-) TimerEvent: {}
+[40.816887] (-) TimerEvent: {}
+[40.917650] (-) TimerEvent: {}
+[41.018402] (-) TimerEvent: {}
+[41.119138] (-) TimerEvent: {}
+[41.219874] (-) TimerEvent: {}
+[41.320559] (-) TimerEvent: {}
+[41.421290] (-) TimerEvent: {}
+[41.522011] (-) TimerEvent: {}
+[41.623559] (-) TimerEvent: {}
+[41.724284] (-) TimerEvent: {}
+[41.825031] (-) TimerEvent: {}
+[41.925749] (-) TimerEvent: {}
+[42.026423] (-) TimerEvent: {}
+[42.127238] (-) TimerEvent: {}
+[42.228262] (-) TimerEvent: {}
+[42.328946] (-) TimerEvent: {}
+[42.429640] (-) TimerEvent: {}
+[42.530269] (-) TimerEvent: {}
+[42.630964] (-) TimerEvent: {}
+[42.731651] (-) TimerEvent: {}
+[42.832353] (-) TimerEvent: {}
+[42.933496] (-) TimerEvent: {}
+[43.034280] (-) TimerEvent: {}
+[43.135018] (-) TimerEvent: {}
+[43.235759] (-) TimerEvent: {}
+[43.336437] (-) TimerEvent: {}
+[43.437188] (-) TimerEvent: {}
+[43.537943] (-) TimerEvent: {}
+[43.638694] (-) TimerEvent: {}
+[43.739396] (-) TimerEvent: {}
+[43.840720] (-) TimerEvent: {}
+[43.941418] (-) TimerEvent: {}
+[44.042279] (-) TimerEvent: {}
+[44.143507] (-) TimerEvent: {}
+[44.244392] (-) TimerEvent: {}
+[44.345325] (-) TimerEvent: {}
+[44.446058] (-) TimerEvent: {}
+[44.546750] (-) TimerEvent: {}
+[44.647427] (-) TimerEvent: {}
+[44.748176] (-) TimerEvent: {}
+[44.848915] (-) TimerEvent: {}
+[44.949669] (-) TimerEvent: {}
+[45.050373] (-) TimerEvent: {}
+[45.151186] (-) TimerEvent: {}
+[45.251931] (-) TimerEvent: {}
+[45.352814] (-) TimerEvent: {}
+[45.453682] (-) TimerEvent: {}
+[45.554561] (-) TimerEvent: {}
+[45.655285] (-) TimerEvent: {}
+[45.756086] (-) TimerEvent: {}
+[45.856830] (-) TimerEvent: {}
+[45.957556] (-) TimerEvent: {}
+[46.058510] (-) TimerEvent: {}
+[46.159468] (-) TimerEvent: {}
+[46.260447] (-) TimerEvent: {}
+[46.361436] (-) TimerEvent: {}
+[46.462173] (-) TimerEvent: {}
+[46.563329] (-) TimerEvent: {}
+[46.664049] (-) TimerEvent: {}
+[46.764754] (-) TimerEvent: {}
+[46.865451] (-) TimerEvent: {}
+[46.966229] (-) TimerEvent: {}
+[47.067061] (-) TimerEvent: {}
+[47.168301] (-) TimerEvent: {}
+[47.269169] (-) TimerEvent: {}
+[47.370193] (-) TimerEvent: {}
+[47.470933] (-) TimerEvent: {}
+[47.571735] (-) TimerEvent: {}
+[47.672690] (-) TimerEvent: {}
+[47.773449] (-) TimerEvent: {}
+[47.874194] (-) TimerEvent: {}
+[47.974972] (-) TimerEvent: {}
+[48.075718] (-) TimerEvent: {}
+[48.176411] (-) TimerEvent: {}
+[48.277153] (-) TimerEvent: {}
+[48.377905] (-) TimerEvent: {}
+[48.478685] (-) TimerEvent: {}
+[48.579342] (-) TimerEvent: {}
+[48.680127] (-) TimerEvent: {}
+[48.780902] (-) TimerEvent: {}
+[48.881650] (-) TimerEvent: {}
+[48.982374] (-) TimerEvent: {}
+[49.083867] (-) TimerEvent: {}
+[49.184520] (-) TimerEvent: {}
+[49.285244] (-) TimerEvent: {}
+[49.386036] (-) TimerEvent: {}
+[49.486740] (-) TimerEvent: {}
+[49.587452] (-) TimerEvent: {}
+[49.688165] (-) TimerEvent: {}
+[49.788921] (-) TimerEvent: {}
+[49.889574] (-) TimerEvent: {}
+[49.990364] (-) TimerEvent: {}
+[50.091132] (-) TimerEvent: {}
+[50.191859] (-) TimerEvent: {}
+[50.292903] (-) TimerEvent: {}
+[50.393641] (-) TimerEvent: {}
+[50.494346] (-) TimerEvent: {}
+[50.595108] (-) TimerEvent: {}
+[50.695866] (-) TimerEvent: {}
+[50.796532] (-) TimerEvent: {}
+[50.897238] (-) TimerEvent: {}
+[50.997998] (-) TimerEvent: {}
+[51.098940] (-) TimerEvent: {}
+[51.199670] (-) TimerEvent: {}
+[51.300379] (-) TimerEvent: {}
+[51.401141] (-) TimerEvent: {}
+[51.501843] (-) TimerEvent: {}
+[51.602561] (-) TimerEvent: {}
+[51.703357] (-) TimerEvent: {}
+[51.804101] (-) TimerEvent: {}
+[51.904815] (-) TimerEvent: {}
+[52.005635] (-) TimerEvent: {}
+[52.106305] (-) TimerEvent: {}
+[52.207083] (-) TimerEvent: {}
+[52.307743] (-) TimerEvent: {}
+[52.408423] (-) TimerEvent: {}
+[52.509156] (-) TimerEvent: {}
+[52.609862] (-) TimerEvent: {}
+[52.710661] (-) TimerEvent: {}
+[52.811359] (-) TimerEvent: {}
+[52.912171] (-) TimerEvent: {}
+[53.013158] (-) TimerEvent: {}
+[53.114142] (-) TimerEvent: {}
+[53.214858] (-) TimerEvent: {}
+[53.315538] (-) TimerEvent: {}
+[53.416246] (-) TimerEvent: {}
+[53.517023] (-) TimerEvent: {}
+[53.617748] (-) TimerEvent: {}
+[53.718390] (-) TimerEvent: {}
+[53.819119] (-) TimerEvent: {}
+[53.919808] (-) TimerEvent: {}
+[54.020510] (-) TimerEvent: {}
+[54.121269] (-) TimerEvent: {}
+[54.222008] (-) TimerEvent: {}
+[54.322828] (-) TimerEvent: {}
+[54.423640] (-) TimerEvent: {}
+[54.524326] (-) TimerEvent: {}
+[54.625195] (-) TimerEvent: {}
+[54.725895] (-) TimerEvent: {}
+[54.826649] (-) TimerEvent: {}
+[54.927326] (-) TimerEvent: {}
+[55.028016] (-) TimerEvent: {}
+[55.128735] (-) TimerEvent: {}
+[55.229413] (-) TimerEvent: {}
+[55.330112] (-) TimerEvent: {}
+[55.430860] (-) TimerEvent: {}
+[55.531659] (-) TimerEvent: {}
+[55.632372] (-) TimerEvent: {}
+[55.733169] (-) TimerEvent: {}
+[55.833905] (-) TimerEvent: {}
+[55.934637] (-) TimerEvent: {}
+[56.035261] (-) TimerEvent: {}
+[56.135994] (-) TimerEvent: {}
+[56.236706] (-) TimerEvent: {}
+[56.337405] (-) TimerEvent: {}
+[56.438174] (-) TimerEvent: {}
+[56.538908] (-) TimerEvent: {}
+[56.639669] (-) TimerEvent: {}
+[56.740552] (-) TimerEvent: {}
+[56.841754] (-) TimerEvent: {}
+[56.942636] (-) TimerEvent: {}
+[57.043362] (-) TimerEvent: {}
+[57.144123] (-) TimerEvent: {}
+[57.244889] (-) TimerEvent: {}
+[57.345748] (-) TimerEvent: {}
+[57.446423] (-) TimerEvent: {}
+[57.547181] (-) TimerEvent: {}
+[57.647914] (-) TimerEvent: {}
+[57.748701] (-) TimerEvent: {}
+[57.849440] (-) TimerEvent: {}
+[57.950187] (-) TimerEvent: {}
+[58.050955] (-) TimerEvent: {}
+[58.151737] (-) TimerEvent: {}
+[58.252548] (-) TimerEvent: {}
+[58.353724] (-) TimerEvent: {}
+[58.454413] (-) TimerEvent: {}
+[58.555164] (-) TimerEvent: {}
+[58.655978] (-) TimerEvent: {}
+[58.756736] (-) TimerEvent: {}
+[58.857398] (-) TimerEvent: {}
+[58.958194] (-) TimerEvent: {}
+[59.058913] (-) TimerEvent: {}
+[59.159660] (-) TimerEvent: {}
+[59.260367] (-) TimerEvent: {}
+[59.361065] (-) TimerEvent: {}
+[59.461821] (-) TimerEvent: {}
+[59.562569] (-) TimerEvent: {}
+[59.663889] (-) TimerEvent: {}
+[59.764545] (-) TimerEvent: {}
+[59.865238] (-) TimerEvent: {}
+[59.965981] (-) TimerEvent: {}
+[60.066655] (-) TimerEvent: {}
+[60.167363] (-) TimerEvent: {}
+[60.268100] (-) TimerEvent: {}
+[60.368856] (-) TimerEvent: {}
+[60.469564] (-) TimerEvent: {}
+[60.570320] (-) TimerEvent: {}
+[60.671035] (-) TimerEvent: {}
+[60.771733] (-) TimerEvent: {}
+[60.872542] (-) TimerEvent: {}
+[60.973722] (-) TimerEvent: {}
+[61.074443] (-) TimerEvent: {}
+[61.175169] (-) TimerEvent: {}
+[61.275983] (-) TimerEvent: {}
+[61.376732] (-) TimerEvent: {}
+[61.477385] (-) TimerEvent: {}
+[61.578116] (-) TimerEvent: {}
+[61.678850] (-) TimerEvent: {}
+[61.779513] (-) TimerEvent: {}
+[61.880283] (-) TimerEvent: {}
+[61.981044] (-) TimerEvent: {}
+[62.081842] (-) TimerEvent: {}
+[62.182558] (-) TimerEvent: {}
+[62.284020] (-) TimerEvent: {}
+[62.384959] (-) TimerEvent: {}
+[62.486025] (-) TimerEvent: {}
+[62.587006] (-) TimerEvent: {}
+[62.688073] (-) TimerEvent: {}
+[62.788992] (-) TimerEvent: {}
+[62.890055] (-) TimerEvent: {}
+[62.991112] (-) TimerEvent: {}
+[63.092132] (-) TimerEvent: {}
+[63.193197] (-) TimerEvent: {}
+[63.294187] (-) TimerEvent: {}
+[63.395093] (-) TimerEvent: {}
+[63.496389] (-) TimerEvent: {}
+[63.597300] (-) TimerEvent: {}
+[63.698090] (-) TimerEvent: {}
+[63.798772] (-) TimerEvent: {}
+[63.899470] (-) TimerEvent: {}
+[64.000200] (-) TimerEvent: {}
+[64.100915] (-) TimerEvent: {}
+[64.201576] (-) TimerEvent: {}
+[64.302317] (-) TimerEvent: {}
+[64.403487] (-) TimerEvent: {}
+[64.504211] (-) TimerEvent: {}
+[64.604914] (-) TimerEvent: {}
+[64.705639] (-) TimerEvent: {}
+[64.806328] (-) TimerEvent: {}
+[64.907050] (-) TimerEvent: {}
+[65.007740] (-) TimerEvent: {}
+[65.108423] (-) TimerEvent: {}
+[65.209185] (-) TimerEvent: {}
+[65.309966] (-) TimerEvent: {}
+[65.410671] (-) TimerEvent: {}
+[65.511378] (-) TimerEvent: {}
+[65.641412] (-) TimerEvent: {}
+[65.742141] (-) TimerEvent: {}
+[65.843282] (-) TimerEvent: {}
+[65.944196] (-) TimerEvent: {}
+[66.045359] (-) TimerEvent: {}
+[66.146148] (-) TimerEvent: {}
+[66.246867] (-) TimerEvent: {}
+[66.347695] (-) TimerEvent: {}
+[66.448807] (-) TimerEvent: {}
+[66.550151] (-) TimerEvent: {}
+[66.650801] (-) TimerEvent: {}
+[66.751801] (-) TimerEvent: {}
+[66.851776] (esp32_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable esp32_controller\x1b[0m\n'}
+[66.852560] (-) TimerEvent: {}
+[66.953171] (-) TimerEvent: {}
+[67.054004] (-) TimerEvent: {}
+[67.154778] (-) TimerEvent: {}
+[67.255657] (-) TimerEvent: {}
+[67.356479] (-) TimerEvent: {}
+[67.457463] (-) TimerEvent: {}
+[67.558519] (-) TimerEvent: {}
+[67.659654] (-) TimerEvent: {}
+[67.760454] (-) TimerEvent: {}
+[67.861354] (-) TimerEvent: {}
+[67.962288] (-) TimerEvent: {}
+[68.063690] (-) TimerEvent: {}
+[68.165465] (-) TimerEvent: {}
+[68.266443] (-) TimerEvent: {}
+[68.367540] (-) TimerEvent: {}
+[68.468397] (-) TimerEvent: {}
+[68.569295] (-) TimerEvent: {}
+[68.670141] (-) TimerEvent: {}
+[68.771156] (-) TimerEvent: {}
+[68.872879] (-) TimerEvent: {}
+[68.974516] (-) TimerEvent: {}
+[69.075655] (-) TimerEvent: {}
+[69.176561] (-) TimerEvent: {}
+[69.277693] (-) TimerEvent: {}
+[69.378572] (-) TimerEvent: {}
+[69.479744] (-) TimerEvent: {}
+[69.580551] (-) TimerEvent: {}
+[69.681370] (-) TimerEvent: {}
+[69.782179] (-) TimerEvent: {}
+[69.884438] (-) TimerEvent: {}
+[69.985710] (-) TimerEvent: {}
+[70.086751] (-) TimerEvent: {}
+[70.187504] (-) TimerEvent: {}
+[70.288261] (-) TimerEvent: {}
+[70.389040] (-) TimerEvent: {}
+[70.489751] (-) TimerEvent: {}
+[70.590534] (-) TimerEvent: {}
+[70.691438] (-) TimerEvent: {}
+[70.792378] (-) TimerEvent: {}
+[70.894092] (-) TimerEvent: {}
+[70.995134] (-) TimerEvent: {}
+[71.095862] (-) TimerEvent: {}
+[71.196646] (-) TimerEvent: {}
+[71.285153] (esp32_controller) StdoutLine: {'line': b'[100%] Built target esp32_controller\n'}
+[71.296778] (-) TimerEvent: {}
+[71.348986] (esp32_controller) CommandEnded: {'returncode': 0}
+[71.351085] (esp32_controller) JobProgress: {'identifier': 'esp32_controller', 'progress': 'install'}
+[71.396972] (-) TimerEvent: {}
+[71.401166] (esp32_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bot/ros2_ws/build/esp32_controller'], 'cwd': '/home/bot/ros2_ws/build/esp32_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bot', 'SSH_CLIENT': '192.168.1.199 58508 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bot', 'OLDPWD': '/home/bot', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/bot/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/bot/ros2_ws/install/robotic_arm_v3_config:/home/bot/ros2_ws/install/robotic_arm_moveit:/home/bot/ros2_ws/install/robotic_arm_model_v3:/home/bot/ros2_ws/install/robotic_arm_config:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/home/bot/ros2_ws/install/move_program:/home/bot/ros2_ws/install/imu_controller:/home/bot/ros2_ws/install/esp32_controller:/home/bot/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/bot/ros2_ws/build/esp32_controller', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.199 58508 192.168.1.224 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bot/ros2_ws/install/pose_printer/lib/python3.12/site-packages:/home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages:/home/bot/ros2_ws/install/moveit_controls/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/bot/ros2_ws/install/robotic_arm_v3_config:/home/bot/ros2_ws/install/robotic_arm_moveit:/home/bot/ros2_ws/install/robotic_arm_model_v3:/home/bot/ros2_ws/install/robotic_arm_config:/home/bot/ros2_ws/install/move_program:/home/bot/ros2_ws/install/imu_controller:/home/bot/ros2_ws/install/esp32_controller:/home/bot/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy'}), 'shell': False}
+[71.449563] (esp32_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[71.451098] (esp32_controller) StdoutLine: {'line': b'-- Installing: /home/bot/ros2_ws/install/esp32_controller/lib/esp32_controller/esp32_controller\n'}
+[71.497127] (-) TimerEvent: {}
+[71.528801] (esp32_controller) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bot/ros2_ws/install/esp32_controller/lib/esp32_controller/esp32_controller" to ""\n'}
+[71.529855] (esp32_controller) StdoutLine: {'line': b'-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/ament_index/resource_index/package_run_dependencies/esp32_controller\n'}
+[71.530553] (esp32_controller) StdoutLine: {'line': b'-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/ament_index/resource_index/parent_prefix_path/esp32_controller\n'}
+[71.531032] (esp32_controller) StdoutLine: {'line': b'-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/environment/ament_prefix_path.sh\n'}
+[71.531710] (esp32_controller) StdoutLine: {'line': b'-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/environment/ament_prefix_path.dsv\n'}
+[71.533185] (esp32_controller) StdoutLine: {'line': b'-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/environment/path.sh\n'}
+[71.533913] (esp32_controller) StdoutLine: {'line': b'-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/environment/path.dsv\n'}
+[71.535464] (esp32_controller) StdoutLine: {'line': b'-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.bash\n'}
+[71.536677] (esp32_controller) StdoutLine: {'line': b'-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.sh\n'}
+[71.537180] (esp32_controller) StdoutLine: {'line': b'-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.zsh\n'}
+[71.538290] (esp32_controller) StdoutLine: {'line': b'-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.dsv\n'}
+[71.539612] (esp32_controller) StdoutLine: {'line': b'-- Installing: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/package.dsv\n'}
+[71.540325] (esp32_controller) StdoutLine: {'line': b'-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/ament_index/resource_index/packages/esp32_controller\n'}
+[71.541097] (esp32_controller) StdoutLine: {'line': b'-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/cmake/esp32_controllerConfig.cmake\n'}
+[71.541705] (esp32_controller) StdoutLine: {'line': b'-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/cmake/esp32_controllerConfig-version.cmake\n'}
+[71.542355] (esp32_controller) StdoutLine: {'line': b'-- Up-to-date: /home/bot/ros2_ws/install/esp32_controller/share/esp32_controller/package.xml\n'}
+[71.545071] (esp32_controller) CommandEnded: {'returncode': 0}
+[71.597251] (-) TimerEvent: {}
+[71.624734] (esp32_controller) JobEnded: {'identifier': 'esp32_controller', 'rc': 0}
+[71.628277] (-) EventReactorShutdown: {}

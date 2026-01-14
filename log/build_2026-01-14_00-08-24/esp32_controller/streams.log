@@ -1,0 +1,89 @@
+[0.069s] Invoking command in '/home/bot/ros2_ws/build/esp32_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bot/ros2_ws/build/esp32_controller -- -j4 -l4
+[0.542s] [ 50%] [32mBuilding CXX object CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o[0m
+[0.620s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:1:32:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[0.621s]     1 | class Esp32Controller : public [01;31m[Krclcpp[m[K::Node
+[0.623s]       |                                [01;31m[K^~~~~~[m[K
+[0.624s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:1:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[KNode[m[K’
+[0.625s]     1 | class Esp32Controller : public rclcpp::[01;31m[KNode[m[K
+[0.626s]       |                                        [01;31m[K^~~~[m[K
+[0.627s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:3:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kpublic[m[K’
+[0.628s]     3 | [01;31m[Kpublic[m[K:
+[0.628s]       | [01;31m[K^~~~~~[m[K
+[0.629s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:3:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[Kpublic[m[K’
+[0.629s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:2:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[0.630s]     2 | [01;36m[K{[m[K
+[0.631s]       | [01;36m[K^[m[K
+[0.632s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:91:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kprivate[m[K’
+[0.633s]    91 | [01;31m[Kprivate[m[K:
+[0.633s]       | [01;31m[K^~~~~~~[m[K
+[0.634s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:129:29:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+[0.634s]   129 |     void odomCallback(const [01;31m[Knav_msgs[m[K::msg::Odometry::SharedPtr msg)
+[0.635s]       |                             [01;31m[K^~~~~~~~[m[K
+[0.635s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:129:42:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[0.636s]   129 |     void odomCallback(const nav_msgs::msg[01;31m[K::[m[KOdometry::SharedPtr msg)
+[0.637s]       |                                          [01;31m[K^~[m[K
+[0.637s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:129:42:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[0.638s]   129 |     void odomCallback[34m[K([m[Kconst nav_msgs::msg[01;31m[K:[m[K[32m[K:[m[KOdometry::SharedPtr msg)
+[0.638s]       |                      [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+[0.639s]       |                                          [32m[K)[m[K
+[0.640s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:129:42:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+[0.640s]   129 |     void odomCallback(const nav_msgs::msg[01;31m[K::[m[KOdometry::SharedPtr msg)
+[0.641s]       |                                          [01;31m[K^~[m[K
+[0.641s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:274:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ does not name a type
+[0.642s]   274 |     [01;31m[Krclcpp[m[K::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
+[0.642s]       |     [01;31m[K^~~~~~[m[K
+[0.643s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:275:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ does not name a type
+[0.643s]   275 |     [01;31m[Krclcpp[m[K::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;  // NEW
+[0.644s]       |     [01;31m[K^~~~~~[m[K
+[0.645s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:276:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ does not name a type
+[0.645s]   276 |     [01;31m[Krclcpp[m[K::Subscription<sensor_msgs::msg::JointState>::SharedPtr joint_state_sub_;
+[0.645s]       |     [01;31m[K^~~~~~[m[K
+[0.646s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:279:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kshared_ptr[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type
+[0.647s]   279 |     std::[01;31m[Kshared_ptr[m[K<moveit::planning_interface::MoveGroupInterface> move_group_;
+[0.648s]       |          [01;31m[K^~~~~~~~~~[m[K
+[0.650s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:1:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::shared_ptr[m[K’ is defined in header ‘[01m[K<memory>[m[K’; did you forget to ‘[01m[K#include <memory>[m[K’?
+[0.650s]   +++ |+[32m[K#include <memory>[m[K
+[0.651s]     1 | class Esp32Controller : public rclcpp::Node
+[0.652s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:280:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_model_loader[m[K’ does not name a type
+[0.652s]   280 |     [01;31m[Krobot_model_loader[m[K::RobotModelLoaderPtr robot_model_loader_;
+[0.653s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[0.653s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:281:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoveit[m[K’ does not name a type
+[0.655s]   281 |     [01;31m[Kmoveit[m[K::core::RobotModelPtr robot_model_;
+[0.656s]       |     [01;31m[K^~~~~~[m[K
+[0.656s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:282:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoveit[m[K’ does not name a type
+[0.657s]   282 |     [01;31m[Kmoveit[m[K::core::RobotStatePtr robot_state_;
+[0.658s]       |     [01;31m[K^~~~~~[m[K
+[0.658s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:283:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+[0.658s]   283 |     std::[01;31m[Kstring[m[K ee_link_;
+[0.659s]       |          [01;31m[K^~~~~~[m[K
+[0.659s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:1:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::string[m[K’ is defined in header ‘[01m[K<string>[m[K’; did you forget to ‘[01m[K#include <string>[m[K’?
+[0.662s]   +++ |+[32m[K#include <string>[m[K
+[0.663s]     1 | class Esp32Controller : public rclcpp::Node
+[0.664s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:286:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kunique_ptr[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type
+[0.666s]   286 |     std::[01;31m[Kunique_ptr[m[K<GradientDescentIK> gd_ik_;
+[0.666s]       |          [01;31m[K^~~~~~~~~~[m[K
+[0.667s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:286:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::unique_ptr[m[K’ is defined in header ‘[01m[K<memory>[m[K’; did you forget to ‘[01m[K#include <memory>[m[K’?
+[0.668s]   286 |     [01;36m[Kstd[m[K::unique_ptr<GradientDescentIK> gd_ik_;
+[0.668s]       |     [01;36m[K^~~[m[K
+[0.669s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:287:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kunique_ptr[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type
+[0.672s]   287 |     std::[01;31m[Kunique_ptr[m[K<SerialPort> serial_;
+[0.672s]       |          [01;31m[K^~~~~~~~~~[m[K
+[0.673s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:287:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::unique_ptr[m[K’ is defined in header ‘[01m[K<memory>[m[K’; did you forget to ‘[01m[K#include <memory>[m[K’?
+[0.674s]   287 |     [01;36m[Kstd[m[K::unique_ptr<SerialPort> serial_;
+[0.674s]       |     [01;36m[K^~~[m[K
+[0.675s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:290:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ does not name a type
+[0.675s]   290 |     [01;31m[Ksensor_msgs[m[K::msg::JointState::SharedPtr last_joint_state_;
+[0.676s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[0.677s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:291:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kmutex[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+[0.677s]   291 |     std::[01;31m[Kmutex[m[K joint_state_mutex_;
+[0.678s]       |          [01;31m[K^~~~~[m[K
+[0.679s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:1:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::mutex[m[K’ is defined in header ‘[01m[K<mutex>[m[K’; did you forget to ‘[01m[K#include <mutex>[m[K’?
+[0.681s]   +++ |+[32m[K#include <mutex>[m[K
+[0.682s]     1 | class Esp32Controller : public rclcpp::Node
+[0.683s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:317:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[0.684s]   317 | [01;31m[K}[m[K;
+[0.684s]       | [01;31m[K^[m[K
+[0.684s] gmake[2]: *** [CMakeFiles/esp32_controller.dir/build.make:76: CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o] Error 1
+[0.685s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/esp32_controller.dir/all] Error 2
+[0.685s] gmake: *** [Makefile:146: all] Error 2
+[0.686s] Invoked command in '/home/bot/ros2_ws/build/esp32_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bot/ros2_ws/build/esp32_controller -- -j4 -l4

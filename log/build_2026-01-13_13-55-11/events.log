@@ -1,0 +1,64 @@
+[0.000000] (-) TimerEvent: {}
+[0.002370] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.003022] (-) JobUnselected: {'identifier': 'imu_controller'}
+[0.003215] (-) JobUnselected: {'identifier': 'move_program'}
+[0.003295] (-) JobUnselected: {'identifier': 'moveit_controls'}
+[0.003367] (-) JobUnselected: {'identifier': 'mqtt_imu'}
+[0.003437] (-) JobUnselected: {'identifier': 'pose_printer'}
+[0.003503] (-) JobUnselected: {'identifier': 'robotic_arm_config'}
+[0.003571] (-) JobUnselected: {'identifier': 'robotic_arm_model_v3'}
+[0.003637] (-) JobUnselected: {'identifier': 'robotic_arm_moveit'}
+[0.003704] (-) JobUnselected: {'identifier': 'robotic_arm_v3_config'}
+[0.003782] (esp32_controller) JobQueued: {'identifier': 'esp32_controller', 'dependencies': OrderedDict()}
+[0.003865] (esp32_controller) JobStarted: {'identifier': 'esp32_controller'}
+[0.057136] (esp32_controller) JobProgress: {'identifier': 'esp32_controller', 'progress': 'cmake'}
+[0.061172] (esp32_controller) JobProgress: {'identifier': 'esp32_controller', 'progress': 'build'}
+[0.064062] (esp32_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bot/ros2_ws/build/esp32_controller', '--', '-j4', '-l4'], 'cwd': '/home/bot/ros2_ws/build/esp32_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bot', 'SSH_CLIENT': '192.168.1.199 42860 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/bot/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/bot/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/bin/helpers/browser.sh', 'HOME': '/home/bot', 'TERM_PROGRAM_VERSION': '1.107.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-5d16fa32-f69b-41b8-8ddd-8dc3fb9abb35.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/bot/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/bot/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/bot/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/home/bot/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-ac632f2b95.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/bot/ros2_ws/install/robotic_arm_v3_config:/home/bot/ros2_ws/install/robotic_arm_moveit:/home/bot/ros2_ws/install/robotic_arm_model_v3:/home/bot/ros2_ws/install/robotic_arm_config:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/home/bot/ros2_ws/install/move_program:/home/bot/ros2_ws/install/imu_controller:/home/bot/ros2_ws/install/esp32_controller:/home/bot/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/bot/ros2_ws/build/esp32_controller', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.199 42860 192.168.1.224 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bot/ros2_ws/install/pose_printer/lib/python3.12/site-packages:/home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages:/home/bot/ros2_ws/install/moveit_controls/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/bot/ros2_ws/install/robotic_arm_v3_config:/home/bot/ros2_ws/install/robotic_arm_moveit:/home/bot/ros2_ws/install/robotic_arm_model_v3:/home/bot/ros2_ws/install/robotic_arm_config:/home/bot/ros2_ws/install/move_program:/home/bot/ros2_ws/install/imu_controller:/home/bot/ros2_ws/install/esp32_controller:/home/bot/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy'}), 'shell': False}
+[0.099146] (-) TimerEvent: {}
+[0.200682] (-) TimerEvent: {}
+[0.301411] (-) TimerEvent: {}
+[0.402233] (-) TimerEvent: {}
+[0.502841] (-) TimerEvent: {}
+[0.535482] (esp32_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o\x1b[0m\n'}
+[0.603041] (-) TimerEvent: {}
+[0.703672] (-) TimerEvent: {}
+[0.804318] (-) TimerEvent: {}
+[0.904923] (-) TimerEvent: {}
+[1.005596] (-) TimerEvent: {}
+[1.106280] (-) TimerEvent: {}
+[1.206892] (-) TimerEvent: {}
+[1.307535] (-) TimerEvent: {}
+[1.408178] (-) TimerEvent: {}
+[1.508825] (-) TimerEvent: {}
+[1.609487] (-) TimerEvent: {}
+[1.710108] (-) TimerEvent: {}
+[1.811448] (-) TimerEvent: {}
+[1.912084] (-) TimerEvent: {}
+[2.012693] (-) TimerEvent: {}
+[2.113352] (-) TimerEvent: {}
+[2.213941] (-) TimerEvent: {}
+[2.314569] (-) TimerEvent: {}
+[2.415197] (-) TimerEvent: {}
+[2.516384] (-) TimerEvent: {}
+[2.617082] (-) TimerEvent: {}
+[2.717875] (-) TimerEvent: {}
+[2.818527] (-) TimerEvent: {}
+[2.919183] (-) TimerEvent: {}
+[3.019834] (-) TimerEvent: {}
+[3.120783] (-) TimerEvent: {}
+[3.221495] (-) TimerEvent: {}
+[3.322304] (-) TimerEvent: {}
+[3.423005] (-) TimerEvent: {}
+[3.523711] (-) TimerEvent: {}
+[3.624394] (-) TimerEvent: {}
+[3.699845] (esp32_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:11:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knav_msgs/msg/odometry.hpp: No such file or directory\n'}
+[3.700854] (esp32_controller) StderrLine: {'line': b'   11 | #include \x1b[01;31m\x1b[K<nav_msgs/msg/odometry.hpp>\x1b[m\x1b[K\n'}
+[3.701388] (esp32_controller) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.701797] (esp32_controller) StderrLine: {'line': b'compilation terminated.\n'}
+[3.711165] (esp32_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/esp32_controller.dir/build.make:76: CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o] Error 1\n'}
+[3.712417] (esp32_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/esp32_controller.dir/all] Error 2\n'}
+[3.713468] (esp32_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.722727] (esp32_controller) CommandEnded: {'returncode': 2}
+[3.724601] (-) TimerEvent: {}
+[3.776040] (esp32_controller) JobEnded: {'identifier': 'esp32_controller', 'rc': 2}
+[3.787946] (-) EventReactorShutdown: {}

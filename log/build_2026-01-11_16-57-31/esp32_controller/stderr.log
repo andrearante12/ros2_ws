@@ -1,0 +1,4 @@
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:[m[K In member function ‘[01m[Kvoid Esp32Controller::[01;32m[KimuCallback[m[K(sensor_msgs::msg::Imu_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:595:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdelta_z[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  595 |         double [01;35m[Kdelta_z[m[K = std::abs(target_z - ee_position.z());
+      |                [01;35m[K^~~~~~~[m[K

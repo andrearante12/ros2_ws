@@ -1,1 +1,1 @@
-moveit_ros_planning_interface:rclcpp:sensor_msgs
+moveit_ros_planning_interface:nav_msgs:rclcpp:sensor_msgs

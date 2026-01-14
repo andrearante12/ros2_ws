@@ -1,0 +1,156 @@
+[0.000000] (-) TimerEvent: {}
+[0.001469] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.002089] (-) JobUnselected: {'identifier': 'imu_controller'}
+[0.002710] (-) JobUnselected: {'identifier': 'move_program'}
+[0.003365] (-) JobUnselected: {'identifier': 'moveit_controls'}
+[0.003586] (-) JobUnselected: {'identifier': 'mqtt_imu'}
+[0.003766] (-) JobUnselected: {'identifier': 'pose_printer'}
+[0.003902] (-) JobUnselected: {'identifier': 'robotic_arm_config'}
+[0.003981] (-) JobUnselected: {'identifier': 'robotic_arm_model_v3'}
+[0.004049] (-) JobUnselected: {'identifier': 'robotic_arm_moveit'}
+[0.004116] (-) JobUnselected: {'identifier': 'robotic_arm_v3_config'}
+[0.004196] (esp32_controller) JobQueued: {'identifier': 'esp32_controller', 'dependencies': OrderedDict()}
+[0.004283] (esp32_controller) JobStarted: {'identifier': 'esp32_controller'}
+[0.055967] (esp32_controller) JobProgress: {'identifier': 'esp32_controller', 'progress': 'cmake'}
+[0.059542] (esp32_controller) JobProgress: {'identifier': 'esp32_controller', 'progress': 'build'}
+[0.062182] (esp32_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bot/ros2_ws/build/esp32_controller', '--', '-j4', '-l4'], 'cwd': '/home/bot/ros2_ws/build/esp32_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bot', 'SSH_CLIENT': '192.168.1.199 42860 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/bot/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/bot/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/bin/helpers/browser.sh', 'HOME': '/home/bot', 'OLDPWD': '/home/bot/ros2_ws', 'TERM_PROGRAM_VERSION': '1.107.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-5d16fa32-f69b-41b8-8ddd-8dc3fb9abb35.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/bot/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/bot/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/bot/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/home/bot/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-ac632f2b95.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/bot/ros2_ws/install/robotic_arm_v3_config:/home/bot/ros2_ws/install/robotic_arm_moveit:/home/bot/ros2_ws/install/robotic_arm_model_v3:/home/bot/ros2_ws/install/robotic_arm_config:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/home/bot/ros2_ws/install/move_program:/home/bot/ros2_ws/install/imu_controller:/home/bot/ros2_ws/install/esp32_controller:/home/bot/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/bot/ros2_ws/build/esp32_controller', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.199 42860 192.168.1.224 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bot/ros2_ws/install/pose_printer/lib/python3.12/site-packages:/home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages:/home/bot/ros2_ws/install/moveit_controls/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/bot/ros2_ws/install/robotic_arm_v3_config:/home/bot/ros2_ws/install/robotic_arm_moveit:/home/bot/ros2_ws/install/robotic_arm_model_v3:/home/bot/ros2_ws/install/robotic_arm_config:/home/bot/ros2_ws/install/move_program:/home/bot/ros2_ws/install/imu_controller:/home/bot/ros2_ws/install/esp32_controller:/home/bot/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy'}), 'shell': False}
+[0.099001] (-) TimerEvent: {}
+[0.200733] (-) TimerEvent: {}
+[0.271818] (esp32_controller) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.300954] (-) TimerEvent: {}
+[0.401837] (-) TimerEvent: {}
+[0.504807] (-) TimerEvent: {}
+[0.605441] (-) TimerEvent: {}
+[0.706058] (-) TimerEvent: {}
+[0.806754] (-) TimerEvent: {}
+[0.907462] (-) TimerEvent: {}
+[1.008367] (-) TimerEvent: {}
+[1.109426] (-) TimerEvent: {}
+[1.210089] (-) TimerEvent: {}
+[1.311414] (-) TimerEvent: {}
+[1.412267] (-) TimerEvent: {}
+[1.511096] (esp32_controller) StdoutLine: {'line': b'-- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.512436] (-) TimerEvent: {}
+[1.613215] (-) TimerEvent: {}
+[1.714411] (-) TimerEvent: {}
+[1.783155] (esp32_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.814583] (-) TimerEvent: {}
+[1.842665] (esp32_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.914806] (-) TimerEvent: {}
+[1.920217] (esp32_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.007547] (esp32_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.014983] (-) TimerEvent: {}
+[2.115655] (-) TimerEvent: {}
+[2.216409] (-) TimerEvent: {}
+[2.317155] (-) TimerEvent: {}
+[2.359199] (esp32_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[2.376262] (esp32_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.417323] (-) TimerEvent: {}
+[2.518154] (-) TimerEvent: {}
+[2.618955] (-) TimerEvent: {}
+[2.719665] (-) TimerEvent: {}
+[2.820442] (-) TimerEvent: {}
+[2.825061] (esp32_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.920641] (-) TimerEvent: {}
+[3.021501] (-) TimerEvent: {}
+[3.122312] (-) TimerEvent: {}
+[3.217374] (esp32_controller) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[3.222515] (-) TimerEvent: {}
+[3.323436] (-) TimerEvent: {}
+[3.424774] (-) TimerEvent: {}
+[3.514222] (esp32_controller) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[3.524983] (-) TimerEvent: {}
+[3.625835] (-) TimerEvent: {}
+[3.629863] (esp32_controller) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.12.3 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)\n'}
+[3.717919] (esp32_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread \n'}
+[3.726085] (-) TimerEvent: {}
+[3.826934] (-) TimerEvent: {}
+[3.927589] (-) TimerEvent: {}
+[4.028305] (-) TimerEvent: {}
+[4.129159] (-) TimerEvent: {}
+[4.229830] (-) TimerEvent: {}
+[4.330480] (-) TimerEvent: {}
+[4.431393] (-) TimerEvent: {}
+[4.532181] (-) TimerEvent: {}
+[4.633139] (-) TimerEvent: {}
+[4.704339] (esp32_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[4.733389] (-) TimerEvent: {}
+[4.834222] (-) TimerEvent: {}
+[4.864214] (esp32_controller) StdoutLine: {'line': b'-- Found parameter_traits: 0.5.0 (/opt/ros/jazzy/share/parameter_traits/cmake)\n'}
+[4.906851] (esp32_controller) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 28.1.13 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)\n'}
+[4.934418] (-) TimerEvent: {}
+[5.035197] (-) TimerEvent: {}
+[5.081357] (esp32_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem \n'}
+[5.135358] (-) TimerEvent: {}
+[5.236155] (-) TimerEvent: {}
+[5.294854] (esp32_controller) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[5.336349] (-) TimerEvent: {}
+[5.437033] (-) TimerEvent: {}
+[5.537747] (-) TimerEvent: {}
+[5.638509] (-) TimerEvent: {}
+[5.739300] (-) TimerEvent: {}
+[5.839994] (-) TimerEvent: {}
+[5.940758] (-) TimerEvent: {}
+[5.941484] (esp32_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono \n'}
+[6.040936] (-) TimerEvent: {}
+[6.111113] (esp32_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options \n'}
+[6.141110] (-) TimerEvent: {}
+[6.207724] (esp32_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread \n'}
+[6.241330] (-) TimerEvent: {}
+[6.342080] (-) TimerEvent: {}
+[6.442772] (-) TimerEvent: {}
+[6.544129] (-) TimerEvent: {}
+[6.644825] (-) TimerEvent: {}
+[6.745513] (-) TimerEvent: {}
+[6.834746] (esp32_controller) StdoutLine: {'line': b'-- Configuring done (6.6s)\n'}
+[6.845723] (-) TimerEvent: {}
+[6.946432] (-) TimerEvent: {}
+[7.047252] (-) TimerEvent: {}
+[7.066766] (esp32_controller) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[7.111964] (esp32_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/bot/ros2_ws/build/esp32_controller\n'}
+[7.147611] (-) TimerEvent: {}
+[7.249083] (-) TimerEvent: {}
+[7.349819] (-) TimerEvent: {}
+[7.450480] (-) TimerEvent: {}
+[7.454648] (esp32_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o\x1b[0m\n'}
+[7.550648] (-) TimerEvent: {}
+[7.651380] (-) TimerEvent: {}
+[7.752125] (-) TimerEvent: {}
+[7.852851] (-) TimerEvent: {}
+[7.953533] (-) TimerEvent: {}
+[8.054204] (-) TimerEvent: {}
+[8.154849] (-) TimerEvent: {}
+[8.255483] (-) TimerEvent: {}
+[8.356205] (-) TimerEvent: {}
+[8.456796] (-) TimerEvent: {}
+[8.557415] (-) TimerEvent: {}
+[8.658099] (-) TimerEvent: {}
+[8.758745] (-) TimerEvent: {}
+[8.859370] (-) TimerEvent: {}
+[8.960018] (-) TimerEvent: {}
+[9.060648] (-) TimerEvent: {}
+[9.161294] (-) TimerEvent: {}
+[9.261950] (-) TimerEvent: {}
+[9.362576] (-) TimerEvent: {}
+[9.463329] (-) TimerEvent: {}
+[9.564036] (-) TimerEvent: {}
+[9.664657] (-) TimerEvent: {}
+[9.765366] (-) TimerEvent: {}
+[9.866046] (-) TimerEvent: {}
+[9.966725] (-) TimerEvent: {}
+[10.067362] (-) TimerEvent: {}
+[10.168052] (-) TimerEvent: {}
+[10.268769] (-) TimerEvent: {}
+[10.369385] (-) TimerEvent: {}
+[10.470012] (-) TimerEvent: {}
+[10.505804] (esp32_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:11:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knav_msgs/msg/odometry.hpp: No such file or directory\n'}
+[10.506726] (esp32_controller) StderrLine: {'line': b'   11 | #include \x1b[01;31m\x1b[K<nav_msgs/msg/odometry.hpp>\x1b[m\x1b[K\n'}
+[10.507288] (esp32_controller) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.507743] (esp32_controller) StderrLine: {'line': b'compilation terminated.\n'}
+[10.516937] (esp32_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/esp32_controller.dir/build.make:76: CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o] Error 1\n'}
+[10.518298] (esp32_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/esp32_controller.dir/all] Error 2\n'}
+[10.519503] (esp32_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.528953] (esp32_controller) CommandEnded: {'returncode': 2}
+[10.570755] (-) TimerEvent: {}
+[10.580461] (esp32_controller) JobEnded: {'identifier': 'esp32_controller', 'rc': 2}
+[10.592561] (-) EventReactorShutdown: {}

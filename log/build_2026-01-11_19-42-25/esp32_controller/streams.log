@@ -1,0 +1,67 @@
+[0.069s] Invoking command in '/home/bot/ros2_ws/build/esp32_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bot/ros2_ws/build/esp32_controller -- -j4 -l4
+[0.522s] [ 50%] [32mBuilding CXX object CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o[0m
+[25.836s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:[m[K In constructor ‘[01m[KEsp32Controller::[01;32m[KEsp32Controller[m[K()[m[K’:
+[25.837s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:207:7:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KEsp32Controller[m[K’ does not have any field named ‘[01m[Kworkspace_samples_[m[K’
+[25.839s]   207 |       [01;31m[Kworkspace_samples_[m[K(0),  // NEW: Track samples for workspace mapping
+[25.840s]       |       [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[25.918s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:228:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kworkspace_min_[m[K’ was not declared in this scope
+[25.920s]   228 |         [01;31m[Kworkspace_min_[m[K = Eigen::Vector3d(1000.0, 1000.0, 1000.0);
+[25.920s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[25.989s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:229:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kworkspace_max_[m[K’ was not declared in this scope
+[25.989s]   229 |         [01;31m[Kworkspace_max_[m[K = Eigen::Vector3d(-1000.0, -1000.0, -1000.0);
+[25.990s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[26.085s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[26.086s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[26.087s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[26.087s]                  from [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:8[m[K:
+[26.089s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:[m[K In member function ‘[01m[Kvoid Esp32Controller::[01;32m[KimuCallback[m[K(sensor_msgs::msg::Imu_<std::allocator<void> >::SharedPtr)[m[K’:
+[26.089s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:440:17:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%zu[m[K’ expects argument of type ‘[01m[Ksize_t[m[K’, but argument 5 has type ‘[01m[Kunsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[26.090s]   440 |                 [01;35m[K"Invalid joint count. Expected %zu joints for 'arm' group, got %zu total joints"[m[K,
+[26.090s]       |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.091s]   441 |                 [32m[Kjmg->getVariableCount()[m[K, joints.size()
+[26.092s]       |                 [32m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.092s]       |                                      [32m[K|[m[K
+[26.093s]       |                                      [32m[Kunsigned int[m[K
+[26.094s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:440:50:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[26.095s]   440 |                 "Invalid joint count. Expected [01;36m[K%zu[m[K joints for 'arm' group, got %zu total joints",
+[26.095s]       |                                                [01;36m[K~~^[m[K
+[26.096s]       |                                                  [01;36m[K|[m[K
+[26.096s]       |                                                  [01;36m[Klong unsigned int[m[K
+[26.097s]       |                                                [32m[K%u[m[K
+[26.179s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:512:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kworkspace_samples_[m[K’ was not declared in this scope
+[26.179s]   512 |         if ([01;31m[Kworkspace_samples_[m[K % 50 == 0) {
+[26.181s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[26.253s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:514:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kworkspace_min_[m[K’ was not declared in this scope
+[26.254s]   514 |                        [01;31m[Kworkspace_min_[m[K.x(), workspace_max_.x(),
+[26.254s]       |                        [01;31m[K^~~~~~~~~~~~~~[m[K
+[26.324s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:514:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kworkspace_max_[m[K’ was not declared in this scope
+[26.325s]   514 |                        workspace_min_.x(), [01;31m[Kworkspace_max_[m[K.x(),
+[26.325s]       |                                            [01;31m[K^~~~~~~~~~~~~~[m[K
+[26.327s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:388:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kgx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[26.329s]   388 |         double [01;35m[Kgx[m[K = msg->angular_velocity.x - gyro_bias_.x();
+[26.330s]       |                [01;35m[K^~[m[K
+[26.330s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:389:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kgy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[26.331s]   389 |         double [01;35m[Kgy[m[K = msg->angular_velocity.y - gyro_bias_.y();
+[26.331s]       |                [01;35m[K^~[m[K
+[26.332s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:390:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kgz[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[26.332s]   390 |         double [01;35m[Kgz[m[K = msg->angular_velocity.z - gyro_bias_.z();
+[26.333s]       |                [01;35m[K^~[m[K
+[26.333s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:525:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktarget_y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[26.334s]   525 |         double [01;35m[Ktarget_y[m[K = imu_state_.y();
+[26.334s]       |                [01;35m[K^~~~~~~~[m[K
+[26.335s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:526:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktarget_z[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[26.336s]   526 |         double [01;35m[Ktarget_z[m[K = imu_state_.z();
+[26.336s]       |                [01;35m[K^~~~~~~~[m[K
+[26.337s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:540:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx_direction_changed[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[26.337s]   540 |         bool [01;35m[Kx_direction_changed[m[K = (x_direction != prev_x_direction_);
+[26.338s]       |              [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.339s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:541:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky_direction_changed[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[26.340s]   541 |         bool [01;35m[Ky_direction_changed[m[K = (y_direction != prev_y_direction_);
+[26.341s]       |              [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.341s] [01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:542:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmovement_stopped[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[26.342s]   542 |         bool [01;35m[Kmovement_stopped[m[K = (x_direction == 0 && y_direction == 0);
+[26.343s]       |              [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[44.356s] gmake[2]: *** [CMakeFiles/esp32_controller.dir/build.make:76: CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o] Error 1
+[44.358s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/esp32_controller.dir/all] Error 2
+[44.359s] gmake: *** [Makefile:146: all] Error 2
+[44.369s] Invoked command in '/home/bot/ros2_ws/build/esp32_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bot/ros2_ws/build/esp32_controller -- -j4 -l4

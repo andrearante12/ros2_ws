@@ -738,6 +738,22 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__builder.hpp \
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__traits.hpp \
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__type_support.hpp \
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/odometry.hpp \
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp \
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/jazzy/include/moveit_ros_planning_interface/moveit/move_group_interface/move_group_interface.hpp \
  /opt/ros/jazzy/include/moveit_core/moveit/macros/class_forward.hpp \
  /opt/ros/jazzy/include/moveit_core/moveit/macros/declare_ptr.hpp \
@@ -1033,11 +1049,7 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /opt/ros/jazzy/include/geometric_shapes/geometric_shapes/check_isometry.h \
  /opt/ros/jazzy/include/moveit_core/moveit/kinematics_base/kinematics_base.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose.hpp \
- /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
- /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__builder.hpp \
- /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
- /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__type_support.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/jazzy/include/moveit_msgs/moveit_msgs/msg/move_it_error_codes.hpp \
@@ -1092,9 +1104,7 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/color_rgba__type_support.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/twist.hpp \
- /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \
- /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp \
  /opt/ros/jazzy/include/moveit_core/moveit/utils/moveit_error_code.hpp \
  /opt/ros/jazzy/include/moveit_msgs/moveit_msgs/msg/robot_trajectory.hpp \
