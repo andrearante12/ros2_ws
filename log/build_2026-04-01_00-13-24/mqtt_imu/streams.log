@@ -1,0 +1,31 @@
+[1.768s] Invoking command in '/home/andre/ros2_ws/src/hardware/mqtt_imu': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andre/ros2_ws/build/mqtt_imu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/mqtt_imu build --build-base /home/andre/ros2_ws/build/mqtt_imu/build install --record /home/andre/ros2_ws/build/mqtt_imu/install.log --single-version-externally-managed
+[2.139s] running egg_info
+[2.139s] creating ../../../build/mqtt_imu/mqtt_imu.egg-info
+[2.175s] writing ../../../build/mqtt_imu/mqtt_imu.egg-info/PKG-INFO
+[2.175s] writing dependency_links to ../../../build/mqtt_imu/mqtt_imu.egg-info/dependency_links.txt
+[2.176s] writing entry points to ../../../build/mqtt_imu/mqtt_imu.egg-info/entry_points.txt
+[2.176s] writing requirements to ../../../build/mqtt_imu/mqtt_imu.egg-info/requires.txt
+[2.176s] writing top-level names to ../../../build/mqtt_imu/mqtt_imu.egg-info/top_level.txt
+[2.330s] writing manifest file '../../../build/mqtt_imu/mqtt_imu.egg-info/SOURCES.txt'
+[2.400s] reading manifest file '../../../build/mqtt_imu/mqtt_imu.egg-info/SOURCES.txt'
+[2.401s] writing manifest file '../../../build/mqtt_imu/mqtt_imu.egg-info/SOURCES.txt'
+[2.401s] running build
+[2.402s] running build_py
+[2.402s] creating /home/andre/ros2_ws/build/mqtt_imu/build
+[2.402s] creating /home/andre/ros2_ws/build/mqtt_imu/build/lib
+[2.402s] creating /home/andre/ros2_ws/build/mqtt_imu/build/lib/mqtt_imu
+[2.402s] copying mqtt_imu/mqtt_imu_node.py -> /home/andre/ros2_ws/build/mqtt_imu/build/lib/mqtt_imu
+[2.402s] copying mqtt_imu/__init__.py -> /home/andre/ros2_ws/build/mqtt_imu/build/lib/mqtt_imu
+[2.402s] running install
+[2.407s] running install_lib
+[2.449s] creating /home/andre/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages/mqtt_imu
+[2.449s] copying /home/andre/ros2_ws/build/mqtt_imu/build/lib/mqtt_imu/mqtt_imu_node.py -> /home/andre/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages/mqtt_imu
+[2.449s] copying /home/andre/ros2_ws/build/mqtt_imu/build/lib/mqtt_imu/__init__.py -> /home/andre/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages/mqtt_imu
+[2.450s] byte-compiling /home/andre/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages/mqtt_imu/mqtt_imu_node.py to mqtt_imu_node.cpython-312.pyc
+[2.452s] byte-compiling /home/andre/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages/mqtt_imu/__init__.py to __init__.cpython-312.pyc
+[2.452s] running install_egg_info
+[2.491s] Copying ../../../build/mqtt_imu/mqtt_imu.egg-info to /home/andre/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages/mqtt_imu-0.0.1-py3.12.egg-info
+[2.492s] running install_scripts
+[2.582s] Installing mqtt_imu_node script to /home/andre/ros2_ws/install/mqtt_imu/lib/mqtt_imu
+[2.582s] writing list of installed files to '/home/andre/ros2_ws/build/mqtt_imu/install.log'
+[2.618s] Invoked command in '/home/andre/ros2_ws/src/hardware/mqtt_imu' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andre/ros2_ws/build/mqtt_imu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/mqtt_imu build --build-base /home/andre/ros2_ws/build/mqtt_imu/build install --record /home/andre/ros2_ws/build/mqtt_imu/install.log --single-version-externally-managed

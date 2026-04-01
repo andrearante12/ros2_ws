@@ -1,0 +1,55 @@
+[0.010s] Invoking command in '/home/andre/ros2_ws/build/move_program': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/planning/move_program -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/move_program
+[0.142s] -- The C compiler identification is GNU 13.3.0
+[0.308s] -- The CXX compiler identification is GNU 13.3.0
+[0.331s] -- Detecting C compiler ABI info
+[0.441s] -- Detecting C compiler ABI info - done
+[0.452s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.453s] -- Detecting C compile features
+[0.453s] -- Detecting C compile features - done
+[0.465s] -- Detecting CXX compiler ABI info
+[0.570s] -- Detecting CXX compiler ABI info - done
+[0.582s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.583s] -- Detecting CXX compile features
+[0.584s] -- Detecting CXX compile features - done
+[0.632s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.780s] -- Found Python3: /home/andre/miniconda3/bin/python3 (found version "3.13.11") found components: Interpreter 
+[0.937s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.028s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.055s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.107s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.139s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.280s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.287s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.431s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.464s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.494s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.624s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.647s] -- Found moveit_ros_planning_interface: 2.12.3 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)
+[1.822s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread 
+[2.290s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[2.413s] -- Found parameter_traits: 0.5.0 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[2.436s] -- Found rclcpp_lifecycle: 28.1.13 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[2.501s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem 
+[2.617s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.617s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.902s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono 
+[2.982s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options 
+[3.025s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread 
+[3.117s] Traceback (most recent call last):
+[3.119s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 22, in <module>
+[3.119s]     from catkin_pkg.package import parse_package_string
+[3.119s] ModuleNotFoundError: No module named 'catkin_pkg'
+[3.125s] CMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[3.125s]   execute_process(/home/andre/miniconda3/bin/python3
+[3.126s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[3.126s]   /home/andre/ros2_ws/src/planning/move_program/package.xml
+[3.126s]   /home/andre/ros2_ws/build/move_program/ament_cmake_core/package.cmake)
+[3.126s]   returned error code 1
+[3.126s] Call Stack (most recent call first):
+[3.126s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[3.126s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[3.126s]   CMakeLists.txt:39 (ament_package)
+[3.127s] 
+[3.127s] 
+[3.127s] -- Configuring incomplete, errors occurred!
+[3.144s] Invoked command in '/home/andre/ros2_ws/build/move_program' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/planning/move_program -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/move_program

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>arm_bringup</name>
+  <version>0.0.0</version>
+  <description>Integrated launch files for ImitationArm — one command per use case.</description>
+  <maintainer email="andrearante12@gmail.com">andre</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Packages launched by bringup -->
+  <exec_depend>robotic_arm_v3_config</exec_depend>
+  <exec_depend>mqtt_imu</exec_depend>
+  <exec_depend>esp32_controller</exec_depend>
+  <exec_depend>pose_printer</exec_depend>
+  <exec_depend>move_program</exec_depend>
+  <exec_depend>moveit_controls</exec_depend>
+  <exec_depend>yolov5_detection</exec_depend>
+  <exec_depend>web_interface</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

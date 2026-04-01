@@ -1,0 +1,10 @@
+# generated from colcon_core/shell/template/command_prefix.sh.em
+. "/home/andre/ros2_ws/install/move_program/share/move_program/package.sh"
+. "/home/andre/ros2_ws/install/moveit_controls/share/moveit_controls/package.sh"
+. "/home/andre/ros2_ws/install/mqtt_imu/share/mqtt_imu/package.sh"
+. "/home/andre/ros2_ws/install/pose_printer/share/pose_printer/package.sh"
+. "/home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/package.sh"
+. "/home/andre/ros2_ws/install/web_interface/share/web_interface/package.sh"
+. "/home/andre/ros2_ws/install/yolov5_detection/share/yolov5_detection/package.sh"
+. "/home/andre/ros2_ws/install/esp32_controller/share/esp32_controller/package.sh"
+. "/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/package.sh"

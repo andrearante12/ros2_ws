@@ -1,0 +1,335 @@
+[0.000000] (-) TimerEvent: {}
+[0.000130] (-) JobUnselected: {'identifier': 'arm_bringup'}
+[0.000332] (-) JobUnselected: {'identifier': 'chess_data_collector'}
+[0.000450] (-) JobUnselected: {'identifier': 'move_program'}
+[0.000630] (-) JobUnselected: {'identifier': 'moveit_controls'}
+[0.000672] (-) JobUnselected: {'identifier': 'mqtt_imu'}
+[0.000689] (-) JobUnselected: {'identifier': 'pose_printer'}
+[0.000719] (-) JobUnselected: {'identifier': 'robotic_arm_model_v3'}
+[0.000735] (-) JobUnselected: {'identifier': 'robotic_arm_v3_config'}
+[0.000784] (-) JobUnselected: {'identifier': 'ros_gz'}
+[0.000890] (-) JobUnselected: {'identifier': 'ros_gz_bridge'}
+[0.000909] (-) JobUnselected: {'identifier': 'ros_gz_image'}
+[0.000924] (-) JobUnselected: {'identifier': 'ros_gz_interfaces'}
+[0.000939] (-) JobUnselected: {'identifier': 'ros_gz_sim'}
+[0.000953] (-) JobUnselected: {'identifier': 'ros_gz_sim_demos'}
+[0.000984] (-) JobUnselected: {'identifier': 'test_ros_gz_bridge'}
+[0.001000] (-) JobUnselected: {'identifier': 'web_interface'}
+[0.001016] (-) JobUnselected: {'identifier': 'yolov5_detection'}
+[0.001033] (esp32_controller) JobQueued: {'identifier': 'esp32_controller', 'dependencies': OrderedDict({'move_program': '/home/andre/ros2_ws/install/move_program'})}
+[0.001058] (esp32_controller) JobStarted: {'identifier': 'esp32_controller'}
+[0.010726] (esp32_controller) JobProgress: {'identifier': 'esp32_controller', 'progress': 'cmake'}
+[0.011278] (esp32_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/andre/ros2_ws/src/planning/esp32_controller', '-DCMAKE_EXE_LINKER_FLAGS=-lcurl', '-DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/esp32_controller'], 'cwd': '/home/andre/ros2_ws/build/esp32_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'andre', 'CLAUDE_CODE_ENTRYPOINT': 'cli', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIT_EDITOR': 'true', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/andre', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/andre', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'HOMEBREW_PREFIX': '/home/linuxbrew/.linuxbrew', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3503', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', '_CONDA_ROOT': '/home/andre/miniconda3', 'LIBVIRT_DEFAULT_URI': 'qemu:///system', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/andre/ros2_ws/install', 'INFOPATH': '/home/linuxbrew/.linuxbrew/share/info:', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'andre', 'SUMO_HOME': '/usr/share/sumo', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'andre', 'TERM': 'xterm-256color', 'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE': 'delta', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', '_VIRTUALENVWRAPPER_API': ' mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv wipeenv allvirtualenv', 'PATH': '/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/andre/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/andre/miniconda3/bin:/home/andre/miniconda3/condabin:/home/andre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/andre/.local/bin:/home/andre/.local/bin', 'SESSION_MANAGER': 'local/nucbox:@/tmp/.ICE-unix/3465,unix/nucbox:/tmp/.ICE-unix/3465', 'HOMEBREW_CELLAR': '/home/linuxbrew/.linuxbrew/Cellar', 'COREPACK_ENABLE_AUTO_PIN': '0', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/104d36b4_ef60_4dd5_960f_5ed85ea64df0', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'NoDefaultCurrentDirectoryInExePath': '1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.2VDMM3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.2432', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/andre/ros2_ws/install/mqtt_imu:/home/andre/ros2_ws/install/move_program:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/andre/miniconda3/bin/python', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', 'CLAUDECODE': '1', '_CONDA_EXE': '/home/andre/miniconda3/bin/conda', 'VIRTUALENVWRAPPER_SCRIPT': '/usr/share/virtualenvwrapper/virtualenvwrapper.sh', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/andre/ros2_ws/build/esp32_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/andre/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/andre/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'HOMEBREW_REPOSITORY': '/home/linuxbrew/.linuxbrew/Homebrew', 'CONDA_PREFIX': '/home/andre/miniconda3', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/andre/ros2_ws/install/move_program:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/mqtt_imu:/opt/ros/jazzy'}), 'shell': False}
+[0.069378] (esp32_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.099786] (-) TimerEvent: {}
+[0.129175] (esp32_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.146399] (esp32_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199947] (-) TimerEvent: {}
+[0.242514] (esp32_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.253974] (esp32_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.254250] (esp32_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.254735] (esp32_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.263882] (esp32_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300084] (-) TimerEvent: {}
+[0.370591] (esp32_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.382141] (esp32_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.382449] (esp32_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.383228] (esp32_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.388194] (esp32_controller) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.400165] (-) TimerEvent: {}
+[0.500330] (-) TimerEvent: {}
+[0.519266] (esp32_controller) StdoutLine: {'line': b'-- Found Python3: /home/andre/miniconda3/bin/python3 (found version "3.13.11") found components: Interpreter \n'}
+[0.600428] (-) TimerEvent: {}
+[0.656150] (esp32_controller) StdoutLine: {'line': b'-- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.700533] (-) TimerEvent: {}
+[0.716049] (esp32_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.735290] (esp32_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.759566] (esp32_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.788080] (esp32_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.800684] (-) TimerEvent: {}
+[0.900916] (-) TimerEvent: {}
+[0.901204] (esp32_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.906081] (esp32_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.001587] (-) TimerEvent: {}
+[1.032781] (esp32_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[1.061153] (esp32_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[1.085512] (esp32_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.101660] (-) TimerEvent: {}
+[1.201834] (-) TimerEvent: {}
+[1.205638] (esp32_controller) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[1.301934] (-) TimerEvent: {}
+[1.365526] (esp32_controller) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[1.399891] (esp32_controller) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.12.3 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)\n'}
+[1.402007] (-) TimerEvent: {}
+[1.502148] (-) TimerEvent: {}
+[1.534231] (esp32_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread \n'}
+[1.602249] (-) TimerEvent: {}
+[1.702413] (-) TimerEvent: {}
+[1.802560] (-) TimerEvent: {}
+[1.860816] (esp32_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[1.902657] (-) TimerEvent: {}
+[1.960694] (esp32_controller) StdoutLine: {'line': b'-- Found parameter_traits: 0.5.0 (/opt/ros/jazzy/share/parameter_traits/cmake)\n'}
+[1.982566] (esp32_controller) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 28.1.13 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)\n'}
+[2.002762] (-) TimerEvent: {}
+[2.045631] (esp32_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem \n'}
+[2.102864] (-) TimerEvent: {}
+[2.152209] (esp32_controller) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.152398] (esp32_controller) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.202945] (-) TimerEvent: {}
+[2.303171] (-) TimerEvent: {}
+[2.386822] (esp32_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono \n'}
+[2.403272] (-) TimerEvent: {}
+[2.467536] (esp32_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options \n'}
+[2.503371] (-) TimerEvent: {}
+[2.507807] (esp32_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread \n'}
+[2.571010] (esp32_controller) StdoutLine: {'line': b'-- Found move_program: 0.0.0 (/home/andre/ros2_ws/install/move_program/share/move_program/cmake)\n'}
+[2.607172] (-) TimerEvent: {}
+[2.703249] (esp32_controller) StdoutLine: {'line': b'-- Configuring done (2.7s)\n'}
+[2.707265] (-) TimerEvent: {}
+[2.737283] (esp32_controller) StderrLine: {'line': b'CMake Warning at CMakeLists.txt:19 (add_executable):\n'}
+[2.737491] (esp32_controller) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target esp32_controller\n'}
+[2.737608] (esp32_controller) StderrLine: {'line': b'  because files in some directories may conflict with libraries in implicit\n'}
+[2.737691] (esp32_controller) StderrLine: {'line': b'  directories:\n'}
+[2.737772] (esp32_controller) StderrLine: {'line': b'\n'}
+[2.737853] (esp32_controller) StderrLine: {'line': b'    runtime library [libcrypto.so.3] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[2.737935] (esp32_controller) StderrLine: {'line': b'      /home/andre/miniconda3/lib\n'}
+[2.738014] (esp32_controller) StderrLine: {'line': b'\n'}
+[2.738090] (esp32_controller) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[2.738169] (esp32_controller) StderrLine: {'line': b'\n'}
+[2.738248] (esp32_controller) StderrLine: {'line': b'\n'}
+[2.739508] (esp32_controller) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.745968] (esp32_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/andre/ros2_ws/build/esp32_controller\n'}
+[2.760539] (esp32_controller) CommandEnded: {'returncode': 0}
+[2.761210] (esp32_controller) JobProgress: {'identifier': 'esp32_controller', 'progress': 'build'}
+[2.761992] (esp32_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/andre/ros2_ws/build/esp32_controller', '--', '-j4', '-l4'], 'cwd': '/home/andre/ros2_ws/build/esp32_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'andre', 'CLAUDE_CODE_ENTRYPOINT': 'cli', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIT_EDITOR': 'true', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/andre', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/andre', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'HOMEBREW_PREFIX': '/home/linuxbrew/.linuxbrew', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3503', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', '_CONDA_ROOT': '/home/andre/miniconda3', 'LIBVIRT_DEFAULT_URI': 'qemu:///system', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/andre/ros2_ws/install', 'INFOPATH': '/home/linuxbrew/.linuxbrew/share/info:', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'andre', 'SUMO_HOME': '/usr/share/sumo', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'andre', 'TERM': 'xterm-256color', 'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE': 'delta', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', '_VIRTUALENVWRAPPER_API': ' mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv wipeenv allvirtualenv', 'PATH': '/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/andre/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/andre/miniconda3/bin:/home/andre/miniconda3/condabin:/home/andre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/andre/.local/bin:/home/andre/.local/bin', 'SESSION_MANAGER': 'local/nucbox:@/tmp/.ICE-unix/3465,unix/nucbox:/tmp/.ICE-unix/3465', 'HOMEBREW_CELLAR': '/home/linuxbrew/.linuxbrew/Cellar', 'COREPACK_ENABLE_AUTO_PIN': '0', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/104d36b4_ef60_4dd5_960f_5ed85ea64df0', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'NoDefaultCurrentDirectoryInExePath': '1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.2VDMM3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.2432', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/andre/ros2_ws/install/mqtt_imu:/home/andre/ros2_ws/install/move_program:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/andre/miniconda3/bin/python', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', 'CLAUDECODE': '1', '_CONDA_EXE': '/home/andre/miniconda3/bin/conda', 'VIRTUALENVWRAPPER_SCRIPT': '/usr/share/virtualenvwrapper/virtualenvwrapper.sh', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/andre/ros2_ws/build/esp32_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/andre/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/andre/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'HOMEBREW_REPOSITORY': '/home/linuxbrew/.linuxbrew/Homebrew', 'CONDA_PREFIX': '/home/andre/miniconda3', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/andre/ros2_ws/install/move_program:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/mqtt_imu:/opt/ros/jazzy'}), 'shell': False}
+[2.807439] (-) TimerEvent: {}
+[2.822985] (esp32_controller) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o\n'}
+[2.907528] (-) TimerEvent: {}
+[3.007702] (-) TimerEvent: {}
+[3.107879] (-) TimerEvent: {}
+[3.208066] (-) TimerEvent: {}
+[3.308293] (-) TimerEvent: {}
+[3.408491] (-) TimerEvent: {}
+[3.508688] (-) TimerEvent: {}
+[3.608884] (-) TimerEvent: {}
+[3.709081] (-) TimerEvent: {}
+[3.809278] (-) TimerEvent: {}
+[3.909529] (-) TimerEvent: {}
+[4.009715] (-) TimerEvent: {}
+[4.109891] (-) TimerEvent: {}
+[4.210103] (-) TimerEvent: {}
+[4.310286] (-) TimerEvent: {}
+[4.410514] (-) TimerEvent: {}
+[4.510699] (-) TimerEvent: {}
+[4.610903] (-) TimerEvent: {}
+[4.711080] (-) TimerEvent: {}
+[4.811259] (-) TimerEvent: {}
+[4.911468] (-) TimerEvent: {}
+[5.011727] (-) TimerEvent: {}
+[5.111950] (-) TimerEvent: {}
+[5.212130] (-) TimerEvent: {}
+[5.312337] (-) TimerEvent: {}
+[5.412554] (-) TimerEvent: {}
+[5.512758] (-) TimerEvent: {}
+[5.612970] (-) TimerEvent: {}
+[5.713145] (-) TimerEvent: {}
+[5.813352] (-) TimerEvent: {}
+[5.913556] (-) TimerEvent: {}
+[6.013755] (-) TimerEvent: {}
+[6.113996] (-) TimerEvent: {}
+[6.214180] (-) TimerEvent: {}
+[6.314384] (-) TimerEvent: {}
+[6.414589] (-) TimerEvent: {}
+[6.514795] (-) TimerEvent: {}
+[6.615089] (-) TimerEvent: {}
+[6.715377] (-) TimerEvent: {}
+[6.815633] (-) TimerEvent: {}
+[6.915816] (-) TimerEvent: {}
+[7.016032] (-) TimerEvent: {}
+[7.116246] (-) TimerEvent: {}
+[7.216457] (-) TimerEvent: {}
+[7.316648] (-) TimerEvent: {}
+[7.416857] (-) TimerEvent: {}
+[7.517037] (-) TimerEvent: {}
+[7.617373] (-) TimerEvent: {}
+[7.717704] (-) TimerEvent: {}
+[7.817884] (-) TimerEvent: {}
+[7.918098] (-) TimerEvent: {}
+[7.933710] (esp32_controller) StderrLine: {'line': b'/home/andre/ros2_ws/src/planning/esp32_controller/src/esp32_controller.cpp: In constructor \xe2\x80\x98Esp32Controller::Esp32Controller()\xe2\x80\x99:\n'}
+[7.933907] (esp32_controller) StderrLine: {'line': b'/home/andre/ros2_ws/src/planning/esp32_controller/src/esp32_controller.cpp:358:9: warning: \xe2\x80\x98Esp32Controller::callback_counter_\xe2\x80\x99 will be initialized after [-Wreorder]\n'}
+[7.934014] (esp32_controller) StderrLine: {'line': b'  358 |     int callback_counter_;\n'}
+[7.934094] (esp32_controller) StderrLine: {'line': b'      |         ^~~~~~~~~~~~~~~~~\n'}
+[7.934173] (esp32_controller) StderrLine: {'line': b'/home/andre/ros2_ws/src/planning/esp32_controller/src/esp32_controller.cpp:353:12: warning:   \xe2\x80\x98double Esp32Controller::current_roll_\xe2\x80\x99 [-Wreorder]\n'}
+[7.934252] (esp32_controller) StderrLine: {'line': b'  353 |     double current_roll_;\n'}
+[7.934332] (esp32_controller) StderrLine: {'line': b'      |            ^~~~~~~~~~~~~\n'}
+[7.934409] (esp32_controller) StderrLine: {'line': b'/home/andre/ros2_ws/src/planning/esp32_controller/src/esp32_controller.cpp:19:5: warning:   when initialized here [-Wreorder]\n'}
+[7.934489] (esp32_controller) StderrLine: {'line': b'   19 |     Esp32Controller()\n'}
+[7.934584] (esp32_controller) StderrLine: {'line': b'      |     ^~~~~~~~~~~~~~~\n'}
+[8.018195] (-) TimerEvent: {}
+[8.118377] (-) TimerEvent: {}
+[8.218585] (-) TimerEvent: {}
+[8.318802] (-) TimerEvent: {}
+[8.419013] (-) TimerEvent: {}
+[8.519225] (-) TimerEvent: {}
+[8.619432] (-) TimerEvent: {}
+[8.719625] (-) TimerEvent: {}
+[8.819805] (-) TimerEvent: {}
+[8.920697] (-) TimerEvent: {}
+[9.020909] (-) TimerEvent: {}
+[9.121112] (-) TimerEvent: {}
+[9.221337] (-) TimerEvent: {}
+[9.321558] (-) TimerEvent: {}
+[9.427584] (-) TimerEvent: {}
+[9.527816] (-) TimerEvent: {}
+[9.628025] (-) TimerEvent: {}
+[9.728217] (-) TimerEvent: {}
+[9.828416] (-) TimerEvent: {}
+[9.928650] (-) TimerEvent: {}
+[10.028864] (-) TimerEvent: {}
+[10.129077] (-) TimerEvent: {}
+[10.229296] (-) TimerEvent: {}
+[10.329533] (-) TimerEvent: {}
+[10.429759] (-) TimerEvent: {}
+[10.529966] (-) TimerEvent: {}
+[10.630179] (-) TimerEvent: {}
+[10.730394] (-) TimerEvent: {}
+[10.830562] (-) TimerEvent: {}
+[10.930749] (-) TimerEvent: {}
+[11.030985] (-) TimerEvent: {}
+[11.131202] (-) TimerEvent: {}
+[11.231431] (-) TimerEvent: {}
+[11.331680] (-) TimerEvent: {}
+[11.431906] (-) TimerEvent: {}
+[11.532084] (-) TimerEvent: {}
+[11.632263] (-) TimerEvent: {}
+[11.732439] (-) TimerEvent: {}
+[11.832662] (-) TimerEvent: {}
+[11.932843] (-) TimerEvent: {}
+[12.033059] (-) TimerEvent: {}
+[12.133274] (-) TimerEvent: {}
+[12.233454] (-) TimerEvent: {}
+[12.333705] (-) TimerEvent: {}
+[12.434016] (-) TimerEvent: {}
+[12.534251] (-) TimerEvent: {}
+[12.634463] (-) TimerEvent: {}
+[12.734687] (-) TimerEvent: {}
+[12.834904] (-) TimerEvent: {}
+[12.935098] (-) TimerEvent: {}
+[13.035322] (-) TimerEvent: {}
+[13.135628] (-) TimerEvent: {}
+[13.235945] (-) TimerEvent: {}
+[13.336135] (-) TimerEvent: {}
+[13.436328] (-) TimerEvent: {}
+[13.536596] (-) TimerEvent: {}
+[13.636848] (-) TimerEvent: {}
+[13.737069] (-) TimerEvent: {}
+[13.837250] (-) TimerEvent: {}
+[13.937458] (-) TimerEvent: {}
+[14.037764] (-) TimerEvent: {}
+[14.138096] (-) TimerEvent: {}
+[14.238385] (-) TimerEvent: {}
+[14.338609] (-) TimerEvent: {}
+[14.438885] (-) TimerEvent: {}
+[14.539118] (-) TimerEvent: {}
+[14.639332] (-) TimerEvent: {}
+[14.739572] (-) TimerEvent: {}
+[14.839800] (-) TimerEvent: {}
+[14.940032] (-) TimerEvent: {}
+[15.040228] (-) TimerEvent: {}
+[15.140432] (-) TimerEvent: {}
+[15.240607] (-) TimerEvent: {}
+[15.340784] (-) TimerEvent: {}
+[15.441027] (-) TimerEvent: {}
+[15.541230] (-) TimerEvent: {}
+[15.641428] (-) TimerEvent: {}
+[15.741640] (-) TimerEvent: {}
+[15.841809] (-) TimerEvent: {}
+[15.942004] (-) TimerEvent: {}
+[16.042194] (-) TimerEvent: {}
+[16.142374] (-) TimerEvent: {}
+[16.242576] (-) TimerEvent: {}
+[16.342745] (-) TimerEvent: {}
+[16.442942] (-) TimerEvent: {}
+[16.543142] (-) TimerEvent: {}
+[16.643412] (-) TimerEvent: {}
+[16.743662] (-) TimerEvent: {}
+[16.843860] (-) TimerEvent: {}
+[16.944058] (-) TimerEvent: {}
+[17.044283] (-) TimerEvent: {}
+[17.144535] (-) TimerEvent: {}
+[17.244713] (-) TimerEvent: {}
+[17.344886] (-) TimerEvent: {}
+[17.445068] (-) TimerEvent: {}
+[17.545296] (-) TimerEvent: {}
+[17.645483] (-) TimerEvent: {}
+[17.745703] (-) TimerEvent: {}
+[17.845897] (-) TimerEvent: {}
+[17.946160] (-) TimerEvent: {}
+[18.046361] (-) TimerEvent: {}
+[18.146594] (-) TimerEvent: {}
+[18.246849] (-) TimerEvent: {}
+[18.347068] (-) TimerEvent: {}
+[18.447268] (-) TimerEvent: {}
+[18.547532] (-) TimerEvent: {}
+[18.647788] (-) TimerEvent: {}
+[18.748004] (-) TimerEvent: {}
+[18.848179] (-) TimerEvent: {}
+[18.948394] (-) TimerEvent: {}
+[19.048572] (-) TimerEvent: {}
+[19.148831] (-) TimerEvent: {}
+[19.249084] (-) TimerEvent: {}
+[19.349263] (-) TimerEvent: {}
+[19.449467] (-) TimerEvent: {}
+[19.549648] (-) TimerEvent: {}
+[19.649820] (-) TimerEvent: {}
+[19.750093] (-) TimerEvent: {}
+[19.850320] (-) TimerEvent: {}
+[19.950531] (-) TimerEvent: {}
+[20.051670] (-) TimerEvent: {}
+[20.151881] (-) TimerEvent: {}
+[20.252065] (-) TimerEvent: {}
+[20.352280] (-) TimerEvent: {}
+[20.452492] (-) TimerEvent: {}
+[20.552679] (-) TimerEvent: {}
+[20.652914] (-) TimerEvent: {}
+[20.753104] (-) TimerEvent: {}
+[20.853334] (-) TimerEvent: {}
+[20.953582] (-) TimerEvent: {}
+[21.040865] (esp32_controller) StdoutLine: {'line': b'[100%] Linking CXX executable esp32_controller\n'}
+[21.053688] (-) TimerEvent: {}
+[21.153891] (-) TimerEvent: {}
+[21.254098] (-) TimerEvent: {}
+[21.354345] (-) TimerEvent: {}
+[21.455600] (-) TimerEvent: {}
+[21.555812] (-) TimerEvent: {}
+[21.656015] (-) TimerEvent: {}
+[21.756258] (-) TimerEvent: {}
+[21.856439] (-) TimerEvent: {}
+[21.956682] (-) TimerEvent: {}
+[22.056918] (-) TimerEvent: {}
+[22.157086] (-) TimerEvent: {}
+[22.161783] (esp32_controller) StdoutLine: {'line': b'[100%] Built target esp32_controller\n'}
+[22.173187] (esp32_controller) CommandEnded: {'returncode': 0}
+[22.173887] (esp32_controller) JobProgress: {'identifier': 'esp32_controller', 'progress': 'install'}
+[22.183772] (esp32_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/andre/ros2_ws/build/esp32_controller'], 'cwd': '/home/andre/ros2_ws/build/esp32_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'andre', 'CLAUDE_CODE_ENTRYPOINT': 'cli', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIT_EDITOR': 'true', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/andre', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/andre', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'HOMEBREW_PREFIX': '/home/linuxbrew/.linuxbrew', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3503', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', '_CONDA_ROOT': '/home/andre/miniconda3', 'LIBVIRT_DEFAULT_URI': 'qemu:///system', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/andre/ros2_ws/install', 'INFOPATH': '/home/linuxbrew/.linuxbrew/share/info:', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'andre', 'SUMO_HOME': '/usr/share/sumo', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'andre', 'TERM': 'xterm-256color', 'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE': 'delta', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', '_VIRTUALENVWRAPPER_API': ' mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv wipeenv allvirtualenv', 'PATH': '/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/andre/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/andre/miniconda3/bin:/home/andre/miniconda3/condabin:/home/andre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/andre/.local/bin:/home/andre/.local/bin', 'SESSION_MANAGER': 'local/nucbox:@/tmp/.ICE-unix/3465,unix/nucbox:/tmp/.ICE-unix/3465', 'HOMEBREW_CELLAR': '/home/linuxbrew/.linuxbrew/Cellar', 'COREPACK_ENABLE_AUTO_PIN': '0', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/104d36b4_ef60_4dd5_960f_5ed85ea64df0', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'NoDefaultCurrentDirectoryInExePath': '1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.2VDMM3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.2432', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/andre/ros2_ws/install/mqtt_imu:/home/andre/ros2_ws/install/move_program:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/andre/miniconda3/bin/python', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', 'CLAUDECODE': '1', '_CONDA_EXE': '/home/andre/miniconda3/bin/conda', 'VIRTUALENVWRAPPER_SCRIPT': '/usr/share/virtualenvwrapper/virtualenvwrapper.sh', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/andre/ros2_ws/build/esp32_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/andre/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/andre/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'HOMEBREW_REPOSITORY': '/home/linuxbrew/.linuxbrew/Homebrew', 'CONDA_PREFIX': '/home/andre/miniconda3', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/andre/ros2_ws/install/move_program:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/mqtt_imu:/opt/ros/jazzy'}), 'shell': False}
+[22.193349] (esp32_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.193876] (esp32_controller) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/esp32_controller/lib/esp32_controller/esp32_controller\n'}
+[22.201096] (esp32_controller) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/andre/ros2_ws/install/esp32_controller/lib/esp32_controller/esp32_controller" to ""\n'}
+[22.201421] (esp32_controller) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/esp32_controller/share/ament_index/resource_index/package_run_dependencies/esp32_controller\n'}
+[22.201557] (esp32_controller) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/esp32_controller/share/ament_index/resource_index/parent_prefix_path/esp32_controller\n'}
+[22.201739] (esp32_controller) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/esp32_controller/share/esp32_controller/environment/ament_prefix_path.sh\n'}
+[22.201995] (esp32_controller) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/esp32_controller/share/esp32_controller/environment/ament_prefix_path.dsv\n'}
+[22.202202] (esp32_controller) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/esp32_controller/share/esp32_controller/environment/path.sh\n'}
+[22.202342] (esp32_controller) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/esp32_controller/share/esp32_controller/environment/path.dsv\n'}
+[22.202474] (esp32_controller) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.bash\n'}
+[22.202624] (esp32_controller) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.sh\n'}
+[22.202711] (esp32_controller) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.zsh\n'}
+[22.202797] (esp32_controller) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/esp32_controller/share/esp32_controller/local_setup.dsv\n'}
+[22.202930] (esp32_controller) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/esp32_controller/share/esp32_controller/package.dsv\n'}
+[22.203093] (esp32_controller) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/esp32_controller/share/ament_index/resource_index/packages/esp32_controller\n'}
+[22.203222] (esp32_controller) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/esp32_controller/share/esp32_controller/cmake/esp32_controllerConfig.cmake\n'}
+[22.203309] (esp32_controller) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/esp32_controller/share/esp32_controller/cmake/esp32_controllerConfig-version.cmake\n'}
+[22.203392] (esp32_controller) StdoutLine: {'line': b'-- Installing: /home/andre/ros2_ws/install/esp32_controller/share/esp32_controller/package.xml\n'}
+[22.204914] (esp32_controller) CommandEnded: {'returncode': 0}
+[22.220243] (esp32_controller) JobEnded: {'identifier': 'esp32_controller', 'rc': 0}
+[22.220811] (-) EventReactorShutdown: {}

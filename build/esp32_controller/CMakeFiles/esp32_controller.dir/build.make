@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bot/ros2_ws/src/esp32_controller
+CMAKE_SOURCE_DIR = /home/andre/ros2_ws/src/planning/esp32_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bot/ros2_ws/build/esp32_controller
+CMAKE_BINARY_DIR = /home/andre/ros2_ws/build/esp32_controller
 
 # Include any dependencies generated for this target.
 include CMakeFiles/esp32_controller.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/esp32_controller.dir/progress.make
 include CMakeFiles/esp32_controller.dir/flags.make
 
 CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: CMakeFiles/esp32_controller.dir/flags.make
-CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: /home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp
+CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: /home/andre/ros2_ws/src/planning/esp32_controller/src/esp32_controller.cpp
 CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: CMakeFiles/esp32_controller.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bot/ros2_ws/build/esp32_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o -MF CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o.d -o CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o -c /home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andre/ros2_ws/build/esp32_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o -MF CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o.d -o CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o -c /home/andre/ros2_ws/src/planning/esp32_controller/src/esp32_controller.cpp
 
 CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp > CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andre/ros2_ws/src/planning/esp32_controller/src/esp32_controller.cpp > CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.i
 
 CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp -o CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andre/ros2_ws/src/planning/esp32_controller/src/esp32_controller.cpp -o CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.s
 
 # Object files for target esp32_controller
 esp32_controller_OBJECTS = \
@@ -146,10 +146,10 @@ esp32_controller: /opt/ros/jazzy/lib/libcomposition_interfaces__rosidl_generator
 esp32_controller: /opt/ros/jazzy/lib/libcomposition_interfaces__rosidl_typesupport_c.so
 esp32_controller: /opt/ros/jazzy/lib/libcomposition_interfaces__rosidl_generator_c.so
 esp32_controller: /opt/ros/jazzy/lib/libmoveit_collision_detection_bullet.so.2.12.3
-esp32_controller: /usr/lib/aarch64-linux-gnu/libBulletDynamics.so
-esp32_controller: /usr/lib/aarch64-linux-gnu/libBulletCollision.so
-esp32_controller: /usr/lib/aarch64-linux-gnu/libLinearMath.so
-esp32_controller: /usr/lib/aarch64-linux-gnu/libBulletSoftBody.so
+esp32_controller: /usr/lib/x86_64-linux-gnu/libBulletDynamics.so
+esp32_controller: /usr/lib/x86_64-linux-gnu/libBulletCollision.so
+esp32_controller: /usr/lib/x86_64-linux-gnu/libLinearMath.so
+esp32_controller: /usr/lib/x86_64-linux-gnu/libBulletSoftBody.so
 esp32_controller: /opt/ros/jazzy/lib/libmoveit_collision_distance_field.so.2.12.3
 esp32_controller: /opt/ros/jazzy/lib/libmoveit_constraint_samplers.so.2.12.3
 esp32_controller: /opt/ros/jazzy/lib/libmoveit_distance_field.so.2.12.3
@@ -171,12 +171,12 @@ esp32_controller: /opt/ros/jazzy/lib/libmoveit_robot_model.so.2.12.3
 esp32_controller: /opt/ros/jazzy/lib/libmoveit_exceptions.so.2.12.3
 esp32_controller: /opt/ros/jazzy/lib/libsrdfdom.so.2.0.7
 esp32_controller: /opt/ros/jazzy/lib/liburdf.so
-esp32_controller: /opt/ros/jazzy/lib/aarch64-linux-gnu/libruckig.so
+esp32_controller: /opt/ros/jazzy/lib/x86_64-linux-gnu/libruckig.so
 esp32_controller: /opt/ros/jazzy/lib/libmoveit_transforms.so.2.12.3
-esp32_controller: /opt/ros/jazzy/lib/aarch64-linux-gnu/liburdfdom_sensor.so.4.0
-esp32_controller: /opt/ros/jazzy/lib/aarch64-linux-gnu/liburdfdom_model_state.so.4.0
-esp32_controller: /opt/ros/jazzy/lib/aarch64-linux-gnu/liburdfdom_model.so.4.0
-esp32_controller: /opt/ros/jazzy/lib/aarch64-linux-gnu/liburdfdom_world.so.4.0
+esp32_controller: /opt/ros/jazzy/lib/x86_64-linux-gnu/liburdfdom_sensor.so.4.0
+esp32_controller: /opt/ros/jazzy/lib/x86_64-linux-gnu/liburdfdom_model_state.so.4.0
+esp32_controller: /opt/ros/jazzy/lib/x86_64-linux-gnu/liburdfdom_model.so.4.0
+esp32_controller: /opt/ros/jazzy/lib/x86_64-linux-gnu/liburdfdom_world.so.4.0
 esp32_controller: /opt/ros/jazzy/lib/libgeometric_shapes.so.2.3.2
 esp32_controller: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_typesupport_fastrtps_c.so
 esp32_controller: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -186,11 +186,11 @@ esp32_controller: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_typesupport_c
 esp32_controller: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_generator_py.so
 esp32_controller: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_typesupport_c.so
 esp32_controller: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_generator_c.so
-esp32_controller: /usr/lib/aarch64-linux-gnu/libfcl.so.0.7.0
-esp32_controller: /usr/lib/aarch64-linux-gnu/libccd.so.2.0
-esp32_controller: /usr/lib/aarch64-linux-gnu/libm.so
-esp32_controller: /usr/lib/aarch64-linux-gnu/liboctomap.so.1.9.7
-esp32_controller: /usr/lib/aarch64-linux-gnu/liboctomath.so.1.9.7
+esp32_controller: /usr/lib/x86_64-linux-gnu/libfcl.so.0.7.0
+esp32_controller: /usr/lib/x86_64-linux-gnu/libccd.so.2.0
+esp32_controller: /usr/lib/x86_64-linux-gnu/libm.so
+esp32_controller: /opt/ros/jazzy/lib/x86_64-linux-gnu/liboctomap.so.1.10.0
+esp32_controller: /opt/ros/jazzy/lib/x86_64-linux-gnu/liboctomath.so.1.10.0
 esp32_controller: /opt/ros/jazzy/lib/libresource_retriever.so
 esp32_controller: /opt/ros/jazzy/lib/librandom_numbers.so
 esp32_controller: /opt/ros/jazzy/lib/libmoveit_utils.so.2.12.3
@@ -241,22 +241,22 @@ esp32_controller: /opt/ros/jazzy/lib/libshape_msgs__rosidl_generator_c.so
 esp32_controller: /opt/ros/jazzy/lib/libtrajectory_msgs__rosidl_typesupport_c.so
 esp32_controller: /opt/ros/jazzy/lib/libtrajectory_msgs__rosidl_generator_c.so
 esp32_controller: /opt/ros/jazzy/lib/librsl.so
-esp32_controller: /usr/lib/aarch64-linux-gnu/libfmt.so.9.1.0
-esp32_controller: /usr/lib/aarch64-linux-gnu/libboost_chrono.so.1.83.0
-esp32_controller: /usr/lib/aarch64-linux-gnu/libboost_iostreams.so.1.83.0
-esp32_controller: /usr/lib/aarch64-linux-gnu/libboost_serialization.so.1.83.0
-esp32_controller: /usr/lib/aarch64-linux-gnu/libboost_thread.so.1.83.0
-esp32_controller: /usr/lib/aarch64-linux-gnu/libboost_system.so.1.83.0
-esp32_controller: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so.1.83.0
-esp32_controller: /usr/lib/aarch64-linux-gnu/libboost_atomic.so.1.83.0
-esp32_controller: /usr/lib/aarch64-linux-gnu/libboost_date_time.so.1.83.0
-esp32_controller: /usr/lib/aarch64-linux-gnu/libboost_program_options.so.1.83.0
-esp32_controller: /usr/lib/aarch64-linux-gnu/libboost_regex.so.1.83.0
+esp32_controller: /home/andre/miniconda3/lib/libfmt.so.11.2.0
+esp32_controller: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.83.0
+esp32_controller: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.83.0
+esp32_controller: /usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0
+esp32_controller: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.83.0
+esp32_controller: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.83.0
+esp32_controller: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0
+esp32_controller: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.83.0
+esp32_controller: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.83.0
+esp32_controller: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.83.0
+esp32_controller: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.83.0
 esp32_controller: /opt/ros/jazzy/lib/libwarehouse_ros.so
 esp32_controller: /opt/ros/jazzy/lib/libstatic_transform_broadcaster_node.so
 esp32_controller: /opt/ros/jazzy/lib/libclass_loader.so
-esp32_controller: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.1.0
-esp32_controller: /usr/lib/aarch64-linux-gnu/libtinyxml2.so.10.0.0
+esp32_controller: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
+esp32_controller: /usr/lib/x86_64-linux-gnu/libtinyxml2.so.10.0.0
 esp32_controller: /opt/ros/jazzy/lib/libtf2_ros.so
 esp32_controller: /opt/ros/jazzy/lib/libmessage_filters.so
 esp32_controller: /opt/ros/jazzy/lib/librclcpp_action.so
@@ -341,8 +341,6 @@ esp32_controller: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_py.so
 esp32_controller: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 esp32_controller: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 esp32_controller: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-esp32_controller: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_c.so
-esp32_controller: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_c.so
 esp32_controller: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 esp32_controller: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so
 esp32_controller: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_py.so
@@ -360,18 +358,20 @@ esp32_controller: /opt/ros/jazzy/lib/librosidl_typesupport_introspection_c.so
 esp32_controller: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 esp32_controller: /opt/ros/jazzy/lib/librosidl_typesupport_cpp.so
 esp32_controller: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_py.so
+esp32_controller: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_c.so
 esp32_controller: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_c.so
 esp32_controller: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+esp32_controller: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_c.so
 esp32_controller: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so
 esp32_controller: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 esp32_controller: /opt/ros/jazzy/lib/librosidl_typesupport_c.so
 esp32_controller: /opt/ros/jazzy/lib/librcpputils.so
 esp32_controller: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 esp32_controller: /opt/ros/jazzy/lib/librcutils.so
-esp32_controller: /usr/lib/aarch64-linux-gnu/liborocos-kdl.so
-esp32_controller: /usr/lib/aarch64-linux-gnu/libcrypto.so
+esp32_controller: /usr/lib/x86_64-linux-gnu/liborocos-kdl.so
+esp32_controller: /usr/lib/x86_64-linux-gnu/libcrypto.so
 esp32_controller: CMakeFiles/esp32_controller.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bot/ros2_ws/build/esp32_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable esp32_controller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/andre/ros2_ws/build/esp32_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable esp32_controller"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/esp32_controller.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -383,6 +383,6 @@ CMakeFiles/esp32_controller.dir/clean:
 .PHONY : CMakeFiles/esp32_controller.dir/clean
 
 CMakeFiles/esp32_controller.dir/depend:
-	cd /home/bot/ros2_ws/build/esp32_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bot/ros2_ws/src/esp32_controller /home/bot/ros2_ws/src/esp32_controller /home/bot/ros2_ws/build/esp32_controller /home/bot/ros2_ws/build/esp32_controller /home/bot/ros2_ws/build/esp32_controller/CMakeFiles/esp32_controller.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/andre/ros2_ws/build/esp32_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andre/ros2_ws/src/planning/esp32_controller /home/andre/ros2_ws/src/planning/esp32_controller /home/andre/ros2_ws/build/esp32_controller /home/andre/ros2_ws/build/esp32_controller /home/andre/ros2_ws/build/esp32_controller/CMakeFiles/esp32_controller.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/esp32_controller.dir/depend
 

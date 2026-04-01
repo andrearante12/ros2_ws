@@ -1,1 +1,0 @@
-Invoking command in '/home/bot/ros2_ws/build/esp32_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bot/ros2_ws/build/esp32_controller -- -j4 -l4

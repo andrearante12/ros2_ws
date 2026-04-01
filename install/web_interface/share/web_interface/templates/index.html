@@ -1,1 +1,275 @@
-/home/bot/ros2_ws/build/web_interface/templates/index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Robot Control Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 100%);
+            color: #ffffff;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(76, 175, 80, 0.1);
+            border-radius: 12px;
+            border: 2px solid #4CAF50;
+        }
+        
+        h1 {
+            color: #4CAF50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .status-indicator {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #4CAF50;
+            animation: pulse 2s infinite;
+            box-shadow: 0 0 10px #4CAF50;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .subtitle {
+            color: #aaa;
+            font-size: 1.1em;
+        }
+        
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .video-box {
+            background: linear-gradient(145deg, #2d2d2d, #1e1e1e);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+            border: 1px solid #3d3d3d;
+            transition: transform 0.2s;
+        }
+        
+        .video-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(76, 175, 80, 0.2);
+        }
+        
+        .video-box h3 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .camera-icon {
+            font-size: 1.2em;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 75%; /* 4:3 aspect ratio */
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .video-wrapper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .info-panel {
+            background: linear-gradient(145deg, #2d2d2d, #1e1e1e);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+            border: 1px solid #3d3d3d;
+        }
+        
+        .info-panel h3 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+            font-size: 1.4em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        #joint-states {
+            display: grid;
+            gap: 10px;
+        }
+        
+        .joint-state {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 16px;
+            background: linear-gradient(90deg, #3d3d3d 0%, #2d2d2d 100%);
+            border-radius: 8px;
+            border-left: 4px solid #4CAF50;
+            transition: all 0.2s;
+        }
+        
+        .joint-state:hover {
+            background: linear-gradient(90deg, #4d4d4d 0%, #3d3d3d 100%);
+            transform: translateX(5px);
+        }
+        
+        .joint-name {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        
+        .joint-value {
+            font-family: 'Courier New', monospace;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-style: italic;
+        }
+        
+        .error {
+            color: #ff6b6b;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .video-container {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                <span class="status-indicator"></span>
+                🤖 Robot Control Dashboard
+            </h1>
+            <p class="subtitle">Real-time Monitoring & Visualization</p>
+        </header>
+        
+        <div class="video-container">
+            <div class="video-box">
+                <h3><span class="camera-icon">📷</span> Color Camera</h3>
+                <div class="video-wrapper">
+                    <img src="{{ url_for('video_feed_color') }}" alt="Color Feed">
+                </div>
+            </div>
+            
+            <div class="video-box">
+                <h3><span class="camera-icon">🌊</span> Depth Camera</h3>
+                <div class="video-wrapper">
+                    <img src="{{ url_for('video_feed_depth') }}" alt="Depth Feed">
+                </div>
+            </div>
+        </div>
+        
+        <div class="info-panel">
+            <h3>⚙️ Joint States</h3>
+            <div id="joint-states">
+                <div class="loading">Loading joint data...</div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Update joint states every 200ms for smooth updates
+        async function updateJointStates() {
+            try {
+                const response = await fetch('/api/joint_states');
+                if (!response.ok) throw new Error('No data');
+                
+                const data = await response.json();
+                
+                let html = '';
+                if (data.names && data.names.length > 0) {
+                    for (let i = 0; i < data.names.length; i++) {
+                        const pos = data.positions[i].toFixed(2);
+                        html += `
+                            <div class="joint-state">
+                                <span class="joint-name">${data.names[i]}</span>
+                                <span class="joint-value">${pos}°</span>
+                            </div>
+                        `;
+                    }
+                } else {
+                    html = '<div class="loading">No joint data available</div>';
+                }
+                
+                document.getElementById('joint-states').innerHTML = html;
+            } catch (error) {
+                document.getElementById('joint-states').innerHTML = 
+                    '<div class="error">Error loading joint states</div>';
+            }
+        }
+        
+        // Initial update
+        updateJointStates();
+        
+        // Update regularly
+        setInterval(updateJointStates, 200);
+        
+        // Status check
+        async function checkStatus() {
+            try {
+                const response = await fetch('/api/status');
+                const status = await response.json();
+                console.log('System status:', status);
+            } catch (error) {
+                console.error('Status check failed:', error);
+            }
+        }
+        
+        setInterval(checkStatus, 5000);
+    </script>
+</body>
+</html>

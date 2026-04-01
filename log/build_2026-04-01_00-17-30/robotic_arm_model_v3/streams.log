@@ -1,0 +1,55 @@
+[0.026s] Invoking command in '/home/andre/ros2_ws/build/robotic_arm_model_v3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/mqtt_imu:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/robot/robotic_arm_model_v3 -DCMAKE_EXE_LINKER_FLAGS=-lcurl -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/robotic_arm_model_v3
+[0.429s] -- The C compiler identification is GNU 13.3.0
+[0.429s] -- The CXX compiler identification is GNU 13.3.0
+[0.429s] -- Detecting C compiler ABI info
+[0.429s] -- Detecting C compiler ABI info - done
+[0.429s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.429s] -- Detecting C compile features
+[0.430s] -- Detecting C compile features - done
+[0.431s] -- Detecting CXX compiler ABI info
+[0.491s] -- Detecting CXX compiler ABI info - done
+[0.887s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.887s] -- Detecting CXX compile features
+[0.888s] -- Detecting CXX compile features - done
+[0.888s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.888s] -- Found Python3: /home/andre/miniconda3/bin/python3 (found version "3.13.11") found components: Interpreter 
+[0.945s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.167s] -- Added test 'lint_cmake' to check CMake code style
+[1.174s] -- Added test 'xmllint' to check XML markup files
+[1.176s] -- Configuring done (1.1s)
+[1.181s] -- Generating done (0.0s)
+[1.183s] -- Build files have been written to: /home/andre/ros2_ws/build/robotic_arm_model_v3
+[1.193s] Invoked command in '/home/andre/ros2_ws/build/robotic_arm_model_v3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/mqtt_imu:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/robot/robotic_arm_model_v3 -DCMAKE_EXE_LINKER_FLAGS=-lcurl -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/robotic_arm_model_v3
+[1.193s] Invoking command in '/home/andre/ros2_ws/build/robotic_arm_model_v3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/mqtt_imu:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/robotic_arm_model_v3 -- -j4 -l4
+[1.246s] Invoked command in '/home/andre/ros2_ws/build/robotic_arm_model_v3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/mqtt_imu:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/robotic_arm_model_v3 -- -j4 -l4
+[1.246s] Invoking command in '/home/andre/ros2_ws/build/robotic_arm_model_v3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/mqtt_imu:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/robotic_arm_model_v3
+[1.263s] -- Install configuration: ""
+[1.263s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/urdf
+[1.263s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/urdf/robotic_arm_model_v3.urdf
+[1.263s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/urdf/robotic_arm_model_v3.sdf
+[1.263s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/urdf/robotic_arm_model_v3.csv
+[1.265s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes
+[1.266s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/end_effector_top.STL
+[1.273s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/base_link.STL
+[1.287s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/link_2.STL
+[1.290s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/end_effector_link.STL
+[1.296s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/link_3.STL
+[1.307s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/end_effector_bottom.STL
+[1.308s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/link_1.STL
+[1.312s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/link_4.STL
+[1.316s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/ament_index/resource_index/package_run_dependencies/robotic_arm_model_v3
+[1.316s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/ament_index/resource_index/parent_prefix_path/robotic_arm_model_v3
+[1.316s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/environment/ament_prefix_path.sh
+[1.316s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/environment/ament_prefix_path.dsv
+[1.317s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/environment/path.sh
+[1.318s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/environment/path.dsv
+[1.318s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/local_setup.bash
+[1.318s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/local_setup.sh
+[1.319s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/local_setup.zsh
+[1.319s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/local_setup.dsv
+[1.320s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/package.dsv
+[1.320s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/ament_index/resource_index/packages/robotic_arm_model_v3
+[1.320s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/cmake/robotic_arm_model_v3Config.cmake
+[1.320s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/cmake/robotic_arm_model_v3Config-version.cmake
+[1.320s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/package.xml
+[1.324s] Invoked command in '/home/andre/ros2_ws/build/robotic_arm_model_v3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/mqtt_imu:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/robotic_arm_model_v3

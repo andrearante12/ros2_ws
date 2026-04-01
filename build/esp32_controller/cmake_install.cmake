@@ -1,8 +1,8 @@
-# Install script for directory: /home/bot/ros2_ws/src/esp32_controller
+# Install script for directory: /home/andre/ros2_ws/src/planning/esp32_controller
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/bot/ros2_ws/install/esp32_controller")
+  set(CMAKE_INSTALL_PREFIX "/home/andre/ros2_ws/install/esp32_controller")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -49,12 +49,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/esp32_controller/esp32_controller"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/esp32_controller" TYPE EXECUTABLE FILES "/home/bot/ros2_ws/build/esp32_controller/esp32_controller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/esp32_controller" TYPE EXECUTABLE FILES "/home/andre/ros2_ws/build/esp32_controller/esp32_controller")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/esp32_controller/esp32_controller" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/esp32_controller/esp32_controller")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/esp32_controller/esp32_controller"
-         OLD_RPATH "/opt/ros/jazzy/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:"
+         OLD_RPATH "/opt/ros/jazzy/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/home/andre/miniconda3/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/esp32_controller/esp32_controller")
@@ -63,15 +63,15 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/bot/ros2_ws/build/esp32_controller/CMakeFiles/esp32_controller.dir/install-cxx-module-bmi-Release.cmake" OPTIONAL)
+  include("/home/andre/ros2_ws/build/esp32_controller/CMakeFiles/esp32_controller.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/bot/ros2_ws/build/esp32_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/esp32_controller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/andre/ros2_ws/build/esp32_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/esp32_controller")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/bot/ros2_ws/build/esp32_controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/esp32_controller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/andre/ros2_ws/build/esp32_controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/esp32_controller")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -79,7 +79,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/esp32_controller/environment" TYPE FILE FILES "/home/bot/ros2_ws/build/esp32_controller/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/esp32_controller/environment" TYPE FILE FILES "/home/andre/ros2_ws/build/esp32_controller/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -87,42 +87,42 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/esp32_controller/environment" TYPE FILE FILES "/home/bot/ros2_ws/build/esp32_controller/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/esp32_controller/environment" TYPE FILE FILES "/home/andre/ros2_ws/build/esp32_controller/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/esp32_controller" TYPE FILE FILES "/home/bot/ros2_ws/build/esp32_controller/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/esp32_controller" TYPE FILE FILES "/home/andre/ros2_ws/build/esp32_controller/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/esp32_controller" TYPE FILE FILES "/home/bot/ros2_ws/build/esp32_controller/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/esp32_controller" TYPE FILE FILES "/home/andre/ros2_ws/build/esp32_controller/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/esp32_controller" TYPE FILE FILES "/home/bot/ros2_ws/build/esp32_controller/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/esp32_controller" TYPE FILE FILES "/home/andre/ros2_ws/build/esp32_controller/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/esp32_controller" TYPE FILE FILES "/home/bot/ros2_ws/build/esp32_controller/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/esp32_controller" TYPE FILE FILES "/home/andre/ros2_ws/build/esp32_controller/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/esp32_controller" TYPE FILE FILES "/home/bot/ros2_ws/build/esp32_controller/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/esp32_controller" TYPE FILE FILES "/home/andre/ros2_ws/build/esp32_controller/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/bot/ros2_ws/build/esp32_controller/ament_cmake_index/share/ament_index/resource_index/packages/esp32_controller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/andre/ros2_ws/build/esp32_controller/ament_cmake_index/share/ament_index/resource_index/packages/esp32_controller")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/esp32_controller/cmake" TYPE FILE FILES
-    "/home/bot/ros2_ws/build/esp32_controller/ament_cmake_core/esp32_controllerConfig.cmake"
-    "/home/bot/ros2_ws/build/esp32_controller/ament_cmake_core/esp32_controllerConfig-version.cmake"
+    "/home/andre/ros2_ws/build/esp32_controller/ament_cmake_core/esp32_controllerConfig.cmake"
+    "/home/andre/ros2_ws/build/esp32_controller/ament_cmake_core/esp32_controllerConfig-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/esp32_controller" TYPE FILE FILES "/home/bot/ros2_ws/src/esp32_controller/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/esp32_controller" TYPE FILE FILES "/home/andre/ros2_ws/src/planning/esp32_controller/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -133,5 +133,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/bot/ros2_ws/build/esp32_controller/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/andre/ros2_ws/build/esp32_controller/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

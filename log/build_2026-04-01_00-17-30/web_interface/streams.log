@@ -1,0 +1,40 @@
+[1.599s] Invoking command in '/home/andre/ros2_ws/src/interfaces/web_interface': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andre/ros2_ws/build/web_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/install/web_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/web_interface build --build-base /home/andre/ros2_ws/build/web_interface/build install --record /home/andre/ros2_ws/build/web_interface/install.log --single-version-externally-managed install_data
+[2.152s] running egg_info
+[2.153s] creating ../../../build/web_interface/web_interface.egg-info
+[2.197s] writing ../../../build/web_interface/web_interface.egg-info/PKG-INFO
+[2.199s] writing dependency_links to ../../../build/web_interface/web_interface.egg-info/dependency_links.txt
+[2.199s] writing entry points to ../../../build/web_interface/web_interface.egg-info/entry_points.txt
+[2.199s] writing requirements to ../../../build/web_interface/web_interface.egg-info/requires.txt
+[2.199s] writing top-level names to ../../../build/web_interface/web_interface.egg-info/top_level.txt
+[2.365s] writing manifest file '../../../build/web_interface/web_interface.egg-info/SOURCES.txt'
+[2.473s] reading manifest file '../../../build/web_interface/web_interface.egg-info/SOURCES.txt'
+[2.475s] writing manifest file '../../../build/web_interface/web_interface.egg-info/SOURCES.txt'
+[2.476s] running build
+[2.477s] running build_py
+[2.478s] creating /home/andre/ros2_ws/build/web_interface/build
+[2.478s] creating /home/andre/ros2_ws/build/web_interface/build/lib
+[2.479s] creating /home/andre/ros2_ws/build/web_interface/build/lib/web_interface
+[2.479s] copying web_interface/flask_server.py -> /home/andre/ros2_ws/build/web_interface/build/lib/web_interface
+[2.479s] copying web_interface/__init__.py -> /home/andre/ros2_ws/build/web_interface/build/lib/web_interface
+[2.482s] running install
+[2.489s] running install_lib
+[2.541s] creating /home/andre/ros2_ws/install/web_interface/lib/python3.12/site-packages/web_interface
+[2.542s] copying /home/andre/ros2_ws/build/web_interface/build/lib/web_interface/flask_server.py -> /home/andre/ros2_ws/install/web_interface/lib/python3.12/site-packages/web_interface
+[2.543s] copying /home/andre/ros2_ws/build/web_interface/build/lib/web_interface/__init__.py -> /home/andre/ros2_ws/install/web_interface/lib/python3.12/site-packages/web_interface
+[2.544s] byte-compiling /home/andre/ros2_ws/install/web_interface/lib/python3.12/site-packages/web_interface/flask_server.py to flask_server.cpython-312.pyc
+[2.547s] byte-compiling /home/andre/ros2_ws/install/web_interface/lib/python3.12/site-packages/web_interface/__init__.py to __init__.cpython-312.pyc
+[2.548s] running install_data
+[2.549s] creating /home/andre/ros2_ws/install/web_interface/share/ament_index
+[2.550s] creating /home/andre/ros2_ws/install/web_interface/share/ament_index/resource_index
+[2.551s] creating /home/andre/ros2_ws/install/web_interface/share/ament_index/resource_index/packages
+[2.554s] copying resource/web_interface -> /home/andre/ros2_ws/install/web_interface/share/ament_index/resource_index/packages
+[2.554s] copying package.xml -> /home/andre/ros2_ws/install/web_interface/share/web_interface
+[2.554s] creating /home/andre/ros2_ws/install/web_interface/share/web_interface/templates
+[2.554s] copying templates/index.html -> /home/andre/ros2_ws/install/web_interface/share/web_interface/templates
+[2.554s] creating /home/andre/ros2_ws/install/web_interface/share/web_interface/static
+[2.554s] running install_egg_info
+[2.611s] Copying ../../../build/web_interface/web_interface.egg-info to /home/andre/ros2_ws/install/web_interface/lib/python3.12/site-packages/web_interface-0.0.1-py3.12.egg-info
+[2.615s] running install_scripts
+[2.771s] Installing flask_server script to /home/andre/ros2_ws/install/web_interface/bin
+[2.771s] writing list of installed files to '/home/andre/ros2_ws/build/web_interface/install.log'
+[2.825s] Invoked command in '/home/andre/ros2_ws/src/interfaces/web_interface' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andre/ros2_ws/build/web_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/install/web_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/web_interface build --build-base /home/andre/ros2_ws/build/web_interface/build install --record /home/andre/ros2_ws/build/web_interface/install.log --single-version-externally-managed install_data

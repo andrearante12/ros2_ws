@@ -1,0 +1,21 @@
+CMake Warning at CMakeLists.txt:16 (add_executable):
+  Cannot generate a safe runtime search path for target move_program because
+  files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libcrypto.so.3] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/andre/miniconda3/lib
+
+  Some of these libraries may not be found correctly.
+
+
+/usr/bin/ld: /opt/ros/jazzy/lib/libresource_retriever.so: undefined reference to `curl_global_init@CURL_OPENSSL_4'
+/usr/bin/ld: /opt/ros/jazzy/lib/libresource_retriever.so: undefined reference to `curl_easy_perform@CURL_OPENSSL_4'
+/usr/bin/ld: /opt/ros/jazzy/lib/libresource_retriever.so: undefined reference to `curl_easy_setopt@CURL_OPENSSL_4'
+/usr/bin/ld: /opt/ros/jazzy/lib/libresource_retriever.so: undefined reference to `curl_easy_init@CURL_OPENSSL_4'
+/usr/bin/ld: /opt/ros/jazzy/lib/libresource_retriever.so: undefined reference to `curl_easy_cleanup@CURL_OPENSSL_4'
+/usr/bin/ld: /opt/ros/jazzy/lib/libresource_retriever.so: undefined reference to `curl_global_cleanup@CURL_OPENSSL_4'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/move_program.dir/build.make:367: move_program] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/move_program.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

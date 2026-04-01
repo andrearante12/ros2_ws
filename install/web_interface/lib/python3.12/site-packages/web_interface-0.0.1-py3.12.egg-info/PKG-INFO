@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: web-interface
+Version: 0.0.1
+Summary: Web interface for robot control
+Maintainer: bot
+Maintainer-email: you@example.com
+License: Apache License 2.0

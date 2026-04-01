@@ -1,0 +1,26 @@
+[0.026s] Invoking command in '/home/andre/ros2_ws/build/move_program': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/mqtt_imu:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/move_program -- -j4 -l4
+[0.436s] [100%] Built target move_program
+[0.436s] Invoked command in '/home/andre/ros2_ws/build/move_program' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/mqtt_imu:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/move_program -- -j4 -l4
+[0.443s] Invoking command in '/home/andre/ros2_ws/build/move_program': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/mqtt_imu:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/move_program
+[0.453s] -- Install configuration: ""
+[0.453s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/lib/move_program/move_program
+[0.454s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/include
+[0.454s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/include/move_program
+[0.454s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/include/move_program/gradient_ik.hpp
+[0.454s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/ament_index/resource_index/package_run_dependencies/move_program
+[0.456s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/ament_index/resource_index/parent_prefix_path/move_program
+[0.456s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/environment/ament_prefix_path.sh
+[0.456s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/environment/ament_prefix_path.dsv
+[0.456s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/environment/path.sh
+[0.456s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/environment/path.dsv
+[0.456s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.bash
+[0.456s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.sh
+[0.456s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.zsh
+[0.456s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.dsv
+[0.456s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/package.dsv
+[0.460s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/ament_index/resource_index/packages/move_program
+[0.460s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.460s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/cmake/move_programConfig.cmake
+[0.461s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/cmake/move_programConfig-version.cmake
+[0.461s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/package.xml
+[0.461s] Invoked command in '/home/andre/ros2_ws/build/move_program' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/mqtt_imu:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/move_program

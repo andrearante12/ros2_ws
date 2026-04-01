@@ -10,6 +10,3 @@ source;share/web_interface/hook/pythonscriptspath.sh
 source;share/web_interface/hook/ament_prefix_path.ps1
 source;share/web_interface/hook/ament_prefix_path.dsv
 source;share/web_interface/hook/ament_prefix_path.sh
-source;../../build/web_interface/share/web_interface/hook/pythonpath_develop.ps1
-source;../../build/web_interface/share/web_interface/hook/pythonpath_develop.dsv
-source;../../build/web_interface/share/web_interface/hook/pythonpath_develop.sh

@@ -114,6 +114,5 @@ colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/web_in
 colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/web_interface/hook/pythonpath.ps1"
 colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/web_interface/hook/pythonscriptspath.ps1"
 colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/web_interface/hook/ament_prefix_path.ps1"
-colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\../../build/web_interface/share/web_interface/hook/pythonpath_develop.ps1"
 
 Remove-Item Env:\COLCON_CURRENT_PREFIX

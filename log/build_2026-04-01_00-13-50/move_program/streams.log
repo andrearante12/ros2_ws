@@ -1,0 +1,50 @@
+[0.009s] Invoking command in '/home/andre/ros2_ws/build/move_program': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/planning/move_program -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/move_program
+[0.023s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.242s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.273s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.282s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.293s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.307s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.386s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.387s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.460s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.540s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.556s] -- Found moveit_ros_planning_interface: 2.12.3 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)
+[0.566s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread 
+[0.897s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[0.934s] -- Found parameter_traits: 0.5.0 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[0.941s] -- Found rclcpp_lifecycle: 28.1.13 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[0.982s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem 
+[1.041s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.217s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono 
+[1.287s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options 
+[1.322s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread 
+[1.502s] -- Configuring done (1.5s)
+[1.552s] CMake Warning at CMakeLists.txt:16 (add_executable):
+[1.552s]   Cannot generate a safe runtime search path for target move_program because
+[1.552s]   files in some directories may conflict with libraries in implicit
+[1.552s]   directories:
+[1.552s] 
+[1.552s]     runtime library [libcrypto.so.3] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[1.552s]       /home/andre/miniconda3/lib
+[1.552s] 
+[1.553s]   Some of these libraries may not be found correctly.
+[1.553s] 
+[1.553s] 
+[1.555s] -- Generating done (0.0s)
+[1.563s] -- Build files have been written to: /home/andre/ros2_ws/build/move_program
+[1.577s] Invoked command in '/home/andre/ros2_ws/build/move_program' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/planning/move_program -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/move_program
+[1.579s] Invoking command in '/home/andre/ros2_ws/build/move_program': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/move_program -- -j4 -l4
+[1.640s] [ 50%] Building CXX object CMakeFiles/move_program.dir/src/move_program.cpp.o
+[11.174s] [100%] Linking CXX executable move_program
+[11.829s] /usr/bin/ld: /opt/ros/jazzy/lib/libresource_retriever.so: undefined reference to `curl_global_init@CURL_OPENSSL_4'
+[11.830s] /usr/bin/ld: /opt/ros/jazzy/lib/libresource_retriever.so: undefined reference to `curl_easy_perform@CURL_OPENSSL_4'
+[11.831s] /usr/bin/ld: /opt/ros/jazzy/lib/libresource_retriever.so: undefined reference to `curl_easy_setopt@CURL_OPENSSL_4'
+[11.832s] /usr/bin/ld: /opt/ros/jazzy/lib/libresource_retriever.so: undefined reference to `curl_easy_init@CURL_OPENSSL_4'
+[11.835s] /usr/bin/ld: /opt/ros/jazzy/lib/libresource_retriever.so: undefined reference to `curl_easy_cleanup@CURL_OPENSSL_4'
+[11.838s] /usr/bin/ld: /opt/ros/jazzy/lib/libresource_retriever.so: undefined reference to `curl_global_cleanup@CURL_OPENSSL_4'
+[11.853s] collect2: error: ld returned 1 exit status
+[11.855s] gmake[2]: *** [CMakeFiles/move_program.dir/build.make:367: move_program] Error 1
+[11.855s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/move_program.dir/all] Error 2
+[11.855s] gmake: *** [Makefile:146: all] Error 2
+[11.857s] Invoked command in '/home/andre/ros2_ws/build/move_program' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/move_program -- -j4 -l4

@@ -1,0 +1,49 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /home/andre/miniconda3/bin/python3 (found version "3.13.11") found components: Interpreter 
+-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/andre/ros2_ws/build/robotic_arm_model_v3
+-- Install configuration: ""
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/urdf
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/urdf/robotic_arm_model_v3.urdf
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/urdf/robotic_arm_model_v3.sdf
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/urdf/robotic_arm_model_v3.csv
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/end_effector_top.STL
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/base_link.STL
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/link_2.STL
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/end_effector_link.STL
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/link_3.STL
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/end_effector_bottom.STL
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/link_1.STL
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/link_4.STL
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/ament_index/resource_index/package_run_dependencies/robotic_arm_model_v3
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/ament_index/resource_index/parent_prefix_path/robotic_arm_model_v3
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/environment/ament_prefix_path.sh
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/environment/ament_prefix_path.dsv
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/environment/path.sh
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/environment/path.dsv
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/local_setup.bash
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/local_setup.sh
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/local_setup.zsh
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/local_setup.dsv
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/package.dsv
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/ament_index/resource_index/packages/robotic_arm_model_v3
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/cmake/robotic_arm_model_v3Config.cmake
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/cmake/robotic_arm_model_v3Config-version.cmake
+-- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/package.xml

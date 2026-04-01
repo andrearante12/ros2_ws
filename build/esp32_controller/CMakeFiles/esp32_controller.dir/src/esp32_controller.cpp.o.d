@@ -1,20 +1,20 @@
 CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
- /home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp \
+ /home/andre/ros2_ws/src/planning/esp32_controller/src/esp32_controller.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/memory \
  /usr/include/c++/13/bits/memoryfwd.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/c++config.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
- /usr/include/aarch64-linux-gnu/bits/wordsize.h \
- /usr/include/aarch64-linux-gnu/bits/timesize.h \
- /usr/include/aarch64-linux-gnu/sys/cdefs.h \
- /usr/include/aarch64-linux-gnu/bits/long-double.h \
- /usr/include/aarch64-linux-gnu/gnu/stubs.h \
- /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/cpu_defines.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/bits/timesize.h \
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/long-double.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
  /usr/include/c++/13/pstl/pstl_config.h \
  /usr/include/c++/13/bits/allocator.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/c++allocator.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
  /usr/include/c++/13/bits/new_allocator.h /usr/include/c++/13/new \
  /usr/include/c++/13/bits/exception.h \
  /usr/include/c++/13/bits/functexcept.h \
@@ -39,15 +39,15 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /usr/include/c++/13/bits/alloc_traits.h \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
  /usr/include/c++/13/bits/align.h \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
- /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
- /usr/include/aarch64-linux-gnu/bits/types.h \
- /usr/include/aarch64-linux-gnu/bits/typesizes.h \
- /usr/include/aarch64-linux-gnu/bits/time64.h \
- /usr/include/aarch64-linux-gnu/bits/wchar.h \
- /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
- /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/unique_ptr.h /usr/include/c++/13/tuple \
  /usr/include/c++/13/bits/invoke.h \
@@ -59,52 +59,52 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/c++/13/bits/stringfwd.h /usr/include/c++/13/bits/postypes.h \
  /usr/include/c++/13/cwchar /usr/include/wchar.h \
- /usr/include/aarch64-linux-gnu/bits/floatn.h \
- /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
- /usr/include/aarch64-linux-gnu/bits/types/wint_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
- /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
- /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/c++/13/bits/shared_ptr_base.h /usr/include/c++/13/typeinfo \
  /usr/include/c++/13/bits/allocated_ptr.h \
  /usr/include/c++/13/bits/refwrap.h \
  /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/ext/atomicity.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/gthr.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/gthr-default.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
  /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/aarch64-linux-gnu/bits/types/time_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h \
- /usr/include/aarch64-linux-gnu/bits/endian.h \
- /usr/include/aarch64-linux-gnu/bits/endianness.h \
- /usr/include/aarch64-linux-gnu/bits/sched.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h \
- /usr/include/aarch64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
- /usr/include/aarch64-linux-gnu/bits/time.h \
- /usr/include/aarch64-linux-gnu/bits/timex.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h \
- /usr/include/aarch64-linux-gnu/bits/types/clock_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h \
- /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/timer_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h \
- /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h \
- /usr/include/aarch64-linux-gnu/bits/thread-shared-types.h \
- /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h \
- /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
- /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
- /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/aarch64-linux-gnu/bits/setjmp.h \
- /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
- /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/atomic_word.h \
- /usr/include/aarch64-linux-gnu/sys/single_threaded.h \
+ /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endianness.h \
+ /usr/include/x86_64-linux-gnu/bits/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+ /usr/include/x86_64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/timex.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+ /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+ /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+ /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
+ /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
  /usr/include/c++/13/ext/concurrence.h /usr/include/c++/13/exception \
  /usr/include/c++/13/bits/exception_ptr.h \
  /usr/include/c++/13/bits/cxxabi_init_exception.h \
@@ -118,136 +118,76 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
  /usr/include/c++/13/cstdint /usr/include/c++/13/limits \
  /usr/include/c++/13/ctime /usr/include/c++/13/bits/parse_numbers.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/error_constants.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
  /usr/include/c++/13/cerrno /usr/include/errno.h \
- /usr/include/aarch64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/aarch64-linux-gnu/asm/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/13/bits/std_mutex.h \
- /usr/include/c++/13/bits/unique_lock.h /usr/include/c++/13/fstream \
- /usr/include/c++/13/istream /usr/include/c++/13/ios \
- /usr/include/c++/13/bits/char_traits.h \
+ /usr/include/c++/13/bits/unique_lock.h \
+ /opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp \
+ /usr/include/c++/13/csignal /usr/include/signal.h \
+ /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
+ /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
+ /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
+ /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+ /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+ /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
+ /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+ /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+ /usr/include/x86_64-linux-gnu/bits/sigstksz.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
+ /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
+ /usr/include/x86_64-linux-gnu/bits/sigthread.h \
+ /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
+ /opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp \
+ /usr/include/c++/13/string /usr/include/c++/13/bits/char_traits.h \
  /usr/include/c++/13/bits/localefwd.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/c++locale.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
  /usr/include/c++/13/clocale /usr/include/locale.h \
- /usr/include/aarch64-linux-gnu/bits/locale.h /usr/include/c++/13/cctype \
- /usr/include/ctype.h /usr/include/c++/13/bits/ios_base.h \
- /usr/include/c++/13/bits/locale_classes.h /usr/include/c++/13/string \
- /usr/include/c++/13/bits/ostream_insert.h \
+ /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/13/cctype \
+ /usr/include/ctype.h /usr/include/c++/13/bits/ostream_insert.h \
  /usr/include/c++/13/bits/cxxabi_forced.h \
  /usr/include/c++/13/bits/range_access.h \
  /usr/include/c++/13/initializer_list \
  /usr/include/c++/13/bits/basic_string.h /usr/include/c++/13/string_view \
  /usr/include/c++/13/bits/string_view.tcc \
  /usr/include/c++/13/ext/string_conversions.h /usr/include/c++/13/cstdlib \
- /usr/include/stdlib.h /usr/include/aarch64-linux-gnu/bits/waitflags.h \
- /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
- /usr/include/aarch64-linux-gnu/sys/types.h /usr/include/endian.h \
- /usr/include/aarch64-linux-gnu/bits/byteswap.h \
- /usr/include/aarch64-linux-gnu/bits/uintn-identity.h \
- /usr/include/aarch64-linux-gnu/sys/select.h \
- /usr/include/aarch64-linux-gnu/bits/select.h \
- /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+ /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+ /usr/include/x86_64-linux-gnu/sys/select.h \
+ /usr/include/x86_64-linux-gnu/bits/select.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/13/bits/std_abs.h /usr/include/c++/13/cstdio \
- /usr/include/stdio.h \
- /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
- /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
- /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator_args.h \
- /usr/include/c++/13/bits/locale_classes.tcc \
- /usr/include/c++/13/system_error /usr/include/c++/13/stdexcept \
- /usr/include/c++/13/streambuf /usr/include/c++/13/bits/streambuf.tcc \
- /usr/include/c++/13/bits/basic_ios.h \
- /usr/include/c++/13/bits/locale_facets.h /usr/include/c++/13/cwctype \
- /usr/include/wctype.h /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/ctype_base.h \
- /usr/include/c++/13/bits/streambuf_iterator.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/ctype_inline.h \
- /usr/include/c++/13/bits/locale_facets.tcc \
- /usr/include/c++/13/bits/basic_ios.tcc /usr/include/c++/13/ostream \
- /usr/include/c++/13/bits/ostream.tcc \
- /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/bits/codecvt.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/basic_file.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/iomanip \
- /usr/include/c++/13/locale \
- /usr/include/c++/13/bits/locale_facets_nonio.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/time_members.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/13/bits/locale_facets_nonio.tcc \
- /usr/include/c++/13/bits/locale_conv.h \
- /usr/include/c++/13/bits/quoted_string.h /usr/include/c++/13/sstream \
- /usr/include/c++/13/bits/sstream.tcc /usr/include/fcntl.h \
- /usr/include/aarch64-linux-gnu/bits/fcntl.h \
- /usr/include/aarch64-linux-gnu/bits/fcntl-linux.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
- /usr/include/linux/falloc.h /usr/include/aarch64-linux-gnu/bits/stat.h \
- /usr/include/aarch64-linux-gnu/bits/struct_stat.h /usr/include/termios.h \
- /usr/include/aarch64-linux-gnu/bits/termios.h \
- /usr/include/aarch64-linux-gnu/bits/termios-struct.h \
- /usr/include/aarch64-linux-gnu/bits/termios-c_cc.h \
- /usr/include/aarch64-linux-gnu/bits/termios-c_iflag.h \
- /usr/include/aarch64-linux-gnu/bits/termios-c_oflag.h \
- /usr/include/aarch64-linux-gnu/bits/termios-baud.h \
- /usr/include/aarch64-linux-gnu/bits/termios-c_cflag.h \
- /usr/include/aarch64-linux-gnu/bits/termios-c_lflag.h \
- /usr/include/aarch64-linux-gnu/bits/termios-tcflow.h \
- /usr/include/aarch64-linux-gnu/bits/termios-misc.h \
- /usr/include/aarch64-linux-gnu/sys/ttydefaults.h /usr/include/unistd.h \
- /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
- /usr/include/aarch64-linux-gnu/bits/environments.h \
- /usr/include/aarch64-linux-gnu/bits/confname.h \
- /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
- /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
- /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h \
- /opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp \
- /usr/include/c++/13/csignal /usr/include/signal.h \
- /usr/include/aarch64-linux-gnu/bits/signum-generic.h \
- /usr/include/aarch64-linux-gnu/bits/signum-arch.h \
- /usr/include/aarch64-linux-gnu/bits/types/sig_atomic_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/siginfo_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__sigval_t.h \
- /usr/include/aarch64-linux-gnu/bits/siginfo-arch.h \
- /usr/include/aarch64-linux-gnu/bits/siginfo-consts.h \
- /usr/include/aarch64-linux-gnu/bits/siginfo-consts-arch.h \
- /usr/include/aarch64-linux-gnu/bits/types/sigval_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/sigevent_t.h \
- /usr/include/aarch64-linux-gnu/bits/sigevent-consts.h \
- /usr/include/aarch64-linux-gnu/bits/sigaction.h \
- /usr/include/aarch64-linux-gnu/bits/sigcontext.h \
- /usr/include/aarch64-linux-gnu/asm/sigcontext.h \
- /usr/include/linux/types.h /usr/include/aarch64-linux-gnu/asm/types.h \
- /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
- /usr/include/aarch64-linux-gnu/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h \
- /usr/include/aarch64-linux-gnu/asm/posix_types.h \
- /usr/include/asm-generic/posix_types.h \
- /usr/include/aarch64-linux-gnu/asm/sve_context.h \
- /usr/include/aarch64-linux-gnu/bits/types/stack_t.h \
- /usr/include/aarch64-linux-gnu/sys/ucontext.h \
- /usr/include/aarch64-linux-gnu/sys/procfs.h \
- /usr/include/aarch64-linux-gnu/sys/time.h \
- /usr/include/aarch64-linux-gnu/sys/user.h \
- /usr/include/aarch64-linux-gnu/bits/procfs.h \
- /usr/include/aarch64-linux-gnu/bits/procfs-id.h \
- /usr/include/aarch64-linux-gnu/bits/procfs-prregset.h \
- /usr/include/aarch64-linux-gnu/bits/procfs-extra.h \
- /usr/include/aarch64-linux-gnu/bits/sigstack.h \
- /usr/include/aarch64-linux-gnu/bits/sigstksz.h \
- /usr/include/aarch64-linux-gnu/bits/ss_flags.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_sigstack.h \
- /usr/include/aarch64-linux-gnu/bits/sigthread.h \
- /usr/include/aarch64-linux-gnu/bits/signal_ext.h \
- /opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
@@ -260,7 +200,8 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h /usr/include/c++/13/array \
  /usr/include/c++/13/compare \
  /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp \
- /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
+ /usr/include/c++/13/stdexcept /usr/include/c++/13/utility \
+ /usr/include/c++/13/bits/stl_relops.h \
  /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
@@ -268,8 +209,32 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+ /usr/include/c++/13/sstream /usr/include/c++/13/istream \
+ /usr/include/c++/13/ios /usr/include/c++/13/bits/ios_base.h \
+ /usr/include/c++/13/bits/locale_classes.h \
+ /usr/include/c++/13/bits/locale_classes.tcc \
+ /usr/include/c++/13/system_error /usr/include/c++/13/streambuf \
+ /usr/include/c++/13/bits/streambuf.tcc \
+ /usr/include/c++/13/bits/basic_ios.h \
+ /usr/include/c++/13/bits/locale_facets.h /usr/include/c++/13/cwctype \
+ /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
+ /usr/include/c++/13/bits/streambuf_iterator.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
+ /usr/include/c++/13/bits/locale_facets.tcc \
+ /usr/include/c++/13/bits/basic_ios.tcc /usr/include/c++/13/ostream \
+ /usr/include/c++/13/bits/ostream.tcc \
+ /usr/include/c++/13/bits/istream.tcc \
+ /usr/include/c++/13/bits/sstream.tcc \
  /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp \
- /usr/include/c++/13/codecvt \
+ /usr/include/c++/13/codecvt /usr/include/c++/13/bits/codecvt.h \
+ /usr/include/c++/13/iomanip /usr/include/c++/13/locale \
+ /usr/include/c++/13/bits/locale_facets_nonio.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/13/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/13/bits/locale_conv.h \
+ /usr/include/c++/13/bits/quoted_string.h \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__traits.hpp \
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
@@ -280,7 +245,7 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
  /opt/ros/jazzy/include/rcutils/rcutils/allocator.h \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/stdbool.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
  /opt/ros/jazzy/include/rcutils/rcutils/macros.h \
  /opt/ros/jazzy/include/rcutils/rcutils/types/rcutils_ret.h \
  /opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h \
@@ -383,7 +348,7 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/types.h \
  /opt/ros/jazzy/include/rcl/rcl/context.h \
  /opt/ros/jazzy/include/rcl/rcl/init_options.h \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/stdalign.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdalign.h \
  /opt/ros/jazzy/include/rcl/rcl/guard_condition.h \
  /opt/ros/jazzy/include/rcl/rcl/node_options.h \
  /opt/ros/jazzy/include/rcl/rcl/domain_id.h \
@@ -507,7 +472,7 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /opt/ros/jazzy/include/rmw/rmw/error_handling.h \
  /opt/ros/jazzy/include/rmw/rmw/impl/cpp/demangle.hpp \
  /usr/include/c++/13/cxxabi.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/cxxabi_tweaks.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/cxxabi_tweaks.h \
  /opt/ros/jazzy/include/rmw/rmw/impl/config.h \
  /opt/ros/jazzy/include/rclcpp/rclcpp/publisher_base.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
@@ -574,15 +539,15 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
  /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
  /usr/include/c++/13/cmath /usr/include/math.h \
- /usr/include/aarch64-linux-gnu/bits/math-vector.h \
- /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/aarch64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/aarch64-linux-gnu/bits/fp-logb.h \
- /usr/include/aarch64-linux-gnu/bits/fp-fast.h \
- /usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/aarch64-linux-gnu/bits/mathcalls.h \
- /usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/aarch64-linux-gnu/bits/iscanonical.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/include/c++/13/bits/specfun.h /usr/include/c++/13/tr1/gamma.tcc \
  /usr/include/c++/13/tr1/special_function_util.h \
  /usr/include/c++/13/tr1/bessel_function.tcc \
@@ -754,6 +719,12 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/string.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/jazzy/include/moveit_ros_planning_interface/moveit/move_group_interface/move_group_interface.hpp \
  /opt/ros/jazzy/include/moveit_core/moveit/macros/class_forward.hpp \
  /opt/ros/jazzy/include/moveit_core/moveit/macros/declare_ptr.hpp \
@@ -762,14 +733,14 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /opt/ros/jazzy/include/moveit_core/moveit/exceptions/exceptions.hpp \
  /opt/ros/jazzy/include/srdfdom/srdfdom/model.h /usr/include/tinyxml2.h \
  /usr/include/c++/13/climits \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/limits.h \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/syslimits.h \
- /usr/include/limits.h /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
- /usr/include/aarch64-linux-gnu/bits/local_lim.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
  /usr/include/linux/limits.h \
- /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
- /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
- /usr/include/aarch64-linux-gnu/bits/uio_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
  /opt/ros/jazzy/include/urdf/urdf/model.h \
  /opt/ros/jazzy/include/urdfdom_headers/urdf_model/model.h \
  /opt/ros/jazzy/include/urdfdom_headers/urdf_model/link.h \
@@ -872,9 +843,10 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
  /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/arm_neon.h \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/arm_fp16.h \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/arm_bf16.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/mm_malloc.h \
  /usr/include/c++/13/complex \
  /usr/include/eigen3/Eigen/src/Core/util/MKL_support.h \
  /usr/include/eigen3/Eigen/src/Core/util/Constants.h \
@@ -894,10 +866,10 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h \
  /usr/include/eigen3/Eigen/src/Core/arch/Default/TypeCasting.h \
  /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
- /usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h \
- /usr/include/eigen3/Eigen/src/Core/arch/NEON/TypeCasting.h \
- /usr/include/eigen3/Eigen/src/Core/arch/NEON/MathFunctions.h \
- /usr/include/eigen3/Eigen/src/Core/arch/NEON/Complex.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h \
  /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h \
  /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
  /usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h \
@@ -989,7 +961,6 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /usr/include/eigen3/Eigen/src/Core/BandMatrix.h \
  /usr/include/eigen3/Eigen/src/Core/CoreIterators.h \
  /usr/include/eigen3/Eigen/src/Core/ConditionEstimator.h \
- /usr/include/eigen3/Eigen/src/Core/arch/NEON/GeneralBlockPanelKernel.h \
  /usr/include/eigen3/Eigen/src/Core/BooleanRedux.h \
  /usr/include/eigen3/Eigen/src/Core/Select.h \
  /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h \
@@ -1102,7 +1073,6 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/color_rgba.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/color_rgba__builder.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/color_rgba__type_support.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/twist.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp \
@@ -1295,7 +1265,7 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /opt/ros/jazzy/include/tf2/tf2/LinearMath/Vector3.hpp \
  /opt/ros/jazzy/include/tf2/tf2/LinearMath/Scalar.hpp \
  /usr/include/c++/13/cfloat \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/float.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
  /opt/ros/jazzy/include/tf2/tf2/LinearMath/MinMax.hpp \
  /opt/ros/jazzy/include/tf2/tf2/visibility_control.h \
  /opt/ros/jazzy/include/tf2/tf2/LinearMath/Quaternion.hpp \
@@ -1330,11 +1300,6 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /opt/ros/jazzy/include/moveit_ros_planning/moveit/robot_model_loader/robot_model_loader.hpp \
  /opt/ros/jazzy/include/moveit_ros_planning/moveit/rdf_loader/rdf_loader.hpp \
  /opt/ros/jazzy/include/moveit_ros_planning/moveit/rdf_loader/synchronized_string_parameter.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/string.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
  /opt/ros/jazzy/include/moveit_ros_planning/moveit/kinematics_plugin_loader/kinematics_plugin_loader.hpp \
  /opt/ros/jazzy/include/moveit_ros_planning/kinematics_parameters.hpp \
  /opt/ros/jazzy/include/rclcpp_lifecycle/rclcpp_lifecycle/lifecycle_node.hpp \
@@ -1362,9 +1327,11 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /opt/ros/jazzy/include/rclcpp_lifecycle/rclcpp_lifecycle/managed_entity.hpp \
  /opt/ros/jazzy/include/rclcpp_lifecycle/rclcpp_lifecycle/transition.hpp \
  /opt/ros/jazzy/include/rclcpp_lifecycle/rclcpp_lifecycle/lifecycle_node_impl.hpp \
- /usr/include/fmt/core.h /usr/include/fmt/format.h \
- /usr/include/fmt/core.h /usr/include/fmt/ranges.h \
- /usr/include/fmt/format.h \
+ /home/andre/miniconda3/include/fmt/core.h \
+ /home/andre/miniconda3/include/fmt/format.h \
+ /home/andre/miniconda3/include/fmt/base.h \
+ /home/andre/miniconda3/include/fmt/format.h \
+ /home/andre/miniconda3/include/fmt/ranges.h \
  /opt/ros/jazzy/include/parameter_traits/parameter_traits/parameter_traits.hpp \
  /opt/ros/jazzy/include/rsl/rsl/algorithm.hpp \
  /opt/ros/jazzy/include/tl_expected/expected.hpp \
@@ -1372,4 +1339,5 @@ CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o: \
  /opt/ros/jazzy/include/rsl/rsl/static_vector.hpp \
  /opt/ros/jazzy/include/tcb_span/span.hpp \
  /opt/ros/jazzy/include/rsl/rsl/parameter_validators.hpp \
- /opt/ros/jazzy/include/rsl/rsl/export.hpp
+ /opt/ros/jazzy/include/rsl/rsl/export.hpp \
+ /home/andre/ros2_ws/install/move_program/include/move_program/gradient_ik.hpp

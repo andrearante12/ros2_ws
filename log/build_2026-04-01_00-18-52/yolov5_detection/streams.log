@@ -1,0 +1,21 @@
+[1.658s] Invoking command in '/home/andre/ros2_ws/src/perception/yolov5_detection': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andre/ros2_ws/build/yolov5_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/install/yolov5_detection/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/yolov5_detection build --build-base /home/andre/ros2_ws/build/yolov5_detection/build install --record /home/andre/ros2_ws/build/yolov5_detection/install.log --single-version-externally-managed install_data
+[2.155s] running egg_info
+[2.194s] writing ../../../build/yolov5_detection/yolov5_detection.egg-info/PKG-INFO
+[2.194s] writing dependency_links to ../../../build/yolov5_detection/yolov5_detection.egg-info/dependency_links.txt
+[2.195s] writing entry points to ../../../build/yolov5_detection/yolov5_detection.egg-info/entry_points.txt
+[2.196s] writing requirements to ../../../build/yolov5_detection/yolov5_detection.egg-info/requires.txt
+[2.196s] writing top-level names to ../../../build/yolov5_detection/yolov5_detection.egg-info/top_level.txt
+[2.430s] reading manifest file '../../../build/yolov5_detection/yolov5_detection.egg-info/SOURCES.txt'
+[2.431s] writing manifest file '../../../build/yolov5_detection/yolov5_detection.egg-info/SOURCES.txt'
+[2.431s] running build
+[2.432s] running build_py
+[2.433s] running install
+[2.438s] running install_lib
+[2.480s] running install_data
+[2.482s] running install_egg_info
+[2.523s] removing '/home/andre/ros2_ws/install/yolov5_detection/lib/python3.12/site-packages/yolov5_detection-0.0.1-py3.12.egg-info' (and everything under it)
+[2.524s] Copying ../../../build/yolov5_detection/yolov5_detection.egg-info to /home/andre/ros2_ws/install/yolov5_detection/lib/python3.12/site-packages/yolov5_detection-0.0.1-py3.12.egg-info
+[2.525s] running install_scripts
+[2.629s] Installing yolo_detector script to /home/andre/ros2_ws/install/yolov5_detection/lib/yolov5_detection
+[2.629s] writing list of installed files to '/home/andre/ros2_ws/build/yolov5_detection/install.log'
+[2.681s] Invoked command in '/home/andre/ros2_ws/src/perception/yolov5_detection' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andre/ros2_ws/build/yolov5_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/install/yolov5_detection/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/yolov5_detection build --build-base /home/andre/ros2_ws/build/yolov5_detection/build install --record /home/andre/ros2_ws/build/yolov5_detection/install.log --single-version-externally-managed install_data

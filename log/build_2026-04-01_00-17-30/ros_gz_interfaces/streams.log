@@ -1,0 +1,39 @@
+[0.031s] Invoking command in '/home/andre/ros2_ws/build/ros_gz_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/mqtt_imu:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/external/ros_gz/ros_gz_interfaces -DCMAKE_EXE_LINKER_FLAGS=-lcurl -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/ros_gz_interfaces
+[0.437s] -- The C compiler identification is GNU 13.3.0
+[0.438s] -- The CXX compiler identification is GNU 13.3.0
+[0.438s] -- Detecting C compiler ABI info
+[0.438s] -- Detecting C compiler ABI info - done
+[0.438s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.438s] -- Detecting C compile features
+[0.438s] -- Detecting C compile features - done
+[0.441s] -- Detecting CXX compiler ABI info
+[0.503s] -- Detecting CXX compiler ABI info - done
+[0.900s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.900s] -- Detecting CXX compile features
+[0.900s] -- Detecting CXX compile features - done
+[0.900s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.900s] -- Found Python3: /home/andre/miniconda3/bin/python3 (found version "3.13.11") found components: Interpreter 
+[0.950s] -- Found builtin_interfaces: 2.0.3 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+[1.022s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.060s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.092s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.126s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.164s] -- Found rcl_interfaces: 2.0.3 (/opt/ros/jazzy/share/rcl_interfaces/cmake)
+[1.245s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.285s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.320s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.771s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[2.617s] -- Found ament_cmake_cppcheck: 0.17.3 (/opt/ros/jazzy/share/ament_cmake_cppcheck/cmake)
+[2.623s] -- Found ament_cmake_cpplint: 0.17.3 (/opt/ros/jazzy/share/ament_cmake_cpplint/cmake)
+[2.636s] -- Found ament_cmake_uncrustify: 0.17.3 (/opt/ros/jazzy/share/ament_cmake_uncrustify/cmake)
+[2.648s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[4.104s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.608s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.621s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[4.810s] -- Found PythonExtra: /home/andre/miniconda3/bin/python3  
+[6.197s] -- Found Python3: /home/andre/miniconda3/bin/python3 (found version "3.13.11") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[6.197s] -- Found ament_cmake_flake8: 0.17.3 (/opt/ros/jazzy/share/ament_cmake_flake8/cmake)
+[6.197s] -- Found ament_cmake_pep257: 0.17.3 (/opt/ros/jazzy/share/ament_cmake_pep257/cmake)
+[6.197s] -- Configuring done (6.0s)
+[6.206s] -- Generating done (0.1s)
+[6.224s] -- Build files have been written to: /home/andre/ros2_ws/build/ros_gz_interfaces

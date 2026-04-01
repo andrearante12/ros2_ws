@@ -1,0 +1,64 @@
+[0.009s] Invoking command in '/home/andre/ros2_ws/build/move_program': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/planning/move_program -DCMAKE_EXE_LINKER_FLAGS=-lcurl -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/move_program
+[0.024s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.246s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.278s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.288s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.301s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.315s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.395s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.397s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.482s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.581s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.600s] -- Found moveit_ros_planning_interface: 2.12.3 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)
+[0.615s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread 
+[0.976s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.018s] -- Found parameter_traits: 0.5.0 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[1.025s] -- Found rclcpp_lifecycle: 28.1.13 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[1.066s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem 
+[1.124s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.299s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono 
+[1.367s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options 
+[1.402s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread 
+[1.556s] -- Configuring done (1.5s)
+[1.583s] CMake Warning at CMakeLists.txt:16 (add_executable):
+[1.583s]   Cannot generate a safe runtime search path for target move_program because
+[1.583s]   files in some directories may conflict with libraries in implicit
+[1.583s]   directories:
+[1.583s] 
+[1.583s]     runtime library [libcrypto.so.3] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[1.583s]       /home/andre/miniconda3/lib
+[1.583s] 
+[1.583s]   Some of these libraries may not be found correctly.
+[1.583s] 
+[1.584s] 
+[1.585s] -- Generating done (0.0s)
+[1.593s] -- Build files have been written to: /home/andre/ros2_ws/build/move_program
+[1.610s] Invoked command in '/home/andre/ros2_ws/build/move_program' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/planning/move_program -DCMAKE_EXE_LINKER_FLAGS=-lcurl -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/move_program
+[1.611s] Invoking command in '/home/andre/ros2_ws/build/move_program': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/move_program -- -j4 -l4
+[1.687s] [ 50%] Linking CXX executable move_program
+[2.144s] [100%] Built target move_program
+[2.157s] Invoked command in '/home/andre/ros2_ws/build/move_program' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/move_program -- -j4 -l4
+[2.170s] Invoking command in '/home/andre/ros2_ws/build/move_program': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/move_program
+[2.180s] -- Install configuration: ""
+[2.182s] -- Installing: /home/andre/ros2_ws/install/move_program/lib/move_program/move_program
+[2.183s] -- Set non-toolchain portion of runtime path of "/home/andre/ros2_ws/install/move_program/lib/move_program/move_program" to ""
+[2.183s] -- Installing: /home/andre/ros2_ws/install/move_program/include
+[2.183s] -- Installing: /home/andre/ros2_ws/install/move_program/include/move_program
+[2.183s] -- Installing: /home/andre/ros2_ws/install/move_program/include/move_program/gradient_ik.hpp
+[2.183s] -- Installing: /home/andre/ros2_ws/install/move_program/share/ament_index/resource_index/package_run_dependencies/move_program
+[2.183s] -- Installing: /home/andre/ros2_ws/install/move_program/share/ament_index/resource_index/parent_prefix_path/move_program
+[2.184s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/environment/ament_prefix_path.sh
+[2.184s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/environment/ament_prefix_path.dsv
+[2.184s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/environment/path.sh
+[2.184s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/environment/path.dsv
+[2.184s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.bash
+[2.185s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.sh
+[2.185s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.zsh
+[2.186s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.dsv
+[2.186s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/package.dsv
+[2.186s] -- Installing: /home/andre/ros2_ws/install/move_program/share/ament_index/resource_index/packages/move_program
+[2.186s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.186s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/cmake/move_programConfig.cmake
+[2.186s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/cmake/move_programConfig-version.cmake
+[2.186s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/package.xml
+[2.188s] Invoked command in '/home/andre/ros2_ws/build/move_program' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/move_program

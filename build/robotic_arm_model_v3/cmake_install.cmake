@@ -1,8 +1,8 @@
-# Install script for directory: /home/bot/ros2_ws/src/robotic_arm_model_v3
+# Install script for directory: /home/andre/ros2_ws/src/robot/robotic_arm_model_v3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/bot/ros2_ws/install/robotic_arm_model_v3")
+  set(CMAKE_INSTALL_PREFIX "/home/andre/ros2_ws/install/robotic_arm_model_v3")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -44,17 +44,17 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_model_v3" TYPE DIRECTORY FILES
-    "/home/bot/ros2_ws/src/robotic_arm_model_v3/urdf"
-    "/home/bot/ros2_ws/src/robotic_arm_model_v3/meshes"
+    "/home/andre/ros2_ws/src/robot/robotic_arm_model_v3/urdf"
+    "/home/andre/ros2_ws/src/robot/robotic_arm_model_v3/meshes"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/bot/ros2_ws/build/robotic_arm_model_v3/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robotic_arm_model_v3")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/andre/ros2_ws/build/robotic_arm_model_v3/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robotic_arm_model_v3")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/bot/ros2_ws/build/robotic_arm_model_v3/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/robotic_arm_model_v3")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/andre/ros2_ws/build/robotic_arm_model_v3/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/robotic_arm_model_v3")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -62,7 +62,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_model_v3/environment" TYPE FILE FILES "/home/bot/ros2_ws/build/robotic_arm_model_v3/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_model_v3/environment" TYPE FILE FILES "/home/andre/ros2_ws/build/robotic_arm_model_v3/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -70,42 +70,42 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_model_v3/environment" TYPE FILE FILES "/home/bot/ros2_ws/build/robotic_arm_model_v3/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_model_v3/environment" TYPE FILE FILES "/home/andre/ros2_ws/build/robotic_arm_model_v3/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_model_v3" TYPE FILE FILES "/home/bot/ros2_ws/build/robotic_arm_model_v3/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_model_v3" TYPE FILE FILES "/home/andre/ros2_ws/build/robotic_arm_model_v3/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_model_v3" TYPE FILE FILES "/home/bot/ros2_ws/build/robotic_arm_model_v3/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_model_v3" TYPE FILE FILES "/home/andre/ros2_ws/build/robotic_arm_model_v3/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_model_v3" TYPE FILE FILES "/home/bot/ros2_ws/build/robotic_arm_model_v3/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_model_v3" TYPE FILE FILES "/home/andre/ros2_ws/build/robotic_arm_model_v3/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_model_v3" TYPE FILE FILES "/home/bot/ros2_ws/build/robotic_arm_model_v3/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_model_v3" TYPE FILE FILES "/home/andre/ros2_ws/build/robotic_arm_model_v3/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_model_v3" TYPE FILE FILES "/home/bot/ros2_ws/build/robotic_arm_model_v3/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_model_v3" TYPE FILE FILES "/home/andre/ros2_ws/build/robotic_arm_model_v3/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/bot/ros2_ws/build/robotic_arm_model_v3/ament_cmake_index/share/ament_index/resource_index/packages/robotic_arm_model_v3")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/andre/ros2_ws/build/robotic_arm_model_v3/ament_cmake_index/share/ament_index/resource_index/packages/robotic_arm_model_v3")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_model_v3/cmake" TYPE FILE FILES
-    "/home/bot/ros2_ws/build/robotic_arm_model_v3/ament_cmake_core/robotic_arm_model_v3Config.cmake"
-    "/home/bot/ros2_ws/build/robotic_arm_model_v3/ament_cmake_core/robotic_arm_model_v3Config-version.cmake"
+    "/home/andre/ros2_ws/build/robotic_arm_model_v3/ament_cmake_core/robotic_arm_model_v3Config.cmake"
+    "/home/andre/ros2_ws/build/robotic_arm_model_v3/ament_cmake_core/robotic_arm_model_v3Config-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_model_v3" TYPE FILE FILES "/home/bot/ros2_ws/src/robotic_arm_model_v3/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_model_v3" TYPE FILE FILES "/home/andre/ros2_ws/src/robot/robotic_arm_model_v3/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -116,5 +116,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/bot/ros2_ws/build/robotic_arm_model_v3/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/andre/ros2_ws/build/robotic_arm_model_v3/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

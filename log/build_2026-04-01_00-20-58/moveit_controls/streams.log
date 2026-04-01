@@ -1,0 +1,22 @@
+[1.806s] Invoking command in '/home/andre/ros2_ws/src/planning/moveit_controls': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andre/ros2_ws/build/moveit_controls/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/install/moveit_controls/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/moveit_controls build --build-base /home/andre/ros2_ws/build/moveit_controls/build install --record /home/andre/ros2_ws/build/moveit_controls/install.log --single-version-externally-managed install_data
+[2.375s] running egg_info
+[2.416s] writing ../../../build/moveit_controls/moveit_controls.egg-info/PKG-INFO
+[2.417s] writing dependency_links to ../../../build/moveit_controls/moveit_controls.egg-info/dependency_links.txt
+[2.417s] writing entry points to ../../../build/moveit_controls/moveit_controls.egg-info/entry_points.txt
+[2.417s] writing requirements to ../../../build/moveit_controls/moveit_controls.egg-info/requires.txt
+[2.417s] writing top-level names to ../../../build/moveit_controls/moveit_controls.egg-info/top_level.txt
+[2.689s] reading manifest file '../../../build/moveit_controls/moveit_controls.egg-info/SOURCES.txt'
+[2.689s] writing manifest file '../../../build/moveit_controls/moveit_controls.egg-info/SOURCES.txt'
+[2.689s] running build
+[2.689s] running build_py
+[2.689s] running install
+[2.696s] running install_lib
+[2.757s] running install_data
+[2.757s] running install_egg_info
+[2.821s] removing '/home/andre/ros2_ws/install/moveit_controls/lib/python3.12/site-packages/moveit_controls-0.0.0-py3.12.egg-info' (and everything under it)
+[2.821s] Copying ../../../build/moveit_controls/moveit_controls.egg-info to /home/andre/ros2_ws/install/moveit_controls/lib/python3.12/site-packages/moveit_controls-0.0.0-py3.12.egg-info
+[2.821s] running install_scripts
+[3.321s] Installing move_to_xyz script to /home/andre/ros2_ws/install/moveit_controls/lib/moveit_controls
+[3.321s] Installing target_listener script to /home/andre/ros2_ws/install/moveit_controls/lib/moveit_controls
+[3.321s] writing list of installed files to '/home/andre/ros2_ws/build/moveit_controls/install.log'
+[3.327s] Invoked command in '/home/andre/ros2_ws/src/planning/moveit_controls' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andre/ros2_ws/build/moveit_controls/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/install/moveit_controls/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/moveit_controls build --build-base /home/andre/ros2_ws/build/moveit_controls/build install --record /home/andre/ros2_ws/build/moveit_controls/install.log --single-version-externally-managed install_data

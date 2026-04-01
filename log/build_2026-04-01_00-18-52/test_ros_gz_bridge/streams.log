@@ -1,0 +1,98 @@
+[0.018s] Invoking command in '/home/andre/ros2_ws/build/test_ros_gz_bridge': CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/ros_gz_interfaces:/home/andre/ros2_ws/install/arm_bringup:/home/andre/ros2_ws/install/robotic_arm_v3_config:/home/andre/ros2_ws/install/robotic_arm_model_v3:/home/andre/ros2_ws/install/esp32_controller:/home/andre/ros2_ws/install/move_program:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/yolov5_detection:/home/andre/ros2_ws/install/web_interface:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/mqtt_imu:/home/andre/ros2_ws/install/moveit_controls:/home/andre/ros2_ws/install/chess_data_collector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/external/ros_gz/test_ros_gz_bridge -DCMAKE_EXE_LINKER_FLAGS=-lcurl -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/test_ros_gz_bridge
+[0.090s] -- The C compiler identification is GNU 13.3.0
+[0.165s] -- The CXX compiler identification is GNU 13.3.0
+[0.186s] -- Detecting C compiler ABI info
+[0.335s] -- Detecting C compiler ABI info - done
+[0.363s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.364s] -- Detecting C compile features
+[0.364s] -- Detecting C compile features - done
+[0.375s] -- Detecting CXX compiler ABI info
+[0.508s] -- Detecting CXX compiler ABI info - done
+[0.522s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.525s] -- Detecting CXX compile features
+[0.527s] -- Detecting CXX compile features - done
+[0.533s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.722s] -- Found Python3: /home/andre/miniconda3/bin/python3 (found version "3.13.11") found components: Interpreter 
+[0.906s] -- Found ros_gz_bridge: 1.0.16 (/opt/ros/jazzy/share/ros_gz_bridge/cmake)
+[1.020s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.052s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.087s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.120s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.261s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.268s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.387s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.418s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.455s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.696s] -- Looking for gz-msgs10 -- found version 10.3.2
+[1.704s] -- Searching for dependencies of gz-msgs10
+[1.845s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.21.12") 
+[1.852s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.852s] -- Searching for dependencies of gz-utils2
+[1.854s] -- Looking for gz-math7 -- found version 7.5.2
+[1.856s] -- Searching for dependencies of gz-math7
+[1.858s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.862s] -- Checking for module 'tinyxml2'
+[1.880s] --   Found tinyxml2, version 10.0.0
+[1.933s] -- Looking for gz-transport13 -- found version 13.5.0
+[1.933s] -- Searching for dependencies of gz-transport13
+[1.978s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.983s] -- Checking for module 'libzmq >= 4'
+[2.001s] --   Found libzmq, version 4.3.5
+[2.050s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[2.057s] -- Checking for module 'uuid'
+[2.077s] --   Found uuid, version 2.39.3
+[2.121s] -- Found UUID: TRUE  
+[2.121s] -- Looking for gz-utils2 -- found version 2.2.1
+[2.122s] -- Searching for dependencies of gz-utils2
+[2.122s] -- Searching for <gz-utils2> component [cli]
+[2.125s] -- Looking for gz-utils2-cli -- found version 2.2.1
+[2.126s] -- Searching for dependencies of gz-utils2-cli
+[2.127s] -- Looking for gz-msgs10 -- found version 10.3.2
+[2.505s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.672s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[2.802s] -- Found PythonExtra: /home/andre/miniconda3/bin/python3  
+[2.837s] -- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.841s] -- Found Threads: TRUE  
+[2.844s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.846s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.846s] -- Configured cppcheck include dirs: 
+[2.846s] -- Configured cppcheck exclude dirs and/or files: 
+[2.847s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.847s] -- Configured cpplint exclude dirs and/or files: 
+[2.848s] -- Added test 'lint_cmake' to check CMake code style
+[2.850s] -- Added test 'uncrustify' to check C / C++ code style
+[2.850s] -- Configured uncrustify additional arguments: 
+[2.851s] -- Added test 'xmllint' to check XML markup files
+[2.853s] -- Configuring done (2.8s)
+[2.874s] -- Generating done (0.0s)
+[2.880s] -- Build files have been written to: /home/andre/ros2_ws/build/test_ros_gz_bridge
+[2.895s] Invoked command in '/home/andre/ros2_ws/build/test_ros_gz_bridge' returned '0': CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/ros_gz_interfaces:/home/andre/ros2_ws/install/arm_bringup:/home/andre/ros2_ws/install/robotic_arm_v3_config:/home/andre/ros2_ws/install/robotic_arm_model_v3:/home/andre/ros2_ws/install/esp32_controller:/home/andre/ros2_ws/install/move_program:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/yolov5_detection:/home/andre/ros2_ws/install/web_interface:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/mqtt_imu:/home/andre/ros2_ws/install/moveit_controls:/home/andre/ros2_ws/install/chess_data_collector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andre/ros2_ws/src/external/ros_gz/test_ros_gz_bridge -DCMAKE_EXE_LINKER_FLAGS=-lcurl -DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/install/test_ros_gz_bridge
+[2.896s] Invoking command in '/home/andre/ros2_ws/build/test_ros_gz_bridge': CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/ros_gz_interfaces:/home/andre/ros2_ws/install/arm_bringup:/home/andre/ros2_ws/install/robotic_arm_v3_config:/home/andre/ros2_ws/install/robotic_arm_model_v3:/home/andre/ros2_ws/install/esp32_controller:/home/andre/ros2_ws/install/move_program:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/yolov5_detection:/home/andre/ros2_ws/install/web_interface:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/mqtt_imu:/home/andre/ros2_ws/install/moveit_controls:/home/andre/ros2_ws/install/chess_data_collector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/test_ros_gz_bridge -- -j4 -l4
+[2.968s] [ 16%] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[2.969s] [ 33%] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[3.956s] [ 50%] Linking CXX static library libgtest_main.a
+[4.031s] [ 50%] Built target gtest_main
+[7.054s] [ 66%] Linking CXX static library libgtest.a
+[7.137s] [ 66%] Built target gtest
+[7.158s] [ 83%] Building CXX object CMakeFiles/test_ros_gz_bridge.dir/src/test_ros_gz_bridge.cpp.o
+[10.154s] [100%] Linking CXX executable test_ros_gz_bridge
+[11.121s] [100%] Built target test_ros_gz_bridge
+[11.131s] Invoked command in '/home/andre/ros2_ws/build/test_ros_gz_bridge' returned '0': CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/ros_gz_interfaces:/home/andre/ros2_ws/install/arm_bringup:/home/andre/ros2_ws/install/robotic_arm_v3_config:/home/andre/ros2_ws/install/robotic_arm_model_v3:/home/andre/ros2_ws/install/esp32_controller:/home/andre/ros2_ws/install/move_program:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/yolov5_detection:/home/andre/ros2_ws/install/web_interface:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/mqtt_imu:/home/andre/ros2_ws/install/moveit_controls:/home/andre/ros2_ws/install/chess_data_collector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/test_ros_gz_bridge -- -j4 -l4
+[11.132s] Invoking command in '/home/andre/ros2_ws/build/test_ros_gz_bridge': CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/ros_gz_interfaces:/home/andre/ros2_ws/install/arm_bringup:/home/andre/ros2_ws/install/robotic_arm_v3_config:/home/andre/ros2_ws/install/robotic_arm_model_v3:/home/andre/ros2_ws/install/esp32_controller:/home/andre/ros2_ws/install/move_program:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/yolov5_detection:/home/andre/ros2_ws/install/web_interface:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/mqtt_imu:/home/andre/ros2_ws/install/moveit_controls:/home/andre/ros2_ws/install/chess_data_collector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/test_ros_gz_bridge
+[11.142s] -- Install configuration: ""
+[11.142s] -- Installing: /home/andre/ros2_ws/install/test_ros_gz_bridge/share/ament_index/resource_index/package_run_dependencies/test_ros_gz_bridge
+[11.143s] -- Installing: /home/andre/ros2_ws/install/test_ros_gz_bridge/share/ament_index/resource_index/parent_prefix_path/test_ros_gz_bridge
+[11.143s] -- Installing: /home/andre/ros2_ws/install/test_ros_gz_bridge/share/test_ros_gz_bridge/environment/ament_prefix_path.sh
+[11.143s] -- Installing: /home/andre/ros2_ws/install/test_ros_gz_bridge/share/test_ros_gz_bridge/environment/ament_prefix_path.dsv
+[11.143s] -- Installing: /home/andre/ros2_ws/install/test_ros_gz_bridge/share/test_ros_gz_bridge/environment/path.sh
+[11.144s] -- Installing: /home/andre/ros2_ws/install/test_ros_gz_bridge/share/test_ros_gz_bridge/environment/path.dsv
+[11.144s] -- Installing: /home/andre/ros2_ws/install/test_ros_gz_bridge/share/test_ros_gz_bridge/local_setup.bash
+[11.144s] -- Installing: /home/andre/ros2_ws/install/test_ros_gz_bridge/share/test_ros_gz_bridge/local_setup.sh
+[11.144s] -- Installing: /home/andre/ros2_ws/install/test_ros_gz_bridge/share/test_ros_gz_bridge/local_setup.zsh
+[11.144s] -- Installing: /home/andre/ros2_ws/install/test_ros_gz_bridge/share/test_ros_gz_bridge/local_setup.dsv
+[11.145s] -- Installing: /home/andre/ros2_ws/install/test_ros_gz_bridge/share/test_ros_gz_bridge/package.dsv
+[11.145s] -- Installing: /home/andre/ros2_ws/install/test_ros_gz_bridge/share/ament_index/resource_index/packages/test_ros_gz_bridge
+[11.145s] -- Installing: /home/andre/ros2_ws/install/test_ros_gz_bridge/share/test_ros_gz_bridge/cmake/test_ros_gz_bridgeConfig.cmake
+[11.145s] -- Installing: /home/andre/ros2_ws/install/test_ros_gz_bridge/share/test_ros_gz_bridge/cmake/test_ros_gz_bridgeConfig-version.cmake
+[11.145s] -- Installing: /home/andre/ros2_ws/install/test_ros_gz_bridge/share/test_ros_gz_bridge/package.xml
+[11.147s] Invoked command in '/home/andre/ros2_ws/build/test_ros_gz_bridge' returned '0': CMAKE_PREFIX_PATH=/home/andre/ros2_ws/install/ros_gz_interfaces:/home/andre/ros2_ws/install/arm_bringup:/home/andre/ros2_ws/install/robotic_arm_v3_config:/home/andre/ros2_ws/install/robotic_arm_model_v3:/home/andre/ros2_ws/install/esp32_controller:/home/andre/ros2_ws/install/move_program:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/andre/ros2_ws/install/yolov5_detection:/home/andre/ros2_ws/install/web_interface:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/mqtt_imu:/home/andre/ros2_ws/install/moveit_controls:/home/andre/ros2_ws/install/chess_data_collector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/test_ros_gz_bridge

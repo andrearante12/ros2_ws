@@ -1,4 +1,0 @@
-# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
-
-set(realsense2_camera_msgs_IDL_FILES "msg/IMUInfo.idl;msg/Extrinsics.idl;msg/Metadata.idl;msg/RGBD.idl;srv/DeviceInfo.idl;srv/SafetyPresetRead.idl;srv/SafetyPresetWrite.idl;srv/SafetyInterfaceConfigRead.idl;srv/SafetyInterfaceConfigWrite.idl;srv/CalibConfigRead.idl;srv/CalibConfigWrite.idl;srv/ApplicationConfigRead.idl;srv/ApplicationConfigWrite.idl;srv/HardwareMonitorCommandSend.idl;action/TriggeredCalibration.idl")
-set(realsense2_camera_msgs_INTERFACE_FILES "msg/IMUInfo.msg;msg/Extrinsics.msg;msg/Metadata.msg;msg/RGBD.msg;srv/DeviceInfo.srv;srv/SafetyPresetRead.srv;srv/SafetyPresetWrite.srv;srv/SafetyInterfaceConfigRead.srv;srv/SafetyInterfaceConfigWrite.srv;srv/CalibConfigRead.srv;srv/CalibConfigWrite.srv;srv/ApplicationConfigRead.srv;srv/ApplicationConfigWrite.srv;srv/HardwareMonitorCommandSend.srv;action/TriggeredCalibration.action")

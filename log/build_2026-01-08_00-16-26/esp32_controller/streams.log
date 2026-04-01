@@ -1,2 +1,0 @@
-[0.126s] Invoking command in '/home/bot/ros2_ws/build/esp32_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/moveit_controls:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bot/ros2_ws/build/esp32_controller -- -j4 -l4
-[1.563s] [ 50%] [32mBuilding CXX object CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o[0m

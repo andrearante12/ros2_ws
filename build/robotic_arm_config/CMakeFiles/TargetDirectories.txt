@@ -1,9 +1,0 @@
-/home/bot/ros2_ws/build/robotic_arm_config/CMakeFiles/uninstall.dir
-/home/bot/ros2_ws/build/robotic_arm_config/CMakeFiles/robotic_arm_config_uninstall.dir
-/home/bot/ros2_ws/build/robotic_arm_config/CMakeFiles/test.dir
-/home/bot/ros2_ws/build/robotic_arm_config/CMakeFiles/edit_cache.dir
-/home/bot/ros2_ws/build/robotic_arm_config/CMakeFiles/rebuild_cache.dir
-/home/bot/ros2_ws/build/robotic_arm_config/CMakeFiles/list_install_components.dir
-/home/bot/ros2_ws/build/robotic_arm_config/CMakeFiles/install.dir
-/home/bot/ros2_ws/build/robotic_arm_config/CMakeFiles/install/local.dir
-/home/bot/ros2_ws/build/robotic_arm_config/CMakeFiles/install/strip.dir

@@ -1,0 +1,21 @@
+CMake Warning at CMakeLists.txt:19 (add_executable):
+  Cannot generate a safe runtime search path for target esp32_controller
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libcrypto.so.3] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/andre/miniconda3/lib
+
+  Some of these libraries may not be found correctly.
+
+
+/home/andre/ros2_ws/src/planning/esp32_controller/src/esp32_controller.cpp: In constructor ‘Esp32Controller::Esp32Controller()’:
+/home/andre/ros2_ws/src/planning/esp32_controller/src/esp32_controller.cpp:358:9: warning: ‘Esp32Controller::callback_counter_’ will be initialized after [-Wreorder]
+  358 |     int callback_counter_;
+      |         ^~~~~~~~~~~~~~~~~
+/home/andre/ros2_ws/src/planning/esp32_controller/src/esp32_controller.cpp:353:12: warning:   ‘double Esp32Controller::current_roll_’ [-Wreorder]
+  353 |     double current_roll_;
+      |            ^~~~~~~~~~~~~
+/home/andre/ros2_ws/src/planning/esp32_controller/src/esp32_controller.cpp:19:5: warning:   when initialized here [-Wreorder]
+   19 |     Esp32Controller()
+      |     ^~~~~~~~~~~~~~~

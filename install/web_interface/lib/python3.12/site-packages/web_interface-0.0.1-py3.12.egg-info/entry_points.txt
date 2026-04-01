@@ -1,0 +1,2 @@
+[console_scripts]
+flask_server = web_interface.flask_server:main

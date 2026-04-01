@@ -1,0 +1,26 @@
+[0.034s] Invoking command in '/home/andre/ros2_ws/build/move_program': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/yolov5_detection:/home/andre/ros2_ws/install/web_interface:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/mqtt_imu:/home/andre/ros2_ws/install/moveit_controls:/home/andre/ros2_ws/install/chess_data_collector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/move_program -- -j4 -l4
+[0.343s] [100%] Built target move_program
+[0.633s] Invoked command in '/home/andre/ros2_ws/build/move_program' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/yolov5_detection:/home/andre/ros2_ws/install/web_interface:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/mqtt_imu:/home/andre/ros2_ws/install/moveit_controls:/home/andre/ros2_ws/install/chess_data_collector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/move_program -- -j4 -l4
+[0.643s] Invoking command in '/home/andre/ros2_ws/build/move_program': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/yolov5_detection:/home/andre/ros2_ws/install/web_interface:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/mqtt_imu:/home/andre/ros2_ws/install/moveit_controls:/home/andre/ros2_ws/install/chess_data_collector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/move_program
+[0.659s] -- Install configuration: ""
+[0.662s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/lib/move_program/move_program
+[0.663s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/include
+[0.663s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/include/move_program
+[0.663s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/include/move_program/gradient_ik.hpp
+[0.663s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/ament_index/resource_index/package_run_dependencies/move_program
+[0.663s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/ament_index/resource_index/parent_prefix_path/move_program
+[0.664s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/environment/ament_prefix_path.sh
+[0.664s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/environment/ament_prefix_path.dsv
+[0.664s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/environment/path.sh
+[0.664s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/environment/path.dsv
+[0.665s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.bash
+[0.665s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.sh
+[0.665s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.zsh
+[0.669s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/local_setup.dsv
+[0.670s] -- Installing: /home/andre/ros2_ws/install/move_program/share/move_program/package.dsv
+[0.670s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/ament_index/resource_index/packages/move_program
+[0.670s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.670s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/cmake/move_programConfig.cmake
+[0.670s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/cmake/move_programConfig-version.cmake
+[0.670s] -- Up-to-date: /home/andre/ros2_ws/install/move_program/share/move_program/package.xml
+[0.675s] Invoked command in '/home/andre/ros2_ws/build/move_program' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/yolov5_detection:/home/andre/ros2_ws/install/web_interface:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/mqtt_imu:/home/andre/ros2_ws/install/moveit_controls:/home/andre/ros2_ws/install/chess_data_collector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/move_program

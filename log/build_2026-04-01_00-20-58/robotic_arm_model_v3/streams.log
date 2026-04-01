@@ -1,0 +1,33 @@
+[0.025s] Invoking command in '/home/andre/ros2_ws/build/robotic_arm_model_v3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/yolov5_detection:/home/andre/ros2_ws/install/web_interface:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/mqtt_imu:/home/andre/ros2_ws/install/moveit_controls:/home/andre/ros2_ws/install/chess_data_collector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/robotic_arm_model_v3 -- -j4 -l4
+[0.633s] Invoked command in '/home/andre/ros2_ws/build/robotic_arm_model_v3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/yolov5_detection:/home/andre/ros2_ws/install/web_interface:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/mqtt_imu:/home/andre/ros2_ws/install/moveit_controls:/home/andre/ros2_ws/install/chess_data_collector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andre/ros2_ws/build/robotic_arm_model_v3 -- -j4 -l4
+[0.635s] Invoking command in '/home/andre/ros2_ws/build/robotic_arm_model_v3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/yolov5_detection:/home/andre/ros2_ws/install/web_interface:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/mqtt_imu:/home/andre/ros2_ws/install/moveit_controls:/home/andre/ros2_ws/install/chess_data_collector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/robotic_arm_model_v3
+[0.660s] -- Install configuration: ""
+[0.660s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/urdf
+[0.660s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/urdf/robotic_arm_model_v3.urdf
+[0.660s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/urdf/robotic_arm_model_v3.sdf
+[0.660s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/urdf/robotic_arm_model_v3.csv
+[0.660s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes
+[0.661s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/end_effector_top.STL
+[0.661s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/base_link.STL
+[0.661s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/link_2.STL
+[0.661s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/end_effector_link.STL
+[0.661s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/link_3.STL
+[0.661s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/end_effector_bottom.STL
+[0.661s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/link_1.STL
+[0.662s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/link_4.STL
+[0.663s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/ament_index/resource_index/package_run_dependencies/robotic_arm_model_v3
+[0.663s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/ament_index/resource_index/parent_prefix_path/robotic_arm_model_v3
+[0.663s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/environment/ament_prefix_path.sh
+[0.663s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/environment/ament_prefix_path.dsv
+[0.663s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/environment/path.sh
+[0.663s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/environment/path.dsv
+[0.663s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/local_setup.bash
+[0.663s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/local_setup.sh
+[0.664s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/local_setup.zsh
+[0.664s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/local_setup.dsv
+[0.664s] -- Installing: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/package.dsv
+[0.664s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/ament_index/resource_index/packages/robotic_arm_model_v3
+[0.664s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/cmake/robotic_arm_model_v3Config.cmake
+[0.664s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/cmake/robotic_arm_model_v3Config-version.cmake
+[0.664s] -- Up-to-date: /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/package.xml
+[0.680s] Invoked command in '/home/andre/ros2_ws/build/robotic_arm_model_v3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andre/ros2_ws/install/yolov5_detection:/home/andre/ros2_ws/install/web_interface:/home/andre/ros2_ws/install/pose_printer:/home/andre/ros2_ws/install/mqtt_imu:/home/andre/ros2_ws/install/moveit_controls:/home/andre/ros2_ws/install/chess_data_collector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andre/ros2_ws/build/robotic_arm_model_v3

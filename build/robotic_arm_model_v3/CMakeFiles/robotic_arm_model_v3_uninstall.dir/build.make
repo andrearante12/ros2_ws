@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bot/ros2_ws/src/robotic_arm_model_v3
+CMAKE_SOURCE_DIR = /home/andre/ros2_ws/src/robot/robotic_arm_model_v3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bot/ros2_ws/build/robotic_arm_model_v3
+CMAKE_BINARY_DIR = /home/andre/ros2_ws/build/robotic_arm_model_v3
 
 # Utility rule file for robotic_arm_model_v3_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/robotic_arm_model_v3_uninstall.dir/compiler_depend.make
 include CMakeFiles/robotic_arm_model_v3_uninstall.dir/progress.make
 
 CMakeFiles/robotic_arm_model_v3_uninstall:
-	/usr/bin/cmake -P /home/bot/ros2_ws/build/robotic_arm_model_v3/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/andre/ros2_ws/build/robotic_arm_model_v3/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 robotic_arm_model_v3_uninstall: CMakeFiles/robotic_arm_model_v3_uninstall
 robotic_arm_model_v3_uninstall: CMakeFiles/robotic_arm_model_v3_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/robotic_arm_model_v3_uninstall.dir/clean:
 .PHONY : CMakeFiles/robotic_arm_model_v3_uninstall.dir/clean
 
 CMakeFiles/robotic_arm_model_v3_uninstall.dir/depend:
-	cd /home/bot/ros2_ws/build/robotic_arm_model_v3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bot/ros2_ws/src/robotic_arm_model_v3 /home/bot/ros2_ws/src/robotic_arm_model_v3 /home/bot/ros2_ws/build/robotic_arm_model_v3 /home/bot/ros2_ws/build/robotic_arm_model_v3 /home/bot/ros2_ws/build/robotic_arm_model_v3/CMakeFiles/robotic_arm_model_v3_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/andre/ros2_ws/build/robotic_arm_model_v3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andre/ros2_ws/src/robot/robotic_arm_model_v3 /home/andre/ros2_ws/src/robot/robotic_arm_model_v3 /home/andre/ros2_ws/build/robotic_arm_model_v3 /home/andre/ros2_ws/build/robotic_arm_model_v3 /home/andre/ros2_ws/build/robotic_arm_model_v3/CMakeFiles/robotic_arm_model_v3_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/robotic_arm_model_v3_uninstall.dir/depend
 
