@@ -1,0 +1,15 @@
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:[m[K In constructor ‘[01m[KEsp32Controller::[01;32m[KEsp32Controller[m[K()[m[K’:
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:563:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KEsp32Controller::callback_counter_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  563 |     int [01;35m[Kcallback_counter_[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:558:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble Esp32Controller::current_roll_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  558 |     double [01;35m[Kcurrent_roll_[m[K;
+      |            [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/bot/ros2_ws/src/esp32_controller/src/esp32_controller.cpp:195:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  195 |     [01;35m[KEsp32Controller[m[K()
+      |     [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+compilation terminated.
+gmake[2]: *** [CMakeFiles/esp32_controller.dir/build.make:76: CMakeFiles/esp32_controller.dir/src/esp32_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/esp32_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

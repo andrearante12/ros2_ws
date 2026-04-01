@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "realsense2_camera_msgs/srv/ApplicationConfigWrite_Request",
+      "fields": [
+        {
+          "name": "application_config",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "realsense2_camera_msgs/srv/ApplicationConfigWrite_Request",
+      "hash_string": "RIHS01_dd18096b612ab60ebf21ef012c27de1b7b5684e76afd00a00fb9d45cb9b5f619"
+    }
+  ]
+}

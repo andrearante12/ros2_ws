@@ -14,9 +14,7 @@
 #include <moveit/robot_model_loader/robot_model_loader.hpp>
 #include <moveit/robot_state/robot_state.hpp>
 
-// =======================
-//  Gradient Descent IK Solver
-// =======================
+// Gradient Descent IK Solver
 class GradientDescentIK {
 private:
     moveit::core::RobotStatePtr robot_state_;
@@ -103,9 +101,7 @@ public:
     }
 };
 
-// =======================
-//  Serial Port Communication
-// =======================
+// Serial Port Communication
 class SerialPort {
 private:
     int fd_;
@@ -192,9 +188,7 @@ public:
     }
 };
 
-// =======================
-//  ESP32 Controller Node
-// =======================
+// ESP32 Controller Node
 class Esp32Controller : public rclcpp::Node
 {
 public:
@@ -219,7 +213,7 @@ public:
         current_odom_x_ = 0.0;
         current_odom_y_ = 0.0;
 
-        // Get ROS parameters
+        // Declare and get ROS parameters
         if (!this->has_parameter("callback_skip_rate")) {
             this->declare_parameter("callback_skip_rate", 5);
         }
@@ -235,11 +229,17 @@ public:
         if (!this->has_parameter("lock_y_axis")) {
             this->declare_parameter("lock_y_axis", false);
         }
-        if (!this->has_parameter("enable_wrist_control")) {
-            this->declare_parameter("enable_wrist_control", true);
+        if (!this->has_parameter("lock_wrist")) {
+            this->declare_parameter("lock_wrist", false);
         }
         if (!this->has_parameter("wrist_sensitivity")) {
             this->declare_parameter("wrist_sensitivity", 1.0);
+        }
+        if (!this->has_parameter("default_y_position")) {
+            this->declare_parameter("default_y_position", -1.35);
+        }
+        if (!this->has_parameter("default_wrist_angle")) {
+            this->declare_parameter("default_wrist_angle", 90);
         }
         
         callback_skip_rate_ = this->get_parameter("callback_skip_rate").as_int();
@@ -247,8 +247,10 @@ public:
         y_sensitivity_ = this->get_parameter("y_sensitivity").as_double();
         lock_x_axis_ = this->get_parameter("lock_x_axis").as_bool();
         lock_y_axis_ = this->get_parameter("lock_y_axis").as_bool();
-        enable_wrist_control_ = this->get_parameter("enable_wrist_control").as_bool();
+        lock_wrist_ = this->get_parameter("lock_wrist").as_bool();
         wrist_sensitivity_ = this->get_parameter("wrist_sensitivity").as_double();
+        default_y_position_ = this->get_parameter("default_y_position").as_double();
+        default_wrist_angle_ = this->get_parameter("default_wrist_angle").as_int();
         
         RCLCPP_INFO(get_logger(), "Parameters:");
         RCLCPP_INFO(get_logger(), "  - callback_skip_rate: %d (send commands every %d callbacks)", 
@@ -259,22 +261,22 @@ public:
                    y_sensitivity_);
         RCLCPP_INFO(get_logger(), "  - lock_x_axis: %s", lock_x_axis_ ? "LOCKED" : "unlocked");
         RCLCPP_INFO(get_logger(), "  - lock_y_axis: %s", lock_y_axis_ ? "LOCKED" : "unlocked");
-        RCLCPP_INFO(get_logger(), "  - enable_wrist_control: %s", enable_wrist_control_ ? "YES" : "NO");
+        RCLCPP_INFO(get_logger(), "  - lock_wrist: %s", lock_wrist_ ? "LOCKED" : "unlocked");
         RCLCPP_INFO(get_logger(), "  - wrist_sensitivity: %.2fx", wrist_sensitivity_);
+        RCLCPP_INFO(get_logger(), "  - default_y_position: %.4f m (used when Y locked)", default_y_position_);
+        RCLCPP_INFO(get_logger(), "  - default_wrist_angle: %d° (used when wrist locked)", default_wrist_angle_);
 
-        // Subscribe to odometry topic (from OTOS sensor)
+        // Subscribe to sensor topics
         odom_sub_ = create_subscription<nav_msgs::msg::Odometry>(
             "/odom", 10,
             std::bind(&Esp32Controller::odomCallback, this, std::placeholders::_1)
         );
 
-        // Subscribe to IMU topic (from MPU6050 sensor)
         imu_sub_ = create_subscription<sensor_msgs::msg::Imu>(
             "/imu/data", 10,
             std::bind(&Esp32Controller::imuCallback, this, std::placeholders::_1)
         );
 
-        // Subscribe to joint states
         joint_state_sub_ = create_subscription<sensor_msgs::msg::JointState>(
             "/joint_states", 10,
             std::bind(&Esp32Controller::jointStateCallback, this, std::placeholders::_1)
@@ -288,7 +290,7 @@ public:
     {
         RCLCPP_INFO(get_logger(), "Initializing MoveIt + Serial");
 
-        // Enable serial port
+        // Initialize serial port
         serial_ = std::make_unique<SerialPort>("/dev/ttyUSB0", 9600);
         if (!serial_->isOpen()) {
             RCLCPP_WARN(get_logger(), "Serial not available, running in dry mode");
@@ -352,31 +354,26 @@ private:
 
     void imuCallback(const sensor_msgs::msg::Imu::SharedPtr msg)
     {
-        // Extract quaternion
         double qx = msg->orientation.x;
         double qy = msg->orientation.y;
         double qz = msg->orientation.z;
         double qw = msg->orientation.w;
         
-        // Convert quaternion to roll, pitch, yaw (Euler angles)
-        // Roll (rotation around X-axis)
+        // Convert quaternion to Euler angles (roll, pitch, yaw)
         double sinr_cosp = 2.0 * (qw * qx + qy * qz);
         double cosr_cosp = 1.0 - 2.0 * (qx * qx + qy * qy);
         current_roll_ = std::atan2(sinr_cosp, cosr_cosp);
         
-        // Pitch (rotation around Y-axis)
         double sinp = 2.0 * (qw * qy - qz * qx);
         if (std::abs(sinp) >= 1)
             current_pitch_ = std::copysign(M_PI / 2, sinp);
         else
             current_pitch_ = std::asin(sinp);
         
-        // Yaw (rotation around Z-axis)
         double siny_cosp = 2.0 * (qw * qz + qx * qy);
         double cosy_cosp = 1.0 - 2.0 * (qy * qy + qz * qz);
         current_yaw_ = std::atan2(siny_cosp, cosy_cosp);
         
-        // Convert to degrees for logging
         double roll_deg = current_roll_ * 180.0 / M_PI;
         double pitch_deg = current_pitch_ * 180.0 / M_PI;
         double yaw_deg = current_yaw_ * 180.0 / M_PI;
@@ -388,10 +385,7 @@ private:
 
     double mapRange(double value, double in_min, double in_max, double out_min, double out_max)
     {
-        // Clamp input to range
         value = std::clamp(value, in_min, in_max);
-        
-        // Map to output range
         return out_min + (value - in_min) * (out_max - out_min) / (in_max - in_min);
     }
 
@@ -401,13 +395,10 @@ private:
             return;
         }
 
-        // ===============================
-        // 1. Read Odometry Data (X, Y coordinates from OTOS sensor)
-        // ===============================
-        current_odom_x_ = msg->pose.pose.position.x;  // meters
-        current_odom_y_ = msg->pose.pose.position.y;  // meters
+        // Read odometry data from OTOS sensor
+        current_odom_x_ = msg->pose.pose.position.x;
+        current_odom_y_ = msg->pose.pose.position.y;
         
-        // Track min/max for calibration
         if (first_odom_) {
             odom_x_min_ = odom_x_max_ = current_odom_x_;
             odom_y_min_ = odom_y_max_ = current_odom_y_;
@@ -421,9 +412,7 @@ private:
             odom_y_max_ = std::max(odom_y_max_, current_odom_y_);
         }
 
-        // ===============================
-        // 2. Get current end effector position
-        // ===============================
+        // Get current end effector position
         std::vector<double> joints;
         
         try {
@@ -451,70 +440,57 @@ private:
         
         Eigen::Vector3d ee_position = ee_pose.translation();
 
-        // ===============================
-        // 3. Scale odometry to robot workspace
-        // ===============================
-        // Target workspace bounds
+        // Scale odometry to robot workspace
         const double target_x_min = 0.6;
         const double target_x_max = 0.77;
         const double target_y_min = -1.5;
         const double target_y_max = -1.2;
         
-        // Calculate center of the calibrated range
         double odom_x_center = (odom_x_min_ + odom_x_max_) / 2.0;
         double odom_y_center = (odom_y_min_ + odom_y_max_) / 2.0;
         
-        // Calculate range with configurable sensitivities
         double odom_x_range = (odom_x_max_ - odom_x_min_) / x_sensitivity_;
         double odom_y_range = (odom_y_max_ - odom_y_min_) / y_sensitivity_;
         
-        // New input bounds (centered)
         double odom_x_min_scaled = odom_x_center - odom_x_range;
         double odom_x_max_scaled = odom_x_center + odom_x_range;
         double odom_y_min_scaled = odom_y_center - odom_y_range;
         double odom_y_max_scaled = odom_y_center + odom_y_range;
         
-        // Map to robot workspace
         double scaled_x = mapRange(current_odom_x_, odom_x_min_scaled, odom_x_max_scaled, 
                                 target_x_min, target_x_max);
         double scaled_y = mapRange(current_odom_y_, odom_y_min_scaled, odom_y_max_scaled, 
                                 target_y_min, target_y_max);
         
-        // Apply hard bounds (safety)
         scaled_x = std::clamp(scaled_x, target_x_min, target_x_max);
         scaled_y = std::clamp(scaled_y, target_y_min, target_y_max);
 
-        // ===============================
-        // 4. Print OTOS Scaled coordinates only
-        // ===============================
-        RCLCPP_INFO(get_logger(), 
-            "OTOS Scaled: [X: %.4f, Y: %.4f]",
-            scaled_x, scaled_y);
+        // RCLCPP_INFO(get_logger(), 
+        //     "OTOS Scaled: [X: %.4f, Y: %.4f]",
+        //     scaled_x, scaled_y);
         
-        // ===============================
-        // 5. Robot Movement Control (X and Y axes) with Callback-based Rate Limiting
-        // ===============================
-        // Target position: Use scaled OTOS X and Y (with axis locking), keep Z fixed
-        double target_x = lock_x_axis_ ? ee_position.x() : scaled_x;  // Lock X if enabled
-        double target_y = lock_y_axis_ ? ee_position.y() : scaled_y;  // Lock Y if enabled
-        double target_z = 1.1;  
+        // Robot movement control with callback-based rate limiting
+        double target_x = lock_x_axis_ ? ee_position.x() : scaled_x;
+        double target_y = lock_y_axis_ ? default_y_position_ : scaled_y;
+        double target_z = 1.1;
+
+        RCLCPP_INFO(get_logger(), 
+            "Target Position: [X: %.4f, Y: %.4f, Z:%.4f]",
+            target_x, target_y, target_z);
         
         Eigen::Vector3d target_position(target_x, target_y, target_z);
         
-        // Increment callback counter
         callback_counter_++;
         
-        // Check if we've reached the callback skip rate
         if (callback_counter_ < callback_skip_rate_) {
-            return;  // Skip this update
+            return;
         }
         
-        // Reset counter since we're sending a command
         callback_counter_ = 0;
         
-        // Solve IK for new target position
+        // Solve IK and send commands
         if (gd_ik_->solveIK(target_position, joints)) {
-            // Send serial commands to robot (servo0, servo1, servo2...)
+            // Send arm servo commands
             for (size_t i = 0; i < joints.size() - 1; i++) {
                 int angle = static_cast<int>(std::round(joints[i] * 180.0 / M_PI));
                 std::string cmd = "servo" + std::to_string(i) + "=" + std::to_string(angle) + "\n";
@@ -524,75 +500,76 @@ private:
                 }
             }
             
-            // ===============================
-            // 6. Wrist Control (servo3) based on IMU Roll (reversed direction)
-            // ===============================
-            if (enable_wrist_control_ && serial_ && serial_->isOpen()) {
-                // Convert roll from radians to degrees
-                double roll_deg = current_roll_ * 180.0 / M_PI;
+            // Wrist control (servo3)
+            if (serial_ && serial_->isOpen()) {
+                int wrist_angle_int;
                 
-                // Apply sensitivity and map to servo range (0-180 degrees)
-                // REVERSED: Subtract roll instead of add to reverse direction
-                double wrist_angle = 90.0 - (roll_deg * wrist_sensitivity_);
+                if (lock_wrist_) {
+                    wrist_angle_int = default_wrist_angle_;
+                    RCLCPP_INFO(get_logger(), "Wrist (servo3): %d° (LOCKED at default)", 
+                               wrist_angle_int);
+                } else {
+                    double roll_deg = current_roll_ * 180.0 / M_PI;
+                    double wrist_angle = 90.0 - (roll_deg * wrist_sensitivity_);
+                    wrist_angle = std::clamp(wrist_angle, 0.0, 180.0);
+                    wrist_angle_int = static_cast<int>(std::round(wrist_angle));
+                    
+                    RCLCPP_INFO(get_logger(), "Wrist (servo3): %d° (IMU Roll: %.1f°)", 
+                               wrist_angle_int, roll_deg);
+                }
                 
-                // Clamp to valid servo range
-                wrist_angle = std::clamp(wrist_angle, 0.0, 180.0);
-                
-                int wrist_angle_int = static_cast<int>(std::round(wrist_angle));
                 std::string wrist_cmd = "servo3=" + std::to_string(wrist_angle_int) + "\n";
-                
                 serial_->write(wrist_cmd);
-                
-                RCLCPP_INFO(get_logger(), "Wrist (servo3): %d° (IMU Roll: %.1f°)", 
-                           wrist_angle_int, roll_deg);
             }
         }
     }
 
-    // ---------- ROS ----------
+    // ROS subscriptions
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;
     rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr joint_state_sub_;
 
-    // ---------- MoveIt ----------
+    // MoveIt components
     std::shared_ptr<moveit::planning_interface::MoveGroupInterface> move_group_;
     robot_model_loader::RobotModelLoaderPtr robot_model_loader_;
     moveit::core::RobotModelPtr robot_model_;
     moveit::core::RobotStatePtr robot_state_;
     std::string ee_link_;
 
-    // ---------- Control ----------
+    // Control components
     std::unique_ptr<GradientDescentIK> gd_ik_;
     std::unique_ptr<SerialPort> serial_;
 
-    // ---------- Joint State Cache ----------
+    // Joint state cache
     sensor_msgs::msg::JointState::SharedPtr last_joint_state_;
     std::mutex joint_state_mutex_;
 
-    // ---------- Odometry Data ----------
+    // Odometry data
     double current_odom_x_;
     double current_odom_y_;
     bool odom_received_;
     
-    // ---------- Calibration ----------
+    // Calibration data
     double odom_x_min_, odom_x_max_;
     double odom_y_min_, odom_y_max_;
     bool first_odom_;
     
-    // ---------- IMU Data ----------
+    // IMU data
     double current_roll_;
     double current_pitch_;
     double current_yaw_;
     
-    // ---------- Callback-based Rate Limiting ----------
+    // Control parameters
     int callback_counter_;
     int callback_skip_rate_;
     double x_sensitivity_;
     double y_sensitivity_;
     bool lock_x_axis_;
     bool lock_y_axis_;
-    bool enable_wrist_control_;
+    bool lock_wrist_;
     double wrist_sensitivity_;
+    double default_y_position_;
+    int default_wrist_angle_;
 };
 
 int main(int argc, char **argv)

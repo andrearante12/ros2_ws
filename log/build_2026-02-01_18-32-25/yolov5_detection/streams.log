@@ -1,0 +1,17 @@
+[6.999s] Invoking command in '/home/bot/ros2_ws/build/yolov5_detection': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/bot/ros2_ws/build/yolov5_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/ros2_ws/install/yolov5_detection/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/bot/ros2_ws/build/yolov5_detection/build --no-deps symlink_data
+[9.185s] running develop
+[10.688s] running egg_info
+[10.828s] writing yolov5_detection.egg-info/PKG-INFO
+[10.843s] writing dependency_links to yolov5_detection.egg-info/dependency_links.txt
+[10.845s] writing entry points to yolov5_detection.egg-info/entry_points.txt
+[10.847s] writing requirements to yolov5_detection.egg-info/requires.txt
+[10.848s] writing top-level names to yolov5_detection.egg-info/top_level.txt
+[11.121s] reading manifest file 'yolov5_detection.egg-info/SOURCES.txt'
+[11.126s] writing manifest file 'yolov5_detection.egg-info/SOURCES.txt'
+[11.276s] running build_ext
+[11.277s] Creating /home/bot/ros2_ws/install/yolov5_detection/lib/python3.12/site-packages/yolov5-detection.egg-link (link to .)
+[11.278s] Installing yolo_detector script to /home/bot/ros2_ws/install/yolov5_detection/lib/yolov5_detection
+[11.280s] 
+[11.281s] Installed /home/bot/ros2_ws/build/yolov5_detection
+[11.281s] running symlink_data
+[11.523s] Invoked command in '/home/bot/ros2_ws/build/yolov5_detection' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/bot/ros2_ws/build/yolov5_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/ros2_ws/install/yolov5_detection/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/bot/ros2_ws/build/yolov5_detection/build --no-deps symlink_data

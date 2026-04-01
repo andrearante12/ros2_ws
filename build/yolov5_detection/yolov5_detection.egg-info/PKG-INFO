@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: yolov5-detection
+Version: 0.0.1
+Summary: YOLOv5 object detection for ROS2
+Maintainer: your_name
+Maintainer-email: your_email@example.com
+License: Apache License 2.0

@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "realsense2_camera_msgs/srv/SafetyInterfaceConfigWrite_Request",
+      "fields": [
+        {
+          "name": "safety_interface_config",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "realsense2_camera_msgs/srv/SafetyInterfaceConfigWrite_Request",
+      "hash_string": "RIHS01_1332d7bc275357bc86ca070bab4ac08473e45f4190f1070a4ef846561a72f1ff"
+    }
+  ]
+}

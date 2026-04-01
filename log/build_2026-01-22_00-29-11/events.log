@@ -1,0 +1,130 @@
+[0.000000] (-) TimerEvent: {}
+[0.002386] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.003285] (-) JobUnselected: {'identifier': 'esp32_controller'}
+[0.003379] (-) JobUnselected: {'identifier': 'imu_controller'}
+[0.003446] (-) JobUnselected: {'identifier': 'move_program'}
+[0.003510] (-) JobUnselected: {'identifier': 'moveit_controls'}
+[0.003576] (-) JobUnselected: {'identifier': 'mqtt_imu'}
+[0.003656] (-) JobUnselected: {'identifier': 'pose_printer'}
+[0.003738] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.003807] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.003872] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.003937] (-) JobUnselected: {'identifier': 'realsense2_ros_mqtt_bridge'}
+[0.004007] (-) JobUnselected: {'identifier': 'realsense2_rviz_plugin'}
+[0.004073] (-) JobUnselected: {'identifier': 'robotic_arm_config'}
+[0.004138] (-) JobUnselected: {'identifier': 'robotic_arm_model_v3'}
+[0.004203] (-) JobUnselected: {'identifier': 'robotic_arm_moveit'}
+[0.004266] (-) JobUnselected: {'identifier': 'robotic_arm_v3_config'}
+[0.004349] (web_interface) JobQueued: {'identifier': 'web_interface', 'dependencies': OrderedDict()}
+[0.004445] (web_interface) JobStarted: {'identifier': 'web_interface'}
+[0.099459] (-) TimerEvent: {}
+[0.200075] (-) TimerEvent: {}
+[0.300712] (-) TimerEvent: {}
+[0.401282] (-) TimerEvent: {}
+[0.501888] (-) TimerEvent: {}
+[0.602428] (-) TimerEvent: {}
+[0.702997] (-) TimerEvent: {}
+[0.803576] (-) TimerEvent: {}
+[0.904161] (-) TimerEvent: {}
+[1.004823] (-) TimerEvent: {}
+[1.105446] (-) TimerEvent: {}
+[1.206055] (-) TimerEvent: {}
+[1.306603] (-) TimerEvent: {}
+[1.407427] (-) TimerEvent: {}
+[1.508062] (-) TimerEvent: {}
+[1.608710] (-) TimerEvent: {}
+[1.709239] (-) TimerEvent: {}
+[1.809774] (-) TimerEvent: {}
+[1.910312] (-) TimerEvent: {}
+[2.010922] (-) TimerEvent: {}
+[2.111548] (-) TimerEvent: {}
+[2.212290] (-) TimerEvent: {}
+[2.313031] (-) TimerEvent: {}
+[2.413763] (-) TimerEvent: {}
+[2.514380] (-) TimerEvent: {}
+[2.614980] (-) TimerEvent: {}
+[2.715524] (-) TimerEvent: {}
+[2.816080] (-) TimerEvent: {}
+[2.916598] (-) TimerEvent: {}
+[3.017175] (-) TimerEvent: {}
+[3.117744] (-) TimerEvent: {}
+[3.218301] (-) TimerEvent: {}
+[3.318894] (-) TimerEvent: {}
+[3.419421] (-) TimerEvent: {}
+[3.520004] (-) TimerEvent: {}
+[3.620520] (-) TimerEvent: {}
+[3.721121] (-) TimerEvent: {}
+[3.821713] (-) TimerEvent: {}
+[3.922250] (-) TimerEvent: {}
+[4.022855] (-) TimerEvent: {}
+[4.123501] (-) TimerEvent: {}
+[4.224457] (-) TimerEvent: {}
+[4.283545] (web_interface) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/web_interface', 'build', '--build-base', '/home/bot/ros2_ws/build/web_interface/build', 'install', '--record', '/home/bot/ros2_ws/build/web_interface/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/bot/ros2_ws/src/web_interface', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bot', 'SSH_CLIENT': '192.168.1.199 44142 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bot', 'OLDPWD': '/home/bot/ros2_ws/src/web_interface', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '58', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/bot/ros2_ws/build/web_interface', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.199 44142 192.168.1.224 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bot/ros2_ws/build/web_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/ros2_ws/install/web_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[4.324588] (-) TimerEvent: {}
+[4.425182] (-) TimerEvent: {}
+[4.525748] (-) TimerEvent: {}
+[4.626304] (-) TimerEvent: {}
+[4.726939] (-) TimerEvent: {}
+[4.827485] (-) TimerEvent: {}
+[4.928073] (-) TimerEvent: {}
+[5.028615] (-) TimerEvent: {}
+[5.129199] (-) TimerEvent: {}
+[5.229729] (-) TimerEvent: {}
+[5.330259] (-) TimerEvent: {}
+[5.430831] (-) TimerEvent: {}
+[5.498850] (web_interface) StdoutLine: {'line': b'running egg_info\n'}
+[5.500067] (web_interface) StdoutLine: {'line': b'creating ../../build/web_interface/web_interface.egg-info\n'}
+[5.530969] (-) TimerEvent: {}
+[5.591200] (web_interface) StdoutLine: {'line': b'writing ../../build/web_interface/web_interface.egg-info/PKG-INFO\n'}
+[5.592387] (web_interface) StdoutLine: {'line': b'writing dependency_links to ../../build/web_interface/web_interface.egg-info/dependency_links.txt\n'}
+[5.593128] (web_interface) StdoutLine: {'line': b'writing entry points to ../../build/web_interface/web_interface.egg-info/entry_points.txt\n'}
+[5.593783] (web_interface) StdoutLine: {'line': b'writing requirements to ../../build/web_interface/web_interface.egg-info/requires.txt\n'}
+[5.594343] (web_interface) StdoutLine: {'line': b'writing top-level names to ../../build/web_interface/web_interface.egg-info/top_level.txt\n'}
+[5.594921] (web_interface) StdoutLine: {'line': b"writing manifest file '../../build/web_interface/web_interface.egg-info/SOURCES.txt'\n"}
+[5.631110] (-) TimerEvent: {}
+[5.731692] (-) TimerEvent: {}
+[5.782098] (web_interface) StdoutLine: {'line': b"reading manifest file '../../build/web_interface/web_interface.egg-info/SOURCES.txt'\n"}
+[5.784901] (web_interface) StdoutLine: {'line': b"writing manifest file '../../build/web_interface/web_interface.egg-info/SOURCES.txt'\n"}
+[5.785517] (web_interface) StdoutLine: {'line': b'running build\n'}
+[5.786071] (web_interface) StdoutLine: {'line': b'running build_py\n'}
+[5.786546] (web_interface) StdoutLine: {'line': b'creating /home/bot/ros2_ws/build/web_interface/build\n'}
+[5.787250] (web_interface) StdoutLine: {'line': b'creating /home/bot/ros2_ws/build/web_interface/build/lib\n'}
+[5.787757] (web_interface) StdoutLine: {'line': b'creating /home/bot/ros2_ws/build/web_interface/build/lib/web_interface\n'}
+[5.788316] (web_interface) StdoutLine: {'line': b'copying web_interface/flask_server.py -> /home/bot/ros2_ws/build/web_interface/build/lib/web_interface\n'}
+[5.788815] (web_interface) StdoutLine: {'line': b'copying web_interface/__init__.py -> /home/bot/ros2_ws/build/web_interface/build/lib/web_interface\n'}
+[5.789754] (web_interface) StdoutLine: {'line': b'running install\n'}
+[5.812903] (web_interface) StdoutLine: {'line': b'running install_lib\n'}
+[5.831777] (-) TimerEvent: {}
+[5.906252] (web_interface) StdoutLine: {'line': b'creating /home/bot/ros2_ws/install/web_interface/lib/python3.12/site-packages/web_interface\n'}
+[5.906900] (web_interface) StdoutLine: {'line': b'copying /home/bot/ros2_ws/build/web_interface/build/lib/web_interface/flask_server.py -> /home/bot/ros2_ws/install/web_interface/lib/python3.12/site-packages/web_interface\n'}
+[5.907840] (web_interface) StdoutLine: {'line': b'copying /home/bot/ros2_ws/build/web_interface/build/lib/web_interface/__init__.py -> /home/bot/ros2_ws/install/web_interface/lib/python3.12/site-packages/web_interface\n'}
+[5.910256] (web_interface) StdoutLine: {'line': b'byte-compiling /home/bot/ros2_ws/install/web_interface/lib/python3.12/site-packages/web_interface/flask_server.py to flask_server.cpython-312.pyc\n'}
+[5.916533] (web_interface) StdoutLine: {'line': b'byte-compiling /home/bot/ros2_ws/install/web_interface/lib/python3.12/site-packages/web_interface/__init__.py to __init__.cpython-312.pyc\n'}
+[5.917714] (web_interface) StdoutLine: {'line': b'running install_data\n'}
+[5.918242] (web_interface) StdoutLine: {'line': b'creating /home/bot/ros2_ws/install/web_interface/share/ament_index\n'}
+[5.918748] (web_interface) StdoutLine: {'line': b'creating /home/bot/ros2_ws/install/web_interface/share/ament_index/resource_index\n'}
+[5.919289] (web_interface) StdoutLine: {'line': b'creating /home/bot/ros2_ws/install/web_interface/share/ament_index/resource_index/packages\n'}
+[5.919826] (web_interface) StdoutLine: {'line': b'copying resource/web_interface -> /home/bot/ros2_ws/install/web_interface/share/ament_index/resource_index/packages\n'}
+[5.920293] (web_interface) StdoutLine: {'line': b'copying package.xml -> /home/bot/ros2_ws/install/web_interface/share/web_interface\n'}
+[5.921041] (web_interface) StdoutLine: {'line': b'creating /home/bot/ros2_ws/install/web_interface/share/web_interface/templates\n'}
+[5.921573] (web_interface) StdoutLine: {'line': b'copying templates/index.html -> /home/bot/ros2_ws/install/web_interface/share/web_interface/templates\n'}
+[5.922453] (web_interface) StdoutLine: {'line': b'creating /home/bot/ros2_ws/install/web_interface/share/web_interface/static\n'}
+[5.923049] (web_interface) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.931898] (-) TimerEvent: {}
+[6.019607] (web_interface) StdoutLine: {'line': b'Copying ../../build/web_interface/web_interface.egg-info to /home/bot/ros2_ws/install/web_interface/lib/python3.12/site-packages/web_interface-0.0.1-py3.12.egg-info\n'}
+[6.025130] (web_interface) StdoutLine: {'line': b'running install_scripts\n'}
+[6.032036] (-) TimerEvent: {}
+[6.132529] (-) TimerEvent: {}
+[6.233113] (-) TimerEvent: {}
+[6.333686] (-) TimerEvent: {}
+[6.434363] (-) TimerEvent: {}
+[6.534950] (-) TimerEvent: {}
+[6.635538] (-) TimerEvent: {}
+[6.721346] (web_interface) StdoutLine: {'line': b'Installing flask_server script to /home/bot/ros2_ws/install/web_interface/bin\n'}
+[6.722823] (web_interface) StdoutLine: {'line': b"writing list of installed files to '/home/bot/ros2_ws/build/web_interface/install.log'\n"}
+[6.735794] (-) TimerEvent: {}
+[6.836693] (-) TimerEvent: {}
+[6.862213] (web_interface) CommandEnded: {'returncode': 0}
+[6.962189] (-) TimerEvent: {}
+[6.971047] (web_interface) JobEnded: {'identifier': 'web_interface', 'rc': 0}
+[6.973905] (-) EventReactorShutdown: {}

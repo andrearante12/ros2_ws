@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+chess_data_collector/__init__.py
+chess_data_collector/image_collector.py
+chess_data_collector.egg-info/PKG-INFO
+chess_data_collector.egg-info/SOURCES.txt
+chess_data_collector.egg-info/dependency_links.txt
+chess_data_collector.egg-info/entry_points.txt
+chess_data_collector.egg-info/requires.txt
+chess_data_collector.egg-info/top_level.txt
+chess_data_collector.egg-info/zip-safe
+resource/chess_data_collector

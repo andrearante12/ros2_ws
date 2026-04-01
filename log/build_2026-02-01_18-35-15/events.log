@@ -1,0 +1,159 @@
+[0.000000] (-) TimerEvent: {}
+[0.001245] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.002699] (-) JobUnselected: {'identifier': 'esp32_controller'}
+[0.005151] (-) JobUnselected: {'identifier': 'imu_controller'}
+[0.005622] (-) JobUnselected: {'identifier': 'move_program'}
+[0.005771] (-) JobUnselected: {'identifier': 'moveit_controls'}
+[0.005855] (-) JobUnselected: {'identifier': 'mqtt_imu'}
+[0.005928] (-) JobUnselected: {'identifier': 'pose_printer'}
+[0.006088] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.006188] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.006322] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.006408] (-) JobUnselected: {'identifier': 'realsense2_ros_mqtt_bridge'}
+[0.006482] (-) JobUnselected: {'identifier': 'realsense2_rviz_plugin'}
+[0.006580] (-) JobUnselected: {'identifier': 'robotic_arm_config'}
+[0.006882] (-) JobUnselected: {'identifier': 'robotic_arm_model_v3'}
+[0.006985] (-) JobUnselected: {'identifier': 'robotic_arm_moveit'}
+[0.007150] (-) JobUnselected: {'identifier': 'robotic_arm_v3_config'}
+[0.007229] (-) JobUnselected: {'identifier': 'web_interface'}
+[0.007318] (yolov5_detection) JobQueued: {'identifier': 'yolov5_detection', 'dependencies': OrderedDict()}
+[0.007430] (yolov5_detection) JobStarted: {'identifier': 'yolov5_detection'}
+[0.098841] (-) TimerEvent: {}
+[0.202990] (-) TimerEvent: {}
+[0.304016] (-) TimerEvent: {}
+[0.405002] (-) TimerEvent: {}
+[0.505802] (-) TimerEvent: {}
+[0.606641] (-) TimerEvent: {}
+[0.707579] (-) TimerEvent: {}
+[0.808764] (-) TimerEvent: {}
+[0.909666] (-) TimerEvent: {}
+[1.012089] (-) TimerEvent: {}
+[1.122125] (-) TimerEvent: {}
+[1.223004] (-) TimerEvent: {}
+[1.323691] (-) TimerEvent: {}
+[1.424410] (-) TimerEvent: {}
+[1.527905] (-) TimerEvent: {}
+[1.628619] (-) TimerEvent: {}
+[1.729412] (-) TimerEvent: {}
+[1.830154] (-) TimerEvent: {}
+[1.931006] (-) TimerEvent: {}
+[2.032067] (-) TimerEvent: {}
+[2.134168] (-) TimerEvent: {}
+[2.239659] (-) TimerEvent: {}
+[2.340680] (-) TimerEvent: {}
+[2.441507] (-) TimerEvent: {}
+[2.542300] (-) TimerEvent: {}
+[2.643183] (-) TimerEvent: {}
+[2.746965] (-) TimerEvent: {}
+[2.848466] (-) TimerEvent: {}
+[2.949256] (-) TimerEvent: {}
+[3.050213] (-) TimerEvent: {}
+[3.150978] (-) TimerEvent: {}
+[3.251671] (-) TimerEvent: {}
+[3.352342] (-) TimerEvent: {}
+[3.453056] (-) TimerEvent: {}
+[3.553807] (-) TimerEvent: {}
+[3.654561] (-) TimerEvent: {}
+[3.755247] (-) TimerEvent: {}
+[3.856031] (-) TimerEvent: {}
+[3.958161] (-) TimerEvent: {}
+[4.061237] (-) TimerEvent: {}
+[4.162013] (-) TimerEvent: {}
+[4.262693] (-) TimerEvent: {}
+[4.363457] (-) TimerEvent: {}
+[4.469778] (-) TimerEvent: {}
+[4.570639] (-) TimerEvent: {}
+[4.671243] (-) TimerEvent: {}
+[4.771890] (-) TimerEvent: {}
+[4.872803] (-) TimerEvent: {}
+[4.973414] (-) TimerEvent: {}
+[5.074080] (-) TimerEvent: {}
+[5.174653] (-) TimerEvent: {}
+[5.275260] (-) TimerEvent: {}
+[5.375959] (-) TimerEvent: {}
+[5.476595] (-) TimerEvent: {}
+[5.577184] (-) TimerEvent: {}
+[5.677820] (-) TimerEvent: {}
+[5.778456] (-) TimerEvent: {}
+[5.879099] (-) TimerEvent: {}
+[5.979659] (-) TimerEvent: {}
+[6.080216] (-) TimerEvent: {}
+[6.180926] (-) TimerEvent: {}
+[6.281608] (-) TimerEvent: {}
+[6.382222] (-) TimerEvent: {}
+[6.482876] (-) TimerEvent: {}
+[6.583574] (-) TimerEvent: {}
+[6.684138] (-) TimerEvent: {}
+[6.784906] (-) TimerEvent: {}
+[6.885840] (-) TimerEvent: {}
+[6.986958] (-) TimerEvent: {}
+[7.013210] (yolov5_detection) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/bot/ros2_ws/build/yolov5_detection/build', '--no-deps', 'symlink_data'], 'cwd': '/home/bot/ros2_ws/build/yolov5_detection', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bot', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/bot/ros2_ws/install/realsense2_camera/lib:/home/bot/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bot', 'OLDPWD': '/home/bot/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2684', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/bot/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bot', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/bot/.local/bin:/home/bot/ros2_ws/install/web_interface/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/bot-desktop:@/tmp/.ICE-unix/2413,unix/bot-desktop:/tmp/.ICE-unix/2413', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/d209a1fd_6c23_42d9_8406_eb82b4ada608', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.XGKMJ3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.121', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/bot/ros2_ws/install/yolov5_detection:/home/bot/ros2_ws/install/web_interface:/home/bot/ros2_ws/install/robotic_arm_v3_config:/home/bot/ros2_ws/install/robotic_arm_moveit:/home/bot/ros2_ws/install/robotic_arm_model_v3:/home/bot/ros2_ws/install/robotic_arm_config:/home/bot/ros2_ws/install/realsense2_camera:/home/bot/ros2_ws/install/realsense2_camera_msgs:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/home/bot/ros2_ws/install/move_program:/home/bot/ros2_ws/install/imu_controller:/home/bot/ros2_ws/install/esp32_controller:/home/bot/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bot/ros2_ws/build/yolov5_detection', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bot/ros2_ws/build/yolov5_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/ros2_ws/install/yolov5_detection/lib/python3.12/site-packages:/home/bot/ros2_ws/build/yolov5_detection:/home/bot/ros2_ws/install/yolov5_detection/lib/python3.12/site-packages:/home/bot/ros2_ws/build/web_interface:/home/bot/ros2_ws/install/web_interface/lib/python3.12/site-packages:/home/bot/ros2_ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/home/bot/ros2_ws/install/pose_printer/lib/python3.12/site-packages:/home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages:/home/bot/ros2_ws/install/moveit_controls/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/bot/ros2_ws/install/robotic_arm_v3_config:/home/bot/ros2_ws/install/robotic_arm_moveit:/home/bot/ros2_ws/install/robotic_arm_model_v3:/home/bot/ros2_ws/install/robotic_arm_config:/home/bot/ros2_ws/install/realsense2_camera:/home/bot/ros2_ws/install/realsense2_camera_msgs:/home/bot/ros2_ws/install/move_program:/home/bot/ros2_ws/install/imu_controller:/home/bot/ros2_ws/install/esp32_controller:/home/bot/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[7.087123] (-) TimerEvent: {}
+[7.187889] (-) TimerEvent: {}
+[7.288472] (-) TimerEvent: {}
+[7.389107] (-) TimerEvent: {}
+[7.489687] (-) TimerEvent: {}
+[7.590410] (-) TimerEvent: {}
+[7.691387] (-) TimerEvent: {}
+[7.792098] (-) TimerEvent: {}
+[7.892767] (-) TimerEvent: {}
+[7.993454] (-) TimerEvent: {}
+[8.096884] (-) TimerEvent: {}
+[8.197810] (-) TimerEvent: {}
+[8.299004] (-) TimerEvent: {}
+[8.399826] (-) TimerEvent: {}
+[8.504508] (-) TimerEvent: {}
+[8.607327] (-) TimerEvent: {}
+[8.711047] (-) TimerEvent: {}
+[8.813132] (-) TimerEvent: {}
+[8.921583] (-) TimerEvent: {}
+[9.023925] (-) TimerEvent: {}
+[9.124571] (-) TimerEvent: {}
+[9.225161] (-) TimerEvent: {}
+[9.325758] (-) TimerEvent: {}
+[9.426320] (-) TimerEvent: {}
+[9.527024] (-) TimerEvent: {}
+[9.627645] (-) TimerEvent: {}
+[9.720839] (yolov5_detection) StdoutLine: {'line': b'running develop\n'}
+[9.727801] (-) TimerEvent: {}
+[9.828355] (-) TimerEvent: {}
+[9.929005] (-) TimerEvent: {}
+[10.029643] (-) TimerEvent: {}
+[10.130214] (-) TimerEvent: {}
+[10.230862] (-) TimerEvent: {}
+[10.331512] (-) TimerEvent: {}
+[10.432193] (-) TimerEvent: {}
+[10.532818] (-) TimerEvent: {}
+[10.633399] (-) TimerEvent: {}
+[10.734055] (-) TimerEvent: {}
+[10.834621] (-) TimerEvent: {}
+[10.935213] (-) TimerEvent: {}
+[11.035836] (-) TimerEvent: {}
+[11.136419] (-) TimerEvent: {}
+[11.237065] (-) TimerEvent: {}
+[11.337634] (-) TimerEvent: {}
+[11.369683] (yolov5_detection) StdoutLine: {'line': b'running egg_info\n'}
+[11.437793] (-) TimerEvent: {}
+[11.494935] (yolov5_detection) StdoutLine: {'line': b'writing yolov5_detection.egg-info/PKG-INFO\n'}
+[11.496142] (yolov5_detection) StdoutLine: {'line': b'writing dependency_links to yolov5_detection.egg-info/dependency_links.txt\n'}
+[11.498437] (yolov5_detection) StdoutLine: {'line': b'writing entry points to yolov5_detection.egg-info/entry_points.txt\n'}
+[11.499400] (yolov5_detection) StdoutLine: {'line': b'writing requirements to yolov5_detection.egg-info/requires.txt\n'}
+[11.500240] (yolov5_detection) StdoutLine: {'line': b'writing top-level names to yolov5_detection.egg-info/top_level.txt\n'}
+[11.537953] (-) TimerEvent: {}
+[11.638561] (-) TimerEvent: {}
+[11.739263] (-) TimerEvent: {}
+[11.757675] (yolov5_detection) StdoutLine: {'line': b"reading manifest file 'yolov5_detection.egg-info/SOURCES.txt'\n"}
+[11.765065] (yolov5_detection) StdoutLine: {'line': b"writing manifest file 'yolov5_detection.egg-info/SOURCES.txt'\n"}
+[11.839393] (-) TimerEvent: {}
+[11.904754] (yolov5_detection) StdoutLine: {'line': b'running build_ext\n'}
+[11.905478] (yolov5_detection) StdoutLine: {'line': b'Creating /home/bot/ros2_ws/install/yolov5_detection/lib/python3.12/site-packages/yolov5-detection.egg-link (link to .)\n'}
+[11.908960] (yolov5_detection) StdoutLine: {'line': b'Installing yolo_detector script to /home/bot/ros2_ws/install/yolov5_detection/lib/yolov5_detection\n'}
+[11.911138] (yolov5_detection) StdoutLine: {'line': b'\n'}
+[11.911971] (yolov5_detection) StdoutLine: {'line': b'Installed /home/bot/ros2_ws/build/yolov5_detection\n'}
+[11.912643] (yolov5_detection) StdoutLine: {'line': b'running symlink_data\n'}
+[11.939671] (-) TimerEvent: {}
+[12.040772] (-) TimerEvent: {}
+[12.120898] (yolov5_detection) CommandEnded: {'returncode': 0}
+[12.141775] (-) TimerEvent: {}
+[12.201544] (yolov5_detection) JobEnded: {'identifier': 'yolov5_detection', 'rc': 0}
+[12.205555] (-) EventReactorShutdown: {}

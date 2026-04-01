@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating chess_data_collector.egg-info
+writing chess_data_collector.egg-info/PKG-INFO
+writing dependency_links to chess_data_collector.egg-info/dependency_links.txt
+writing entry points to chess_data_collector.egg-info/entry_points.txt
+writing requirements to chess_data_collector.egg-info/requires.txt
+writing top-level names to chess_data_collector.egg-info/top_level.txt
+writing manifest file 'chess_data_collector.egg-info/SOURCES.txt'
+reading manifest file 'chess_data_collector.egg-info/SOURCES.txt'
+writing manifest file 'chess_data_collector.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/bot/ros2_ws/install/chess_data_collector/lib/python3.12/site-packages/chess-data-collector.egg-link (link to .)
+Installing collect script to /home/bot/ros2_ws/install/chess_data_collector/lib/chess_data_collector
+
+Installed /home/bot/ros2_ws/build/chess_data_collector
+running symlink_data
+creating /home/bot/ros2_ws/install/chess_data_collector/share/ament_index
+creating /home/bot/ros2_ws/install/chess_data_collector/share/ament_index/resource_index
+creating /home/bot/ros2_ws/install/chess_data_collector/share/ament_index/resource_index/packages
+symbolically linking /home/bot/ros2_ws/build/chess_data_collector/resource/chess_data_collector -> /home/bot/ros2_ws/install/chess_data_collector/share/ament_index/resource_index/packages
+symbolically linking /home/bot/ros2_ws/build/chess_data_collector/package.xml -> /home/bot/ros2_ws/install/chess_data_collector/share/chess_data_collector

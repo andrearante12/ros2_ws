@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "realsense2_camera_msgs/srv/SafetyPresetWrite_Request",
+      "fields": [
+        {
+          "name": "safety_preset",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "index",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "realsense2_camera_msgs/srv/SafetyPresetWrite_Request",
+      "hash_string": "RIHS01_8dbeb16ff3d851cd88d196f289310623830e23f163ec0c06abd95274153df2eb"
+    }
+  ]
+}

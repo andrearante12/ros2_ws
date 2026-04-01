@@ -1,0 +1,24 @@
+[4.668s] Invoking command in '/home/bot/ros2_ws/src/yolov5_detection': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/bot/ros2_ws/build/yolov5_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/ros2_ws/install/yolov5_detection/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yolov5_detection build --build-base /home/bot/ros2_ws/build/yolov5_detection/build install --record /home/bot/ros2_ws/build/yolov5_detection/install.log --single-version-externally-managed install_data
+[6.249s] running egg_info
+[6.363s] writing ../../build/yolov5_detection/yolov5_detection.egg-info/PKG-INFO
+[6.364s] writing dependency_links to ../../build/yolov5_detection/yolov5_detection.egg-info/dependency_links.txt
+[6.366s] writing entry points to ../../build/yolov5_detection/yolov5_detection.egg-info/entry_points.txt
+[6.366s] writing requirements to ../../build/yolov5_detection/yolov5_detection.egg-info/requires.txt
+[6.367s] writing top-level names to ../../build/yolov5_detection/yolov5_detection.egg-info/top_level.txt
+[6.598s] reading manifest file '../../build/yolov5_detection/yolov5_detection.egg-info/SOURCES.txt'
+[6.602s] writing manifest file '../../build/yolov5_detection/yolov5_detection.egg-info/SOURCES.txt'
+[6.603s] running build
+[6.603s] running build_py
+[6.604s] copying yolov5_detection/yolo_detector.py -> /home/bot/ros2_ws/build/yolov5_detection/build/lib/yolov5_detection
+[6.606s] running install
+[6.633s] running install_lib
+[6.747s] copying /home/bot/ros2_ws/build/yolov5_detection/build/lib/yolov5_detection/yolo_detector.py -> /home/bot/ros2_ws/install/yolov5_detection/lib/python3.12/site-packages/yolov5_detection
+[6.752s] byte-compiling /home/bot/ros2_ws/install/yolov5_detection/lib/python3.12/site-packages/yolov5_detection/yolo_detector.py to yolo_detector.cpython-312.pyc
+[6.761s] running install_data
+[6.762s] running install_egg_info
+[6.883s] removing '/home/bot/ros2_ws/install/yolov5_detection/lib/python3.12/site-packages/yolov5_detection-0.0.1-py3.12.egg-info' (and everything under it)
+[6.885s] Copying ../../build/yolov5_detection/yolov5_detection.egg-info to /home/bot/ros2_ws/install/yolov5_detection/lib/python3.12/site-packages/yolov5_detection-0.0.1-py3.12.egg-info
+[6.891s] running install_scripts
+[7.736s] Installing yolo_detector script to /home/bot/ros2_ws/install/yolov5_detection/lib/yolov5_detection
+[7.738s] writing list of installed files to '/home/bot/ros2_ws/build/yolov5_detection/install.log'
+[7.904s] Invoked command in '/home/bot/ros2_ws/src/yolov5_detection' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/bot/ros2_ws/build/yolov5_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/ros2_ws/install/yolov5_detection/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yolov5_detection build --build-base /home/bot/ros2_ws/build/yolov5_detection/build install --record /home/bot/ros2_ws/build/yolov5_detection/install.log --single-version-externally-managed install_data

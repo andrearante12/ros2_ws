@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "realsense2_camera_msgs/srv/SafetyPresetRead_Request",
+      "fields": [
+        {
+          "name": "index",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "realsense2_camera_msgs/srv/SafetyPresetRead_Request",
+      "hash_string": "RIHS01_05ec3de41d103097ccc69b93ca7c20eab2f183fd8cbe4a42b08fa02691eef9f3"
+    }
+  ]
+}

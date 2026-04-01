@@ -1,0 +1,40 @@
+[4.286s] Invoking command in '/home/bot/ros2_ws/src/web_interface': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/bot/ros2_ws/build/web_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/ros2_ws/install/web_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/web_interface build --build-base /home/bot/ros2_ws/build/web_interface/build install --record /home/bot/ros2_ws/build/web_interface/install.log --single-version-externally-managed install_data
+[5.495s] running egg_info
+[5.496s] creating ../../build/web_interface/web_interface.egg-info
+[5.587s] writing ../../build/web_interface/web_interface.egg-info/PKG-INFO
+[5.588s] writing dependency_links to ../../build/web_interface/web_interface.egg-info/dependency_links.txt
+[5.589s] writing entry points to ../../build/web_interface/web_interface.egg-info/entry_points.txt
+[5.590s] writing requirements to ../../build/web_interface/web_interface.egg-info/requires.txt
+[5.590s] writing top-level names to ../../build/web_interface/web_interface.egg-info/top_level.txt
+[5.591s] writing manifest file '../../build/web_interface/web_interface.egg-info/SOURCES.txt'
+[5.778s] reading manifest file '../../build/web_interface/web_interface.egg-info/SOURCES.txt'
+[5.781s] writing manifest file '../../build/web_interface/web_interface.egg-info/SOURCES.txt'
+[5.781s] running build
+[5.782s] running build_py
+[5.782s] creating /home/bot/ros2_ws/build/web_interface/build
+[5.783s] creating /home/bot/ros2_ws/build/web_interface/build/lib
+[5.784s] creating /home/bot/ros2_ws/build/web_interface/build/lib/web_interface
+[5.784s] copying web_interface/flask_server.py -> /home/bot/ros2_ws/build/web_interface/build/lib/web_interface
+[5.785s] copying web_interface/__init__.py -> /home/bot/ros2_ws/build/web_interface/build/lib/web_interface
+[5.786s] running install
+[5.809s] running install_lib
+[5.902s] creating /home/bot/ros2_ws/install/web_interface/lib/python3.12/site-packages/web_interface
+[5.903s] copying /home/bot/ros2_ws/build/web_interface/build/lib/web_interface/flask_server.py -> /home/bot/ros2_ws/install/web_interface/lib/python3.12/site-packages/web_interface
+[5.904s] copying /home/bot/ros2_ws/build/web_interface/build/lib/web_interface/__init__.py -> /home/bot/ros2_ws/install/web_interface/lib/python3.12/site-packages/web_interface
+[5.906s] byte-compiling /home/bot/ros2_ws/install/web_interface/lib/python3.12/site-packages/web_interface/flask_server.py to flask_server.cpython-312.pyc
+[5.912s] byte-compiling /home/bot/ros2_ws/install/web_interface/lib/python3.12/site-packages/web_interface/__init__.py to __init__.cpython-312.pyc
+[5.914s] running install_data
+[5.914s] creating /home/bot/ros2_ws/install/web_interface/share/ament_index
+[5.915s] creating /home/bot/ros2_ws/install/web_interface/share/ament_index/resource_index
+[5.915s] creating /home/bot/ros2_ws/install/web_interface/share/ament_index/resource_index/packages
+[5.916s] copying resource/web_interface -> /home/bot/ros2_ws/install/web_interface/share/ament_index/resource_index/packages
+[5.916s] copying package.xml -> /home/bot/ros2_ws/install/web_interface/share/web_interface
+[5.917s] creating /home/bot/ros2_ws/install/web_interface/share/web_interface/templates
+[5.917s] copying templates/index.html -> /home/bot/ros2_ws/install/web_interface/share/web_interface/templates
+[5.918s] creating /home/bot/ros2_ws/install/web_interface/share/web_interface/static
+[5.919s] running install_egg_info
+[6.016s] Copying ../../build/web_interface/web_interface.egg-info to /home/bot/ros2_ws/install/web_interface/lib/python3.12/site-packages/web_interface-0.0.1-py3.12.egg-info
+[6.021s] running install_scripts
+[6.717s] Installing flask_server script to /home/bot/ros2_ws/install/web_interface/bin
+[6.719s] writing list of installed files to '/home/bot/ros2_ws/build/web_interface/install.log'
+[6.858s] Invoked command in '/home/bot/ros2_ws/src/web_interface' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/bot/ros2_ws/build/web_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/ros2_ws/install/web_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/web_interface build --build-base /home/bot/ros2_ws/build/web_interface/build install --record /home/bot/ros2_ws/build/web_interface/install.log --single-version-externally-managed install_data

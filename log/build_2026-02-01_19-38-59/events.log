@@ -1,0 +1,166 @@
+[0.000000] (-) TimerEvent: {}
+[0.003272] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.004833] (-) JobUnselected: {'identifier': 'esp32_controller'}
+[0.005444] (-) JobUnselected: {'identifier': 'imu_controller'}
+[0.005958] (-) JobUnselected: {'identifier': 'move_program'}
+[0.006090] (-) JobUnselected: {'identifier': 'moveit_controls'}
+[0.006167] (-) JobUnselected: {'identifier': 'mqtt_imu'}
+[0.006237] (-) JobUnselected: {'identifier': 'pose_printer'}
+[0.006302] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.006583] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.006857] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.006959] (-) JobUnselected: {'identifier': 'realsense2_ros_mqtt_bridge'}
+[0.007029] (-) JobUnselected: {'identifier': 'realsense2_rviz_plugin'}
+[0.007092] (-) JobUnselected: {'identifier': 'robotic_arm_config'}
+[0.007149] (-) JobUnselected: {'identifier': 'robotic_arm_model_v3'}
+[0.007208] (-) JobUnselected: {'identifier': 'robotic_arm_moveit'}
+[0.007265] (-) JobUnselected: {'identifier': 'robotic_arm_v3_config'}
+[0.007323] (-) JobUnselected: {'identifier': 'web_interface'}
+[0.007531] (-) JobUnselected: {'identifier': 'yolov5_detection'}
+[0.007638] (chess_data_collector) JobQueued: {'identifier': 'chess_data_collector', 'dependencies': OrderedDict()}
+[0.007858] (chess_data_collector) JobStarted: {'identifier': 'chess_data_collector'}
+[0.098002] (-) TimerEvent: {}
+[0.202073] (-) TimerEvent: {}
+[0.306298] (-) TimerEvent: {}
+[0.407266] (-) TimerEvent: {}
+[0.509882] (-) TimerEvent: {}
+[0.611570] (-) TimerEvent: {}
+[0.712650] (-) TimerEvent: {}
+[0.813298] (-) TimerEvent: {}
+[0.915528] (-) TimerEvent: {}
+[1.021923] (-) TimerEvent: {}
+[1.123577] (-) TimerEvent: {}
+[1.226020] (-) TimerEvent: {}
+[1.327697] (-) TimerEvent: {}
+[1.431515] (-) TimerEvent: {}
+[1.532108] (-) TimerEvent: {}
+[1.632760] (-) TimerEvent: {}
+[1.733784] (-) TimerEvent: {}
+[1.835020] (-) TimerEvent: {}
+[1.935744] (-) TimerEvent: {}
+[2.036427] (-) TimerEvent: {}
+[2.137181] (-) TimerEvent: {}
+[2.238665] (-) TimerEvent: {}
+[2.339640] (-) TimerEvent: {}
+[2.440303] (-) TimerEvent: {}
+[2.541272] (-) TimerEvent: {}
+[2.642000] (-) TimerEvent: {}
+[2.742937] (-) TimerEvent: {}
+[2.843515] (-) TimerEvent: {}
+[2.944066] (-) TimerEvent: {}
+[3.044709] (-) TimerEvent: {}
+[3.146787] (-) TimerEvent: {}
+[3.248542] (-) TimerEvent: {}
+[3.349478] (-) TimerEvent: {}
+[3.450452] (-) TimerEvent: {}
+[3.551929] (-) TimerEvent: {}
+[3.653762] (-) TimerEvent: {}
+[3.755159] (-) TimerEvent: {}
+[3.856073] (-) TimerEvent: {}
+[3.956947] (-) TimerEvent: {}
+[4.057814] (-) TimerEvent: {}
+[4.158467] (-) TimerEvent: {}
+[4.259312] (-) TimerEvent: {}
+[4.360034] (-) TimerEvent: {}
+[4.461518] (-) TimerEvent: {}
+[4.562325] (-) TimerEvent: {}
+[4.663068] (-) TimerEvent: {}
+[4.763788] (-) TimerEvent: {}
+[4.864473] (-) TimerEvent: {}
+[4.965207] (-) TimerEvent: {}
+[5.066014] (-) TimerEvent: {}
+[5.166743] (-) TimerEvent: {}
+[5.267477] (-) TimerEvent: {}
+[5.368134] (-) TimerEvent: {}
+[5.468768] (-) TimerEvent: {}
+[5.569315] (-) TimerEvent: {}
+[5.669968] (-) TimerEvent: {}
+[5.770657] (-) TimerEvent: {}
+[5.871432] (-) TimerEvent: {}
+[5.972089] (-) TimerEvent: {}
+[6.072714] (-) TimerEvent: {}
+[6.173297] (-) TimerEvent: {}
+[6.273941] (-) TimerEvent: {}
+[6.374545] (-) TimerEvent: {}
+[6.475102] (-) TimerEvent: {}
+[6.575714] (-) TimerEvent: {}
+[6.676314] (-) TimerEvent: {}
+[6.776916] (-) TimerEvent: {}
+[6.879474] (-) TimerEvent: {}
+[6.980088] (-) TimerEvent: {}
+[7.080721] (-) TimerEvent: {}
+[7.181443] (-) TimerEvent: {}
+[7.282097] (-) TimerEvent: {}
+[7.382799] (-) TimerEvent: {}
+[7.483857] (-) TimerEvent: {}
+[7.584985] (-) TimerEvent: {}
+[7.599815] (chess_data_collector) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/bot/ros2_ws/build/chess_data_collector/build', '--no-deps', 'symlink_data'], 'cwd': '/home/bot/ros2_ws/build/chess_data_collector', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bot', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/bot/ros2_ws/install/realsense2_camera/lib:/home/bot/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bot', 'OLDPWD': '/home/bot/ros2_ws/src/chess_data_collector', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2684', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/bot/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bot', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/bot/.local/bin:/home/bot/ros2_ws/install/web_interface/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/bot-desktop:@/tmp/.ICE-unix/2413,unix/bot-desktop:/tmp/.ICE-unix/2413', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/d209a1fd_6c23_42d9_8406_eb82b4ada608', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.XGKMJ3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.121', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/bot/ros2_ws/install/yolov5_detection:/home/bot/ros2_ws/install/web_interface:/home/bot/ros2_ws/install/robotic_arm_v3_config:/home/bot/ros2_ws/install/robotic_arm_moveit:/home/bot/ros2_ws/install/robotic_arm_model_v3:/home/bot/ros2_ws/install/robotic_arm_config:/home/bot/ros2_ws/install/realsense2_camera:/home/bot/ros2_ws/install/realsense2_camera_msgs:/home/bot/ros2_ws/install/pose_printer:/home/bot/ros2_ws/install/mqtt_imu:/home/bot/ros2_ws/install/moveit_controls:/home/bot/ros2_ws/install/move_program:/home/bot/ros2_ws/install/imu_controller:/home/bot/ros2_ws/install/esp32_controller:/home/bot/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bot/ros2_ws/build/chess_data_collector', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bot/ros2_ws/build/chess_data_collector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/ros2_ws/install/chess_data_collector/lib/python3.12/site-packages:/home/bot/ros2_ws/build/yolov5_detection:/home/bot/ros2_ws/install/yolov5_detection/lib/python3.12/site-packages:/home/bot/ros2_ws/build/web_interface:/home/bot/ros2_ws/install/web_interface/lib/python3.12/site-packages:/home/bot/ros2_ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/home/bot/ros2_ws/install/pose_printer/lib/python3.12/site-packages:/home/bot/ros2_ws/install/mqtt_imu/lib/python3.12/site-packages:/home/bot/ros2_ws/install/moveit_controls/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/bot/ros2_ws/install/robotic_arm_v3_config:/home/bot/ros2_ws/install/robotic_arm_moveit:/home/bot/ros2_ws/install/robotic_arm_model_v3:/home/bot/ros2_ws/install/robotic_arm_config:/home/bot/ros2_ws/install/realsense2_camera:/home/bot/ros2_ws/install/realsense2_camera_msgs:/home/bot/ros2_ws/install/move_program:/home/bot/ros2_ws/install/imu_controller:/home/bot/ros2_ws/install/esp32_controller:/home/bot/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[7.685253] (-) TimerEvent: {}
+[7.785933] (-) TimerEvent: {}
+[7.886553] (-) TimerEvent: {}
+[7.987222] (-) TimerEvent: {}
+[8.087900] (-) TimerEvent: {}
+[8.188678] (-) TimerEvent: {}
+[8.289547] (-) TimerEvent: {}
+[8.390099] (-) TimerEvent: {}
+[8.490747] (-) TimerEvent: {}
+[8.591296] (-) TimerEvent: {}
+[8.691890] (-) TimerEvent: {}
+[8.792461] (-) TimerEvent: {}
+[8.893070] (-) TimerEvent: {}
+[8.993743] (-) TimerEvent: {}
+[9.094315] (-) TimerEvent: {}
+[9.194903] (-) TimerEvent: {}
+[9.295461] (-) TimerEvent: {}
+[9.396010] (-) TimerEvent: {}
+[9.496617] (-) TimerEvent: {}
+[9.597216] (-) TimerEvent: {}
+[9.697918] (-) TimerEvent: {}
+[9.760617] (chess_data_collector) StdoutLine: {'line': b'running develop\n'}
+[9.798073] (-) TimerEvent: {}
+[9.898679] (-) TimerEvent: {}
+[9.999235] (-) TimerEvent: {}
+[10.099847] (-) TimerEvent: {}
+[10.200451] (-) TimerEvent: {}
+[10.301027] (-) TimerEvent: {}
+[10.401724] (-) TimerEvent: {}
+[10.502280] (-) TimerEvent: {}
+[10.602888] (-) TimerEvent: {}
+[10.703500] (-) TimerEvent: {}
+[10.804060] (-) TimerEvent: {}
+[10.904656] (-) TimerEvent: {}
+[11.005223] (-) TimerEvent: {}
+[11.105811] (-) TimerEvent: {}
+[11.206398] (-) TimerEvent: {}
+[11.271664] (chess_data_collector) StdoutLine: {'line': b'running egg_info\n'}
+[11.272400] (chess_data_collector) StdoutLine: {'line': b'creating chess_data_collector.egg-info\n'}
+[11.306531] (-) TimerEvent: {}
+[11.392887] (chess_data_collector) StdoutLine: {'line': b'writing chess_data_collector.egg-info/PKG-INFO\n'}
+[11.394165] (chess_data_collector) StdoutLine: {'line': b'writing dependency_links to chess_data_collector.egg-info/dependency_links.txt\n'}
+[11.394901] (chess_data_collector) StdoutLine: {'line': b'writing entry points to chess_data_collector.egg-info/entry_points.txt\n'}
+[11.395574] (chess_data_collector) StdoutLine: {'line': b'writing requirements to chess_data_collector.egg-info/requires.txt\n'}
+[11.396199] (chess_data_collector) StdoutLine: {'line': b'writing top-level names to chess_data_collector.egg-info/top_level.txt\n'}
+[11.396803] (chess_data_collector) StdoutLine: {'line': b"writing manifest file 'chess_data_collector.egg-info/SOURCES.txt'\n"}
+[11.406667] (-) TimerEvent: {}
+[11.507210] (-) TimerEvent: {}
+[11.607817] (-) TimerEvent: {}
+[11.662322] (chess_data_collector) StdoutLine: {'line': b"reading manifest file 'chess_data_collector.egg-info/SOURCES.txt'\n"}
+[11.665219] (chess_data_collector) StdoutLine: {'line': b"writing manifest file 'chess_data_collector.egg-info/SOURCES.txt'\n"}
+[11.707973] (-) TimerEvent: {}
+[11.792545] (chess_data_collector) StdoutLine: {'line': b'running build_ext\n'}
+[11.793206] (chess_data_collector) StdoutLine: {'line': b'Creating /home/bot/ros2_ws/install/chess_data_collector/lib/python3.12/site-packages/chess-data-collector.egg-link (link to .)\n'}
+[11.795731] (chess_data_collector) StdoutLine: {'line': b'Installing collect script to /home/bot/ros2_ws/install/chess_data_collector/lib/chess_data_collector\n'}
+[11.797187] (chess_data_collector) StdoutLine: {'line': b'\n'}
+[11.797730] (chess_data_collector) StdoutLine: {'line': b'Installed /home/bot/ros2_ws/build/chess_data_collector\n'}
+[11.798321] (chess_data_collector) StdoutLine: {'line': b'running symlink_data\n'}
+[11.798879] (chess_data_collector) StdoutLine: {'line': b'creating /home/bot/ros2_ws/install/chess_data_collector/share/ament_index\n'}
+[11.799270] (chess_data_collector) StdoutLine: {'line': b'creating /home/bot/ros2_ws/install/chess_data_collector/share/ament_index/resource_index\n'}
+[11.799801] (chess_data_collector) StdoutLine: {'line': b'creating /home/bot/ros2_ws/install/chess_data_collector/share/ament_index/resource_index/packages\n'}
+[11.800175] (chess_data_collector) StdoutLine: {'line': b'symbolically linking /home/bot/ros2_ws/build/chess_data_collector/resource/chess_data_collector -> /home/bot/ros2_ws/install/chess_data_collector/share/ament_index/resource_index/packages\n'}
+[11.801060] (chess_data_collector) StdoutLine: {'line': b'symbolically linking /home/bot/ros2_ws/build/chess_data_collector/package.xml -> /home/bot/ros2_ws/install/chess_data_collector/share/chess_data_collector\n'}
+[11.808241] (-) TimerEvent: {}
+[11.909249] (-) TimerEvent: {}
+[12.010688] (-) TimerEvent: {}
+[12.018396] (chess_data_collector) CommandEnded: {'returncode': 0}
+[12.100063] (chess_data_collector) JobEnded: {'identifier': 'chess_data_collector', 'rc': 0}
+[12.103237] (-) EventReactorShutdown: {}

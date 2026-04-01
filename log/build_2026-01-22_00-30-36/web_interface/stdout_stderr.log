@@ -1,0 +1,18 @@
+running develop
+running egg_info
+writing web_interface.egg-info/PKG-INFO
+writing dependency_links to web_interface.egg-info/dependency_links.txt
+writing entry points to web_interface.egg-info/entry_points.txt
+writing requirements to web_interface.egg-info/requires.txt
+writing top-level names to web_interface.egg-info/top_level.txt
+reading manifest file 'web_interface.egg-info/SOURCES.txt'
+writing manifest file 'web_interface.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/bot/ros2_ws/install/web_interface/lib/python3.12/site-packages/web-interface.egg-link (link to .)
+Installing flask_server script to /home/bot/ros2_ws/install/web_interface/bin
+
+Installed /home/bot/ros2_ws/build/web_interface
+running symlink_data
+symbolically linking /home/bot/ros2_ws/build/web_interface/resource/web_interface -> /home/bot/ros2_ws/install/web_interface/share/ament_index/resource_index/packages
+symbolically linking /home/bot/ros2_ws/build/web_interface/package.xml -> /home/bot/ros2_ws/install/web_interface/share/web_interface
+symbolically linking /home/bot/ros2_ws/build/web_interface/templates/index.html -> /home/bot/ros2_ws/install/web_interface/share/web_interface/templates
