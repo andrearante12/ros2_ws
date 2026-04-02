@@ -167,6 +167,84 @@ ros2 launch arm_bringup teleop.launch.py callback_skip_rate:=10 x_sensitivity:=0
 
 ---
 
+### Gazebo Simulation Mode (physics simulation)
+
+Runs the full arm in Gazebo Harmonic with real physics, `ros2_control` controllers, MoveIt2, and RViz2. No physical hardware required. Use this for imitation learning demonstration collection and RL environment development.
+
+```bash
+ros2 launch arm_bringup gazebo.launch.py
+```
+
+This starts:
+- `gz-sim` (Gazebo Harmonic) — physics world with table and target object
+- `robot_state_publisher` — publishes URDF
+- `ros_gz_bridge` — bridges Gazebo clock → ROS `/clock` topic
+- `gz_ros2_control` plugin — controller manager inside Gazebo
+- `joint_state_broadcaster`, `robotic_arm_controller`, `hand_controller` — spawned in sequence after robot loads
+- `move_group` — MoveIt2 planning (sim time)
+- `rviz2` — visualisation
+
+**Launch arguments:**
+
+| Argument | Default | Description |
+|---|---|---|
+| `world` | `arm_world.sdf` | Path to Gazebo world SDF file |
+| `gz_headless` | `false` | Run Gazebo without GUI (server only) |
+
+---
+
+### Recording Demonstrations (imitation learning)
+
+Records sensor and command data into a rosbag2 file for imitation learning. Run alongside any control launch file.
+
+```bash
+# Terminal 1 — start the arm (real or simulation)
+ros2 launch arm_bringup teleop.launch.py              # real arm
+ros2 launch arm_bringup teleop.launch.py backend:=gazebo  # Gazebo
+
+# Terminal 2 — start recording
+ros2 launch arm_bringup record_demo.launch.py demo_name:=demo_001
+```
+
+Always-recorded topics:
+- `/joint_states` — observation: current joint positions (100 Hz)
+- `/arm/servo_commands` — action: commanded servo positions
+- `/clock`, `/tf`, `/tf_static` — time synchronisation and transforms
+- `/yolo/detections` — object detections (if vision pipeline is running)
+
+Optional (pass `record_images:=true`):
+- `/camera/camera/color/image_raw`
+- `/camera/camera/aligned_depth_to_color/image_raw`
+- `/yolo/visualization`
+
+Bags are saved to `~/demonstrations/<demo_name>/` and are readable with:
+```bash
+ros2 bag info ~/demonstrations/demo_001
+ros2 bag play ~/demonstrations/demo_001
+```
+
+**Launch arguments:**
+
+| Argument | Default | Description |
+|---|---|---|
+| `demo_name` | `demo` | Name for the bag file |
+| `output_dir` | `~/demonstrations` | Parent directory for recordings |
+| `record_images` | `false` | Also record camera RGB/depth topics (large files) |
+
+---
+
+### Teleoperation with Gazebo
+
+Drive the Gazebo simulation using the wearable controller instead of the real arm:
+
+```bash
+ros2 launch arm_bringup teleop.launch.py backend:=gazebo
+```
+
+When `backend:=gazebo`, Gazebo is launched in place of the MoveIt-only stack, `pose_printer` is not started (no serial port opened), and `esp32_controller` uses sim time. All other wearable arguments (`lock_wrist`, `x_sensitivity`, etc.) work the same.
+
+---
+
 ### Vision Mode (chess piece detection)
 
 Runs the RealSense camera driver and YOLO object detection pipeline. Requires a RealSense RGB-D camera.

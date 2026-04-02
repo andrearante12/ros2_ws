@@ -60,13 +60,13 @@ public:
             this->declare_parameter("wrist_sensitivity", 1.0);
         }
         if (!this->has_parameter("default_y_position")) {
-            this->declare_parameter("default_y_position", -1.35);
+            this->declare_parameter("default_y_position", -0.03);
         }
         if (!this->has_parameter("default_wrist_angle")) {
             this->declare_parameter("default_wrist_angle", 90);
         }
         if (!this->has_parameter("default_z_position")) {
-            this->declare_parameter("default_z_position", 1.1);
+            this->declare_parameter("default_z_position", 0.19);
         }
 
         callback_skip_rate_ = this->get_parameter("callback_skip_rate").as_int();

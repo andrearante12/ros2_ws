@@ -2,23 +2,49 @@
 """
 teleop.launch.py — Teleoperation mode (IMU wearable controller)
 
-Starts the full pipeline for controlling the arm with the ESP32 wearable:
-  1. mqtt_imu_node   — bridges ESP32 sensor data (MQTT) → /odom + /imu/data
-  2. MoveIt2         — robot state publisher + move_group
-  3. esp32_controller — maps OTOS odometry to arm workspace, solves IK,
-                        publishes servo commands to /arm/servo_commands
-  4. pose_printer    — sole serial owner; relays /arm/servo_commands to Arduino
+Starts the full pipeline for controlling the arm with the ESP32 wearable.
+Supports three backends:
 
-pose_printer is the ONLY node that opens the serial port. esp32_controller
-publishes to /arm/servo_commands, which pose_printer forwards to hardware.
+  backend:=real (default)
+    1. mqtt_imu_node   — bridges ESP32 sensor data (MQTT) → /odom + /imu/data
+    2. MoveIt2         — robot state publisher + move_group (mock hardware)
+    3. esp32_controller — maps OTOS odometry to arm workspace, solves IK,
+                          publishes servo commands to /arm/servo_commands
+    4. pose_printer    — sole serial owner; relays /arm/servo_commands to Arduino
+
+  backend:=gazebo
+    1. mqtt_imu_node   — same as above
+    2. Gazebo Harmonic — full physics simulation (includes MoveIt + ros2_control)
+    3. esp32_controller — same IK pipeline, publishes to /arm/servo_commands
+    (no pose_printer — Gazebo's JointTrajectoryController receives commands)
+
+  backend:=mujoco
+    1. mqtt_imu_node   — same as above
+    2. MuJoCo          — full physics simulation (includes MoveIt + ros2_control)
+    3. esp32_controller — same IK pipeline, publishes to /arm/servo_commands
+    (no pose_printer — MuJoCo's JointTrajectoryController receives commands)
+
+pose_printer is the ONLY node that opens the serial port in real mode.
+esp32_controller publishes to /arm/servo_commands in both modes.
 
 Usage:
+  # Real arm (default):
   ros2 launch arm_bringup teleop.launch.py
 
+  # Gazebo simulation:
+  ros2 launch arm_bringup teleop.launch.py backend:=gazebo
+
+  # MuJoCo simulation:
+  ros2 launch arm_bringup teleop.launch.py backend:=mujoco
+
+  # Hardware-free test (real backend, no serial):
+  ros2 launch arm_bringup teleop.launch.py dry_run:=true
+
 Launch arguments:
+  backend              'real', 'gazebo', or 'mujoco' (default: real)
   serial_port          Serial device for Arduino (default: /dev/ttyUSB0)
   dry_run              Log commands instead of sending to serial
-                       (default: false)
+                       (default: false, only applies to backend:=real)
   mqtt_broker          MQTT broker hostname (default: localhost)
   callback_skip_rate   Send command every N odometry callbacks (default: 5)
   lock_wrist           Lock wrist at default angle (default: false)
@@ -27,29 +53,25 @@ Launch arguments:
   default_y_position   Y position when Y locked, in metres (default: -1.2)
   default_z_position   Fixed Z height, in metres (default: 1.10)
   default_wrist_angle  Wrist angle when locked, in degrees (default: 90)
-
-Example (hardware-free test):
-  ros2 launch arm_bringup teleop.launch.py dry_run:=true
-
-Recommended calibration from README:
-  ros2 launch arm_bringup teleop.launch.py \\
-    callback_skip_rate:=5 x_sensitivity:=3.0 \\
-    lock_y_axis:=true default_y_position:=-1.2 \\
-    lock_wrist:=true default_wrist_angle:=90 \\
-    default_z_position:=1.10
 """
 
+import os
+
+from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
+from launch.conditions import IfCondition, UnlessCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration
+from launch.substitutions import LaunchConfiguration, PythonExpression
 from launch_ros.actions import Node
-from ament_index_python.packages import get_package_share_directory
-import os
 
 
 def generate_launch_description():
     # ── Launch arguments ──────────────────────────────────────────────────────
+    backend_arg = DeclareLaunchArgument(
+        "backend", default_value="real",
+        description="'real' to drive the physical arm, 'gazebo' or 'mujoco' for simulation"
+    )
     serial_port_arg = DeclareLaunchArgument(
         "serial_port", default_value="/dev/ttyUSB0",
         description="Serial port connected to the Arduino Nano"
@@ -91,12 +113,37 @@ def generate_launch_description():
         description="Wrist servo angle (degrees) used when lock_wrist=true"
     )
 
-    # ── MoveIt2 stack ─────────────────────────────────────────────────────────
+    backend = LaunchConfiguration("backend")
+    is_real = PythonExpression(["'", backend, "' == 'real'"])
+    is_gazebo = PythonExpression(["'", backend, "' == 'gazebo'"])
+    is_mujoco = PythonExpression(["'", backend, "' == 'mujoco'"])
+    # Both gazebo and mujoco publish /clock; use sim time for their controllers
+    is_gazebo_sim = PythonExpression(["'", backend, "' in ('gazebo', 'mujoco')"])
+
+    # ── MoveIt2 stack (real backend only — sim backends bring their own) ──────
     moveit_config_share = get_package_share_directory("robotic_arm_v3_config")
     moveit = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(moveit_config_share, "launch", "demo_with_controllers.launch.py")
-        )
+        ),
+        condition=IfCondition(is_real),
+    )
+
+    # ── Gazebo simulation stack (gazebo backend only) ─────────────────────────
+    bringup_share = get_package_share_directory("arm_bringup")
+    gazebo = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(bringup_share, "launch", "gazebo.launch.py")
+        ),
+        condition=IfCondition(is_gazebo),
+    )
+
+    # ── MuJoCo simulation stack (mujoco backend only) ─────────────────────────
+    mujoco = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(bringup_share, "launch", "mujoco.launch.py")
+        ),
+        condition=IfCondition(is_mujoco),
     )
 
     # ── MQTT → ROS bridge ─────────────────────────────────────────────────────
@@ -111,6 +158,7 @@ def generate_launch_description():
     )
 
     # ── Teleoperation controller ───────────────────────────────────────────────
+    # use_sim_time=true when driving Gazebo so IK callbacks align with sim clock
     esp32_controller = Node(
         package="esp32_controller",
         executable="esp32_controller",
@@ -123,11 +171,12 @@ def generate_launch_description():
             "lock_wrist": LaunchConfiguration("lock_wrist"),
             "default_wrist_angle": LaunchConfiguration("default_wrist_angle"),
             "default_z_position": LaunchConfiguration("default_z_position"),
+            "use_sim_time": is_gazebo_sim,
         }],
         output="screen",
     )
 
-    # ── Serial arbitrator — sole owner of /dev/ttyUSB0 ────────────────────────
+    # ── Serial arbitrator — sole owner of /dev/ttyUSB0 (real backend only) ────
     pose_printer = Node(
         package="pose_printer",
         executable="pose_printer",
@@ -138,9 +187,11 @@ def generate_launch_description():
             "dry_run": LaunchConfiguration("dry_run"),
         }],
         output="screen",
+        condition=IfCondition(is_real),
     )
 
     return LaunchDescription([
+        backend_arg,
         serial_port_arg,
         dry_run_arg,
         mqtt_broker_arg,
@@ -152,6 +203,8 @@ def generate_launch_description():
         default_z_position_arg,
         default_wrist_angle_arg,
         moveit,
+        gazebo,
+        mujoco,
         mqtt_imu,
         esp32_controller,
         pose_printer,

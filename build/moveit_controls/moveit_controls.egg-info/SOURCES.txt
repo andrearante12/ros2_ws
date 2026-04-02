@@ -9,7 +9,10 @@ setup.py
 ../../../build/moveit_controls/moveit_controls.egg-info/top_level.txt
 ../../../build/moveit_controls/moveit_controls.egg-info/zip-safe
 moveit_controls/__init__.py
+moveit_controls/gripper_control.py
+moveit_controls/run_trajectory.py
 resource/moveit_controls
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
+trajectories/pick_and_place.yaml

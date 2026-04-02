@@ -1,3 +1,5 @@
 [console_scripts]
+gripper_control = moveit_controls.gripper_control:main
 move_to_xyz = moveit_controls.move_to_xyz:main
+run_trajectory = moveit_controls.run_trajectory:main
 target_listener = moveit_controls.target_listener:main

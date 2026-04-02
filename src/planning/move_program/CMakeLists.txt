@@ -26,7 +26,20 @@ ament_target_dependencies(move_program
   moveit_ros_planning_interface
 )
 
-install(TARGETS move_program
+add_executable(move_with_simulation src/move_with_simulation.cpp)
+
+target_include_directories(move_with_simulation PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
+
+ament_target_dependencies(move_with_simulation
+  rclcpp
+  std_msgs
+  moveit_ros_planning_interface
+)
+
+install(TARGETS move_program move_with_simulation
   DESTINATION lib/${PROJECT_NAME}
 )
 

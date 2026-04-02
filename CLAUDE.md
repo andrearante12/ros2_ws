@@ -31,8 +31,11 @@ colcon build --symlink-install --packages-select pose_printer mqtt_imu
 ## Launch Commands (One Per Mode)
 
 ```bash
-# Simulation only — no hardware required
+# Simulation only (MoveIt mock hardware) — no hardware required
 ros2 launch arm_bringup sim.launch.py
+
+# Gazebo physics simulation — full ros2_control + MoveIt + physics
+ros2 launch arm_bringup gazebo.launch.py
 
 # IK positioning — then in a 2nd terminal: ros2 run move_program move_program <x> <y> <z>
 ros2 launch arm_bringup ik_positioning.launch.py
@@ -41,6 +44,11 @@ ros2 launch arm_bringup ik_positioning.launch.py dry_run:=true   # test without 
 # Teleoperation — ESP32 wearable controls arm in real time
 ros2 launch arm_bringup teleop.launch.py
 ros2 launch arm_bringup teleop.launch.py dry_run:=true           # test without Arduino
+ros2 launch arm_bringup teleop.launch.py backend:=gazebo         # drive Gazebo instead
+
+# Record demonstration for imitation learning (run alongside teleop or gazebo)
+ros2 launch arm_bringup record_demo.launch.py demo_name:=demo_001
+ros2 launch arm_bringup record_demo.launch.py demo_name:=demo_001 record_images:=true
 
 # Vision — RealSense + YOLO detection + web dashboard at :5000
 ros2 launch arm_bringup vision.launch.py
@@ -84,6 +92,20 @@ src/
 **interfaces/**
 - `web_interface` — Flask server at `:5000`; streams camera feeds and joint states
 
+## Gazebo Integration
+
+`gazebo.launch.py` uses `gz_ros2_control/GazeboSimSystem` as the hardware interface instead of `mock_components/GenericSystem`. The URDF switches via the `use_sim` xacro argument:
+
+- `robotic_arm_model_v3.urdf.xacro` — top-level xacro; accepts `use_sim:=false` (default)
+- `robotic_arm_model_v3.ros2_control.xacro` — macro with `use_sim` param; selects hardware plugin conditionally
+- `<gazebo>` plugin block (injected when `use_sim:=true`) loads `libgz_ros2_control-system.so` into Gazebo
+
+`MoveItConfigsBuilder` in `gazebo.launch.py` passes `mappings={"use_sim": "true"}` to pick up the Gazebo interface. Controller spawning is sequenced via `RegisterEventHandler(OnProcessExit)`: spawn robot → `joint_state_broadcaster` → arm and hand controllers.
+
+All nodes in Gazebo mode use `use_sim_time: True` and receive time from the `/clock` bridge (`ros_gz_bridge parameter_bridge`). Do NOT start a separate `ros2_control_node` — the Gazebo plugin acts as the controller manager.
+
+Demos are recorded with `record_demo.launch.py` (separate terminal). Bags land in `~/demonstrations/<demo_name>/`.
+
 ## Serial Port Architecture
 
 `pose_printer` is the sole node that opens `/dev/ttyUSB0`. Other nodes publish servo commands as `std_msgs/String` to `/arm/servo_commands`. Format: newline-delimited `servoN=angle` strings.
@@ -120,8 +142,8 @@ src/
 - ESP32 wearable on WiFi → MQTT `localhost:1883`, topic `esp32/dual_sensors` (JSON)
 - RealSense RGB-D camera — required for vision mode
 
-## Workspace Bounds
+## Workspace Bounds (normalized, arm base at origin)
 
-- X: 0.60 – 0.77 m
-- Y: −1.50 – −1.20 m
-- Z: fixed (configurable via `default_z_position`, default 1.10 m)
+- X: −0.08 – 0.09 m
+- Y: −0.18 – 0.10 m
+- Z: fixed (configurable via `default_z_position`, default 0.19 m)

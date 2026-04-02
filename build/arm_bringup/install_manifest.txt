@@ -1,5 +1,8 @@
 /home/andre/ros2_ws/install/arm_bringup/share/arm_bringup/launch/vision.launch.py
+/home/andre/ros2_ws/install/arm_bringup/share/arm_bringup/launch/record_demo.launch.py
 /home/andre/ros2_ws/install/arm_bringup/share/arm_bringup/launch/sim.launch.py
+/home/andre/ros2_ws/install/arm_bringup/share/arm_bringup/launch/mujoco.launch.py
+/home/andre/ros2_ws/install/arm_bringup/share/arm_bringup/launch/gazebo.launch.py
 /home/andre/ros2_ws/install/arm_bringup/share/arm_bringup/launch/ik_positioning.launch.py
 /home/andre/ros2_ws/install/arm_bringup/share/arm_bringup/launch/teleop.launch.py
 /home/andre/ros2_ws/install/arm_bringup/share/ament_index/resource_index/package_run_dependencies/arm_bringup

@@ -1,18 +1,22 @@
-# This config file is used by ros2_control
+# Path: src/robot/robotic_arm_v3_config/config/ros2_controllers.yaml
+
 controller_manager:
   ros__parameters:
     update_rate: 100  # Hz
 
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
     robotic_arm_controller:
       type: joint_trajectory_controller/JointTrajectoryController
-
 
     hand_controller:
       type: position_controllers/GripperActionController
 
+    finger_controller:
+      type: position_controllers/JointGroupPositionController
 
-    joint_state_broadcaster:
-      type: joint_state_broadcaster/JointStateBroadcaster
+# --- Controller Configurations ---
 
 robotic_arm_controller:
   ros__parameters:
@@ -27,6 +31,15 @@ robotic_arm_controller:
       - position
       - velocity
     allow_nonzero_velocity_at_trajectory_end: true
+
 hand_controller:
   ros__parameters:
     joint: end_effector_joint
+    # This allows MoveIt to find the action server
+    action_ns: gripper_cmd
+
+finger_controller:
+  ros__parameters:
+    joints:
+      - end_effector_top_joint
+      - end_effector_bottom_joint

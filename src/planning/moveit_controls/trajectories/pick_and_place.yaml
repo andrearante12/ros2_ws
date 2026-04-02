@@ -1,0 +1,13 @@
+# Pick-and-place demo trajectory
+# Each step is either a gripper command or an arm move
+# gripper: open / close
+# move: [x, y, z]
+# sleep: seconds (optional pause between steps)
+
+steps:
+  - move: [-0.02, 0.14, 0.12]
+  - gripper: close
+  - sleep: 1.0
+  - move: [-0.02, 0.14, 0.18]
+  - move: [-0.1, 0.15, 0.12]
+  - gripper: open

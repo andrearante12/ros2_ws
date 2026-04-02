@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/andre/ros2_ws/build/move_program
 
 # The main recursive "all" target.
 all: CMakeFiles/move_program.dir/all
+all: CMakeFiles/move_with_simulation.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +75,7 @@ preinstall:
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/move_program_uninstall.dir/clean
 clean: CMakeFiles/move_program.dir/clean
+clean: CMakeFiles/move_with_simulation.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -153,6 +155,32 @@ move_program: CMakeFiles/move_program.dir/rule
 CMakeFiles/move_program.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_program.dir/build.make CMakeFiles/move_program.dir/clean
 .PHONY : CMakeFiles/move_program.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/move_with_simulation.dir
+
+# All Build rule for target.
+CMakeFiles/move_with_simulation.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_with_simulation.dir/build.make CMakeFiles/move_with_simulation.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_with_simulation.dir/build.make CMakeFiles/move_with_simulation.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/andre/ros2_ws/build/move_program/CMakeFiles --progress-num=3,4 "Built target move_with_simulation"
+.PHONY : CMakeFiles/move_with_simulation.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/move_with_simulation.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andre/ros2_ws/build/move_program/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/move_with_simulation.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andre/ros2_ws/build/move_program/CMakeFiles 0
+.PHONY : CMakeFiles/move_with_simulation.dir/rule
+
+# Convenience name for target.
+move_with_simulation: CMakeFiles/move_with_simulation.dir/rule
+.PHONY : move_with_simulation
+
+# clean rule for target.
+CMakeFiles/move_with_simulation.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_with_simulation.dir/build.make CMakeFiles/move_with_simulation.dir/clean
+.PHONY : CMakeFiles/move_with_simulation.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

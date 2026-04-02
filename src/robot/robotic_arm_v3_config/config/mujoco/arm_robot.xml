@@ -1,0 +1,62 @@
+<mujoco model="robotic_arm_model_v3">
+  <compiler angle="radian" meshdir="/home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/"/>
+
+  <asset>
+    <mesh name="base_link" content_type="model/stl" file="base_link.STL"/>
+    <mesh name="link_1" content_type="model/stl" file="link_1.STL"/>
+    <mesh name="link_2" content_type="model/stl" file="link_2.STL"/>
+    <mesh name="link_3" content_type="model/stl" file="link_3.STL"/>
+    <mesh name="link_4" content_type="model/stl" file="link_4.STL"/>
+    <mesh name="end_effector_link" content_type="model/stl" file="end_effector_link.STL"/>
+    <mesh name="end_effector_top" content_type="model/stl" file="end_effector_top.STL"/>
+    <mesh name="end_effector_bottom" content_type="model/stl" file="end_effector_bottom.STL"/>
+  </asset>
+
+  <worldbody>
+    <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" contype="0" conaffinity="0" mesh="base_link"/>
+    <body name="link_1" pos="0 0 0" quat="0.28687 0.28687 0.646301 0.646301">
+      <inertial pos="-0.00834674 0.0592849 -0.0104318" quat="0.92142 -0.0380551 0.375443 -0.0926238" mass="0.0465317" diaginertia="1.48896e-05 1.40722e-05 1.08438e-05"/>
+      <joint name="joint_1" pos="0 0 0" axis="0 1 0"/>
+      <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" contype="0" conaffinity="0" mesh="link_1"/>
+      <body name="link_2" pos="-0.0138083 0.068 -0.0144682" quat="0.169086 -0.170347 -0.25967 -0.935395">
+        <inertial pos="-0.00411556 -0.0490782 0.0151869" quat="0.126982 0.547387 0.0853286 0.822777" mass="0.0196331" diaginertia="1.5455e-05 9.86531e-06 7.49597e-06"/>
+        <joint name="joint_2" pos="0 0 0" axis="0.920715 0.00279091 0.390225"/>
+        <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" contype="0" conaffinity="0" mesh="link_2"/>
+        <body name="link_3" pos="-0.0119074 -0.0981729 0.0287976" quat="0.00257349 0.262055 -0.736387 -0.623743">
+          <inertial pos="-0.00444665 0.0223203 -0.00518263" quat="0.422741 0.35326 -0.463923 0.693738" mass="0.0527193" diaginertia="1.94596e-05 1.24466e-05 1.17761e-05"/>
+          <joint name="joint_3" pos="0 0 0" axis="0.920648 0.00215985 0.390387"/>
+          <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" contype="0" conaffinity="0" mesh="link_3"/>
+          <body name="link_4" pos="0.00878557 0.0942864 -0.021316" quat="-0.0178844 0.199155 -0.779726 -0.593334">
+            <inertial pos="0.00067968 0.0122665 0.0211158" quat="0.0771712 0.57751 -0.390577 0.712725" mass="0.0734303" diaginertia="2.072e-05 1.306e-05 1.3015e-05"/>
+            <joint name="joint_4" pos="0 0 0" axis="0.951231 -0.0451134 0.305163"/>
+            <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" contype="0" conaffinity="0" mesh="link_4"/>
+            <body name="end_effector_link" pos="0.00676343 0.014663 0.040028" quat="0.0207944 -0.000951313 0.923905 0.382055">
+              <inertial pos="0.0116216 0.0349809 0.0434474" quat="0.721787 0.0603347 -0.231744 0.649367" mass="0.0389627" diaginertia="9.51013e-06 7.08275e-06 5.32134e-06"/>
+              <joint name="end_effector_joint" pos="0 0 0" axis="0.0547588 0.915424 0.398749"/>
+              <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="end_effector_link" condim="6" solref="0.001 1" solimp="0.99 0.999 0.001"/>
+              <body name="end_effector_top" pos="0.00757297 0.0540308 0.00949071" quat="0.978569 0.1854 0.0142888 0.0884656">
+                <inertial pos="3.87435e-05 0.023434 0.000841243" quat="0.656396 0.718103 -0.219325 0.0732646" mass="0.00541879" diaginertia="1.02507e-06 8.99009e-07 1.40236e-07"/>
+                <joint name="end_effector_top_joint" pos="0 0 0" axis="0.893057 -0.218815 0.393152" damping="0.5"/>
+                <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="end_effector_top" friction="5.0 0.05 0.01" condim="6" solref="0.001 1" solimp="0.99 0.999 0.001"/>
+              </body>
+              <body name="end_effector_bottom" pos="-0.00239381 0.0429649 0.034775" quat="0.976056 -0.0631565 -0.00202574 -0.208138">
+                <inertial pos="-0.0100436 0.0180907 0.0101758" quat="0.491882 0.853519 0.00702286 0.171778" mass="0.00541879" diaginertia="1.02507e-06 8.93811e-07 1.45434e-07"/>
+                <joint name="end_effector_bottom_joint" pos="0 0 0" axis="0.940886 0.180977 0.286322" damping="0.5"/>
+                <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="end_effector_bottom" friction="5.0 0.05 0.01" condim="6" solref="0.001 1" solimp="0.99 0.999 0.001"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <position name="joint_1" joint="joint_1" kp="100" kv="10" ctrlrange="-6.28 6.28"/>
+    <position name="joint_2" joint="joint_2" kp="100" kv="10" ctrlrange="-6.28 6.28"/>
+    <position name="joint_3" joint="joint_3" kp="100" kv="10" ctrlrange="-6.28 6.28"/>
+    <position name="joint_4" joint="joint_4" kp="100" kv="10" ctrlrange="-6.28 6.28"/>
+    <position name="end_effector_joint" joint="end_effector_joint" kp="100" kv="10" ctrlrange="-6.28 6.28"/>
+    <position name="end_effector_top_joint" joint="end_effector_top_joint" kp="30" kv="5" ctrlrange="-1.57 1.57"/>
+    <position name="end_effector_bottom_joint" joint="end_effector_bottom_joint" kp="30" kv="5" ctrlrange="-1.57 1.57"/>
+  </actuator>
+</mujoco>

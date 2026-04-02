@@ -26,6 +26,8 @@
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/config/bridge.yaml
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/config/pilz_cartesian_limits.yaml
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/config/initial_positions.yaml
+/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/config/mujoco/arm_robot.xml
+/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/config/mujoco/arm_scene.xml
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/config/ros_gz_bridge.yaml
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/config/moveit_controllers.yaml
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/config/robotic_arm_model_v3.srdf
@@ -35,4 +37,5 @@
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/config/robotic_arm_model_v3.urdf.xacro
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/config/moveit.rviz
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/config/ros2_controllers.yaml
+/home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/worlds/arm_world.sdf
 /home/andre/ros2_ws/install/robotic_arm_v3_config/share/robotic_arm_v3_config/.setup_assistant

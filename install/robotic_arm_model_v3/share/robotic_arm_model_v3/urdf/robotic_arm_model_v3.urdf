@@ -14,61 +14,14 @@
     <origin xyz="0 0 0" rpy="0 0 0"/>
   </joint>
 
-  <!-- ros2_control: fake hardware for MoveIt testing -->
-  <ros2_control name="FakeSystem" type="system">
-    <hardware>
-      <plugin>mock_components/GenericSystem</plugin>
-    </hardware>
-
-    <joint name="joint_1">
-      <command_interface name="position"/>
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-    </joint>
-
-    <joint name="joint_2">
-      <command_interface name="position"/>
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-    </joint>
-
-    <joint name="joint_3">
-      <command_interface name="position"/>
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-    </joint>
-
-    <joint name="joint_4">
-      <command_interface name="position"/>
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-    </joint>
-
-    <joint name="end_effector_joint">
-      <command_interface name="position"/>
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-    </joint>
-
-    <joint name="end_effector_top_joint">
-      <command_interface name="position"/>
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-    </joint>
-
-    <joint name="end_effector_bottom_joint">
-      <command_interface name="position"/>
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-    </joint>
-  </ros2_control>
-
+  <!-- ros2_control hardware interface is defined in robotic_arm_model_v3.ros2_control.xacro
+       (conditionally selects mock_components or gz_ros2_control based on use_sim arg) -->
 
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="0.690918199012026 -1.31818064426375 0.905986463170299"
+        xyz="0.009405300070128 0.001393067806921 -0.004641259829701"
         rpy="0 0 0" />
       <mass
         value="0.0953444546366154" />
@@ -148,7 +101,7 @@
     name="joint_1"
     type="continuous">
     <origin
-      xyz="0.681512899942898 -1.31957371207269 0.9106277233023"
+      xyz="0 0 0"
       rpy="1.57079632679489 0 2.30611320700167" />
     <parent
       link="base_link" />

@@ -18,6 +18,7 @@
   <exec_depend>moveit_controls</exec_depend>
   <exec_depend>yolov5_detection</exec_depend>
   <exec_depend>web_interface</exec_depend>
+  <exec_depend>mujoco_ros2_control</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>

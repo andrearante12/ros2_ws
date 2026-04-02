@@ -43,7 +43,7 @@
       </visual>
     </link>
     <joint name='joint_1' type='revolute'>
-      <pose relative_to='base_link'>0.68151289994289799 -1.31957371207269 0.91062772330230002 1.5707963267948899 5.5511151231257827e-17 2.3061132070016699</pose>
+      <pose relative_to='base_link'>0 0 0 1.5707963267948899 5.5511151231257827e-17 2.3061132070016699</pose>
       <parent>base_link</parent>
       <child>link_1</child>
       <axis>

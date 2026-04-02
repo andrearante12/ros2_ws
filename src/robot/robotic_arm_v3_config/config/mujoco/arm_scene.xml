@@ -1,0 +1,57 @@
+<mujoco model="arm_world">
+  <!-- Include the robot body, joints, and actuators generated from the URDF -->
+  <include file="arm_robot.xml"/>
+
+  <option timestep="0.001" gravity="0 0 -9.81" integrator="implicitfast" solver="Newton" noslip_iterations="10"/>
+
+  <statistic center="0 0 -0.01" extent="0.5"/>
+
+  <visual>
+    <headlight diffuse="0.6 0.6 0.6" ambient="0.3 0.3 0.3" specular="0.1 0.1 0.1"/>
+    <rgba haze="0.15 0.25 0.35 1"/>
+    <global azimuth="160" elevation="-15"/>
+  </visual>
+
+  <asset>
+    <texture type="2d" name="groundplane" builtin="checker"
+             rgb1="0.45 0.45 0.45" rgb2="0.35 0.35 0.35" width="300" height="300"/>
+    <material name="groundplane" texture="groundplane" texrepeat="5 5" reflectance="0.1"/>
+    <material name="table_wood" rgba="0.55 0.38 0.18 1"/>
+    <material name="target_red" rgba="0.8 0.1 0.1 1"/>
+  </asset>
+
+  <worldbody>
+    <light directional="true" pos="0 0 3" dir="-0.3 0.1 -0.9"
+           diffuse="0.8 0.8 0.8" specular="0.2 0.2 0.2" castshadow="true"/>
+    <light directional="true" pos="0 -1 3" dir="0.1 0.4 -0.9"
+           diffuse="0.4 0.4 0.4" castshadow="false"/>
+
+    <!-- Ground plane -->
+    <geom name="ground" type="plane" size="50 50 0.1" pos="0 0 -0.91"
+          material="groundplane" friction="1 0.005 0.0001"/>
+
+    <!-- Table (static — no joint, fixed to world) -->
+    <body name="table" pos="0 0 -0.49">
+      <geom name="table_surface" type="box" size="0.3 0.3 0.02"
+            pos="0 0 0.42" material="table_wood"
+            solref="0.001 1" solimp="0.99 0.999 0.001"/>
+      <geom name="table_leg_fl" type="box" size="0.03 0.03 0.44"
+            pos=" 0.25  0.25 0" material="table_wood"/>
+      <geom name="table_leg_fr" type="box" size="0.03 0.03 0.44"
+            pos=" 0.25 -0.25 0" material="table_wood"/>
+      <geom name="table_leg_bl" type="box" size="0.03 0.03 0.44"
+            pos="-0.25  0.25 0" material="table_wood"/>
+      <geom name="table_leg_br" type="box" size="0.03 0.03 0.44"
+            pos="-0.25 -0.25 0" material="table_wood"/>
+    </body>
+
+    <!-- Target object (dynamic, graspable) — red cube on table surface -->
+    <body name="target_object" pos="0 0.16 -0.037">
+      <freejoint name="target_free"/>
+      <geom name="target_box" type="box" size="0.013 0.013 0.011"
+            material="target_red" mass="0.0001"
+            friction="5.0 0.05 0.01" condim="6"
+            solref="0.001 1" solimp="0.99 0.999 0.001"/>
+    </body>
+  </worldbody>
+</mujoco>

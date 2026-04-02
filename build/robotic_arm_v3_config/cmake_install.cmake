@@ -110,6 +110,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_v3_config" TYPE DIRECTORY FILES "/home/andre/ros2_ws/src/robot/robotic_arm_v3_config/worlds")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotic_arm_v3_config" TYPE FILE FILES "/home/andre/ros2_ws/src/robot/robotic_arm_v3_config/.setup_assistant")
 endif()
 

@@ -2,6 +2,7 @@
 /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/urdf/robotic_arm_model_v3.sdf
 /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/urdf/robotic_arm_model_v3.csv
 /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/end_effector_top.STL
+/home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/base_link.STL.bak
 /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/base_link.STL
 /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/link_2.STL
 /home/andre/ros2_ws/install/robotic_arm_model_v3/share/robotic_arm_model_v3/meshes/end_effector_link.STL

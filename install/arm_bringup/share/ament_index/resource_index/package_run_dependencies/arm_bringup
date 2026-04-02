@@ -1,1 +1,1 @@
-robotic_arm_v3_config;mqtt_imu;esp32_controller;pose_printer;move_program;moveit_controls;yolov5_detection;web_interface
+robotic_arm_v3_config;mqtt_imu;esp32_controller;pose_printer;move_program;moveit_controls;yolov5_detection;web_interface;mujoco_ros2_control

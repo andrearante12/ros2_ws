@@ -26,7 +26,7 @@ int main(int argc, char * argv[])
 
     if (argc < 4) {
         RCLCPP_ERROR(logger, "Usage: ros2 run move_program move_program <x> <y> <z>");
-        RCLCPP_ERROR(logger, "Example: ros2 run move_program move_program 0.6 -1.2 1.145");
+        RCLCPP_ERROR(logger, "Example: ros2 run move_program move_program 0.0 -0.15 0.0");
         rclcpp::shutdown();
         return 1;
     }
@@ -60,12 +60,20 @@ int main(int argc, char * argv[])
     GradientDescentIK gd_ik(robot_model, "arm", move_group.getEndEffectorLink());
 
     Eigen::Vector3d target_position(target_x, target_y, target_z);
+
+    // Get current joint state or fall back to zeros
+    rclcpp::sleep_for(std::chrono::seconds(1));
+    rclcpp::spin_some(node);
     std::vector<double> joint_solution = move_group.getCurrentJointValues();
+    if (joint_solution.empty()) {
+        RCLCPP_WARN(logger, "Could not fetch current joint state, using zeros as initial seed");
+        joint_solution.assign(robot_model->getJointModelGroup("arm")->getVariableCount(), 0.0);
+    }
 
     if (gd_ik.solveIK(target_position, joint_solution)) {
         RCLCPP_INFO(logger, "IK Solution found!");
 
-        // Build a single message with all servo commands
+        // Build servo commands (skip last joint = end effector)
         std::string commands;
         for (size_t i = 0; i < joint_solution.size() - 1; i++) {
             int angle = static_cast<int>(std::round(joint_solution[i] * 180.0 / M_PI));

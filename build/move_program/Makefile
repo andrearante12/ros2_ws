@@ -210,6 +210,19 @@ move_program/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_program.dir/build.make CMakeFiles/move_program.dir/build
 .PHONY : move_program/fast
 
+#=============================================================================
+# Target rules for targets named move_with_simulation
+
+# Build rule for target.
+move_with_simulation: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 move_with_simulation
+.PHONY : move_with_simulation
+
+# fast build rule for target.
+move_with_simulation/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_with_simulation.dir/build.make CMakeFiles/move_with_simulation.dir/build
+.PHONY : move_with_simulation/fast
+
 src/move_program.o: src/move_program.cpp.o
 .PHONY : src/move_program.o
 
@@ -234,6 +247,30 @@ src/move_program.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_program.dir/build.make CMakeFiles/move_program.dir/src/move_program.cpp.s
 .PHONY : src/move_program.cpp.s
 
+src/move_with_simulation.o: src/move_with_simulation.cpp.o
+.PHONY : src/move_with_simulation.o
+
+# target to build an object file
+src/move_with_simulation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_with_simulation.dir/build.make CMakeFiles/move_with_simulation.dir/src/move_with_simulation.cpp.o
+.PHONY : src/move_with_simulation.cpp.o
+
+src/move_with_simulation.i: src/move_with_simulation.cpp.i
+.PHONY : src/move_with_simulation.i
+
+# target to preprocess a source file
+src/move_with_simulation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_with_simulation.dir/build.make CMakeFiles/move_with_simulation.dir/src/move_with_simulation.cpp.i
+.PHONY : src/move_with_simulation.cpp.i
+
+src/move_with_simulation.s: src/move_with_simulation.cpp.s
+.PHONY : src/move_with_simulation.s
+
+# target to generate assembly for a file
+src/move_with_simulation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_with_simulation.dir/build.make CMakeFiles/move_with_simulation.dir/src/move_with_simulation.cpp.s
+.PHONY : src/move_with_simulation.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -250,9 +287,13 @@ help:
 	@echo "... move_program_uninstall"
 	@echo "... uninstall"
 	@echo "... move_program"
+	@echo "... move_with_simulation"
 	@echo "... src/move_program.o"
 	@echo "... src/move_program.i"
 	@echo "... src/move_program.s"
+	@echo "... src/move_with_simulation.o"
+	@echo "... src/move_with_simulation.i"
+	@echo "... src/move_with_simulation.s"
 .PHONY : help
 
 

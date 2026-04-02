@@ -624,6 +624,8 @@ _Python3_INCLUDE_DIR:INTERNAL=/home/andre/miniconda3/include/python3.13
 //Python3 Properties
 _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;13;11;64;;cpython-313-x86_64-linux-gnu;abi3;/home/andre/miniconda3/lib/python3.13;/home/andre/miniconda3/lib/python3.13;/home/andre/miniconda3/lib/python3.13/site-packages;/home/andre/miniconda3/lib/python3.13/site-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=c196e9d33298c51a2f81abe0c0f19773
+//Interpreter reason failure
+_Python3_Interpreter_REASON_FAILURE:INTERNAL=
 //Path to a library.
 _Python3_LIBRARY_RELEASE:INTERNAL=/home/andre/miniconda3/lib/libpython3.13.so
 _Python3_NUMPY_SIGNATURE:INTERNAL=f63092195b3b8f9446f9140aa5fbd5cf

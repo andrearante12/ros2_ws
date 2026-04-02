@@ -1,4 +1,5 @@
 /home/andre/ros2_ws/install/move_program/lib/move_program/move_program
+/home/andre/ros2_ws/install/move_program/lib/move_program/move_with_simulation
 /home/andre/ros2_ws/install/move_program/include/move_program/gradient_ik.hpp
 /home/andre/ros2_ws/install/move_program/share/ament_index/resource_index/package_run_dependencies/move_program
 /home/andre/ros2_ws/install/move_program/share/ament_index/resource_index/parent_prefix_path/move_program
