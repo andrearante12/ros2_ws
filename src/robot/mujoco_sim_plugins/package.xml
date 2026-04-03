@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>mujoco_sim_plugins</name>
+  <version>0.0.0</version>
+  <description>Custom MuJoCo simulation plugins (reset, etc.)</description>
+  <maintainer email="andre@example.com">andre</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>pluginlib</depend>
+  <depend>std_msgs</depend>
+  <depend>mujoco_vendor</depend>
+  <depend>mujoco_ros2_control_plugins</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

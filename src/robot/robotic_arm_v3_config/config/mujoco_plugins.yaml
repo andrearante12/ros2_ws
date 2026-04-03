@@ -1,0 +1,5 @@
+/**:
+  ros__parameters:
+    mujoco_plugins:
+      reset_plugin:
+        type: "mujoco_sim_plugins/ResetPlugin"

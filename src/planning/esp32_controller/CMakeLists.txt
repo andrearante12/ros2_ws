@@ -10,10 +10,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
-find_package(moveit_ros_planning_interface REQUIRED)
+find_package(moveit_core REQUIRED)
+find_package(moveit_ros_planning REQUIRED)
 find_package(move_program REQUIRED)
 
 add_executable(esp32_controller
@@ -26,10 +28,12 @@ target_include_directories(esp32_controller PUBLIC
 
 ament_target_dependencies(esp32_controller
   rclcpp
+  geometry_msgs
   sensor_msgs
   nav_msgs
   std_msgs
-  moveit_ros_planning_interface
+  moveit_core
+  moveit_ros_planning
   move_program
 )
 

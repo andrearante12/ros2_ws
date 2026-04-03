@@ -27,6 +27,7 @@ setup(
             'target_listener = moveit_controls.target_listener:main',
             'gripper_control = moveit_controls.gripper_control:main',
             'run_trajectory = moveit_controls.run_trajectory:main',
+            'keyboard_teleop = moveit_controls.keyboard_teleop:main',
         ],
     },
 )

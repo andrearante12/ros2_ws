@@ -15,14 +15,16 @@ Supports three backends:
   backend:=gazebo
     1. mqtt_imu_node   — same as above
     2. Gazebo Harmonic — full physics simulation (includes MoveIt + ros2_control)
-    3. esp32_controller — same IK pipeline, publishes to /arm/servo_commands
-    (no pose_printer — Gazebo's JointTrajectoryController receives commands)
+    3. esp32_controller — IK pipeline, publishes JointTrajectory to
+                          /robotic_arm_controller/joint_trajectory (use_trajectory_controller=true)
+    (no pose_printer)
 
   backend:=mujoco
     1. mqtt_imu_node   — same as above
     2. MuJoCo          — full physics simulation (includes MoveIt + ros2_control)
-    3. esp32_controller — same IK pipeline, publishes to /arm/servo_commands
-    (no pose_printer — MuJoCo's JointTrajectoryController receives commands)
+    3. esp32_controller — IK pipeline, publishes JointTrajectory to
+                          /robotic_arm_controller/joint_trajectory (use_trajectory_controller=true)
+    (no pose_printer)
 
 pose_printer is the ONLY node that opens the serial port in real mode.
 esp32_controller publishes to /arm/servo_commands in both modes.
@@ -49,9 +51,10 @@ Launch arguments:
   callback_skip_rate   Send command every N odometry callbacks (default: 5)
   lock_wrist           Lock wrist at default angle (default: false)
   lock_y_axis          Lock Y axis at default position (default: false)
-  x_sensitivity        X-axis responsiveness multiplier (default: 3.0)
-  default_y_position   Y position when Y locked, in metres (default: -1.2)
-  default_z_position   Fixed Z height, in metres (default: 1.10)
+  x_sensitivity        X-axis responsiveness multiplier (default: 6.0)
+  y_sensitivity        Y-axis responsiveness multiplier (default: 6.0)
+  default_y_position   Y position when Y locked, in metres (default: -0.03)
+  default_z_position   Fixed Z height, in metres (default: 0.19)
   default_wrist_angle  Wrist angle when locked, in degrees (default: 90)
 """
 
@@ -97,15 +100,19 @@ def generate_launch_description():
         description="Lock Y axis at default_y_position"
     )
     x_sensitivity_arg = DeclareLaunchArgument(
-        "x_sensitivity", default_value="3.0",
+        "x_sensitivity", default_value="6.0",
         description="X-axis responsiveness (higher = more movement per sensor input)"
     )
+    y_sensitivity_arg = DeclareLaunchArgument(
+        "y_sensitivity", default_value="6.0",
+        description="Y-axis responsiveness (higher = more movement per sensor input)"
+    )
     default_y_position_arg = DeclareLaunchArgument(
-        "default_y_position", default_value="-1.2",
+        "default_y_position", default_value="-0.03",
         description="Y position (metres) used when lock_y_axis=true"
     )
     default_z_position_arg = DeclareLaunchArgument(
-        "default_z_position", default_value="1.10",
+        "default_z_position", default_value="0.19",
         description="Fixed Z height in metres"
     )
     default_wrist_angle_arg = DeclareLaunchArgument(
@@ -166,12 +173,14 @@ def generate_launch_description():
         parameters=[{
             "callback_skip_rate": LaunchConfiguration("callback_skip_rate"),
             "x_sensitivity": LaunchConfiguration("x_sensitivity"),
+            "y_sensitivity": LaunchConfiguration("y_sensitivity"),
             "lock_y_axis": LaunchConfiguration("lock_y_axis"),
             "default_y_position": LaunchConfiguration("default_y_position"),
             "lock_wrist": LaunchConfiguration("lock_wrist"),
             "default_wrist_angle": LaunchConfiguration("default_wrist_angle"),
             "default_z_position": LaunchConfiguration("default_z_position"),
             "use_sim_time": is_gazebo_sim,
+            "use_trajectory_controller": is_gazebo_sim,
         }],
         output="screen",
     )
@@ -199,6 +208,7 @@ def generate_launch_description():
         lock_wrist_arg,
         lock_y_axis_arg,
         x_sensitivity_arg,
+        y_sensitivity_arg,
         default_y_position_arg,
         default_z_position_arg,
         default_wrist_angle_arg,

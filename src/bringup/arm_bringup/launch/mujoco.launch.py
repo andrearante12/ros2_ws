@@ -108,6 +108,7 @@ def generate_launch_description():
             robot_description,
             {"use_sim_time": True},
             os.path.join(pkg_config, "config", "ros2_controllers.yaml"),
+            os.path.join(pkg_config, "config", "mujoco_plugins.yaml"),
         ],
         output="screen",
     )
@@ -164,6 +165,19 @@ def generate_launch_description():
         output="screen",
     )
 
+    # ── Persistent move server ───────────────────────────────────────────────
+    # Keeps MoveIt + gradient IK loaded; accepts waypoints via /move_to topic.
+    # Eliminates ~2-3s model-loading overhead per move step.
+    move_server = Node(
+        package="move_program",
+        executable="move_server",
+        parameters=[
+            robot_description,
+            {"use_sim_time": True},
+        ],
+        output="screen",
+    )
+
     return LaunchDescription([
         headless_arg,
         robot_state_publisher,
@@ -174,4 +188,5 @@ def generate_launch_description():
         finger_controller_spawner,
         move_group,
         gripper_control,
+        move_server,
     ])

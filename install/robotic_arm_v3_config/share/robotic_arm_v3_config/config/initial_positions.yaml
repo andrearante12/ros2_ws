@@ -1,10 +1,1 @@
-# Default initial positions for robotic_arm_model_v3's ros2_control fake system
-
-initial_positions:
-  end_effector_bottom_joint: 0.35
-  end_effector_joint: 0
-  end_effector_top_joint: -0.35
-  joint_1: 0
-  joint_2: 0
-  joint_3: 0
-  joint_4: 0
+/home/andre/ros2_ws/src/robot/robotic_arm_v3_config/config/initial_positions.yaml

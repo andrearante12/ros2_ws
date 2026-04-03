@@ -1,0 +1,9 @@
+<library path="mujoco_sim_plugins">
+  <class name="mujoco_sim_plugins/ResetPlugin"
+         type="mujoco_sim_plugins::ResetPlugin"
+         base_class_type="mujoco_ros2_control_plugins::MuJoCoROS2ControlPluginBase">
+    <description>
+      Resets MuJoCo simulation state when a message is published to /sim/reset.
+    </description>
+  </class>
+</library>

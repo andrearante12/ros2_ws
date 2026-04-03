@@ -1,30 +1,37 @@
 import sys
 import time
-import subprocess
 import yaml
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String
+from std_msgs.msg import String, Bool
 from sensor_msgs.msg import JointState
+from geometry_msgs.msg import Point
 from ament_index_python.packages import get_package_share_directory
 
 SETTLE_VEL_THRESHOLD = 0.01   # rad/s — consider finger settled below this
 SETTLE_DURATION      = 0.5    # seconds finger must be settled
 GRIPPER_TIMEOUT      = 10.0   # max wait for gripper
+MOVE_TIMEOUT         = 30.0   # max wait for move completion
 
 
 class TrajectoryRunner(Node):
     def __init__(self):
         super().__init__('trajectory_runner')
         self.gripper_pub = self.create_publisher(String, '/gripper/command', 10)
+        self.move_pub = self.create_publisher(Point, '/move_to', 10)
         self.create_subscription(JointState, '/joint_states', self._joint_state_cb, 10)
+        self.create_subscription(Bool, '/move_to/result', self._move_result_cb, 10)
         self._top_vel = 0.0
         self._bot_vel = 0.0
-        # Wait for gripper_control subscriber to connect
-        while self.gripper_pub.get_subscription_count() == 0:
-            self.get_logger().info('Waiting for gripper_control subscriber...', throttle_duration_sec=2.0)
+        self._move_done = False
+        self._move_success = False
+
+        # Wait for move_server and gripper_control to be ready
+        self.get_logger().info('Waiting for move_server and gripper_control...')
+        while self.move_pub.get_subscription_count() == 0 or \
+              self.gripper_pub.get_subscription_count() == 0:
             rclpy.spin_once(self, timeout_sec=0.1)
-        self.get_logger().info('Gripper subscriber connected')
+        self.get_logger().info('All subscribers connected')
 
     def _joint_state_cb(self, msg: JointState):
         for i, name in enumerate(msg.name):
@@ -32,6 +39,10 @@ class TrajectoryRunner(Node):
                 self._top_vel = msg.velocity[i] if msg.velocity else 0.0
             elif name == 'end_effector_bottom_joint':
                 self._bot_vel = msg.velocity[i] if msg.velocity else 0.0
+
+    def _move_result_cb(self, msg: Bool):
+        self._move_done = True
+        self._move_success = msg.data
 
     def run_gripper(self, cmd):
         self.get_logger().info(f'Gripper: {cmd}')
@@ -64,13 +75,21 @@ class TrajectoryRunner(Node):
     def run_move(self, coords):
         x, y, z = coords
         self.get_logger().info(f'Moving to: [{x}, {y}, {z}]')
-        result = subprocess.run(
-            ['ros2', 'run', 'move_program', 'move_with_simulation',
-             '--', str(x), str(y), str(z)],
-            capture_output=False
-        )
-        if result.returncode != 0:
-            self.get_logger().error(f'Move failed with return code {result.returncode}')
+        self._move_done = False
+        msg = Point(x=float(x), y=float(y), z=float(z))
+        self.move_pub.publish(msg)
+
+        # Wait for move_server to complete
+        start = time.time()
+        while not self._move_done and time.time() - start < MOVE_TIMEOUT:
+            rclpy.spin_once(self, timeout_sec=0.05)
+
+        if not self._move_done:
+            self.get_logger().error(f'Move timed out after {MOVE_TIMEOUT}s')
+        elif not self._move_success:
+            self.get_logger().error('Move failed')
+        else:
+            self.get_logger().info('Move complete')
 
     def run_trajectory(self, trajectory_file):
         with open(trajectory_file, 'r') as f:

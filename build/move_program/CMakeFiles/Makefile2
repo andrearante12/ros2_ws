@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/andre/ros2_ws/build/move_program
 # The main recursive "all" target.
 all: CMakeFiles/move_program.dir/all
 all: CMakeFiles/move_with_simulation.dir/all
+all: CMakeFiles/move_server.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,6 +77,7 @@ clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/move_program_uninstall.dir/clean
 clean: CMakeFiles/move_program.dir/clean
 clean: CMakeFiles/move_with_simulation.dir/clean
+clean: CMakeFiles/move_server.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -163,7 +165,7 @@ CMakeFiles/move_program.dir/clean:
 CMakeFiles/move_with_simulation.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_with_simulation.dir/build.make CMakeFiles/move_with_simulation.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_with_simulation.dir/build.make CMakeFiles/move_with_simulation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/andre/ros2_ws/build/move_program/CMakeFiles --progress-num=3,4 "Built target move_with_simulation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/andre/ros2_ws/build/move_program/CMakeFiles --progress-num=5,6 "Built target move_with_simulation"
 .PHONY : CMakeFiles/move_with_simulation.dir/all
 
 # Build rule for subdir invocation for target.
@@ -181,6 +183,32 @@ move_with_simulation: CMakeFiles/move_with_simulation.dir/rule
 CMakeFiles/move_with_simulation.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_with_simulation.dir/build.make CMakeFiles/move_with_simulation.dir/clean
 .PHONY : CMakeFiles/move_with_simulation.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/move_server.dir
+
+# All Build rule for target.
+CMakeFiles/move_server.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_server.dir/build.make CMakeFiles/move_server.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_server.dir/build.make CMakeFiles/move_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/andre/ros2_ws/build/move_program/CMakeFiles --progress-num=3,4 "Built target move_server"
+.PHONY : CMakeFiles/move_server.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/move_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andre/ros2_ws/build/move_program/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/move_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andre/ros2_ws/build/move_program/CMakeFiles 0
+.PHONY : CMakeFiles/move_server.dir/rule
+
+# Convenience name for target.
+move_server: CMakeFiles/move_server.dir/rule
+.PHONY : move_server
+
+# clean rule for target.
+CMakeFiles/move_server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_server.dir/build.make CMakeFiles/move_server.dir/clean
+.PHONY : CMakeFiles/move_server.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,1 +1,1 @@
-move_program:moveit_ros_planning_interface:nav_msgs:rclcpp:sensor_msgs:std_msgs
+geometry_msgs:move_program:moveit_core:moveit_ros_planning:nav_msgs:rclcpp:sensor_msgs:std_msgs

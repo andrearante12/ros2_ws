@@ -223,6 +223,19 @@ move_with_simulation/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_with_simulation.dir/build.make CMakeFiles/move_with_simulation.dir/build
 .PHONY : move_with_simulation/fast
 
+#=============================================================================
+# Target rules for targets named move_server
+
+# Build rule for target.
+move_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 move_server
+.PHONY : move_server
+
+# fast build rule for target.
+move_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_server.dir/build.make CMakeFiles/move_server.dir/build
+.PHONY : move_server/fast
+
 src/move_program.o: src/move_program.cpp.o
 .PHONY : src/move_program.o
 
@@ -246,6 +259,30 @@ src/move_program.s: src/move_program.cpp.s
 src/move_program.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_program.dir/build.make CMakeFiles/move_program.dir/src/move_program.cpp.s
 .PHONY : src/move_program.cpp.s
+
+src/move_server.o: src/move_server.cpp.o
+.PHONY : src/move_server.o
+
+# target to build an object file
+src/move_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_server.dir/build.make CMakeFiles/move_server.dir/src/move_server.cpp.o
+.PHONY : src/move_server.cpp.o
+
+src/move_server.i: src/move_server.cpp.i
+.PHONY : src/move_server.i
+
+# target to preprocess a source file
+src/move_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_server.dir/build.make CMakeFiles/move_server.dir/src/move_server.cpp.i
+.PHONY : src/move_server.cpp.i
+
+src/move_server.s: src/move_server.cpp.s
+.PHONY : src/move_server.s
+
+# target to generate assembly for a file
+src/move_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_server.dir/build.make CMakeFiles/move_server.dir/src/move_server.cpp.s
+.PHONY : src/move_server.cpp.s
 
 src/move_with_simulation.o: src/move_with_simulation.cpp.o
 .PHONY : src/move_with_simulation.o
@@ -287,10 +324,14 @@ help:
 	@echo "... move_program_uninstall"
 	@echo "... uninstall"
 	@echo "... move_program"
+	@echo "... move_server"
 	@echo "... move_with_simulation"
 	@echo "... src/move_program.o"
 	@echo "... src/move_program.i"
 	@echo "... src/move_program.s"
+	@echo "... src/move_server.o"
+	@echo "... src/move_server.i"
+	@echo "... src/move_server.s"
 	@echo "... src/move_with_simulation.o"
 	@echo "... src/move_with_simulation.i"
 	@echo "... src/move_with_simulation.s"

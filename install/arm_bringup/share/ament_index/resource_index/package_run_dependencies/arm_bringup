@@ -1,1 +1,1 @@
-robotic_arm_v3_config;mqtt_imu;esp32_controller;pose_printer;move_program;moveit_controls;yolov5_detection;web_interface;mujoco_ros2_control
+/home/andre/ros2_ws/build/arm_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/arm_bringup

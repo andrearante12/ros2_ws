@@ -442,6 +442,9 @@ console_bridge_DIR:PATH=/usr/lib/x86_64-linux-gnu/console_bridge/cmake
 //The directory containing a CMake configuration file for console_bridge_vendor.
 console_bridge_vendor_DIR:PATH=/opt/ros/jazzy/share/console_bridge_vendor/cmake
 
+//The directory containing a CMake configuration file for control_msgs.
+control_msgs_DIR:PATH=/opt/ros/jazzy/share/control_msgs/cmake
+
 //The directory containing a CMake configuration file for eigen3_cmake_module.
 eigen3_cmake_module_DIR:PATH=/opt/ros/jazzy/share/eigen3_cmake_module/cmake
 

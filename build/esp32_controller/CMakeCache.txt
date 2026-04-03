@@ -329,7 +329,7 @@ SITE:STRING=nucbox
 TinyXML2_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/tinyxml2
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_fastrtps_cpp.so
 
 //The directory containing a CMake configuration file for action_msgs.
 action_msgs_DIR:PATH=/opt/ros/jazzy/share/action_msgs/cmake
@@ -441,6 +441,9 @@ console_bridge_DIR:PATH=/usr/lib/x86_64-linux-gnu/console_bridge/cmake
 
 //The directory containing a CMake configuration file for console_bridge_vendor.
 console_bridge_vendor_DIR:PATH=/opt/ros/jazzy/share/console_bridge_vendor/cmake
+
+//The directory containing a CMake configuration file for control_msgs.
+control_msgs_DIR:PATH=/opt/ros/jazzy/share/control_msgs/cmake
 
 //The directory containing a CMake configuration file for eigen3_cmake_module.
 eigen3_cmake_module_DIR:PATH=/opt/ros/jazzy/share/eigen3_cmake_module/cmake
@@ -925,7 +928,7 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Boost
-FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake][cfound components: system filesystem date_time program_options thread ][v1.83.0()]
+FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake][cfound components: system filesystem date_time program_options thread chrono ][v1.83.0()]
 //Details about finding Eigen3
 FIND_PACKAGE_MESSAGE_DETAILS_Eigen3:INTERNAL=[1][v3.4.0()]
 //Details about finding FastRTPS

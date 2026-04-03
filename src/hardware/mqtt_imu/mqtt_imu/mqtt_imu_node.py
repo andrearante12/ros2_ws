@@ -23,11 +23,27 @@ class MqttDualSensorNode(Node):
 
         # Publisher for odometry data (from OTOS)
         self.odom_publisher_ = self.create_publisher(Odometry, "/odom", 10)
-        
+
         # Publisher for IMU data (from MPU6050)
         self.imu_publisher_ = self.create_publisher(Imu, "/imu/data", 10)
 
+        # EMA filter parameters (tunable at launch via --ros-args -p position_alpha:=0.5)
+        self.declare_parameter("position_alpha", 0.3)
+        self.declare_parameter("orientation_alpha", 0.4)
+        self.position_alpha = self.get_parameter("position_alpha").value
+        self.orientation_alpha = self.get_parameter("orientation_alpha").value
+
+        # EMA filter state — None until first sample arrives
+        self.filtered_x = None
+        self.filtered_y = None
+        self.filtered_roll = None
+        self.filtered_pitch = None
+
         self.get_logger().info("Starting MQTT Dual Sensor bridge (OTOS + MPU6050)")
+        self.get_logger().info(
+            f"EMA filter: position_alpha={self.position_alpha}, "
+            f"orientation_alpha={self.orientation_alpha}"
+        )
 
         # MQTT client
         self.client = mqtt.Client()
@@ -49,39 +65,45 @@ class MqttDualSensorNode(Node):
         try:
             data = json.loads(msg.payload.decode())
             
-            # Print received data to console
-            self.get_logger().info("="*60)
-            self.get_logger().info(f"Raw MQTT data: {data}")
-            
             # ========================================
             # Parse OTOS position data
             # ========================================
             otos_x_inches = float(data["otos"]["x"])
             otos_y_inches = float(data["otos"]["y"])
             otos_heading_deg = float(data["otos"]["h"])
-            
+
             # Convert inches to meters (ROS standard)
             otos_x_meters = otos_x_inches * 0.0254
             otos_y_meters = otos_y_inches * 0.0254
             otos_heading_rad = math.radians(otos_heading_deg)
-            
-            self.get_logger().info(f"OTOS Position: X={otos_x_inches:.2f}\" ({otos_x_meters:.3f}m), "
-                                   f"Y={otos_y_inches:.2f}\" ({otos_y_meters:.3f}m), "
-                                   f"Heading={otos_heading_deg:.1f}°")
-            
+
             # ========================================
             # Parse MPU6050 orientation data
             # ========================================
             roll_deg = float(data["orient"]["r"])
             pitch_deg = float(data["orient"]["p"])
             yaw_deg = float(data["orient"]["y"])
-            
+
             roll_rad = math.radians(roll_deg)
             pitch_rad = math.radians(pitch_deg)
             yaw_rad = math.radians(yaw_deg)
-            
-            self.get_logger().info(f"Orientation: Roll={roll_deg:.1f}°, "
-                                   f"Pitch={pitch_deg:.1f}°, Yaw={yaw_deg:.1f}°")
+
+            # ========================================
+            # EMA smoothing (applied before publishing)
+            # ========================================
+            if self.filtered_x is None:
+                # First sample — seed filter state directly
+                self.filtered_x = otos_x_meters
+                self.filtered_y = otos_y_meters
+                self.filtered_roll = roll_rad
+                self.filtered_pitch = pitch_rad
+            else:
+                a_pos = self.position_alpha
+                a_ori = self.orientation_alpha
+                self.filtered_x     = a_pos * otos_x_meters + (1 - a_pos) * self.filtered_x
+                self.filtered_y     = a_pos * otos_y_meters + (1 - a_pos) * self.filtered_y
+                self.filtered_roll  = a_ori * roll_rad      + (1 - a_ori) * self.filtered_roll
+                self.filtered_pitch = a_ori * pitch_rad     + (1 - a_ori) * self.filtered_pitch
             
             # ========================================
             # Parse MPU6050 accelerometer data
@@ -89,17 +111,13 @@ class MqttDualSensorNode(Node):
             accel_x = float(data["accel"]["x"])
             accel_y = float(data["accel"]["y"])
             accel_z = float(data["accel"]["z"])
-            
-            self.get_logger().info(f"Accel: X={accel_x:.2f}, Y={accel_y:.2f}, Z={accel_z:.2f} m/s²")
-            
+
             # ========================================
             # Parse MPU6050 gyroscope data
             # ========================================
             gyro_x = float(data["gyro"]["x"])
             gyro_y = float(data["gyro"]["y"])
             gyro_z = float(data["gyro"]["z"])
-            
-            self.get_logger().info(f"Gyro: X={gyro_x:.2f}, Y={gyro_y:.2f}, Z={gyro_z:.2f} rad/s")
             
             # ========================================
             # Create and publish Odometry message (OTOS data)
@@ -109,13 +127,13 @@ class MqttDualSensorNode(Node):
             odom_msg.header.frame_id = "odom"
             odom_msg.child_frame_id = "base_link"
 
-            # Position (from OTOS, in meters)
-            odom_msg.pose.pose.position.x = otos_x_meters
-            odom_msg.pose.pose.position.y = otos_y_meters
+            # Position (from OTOS, EMA-filtered)
+            odom_msg.pose.pose.position.x = self.filtered_x
+            odom_msg.pose.pose.position.y = self.filtered_y
             odom_msg.pose.pose.position.z = 0.0
 
-            # Orientation (use full 3D orientation from IMU + OTOS)
-            quaternion = quaternion_from_euler(roll_rad, pitch_rad, yaw_rad)
+            # Orientation (EMA-filtered roll/pitch, raw yaw from OTOS heading)
+            quaternion = quaternion_from_euler(self.filtered_roll, self.filtered_pitch, yaw_rad)
             odom_msg.pose.pose.orientation.x = quaternion[0]
             odom_msg.pose.pose.orientation.y = quaternion[1]
             odom_msg.pose.pose.orientation.z = quaternion[2]
@@ -128,7 +146,6 @@ class MqttDualSensorNode(Node):
 
             # Publish odometry
             self.odom_publisher_.publish(odom_msg)
-            self.get_logger().info("✓ Published Odometry message")
             
             # ========================================
             # Create and publish IMU message (MPU6050 data)
@@ -160,7 +177,6 @@ class MqttDualSensorNode(Node):
             
             # Publish IMU
             self.imu_publisher_.publish(imu_msg)
-            self.get_logger().info("✓ Published IMU message")
 
         except KeyError as e:
             self.get_logger().error(f"Missing key in MQTT data: {e}")
