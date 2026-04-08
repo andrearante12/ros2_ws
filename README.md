@@ -1,14 +1,37 @@
 # ImitationArm
 
-A 6DOF robotic arm that learns skills by watching human demonstrations and mimicking movements. The end goal is a generalised system where a human records a video of picking up and placing an object, uploads it to the arm, and the arm autonomously reproduces the exact motion.
+A 6DOF robotic arm that learns skills by watching human demonstrations and mimicking movements. The end goal is a generalised system where a human records a video of picking up and placing an object, uploads it to the arm, and the arm autonomously reproduces the exact motion and eventually generalize to pick and place other objects in varied locations on its own through Reinforcement Learning.
 
 ## System Overview
 
-A human trains the robot via a wearable device consisting of an ESP32 microcontroller and a MPU-6050 accelerometer/gyroscope. Data is streamed over WiFi to a central Raspberry Pi using MQTT. The Raspberry Pi handles calibration and signal processing.
+A human trains the robot via a wearable device consisting of an ESP32 microcontroller and a MPU-6050 accelerometer/gyroscope. Optionally, you can control via keyboard commands. Data is streamed over WiFi to a central Raspberry Pi using MQTT. The Raspberry Pi handles calibration and signal processing.
+Six MG996R PWM servomotors are driven by a PCA9685 16-channel PWM controller (I2C). Low-level actuator control is handled by an Arduino Nano. High-level control runs on a Raspberry Pi or any workstation running a modern Ubuntu Version capable of running ROS2 Jazzy.
 
-Six MG996R PWM servomotors are driven by a PCA9685 16-channel PWM controller (I2C). Low-level actuator control is handled by an Arduino Nano. High-level control runs on a Raspberry Pi using ROS2 Jazzy.
+A custom inverse kinematics solver (gradient descent) converts target coordinates (x, y, z) into servo angles. MoveIt2 validates paths via trajectory planning and collision detection. 
 
-A custom inverse kinematics solver (gradient descent) converts target coordinates (x, y, z) into servo angles. MoveIt2 validates paths via trajectory planning and collision detection. Commands are sent from the Raspberry Pi to the Arduino over serial.
+## Demo Videos
+
+<table>
+  <tr>
+    <td>
+      <video src="https://github.com/user-attachments/assets/1b833705-149b-485d-a584-b4955f043c07" autoplay loop muted playsinline></video>
+    </td>
+    <td>
+      <video src="https://github.com/user-attachments/assets/d2449af5-33b9-40b6-b529-fdc64cf5f03b" autoplay loop muted playsinline></video>
+    </td>
+  </tr>
+</table>
+
+Rough prototype of wearable controller
+
+<p align="center">
+  <video src="https://github.com/user-attachments/assets/a6dace8c-65ac-41af-8a9c-40d3fd4ca57d" width="300" autoplay loop muted playsinline></video>
+</p>
+
+<!-- <p align="center">
+  <img src="https://github.com/user-attachments/assets/fcc12da2-aa8b-4a2a-a6ee-2820b6211cab" width="300" />
+  <img src="https://github.com/user-attachments/assets/e8a81c16-5bbc-4d5e-98a2-1cae8d4265bf" width="300" />
+</p> -->
 
 ## System Requirements
 
