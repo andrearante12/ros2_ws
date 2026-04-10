@@ -8,6 +8,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(pluginlib REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 find_package(mujoco_ros2_control_plugins REQUIRED)
 
 find_package(mujoco_vendor QUIET)
@@ -20,6 +21,7 @@ endif()
 
 add_library(mujoco_sim_plugins SHARED
   src/reset_plugin.cpp
+  src/object_state_plugin.cpp
 )
 target_include_directories(mujoco_sim_plugins PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -33,6 +35,7 @@ target_link_libraries(mujoco_sim_plugins PUBLIC
   rclcpp::rclcpp
   pluginlib::pluginlib
   ${std_msgs_TARGETS}
+  ${geometry_msgs_TARGETS}
   ${mujoco_ros2_control_plugins_TARGETS}
 )
 
@@ -49,6 +52,6 @@ install(DIRECTORY include/
 pluginlib_export_plugin_description_file(mujoco_ros2_control_plugins mujoco_sim_plugins.xml)
 
 ament_export_include_directories(include)
-ament_export_dependencies(mujoco_vendor rclcpp pluginlib std_msgs mujoco_ros2_control_plugins)
+ament_export_dependencies(mujoco_vendor rclcpp pluginlib std_msgs geometry_msgs mujoco_ros2_control_plugins)
 
 ament_package()

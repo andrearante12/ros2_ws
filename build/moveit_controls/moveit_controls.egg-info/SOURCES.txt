@@ -2,8 +2,10 @@ package.xml
 setup.cfg
 setup.py
 moveit_controls/__init__.py
+moveit_controls/demo_recorder.py
 moveit_controls/gripper_control.py
 moveit_controls/keyboard_teleop.py
+moveit_controls/policy_executor.py
 moveit_controls/run_trajectory.py
 moveit_controls.egg-info/PKG-INFO
 moveit_controls.egg-info/SOURCES.txt
@@ -12,5 +14,9 @@ moveit_controls.egg-info/entry_points.txt
 moveit_controls.egg-info/requires.txt
 moveit_controls.egg-info/top_level.txt
 moveit_controls.egg-info/zip-safe
+moveit_controls/il/__init__.py
+moveit_controls/il/dataset.py
+moveit_controls/il/policy.py
+moveit_controls/il/train.py
 resource/moveit_controls
 trajectories/pick_and_place.yaml

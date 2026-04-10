@@ -7,7 +7,7 @@ package_name = 'moveit_controls'
 setup(
     name=package_name,
     version='0.0.0',
-    packages=[package_name],
+    packages=[package_name, package_name + '.il'],
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
@@ -28,6 +28,8 @@ setup(
             'gripper_control = moveit_controls.gripper_control:main',
             'run_trajectory = moveit_controls.run_trajectory:main',
             'keyboard_teleop = moveit_controls.keyboard_teleop:main',
+            'demo_recorder = moveit_controls.demo_recorder:main',
+            'policy_executor = moveit_controls.policy_executor:main',
         ],
     },
 )

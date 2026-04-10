@@ -40,152 +40,83 @@ source /opt/ros/jazzy/setup.bash && source install/setup.bash
 
 ## MuJoCo Simulation
 
-Runs the full arm in MuJoCo with real physics, ros2_control controllers, MoveIt2 planning, and a persistent move server. No physical hardware required.
+No hardware required. Runs MuJoCo physics, ros2_control, MoveIt2, and a persistent move server.
 
+```bash
+ros2 launch arm_bringup mujoco.launch.py
+ros2 launch arm_bringup mujoco.launch.py headless:=true   # no GUI
+```
+
+---
+
+## Teleoperation
+
+### Keyboard (MuJoCo)
+
+**Terminal 1:**
 ```bash
 ros2 launch arm_bringup mujoco.launch.py
 ```
 
-This starts:
-- **MuJoCo ros2_control node** — embeds physics simulation and acts as the controller manager (no separate simulator process)
-- **MuJoCo Simulate GUI** — interactive 3D viewer (disable with `headless:=true`)
-- **robot_state_publisher** — publishes URDF to TF
-- **joint_state_broadcaster**, **robotic_arm_controller**, **hand_controller**, **finger_controller** — ros2_control controller chain
-- **move_group** — MoveIt2 motion planning
-- **gripper_control** — gripper open/close service
-- **move_server** — persistent IK server accepting waypoints on `/move_to`
-
-| Argument | Default | Description |
-|---|---|---|
-| `headless` | `false` | Run MuJoCo without GUI |
-
----
-
-## ESP32 Teleoperation (MuJoCo)
-
-Controls the simulated arm in real time using the ESP32 wearable (OTOS odometry + MPU-6050 IMU). The wearable position maps to the arm's XY workspace; IMU roll controls the wrist.
-
-```bash
-ros2 launch arm_bringup teleop.launch.py backend:=mujoco
-```
-
-This launches the full MuJoCo stack plus:
-- **mqtt_imu_node** — bridges ESP32 MQTT sensor data to `/odom` + `/imu/data`
-- **esp32_controller** — maps OTOS position to arm workspace, solves IK, publishes JointTrajectory commands
-
-| Argument | Default | Description |
-|---|---|---|
-| `backend` | `real` | `real`, `gazebo`, or `mujoco` |
-| `callback_skip_rate` | `5` | Send command every N odometry callbacks |
-| `x_sensitivity` | `6.0` | X-axis responsiveness multiplier |
-| `y_sensitivity` | `6.0` | Y-axis responsiveness multiplier |
-| `lock_y_axis` | `false` | Lock Y at `default_y_position` |
-| `lock_wrist` | `false` | Lock wrist at `default_wrist_angle` |
-| `default_y_position` | `-0.03` | Y position (m) when Y locked |
-| `default_z_position` | `0.19` | Fixed Z height (m) |
-| `default_wrist_angle` | `90` | Wrist angle (deg) when locked |
-
----
-
-## Keyboard Teleoperation (MuJoCo)
-
-A drop-in replacement for the ESP32 wearable — control the arm from the keyboard. Publishes to the same `/move_to` topic as the ESP32 controller.
-
-**Terminal 1** — start the MuJoCo simulation:
-
-```bash
-ros2 launch arm_bringup mujoco.launch.py
-```
-
-**Terminal 2** — start the keyboard teleop:
-
+**Terminal 2:**
 ```bash
 ros2 run moveit_controls keyboard_teleop
 ```
-
-### Keyboard Controls
 
 | Key | Action |
 |---|---|
 | W / S | Y forward / backward |
 | A / D | X left / right |
 | Q / E | Z up / down |
-| O | Open gripper |
-| C | Close gripper |
+| O / C | Open / close gripper |
 | R | Reset to center |
-| Ctrl+C | Quit |
 
-Step size is configurable:
-
-```bash
-ros2 run moveit_controls keyboard_teleop --ros-args -p step_size:=0.02
-```
-
----
-
-## ESP32 RViz Visualization
-
-Visualize the ESP32 wearable controller's position and orientation in RViz2 without commanding the arm. Useful for debugging sensor input and calibrating the controller.
+### ESP32 Glove (MuJoCo)
 
 ```bash
-ros2 launch arm_bringup esp32_viz.launch.py
+ros2 launch arm_bringup teleop.launch.py backend:=mujoco
 ```
 
-Then open RViz2, set **Fixed Frame** to `base_link`, and add a **MarkerArray** display subscribed to `/esp32_viz/markers`.
-
-Published markers:
-- **Green sphere** — target end-effector position in workspace
-- **Orange arrow** — wrist orientation (roll + pitch from IMU)
-- **Blue wireframe box** — workspace bounding volume
-
----
-
-## Other Modes
-
-### Simulation (MoveIt mock hardware)
-
-```bash
-ros2 launch arm_bringup sim.launch.py
-```
-
-### IK Positioning (real arm)
-
-```bash
-ros2 launch arm_bringup ik_positioning.launch.py
-ros2 run move_program move_program <x> <y> <z>    # separate terminal
-```
-
-### Teleoperation (real arm)
+### ESP32 Glove (Real Arm)
 
 ```bash
 ros2 launch arm_bringup teleop.launch.py
 ros2 launch arm_bringup teleop.launch.py dry_run:=true   # no Arduino needed
 ```
 
-### Gazebo Simulation
+---
 
+## Imitation Learning
+
+Train a policy to autonomously lift a cube via behavioral cloning from human demonstrations. See the full training guide: **[docs/imitation_learning.md](docs/imitation_learning.md)**
+
+Quick start:
 ```bash
-ros2 launch arm_bringup gazebo.launch.py
-ros2 launch arm_bringup teleop.launch.py backend:=gazebo  # teleop in Gazebo
+# 1. Record demos (30-50 lifts)
+ros2 launch arm_bringup mujoco_mirror.launch.py dry_run:=true   # Terminal 1
+ros2 run moveit_controls demo_recorder                           # Terminal 2
+
+# 2. Train (~1 min on CPU)
+python3 -m moveit_controls.il.train
+
+# 3. Deploy
+ros2 launch arm_bringup policy_eval.launch.py                   # sim only
+ros2 launch arm_bringup policy_eval.launch.py dry_run:=false     # with real arm
 ```
 
-### Recording Demonstrations
+---
+
+## Real Robot
+
+### Sim-to-Real Mirroring
+
+MuJoCo simulation drives the physical arm over serial in real time.
 
 ```bash
-ros2 launch arm_bringup record_demo.launch.py demo_name:=demo_001
-ros2 launch arm_bringup record_demo.launch.py demo_name:=demo_001 record_images:=true
+ros2 launch arm_bringup mujoco_mirror.launch.py                    # keyboard control
+ros2 launch arm_bringup mujoco_mirror.launch.py teleop:=esp32      # ESP32 glove
+ros2 launch arm_bringup mujoco_mirror.launch.py dry_run:=true      # test without Arduino
 ```
-
-Bags are saved to `~/demonstrations/<demo_name>/`.
-
-### Vision (chess piece detection)
-
-```bash
-ros2 launch arm_bringup vision.launch.py
-ros2 launch arm_bringup vision.launch.py mode:=collect   # training data collection
-```
-
-Web dashboard at http://localhost:5000.
 
 ---
 
@@ -213,7 +144,6 @@ src/
 │   └── arm_bringup/             # Integrated launch files (one per mode)
 └── external/
     ├── mujoco_ros2_control/     # MuJoCo ↔ ros2_control plugin
-    ├── ros_gz/                  # Gazebo ↔ ROS2 bridge
     └── realsense-ros/           # RealSense camera driver
 ```
 

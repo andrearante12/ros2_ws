@@ -36,13 +36,21 @@
               <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="end_effector_link" condim="6" solref="0.001 1" solimp="0.99 0.999 0.001"/>
               <body name="end_effector_top" pos="0.00757297 0.0540308 0.00949071" quat="0.978569 0.1854 0.0142888 0.0884656">
                 <inertial pos="3.87435e-05 0.023434 0.000841243" quat="0.656396 0.718103 -0.219325 0.0732646" mass="0.00541879" diaginertia="1.02507e-06 8.99009e-07 1.40236e-07"/>
-                <joint name="end_effector_top_joint" pos="0 0 0" axis="0.893057 -0.218815 0.393152" damping="0.5"/>
-                <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="end_effector_top" friction="5.0 0.05 0.01" condim="6" solref="0.001 1" solimp="0.99 0.999 0.001"/>
+                <joint name="end_effector_top_joint" pos="0 0 0" axis="0.893057 -0.218815 0.393152" damping="2.0"/>
+                <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="end_effector_top" contype="0" conaffinity="0"/>
+                <geom name="finger_top_col" type="box" size="0.006 0.035 0.004" pos="0.005 0.05 0.0"
+                      euler="0 -0.5 -0.25" margin="0.005"
+                      friction="2.0 0.05 0.01" condim="6" solref="0.005 1" solimp="0.99 0.999 0.00001"
+                      rgba="1 0 0 0.3"/>
               </body>
               <body name="end_effector_bottom" pos="-0.00239381 0.0429649 0.034775" quat="0.976056 -0.0631565 -0.00202574 -0.208138">
                 <inertial pos="-0.0100436 0.0180907 0.0101758" quat="0.491882 0.853519 0.00702286 0.171778" mass="0.00541879" diaginertia="1.02507e-06 8.93811e-07 1.45434e-07"/>
-                <joint name="end_effector_bottom_joint" pos="0 0 0" axis="0.940886 0.180977 0.286322" damping="0.5"/>
-                <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="end_effector_bottom" friction="5.0 0.05 0.01" condim="6" solref="0.001 1" solimp="0.99 0.999 0.001"/>
+                <joint name="end_effector_bottom_joint" pos="0 0 0" axis="0.940886 0.180977 0.286322" damping="2.0"/>
+                <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="end_effector_bottom" contype="0" conaffinity="0"/>
+                <geom name="finger_bot_col" type="box" size="0.006 0.035 0.004" pos="-0.015 0.035 0.02"
+                      euler="0.5 0.05 0.3" margin="0.005"
+                      friction="2.0 0.05 0.01" condim="6" solref="0.005 1" solimp="0.99 0.999 0.00001"
+                      rgba="1 0 0 0.3"/>
               </body>
             </body>
           </body>
@@ -56,7 +64,7 @@
     <position name="joint_3" joint="joint_3" kp="100" kv="10" ctrlrange="-6.28 6.28"/>
     <position name="joint_4" joint="joint_4" kp="100" kv="10" ctrlrange="-6.28 6.28"/>
     <position name="end_effector_joint" joint="end_effector_joint" kp="100" kv="10" ctrlrange="-6.28 6.28"/>
-    <position name="end_effector_top_joint" joint="end_effector_top_joint" kp="30" kv="5" ctrlrange="-1.57 1.57"/>
-    <position name="end_effector_bottom_joint" joint="end_effector_bottom_joint" kp="30" kv="5" ctrlrange="-1.57 1.57"/>
+    <position name="end_effector_top_joint" joint="end_effector_top_joint" kp="20" kv="10" ctrlrange="-1.57 1.57" forcelimited="true" forcerange="-2 2"/>
+    <position name="end_effector_bottom_joint" joint="end_effector_bottom_joint" kp="20" kv="10" ctrlrange="-1.57 1.57" forcelimited="true" forcerange="-2 2"/>
   </actuator>
 </mujoco>

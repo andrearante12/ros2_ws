@@ -6,4 +6,11 @@
       Resets MuJoCo simulation state when a message is published to /sim/reset.
     </description>
   </class>
+  <class name="mujoco_sim_plugins/ObjectStatePlugin"
+         type="mujoco_sim_plugins::ObjectStatePlugin"
+         base_class_type="mujoco_ros2_control_plugins::MuJoCoROS2ControlPluginBase">
+    <description>
+      Publishes the target object position from MuJoCo to /object/position.
+    </description>
+  </class>
 </library>

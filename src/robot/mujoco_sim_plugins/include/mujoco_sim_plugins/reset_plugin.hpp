@@ -22,6 +22,7 @@ private:
   rclcpp::Subscription<std_msgs::msg::Empty>::SharedPtr reset_sub_;
   rclcpp::Logger logger_{rclcpp::get_logger("reset_plugin")};
   std::atomic<bool> reset_requested_{false};
+  int target_qpos_adr_{-1};  // qpos index for target_free joint (cube randomization)
 };
 
 }  // namespace mujoco_sim_plugins

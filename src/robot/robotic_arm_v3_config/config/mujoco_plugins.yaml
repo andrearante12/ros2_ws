@@ -3,3 +3,5 @@
     mujoco_plugins:
       reset_plugin:
         type: "mujoco_sim_plugins/ResetPlugin"
+      object_state_plugin:
+        type: "mujoco_sim_plugins/ObjectStatePlugin"

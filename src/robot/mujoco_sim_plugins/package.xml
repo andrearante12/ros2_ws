@@ -11,6 +11,7 @@
   <depend>rclcpp</depend>
   <depend>pluginlib</depend>
   <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
   <depend>mujoco_vendor</depend>
   <depend>mujoco_ros2_control_plugins</depend>
 

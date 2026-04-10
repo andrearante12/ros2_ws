@@ -28,7 +28,7 @@ import math
 import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionClient
-from control_msgs.action import FollowJointTrajectory
+from control_msgs.action import FollowJointTrajectory, GripperCommand
 from geometry_msgs.msg import Point
 from sensor_msgs.msg import JointState
 from std_msgs.msg import String, Float64MultiArray
@@ -67,7 +67,7 @@ Keyboard Teleop — Arm Target Control
   R   : Reset to center
 
   Joint mode (direct joint control):
-  1-4 : Select joint (1=base .. 4=wrist)
+  1-5 : Select joint (1=base .. 4=wrist, 5=hand rotation)
   0   : Deselect joint (back to XYZ mode)
   When a joint is selected, W/S nudge it
 
@@ -97,10 +97,15 @@ class KeyboardTeleop(Node):
             self, FollowJointTrajectory,
             '/robotic_arm_controller/follow_joint_trajectory'
         )
+        self.hand_action = ActionClient(
+            self, GripperCommand,
+            '/hand_controller/gripper_cmd'
+        )
 
         self.servo_values = {}
         self.joint_positions = [0.0] * 4  # current arm joint positions (rad)
-        self.selected_joint = None  # None = XYZ mode, 0-3 = joint index
+        self.ee_joint_pos = 0.0  # end_effector_joint position (rad)
+        self.selected_joint = None  # None = XYZ mode, 0-4 = joint index
         self.create_subscription(JointState, '/joint_states', self._joint_state_cb, 10)
 
         self.get_logger().info(f'Step size: {self.step}m')
@@ -148,6 +153,8 @@ class KeyboardTeleop(Node):
         for i, jn in enumerate(ARM_JOINTS):
             if jn in positions:
                 self.joint_positions[i] = positions[jn]
+        if 'end_effector_joint' in positions:
+            self.ee_joint_pos = positions['end_effector_joint']
 
     def send_arm_joints(self, positions):
         """Send arm joint positions (radians) via trajectory action."""
@@ -158,6 +165,13 @@ class KeyboardTeleop(Node):
         point.time_from_start = Duration(sec=0, nanosec=500000000)  # 0.5s
         goal.trajectory.points = [point]
         self.arm_action.send_goal_async(goal)
+
+    def send_ee_joint(self, position):
+        """Send end_effector_joint position via gripper action."""
+        goal = GripperCommand.Goal()
+        goal.command.position = position
+        goal.command.max_effort = 10.0
+        self.hand_action.send_goal_async(goal)
 
     def send_gripper(self, values):
         """Send finger positions directly."""
@@ -199,7 +213,7 @@ def main(args=None):
             moved = True
 
             # Joint selection
-            if key in ('1', '2', '3', '4'):
+            if key in ('1', '2', '3', '4', '5'):
                 node.selected_joint = int(key) - 1
                 moved = False
             elif key == '0':
@@ -208,14 +222,22 @@ def main(args=None):
             # Movement: W/S either move Y or nudge selected joint
             elif key == 'w':
                 if node.selected_joint is not None:
-                    node.joint_positions[node.selected_joint] += JOINT_STEP_RAD
-                    node.send_arm_joints(node.joint_positions)
+                    if node.selected_joint < 4:
+                        node.joint_positions[node.selected_joint] += JOINT_STEP_RAD
+                        node.send_arm_joints(node.joint_positions)
+                    else:
+                        node.ee_joint_pos += JOINT_STEP_RAD
+                        node.send_ee_joint(node.ee_joint_pos)
                 else:
                     node.y += node.step
             elif key == 's':
                 if node.selected_joint is not None:
-                    node.joint_positions[node.selected_joint] -= JOINT_STEP_RAD
-                    node.send_arm_joints(node.joint_positions)
+                    if node.selected_joint < 4:
+                        node.joint_positions[node.selected_joint] -= JOINT_STEP_RAD
+                        node.send_arm_joints(node.joint_positions)
+                    else:
+                        node.ee_joint_pos -= JOINT_STEP_RAD
+                        node.send_ee_joint(node.ee_joint_pos)
                 else:
                     node.y -= node.step
             elif key == 'a':
@@ -249,8 +271,12 @@ def main(args=None):
             rclpy.spin_once(node, timeout_sec=0)
 
             if node.selected_joint is not None:
-                jname = ARM_JOINTS[node.selected_joint]
-                jdeg = round(math.degrees(node.joint_positions[node.selected_joint]))
+                if node.selected_joint < 4:
+                    jname = ARM_JOINTS[node.selected_joint]
+                    jdeg = round(math.degrees(node.joint_positions[node.selected_joint]))
+                else:
+                    jname = 'end_effector_joint'
+                    jdeg = round(math.degrees(node.ee_joint_pos))
                 mode_str = f'Joint: {jname} = {jdeg}°  (W/S to nudge, 0 for XYZ mode)'
             else:
                 mode_str = f'Target: [X={node.x:.3f}, Y={node.y:.3f}, Z={node.z:.3f}]'

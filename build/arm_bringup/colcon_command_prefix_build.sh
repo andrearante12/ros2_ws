@@ -1,4 +1,5 @@
 # generated from colcon_core/shell/template/command_prefix.sh.em
+. "/home/andre/ros2_ws/install/cube_detector/share/cube_detector/package.sh"
 . "/home/andre/ros2_ws/install/move_program/share/move_program/package.sh"
 . "/home/andre/ros2_ws/install/moveit_controls/share/moveit_controls/package.sh"
 . "/home/andre/ros2_ws/install/mqtt_imu/share/mqtt_imu/package.sh"
