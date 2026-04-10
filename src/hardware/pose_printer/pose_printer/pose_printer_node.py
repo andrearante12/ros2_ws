@@ -5,9 +5,21 @@ from rclpy.node import Node
 from sensor_msgs.msg import JointState
 from std_msgs.msg import String
 import math
-import re
 import serial
 import time
+
+
+# (servo_name, direction, offset, clamp_range)
+# final_angle = direction * mujoco_degrees + offset
+JOINT_SERVO_MAP = {
+    'joint_1':                ('servo0', +1,  90, None),
+    'joint_2':                ('servo1', -1,  50, None),
+    'joint_3':                ('servo2', -1,  25, None),
+    'joint_4':                ('servo3', -1,  55, None),
+    'end_effector_joint':     ('servo4', -1, 210, None),
+    # servo5 (gripper) is controlled directly via /arm/servo_commands, not joint_states
+
+}
 
 
 class PosePrinter(Node):
@@ -16,7 +28,7 @@ class PosePrinter(Node):
 
         # ===== Parameters =====
         self.declare_parameter('serial_port', '/dev/ttyUSB0')
-        self.declare_parameter('baud_rate', 9600)
+        self.declare_parameter('baud_rate', 115200)
         # dry_run: skip opening serial, log commands instead (useful for testing)
         self.declare_parameter('dry_run', False)
         # mode: 'joint_states' - 1 Hz timer from /joint_states (original behavior)
@@ -56,7 +68,7 @@ class PosePrinter(Node):
                 self.joint_state_callback,
                 10
             )
-            self.timer = self.create_timer(1.0, self.timer_callback)
+            self.timer = self.create_timer(0.05, self.timer_callback)
 
         if self.mode in ('direct', 'both'):
             self.cmd_sub = self.create_subscription(
@@ -67,10 +79,8 @@ class PosePrinter(Node):
             )
 
     def write_command(self, command: str):
-        """Write a servo command string to serial, or log it if dry_run=True."""
-        if self.dry_run:
-            self.get_logger().info(f"[dry_run] {command.strip()}")
-        elif self.ser:
+        """Write a servo command string to serial."""
+        if self.ser:
             self.ser.write(command.encode())
             self.ser.flush()
 
@@ -92,25 +102,19 @@ class PosePrinter(Node):
             zip(self.latest_joint_state.name, self.latest_joint_state.position)
         )
 
-        arm_joints = {
-            k: v for k, v in joint_positions.items()
-            if k.startswith("joint_")
-        }
+        # Build servo commands from the explicit map, sorted by servo number
+        commands = []
+        for joint_name, (servo_name, direction, offset, clamp_range) in JOINT_SERVO_MAP.items():
+            if joint_name not in joint_positions:
+                continue
+            angle = round(direction * math.degrees(joint_positions[joint_name]) + offset)
+            if clamp_range is not None:
+                angle = max(clamp_range[0], min(clamp_range[1], angle))
+            commands.append((servo_name, angle))
 
-        # Send in deterministic order
-        for name, pos in sorted(
-            arm_joints.items(),
-            key=lambda item: int(item[0].split('_')[-1])
-        ):
-            servo = self.joint_to_servo(name)
-            angle = round(math.degrees(pos))
-            self.write_command(f"{servo}={angle}\n")
-
-    def joint_to_servo(self, joint_name: str) -> str:
-        match = re.search(r'\d+', joint_name)
-        if not match:
-            return joint_name
-        return f"servo{int(match.group()) - 1}"
+        commands.sort(key=lambda c: c[0])
+        for servo_name, angle in commands:
+            self.write_command(f"{servo_name}={angle}\n")
 
     def destroy_node(self):
         if self.ser:

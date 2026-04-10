@@ -46,6 +46,11 @@ ros2 launch arm_bringup teleop.launch.py
 ros2 launch arm_bringup teleop.launch.py dry_run:=true           # test without Arduino
 ros2 launch arm_bringup teleop.launch.py backend:=gazebo         # drive Gazebo instead
 
+# MuJoCo sim-to-real mirroring — real arm follows MuJoCo in real time
+ros2 launch arm_bringup mujoco_mirror.launch.py                    # keyboard teleop
+ros2 launch arm_bringup mujoco_mirror.launch.py dry_run:=true      # test without Arduino
+ros2 launch arm_bringup mujoco_mirror.launch.py teleop:=esp32      # ESP32 wearable
+
 # Record demonstration for imitation learning (run alongside teleop or gazebo)
 ros2 launch arm_bringup record_demo.launch.py demo_name:=demo_001
 ros2 launch arm_bringup record_demo.launch.py demo_name:=demo_001 record_images:=true
@@ -78,7 +83,7 @@ src/
 
 **hardware/**
 - `mqtt_imu` — Bridges `esp32/dual_sensors` MQTT topic → `/odom` (OTOS) + `/imu/data` (MPU6050)
-- `pose_printer` — **Sole owner of `/dev/ttyUSB0`**. Subscribes to `/arm/servo_commands` (`std_msgs/String`) and writes to Arduino. Params: `mode` (`joint_states`|`direct`|`both`), `dry_run`, `serial_port`
+- `pose_printer` — **Sole owner of `/dev/ttyUSB0`**. Subscribes to `/arm/servo_commands` (`std_msgs/String`) and/or `/joint_states` and writes to Arduino. In `joint_states` mode, uses `JOINT_SERVO_MAP` to convert all 6 joints (arm + gripper) from radians to servo degrees. Params: `mode` (`joint_states`|`direct`|`both`), `dry_run`, `serial_port`
 
 **planning/**
 - `move_program` — One-shot CLI: takes (x,y,z), runs gradient descent IK, publishes to `/arm/servo_commands`, exits. Also exports `include/move_program/gradient_ik.hpp`
@@ -105,6 +110,45 @@ src/
 All nodes in Gazebo mode use `use_sim_time: True` and receive time from the `/clock` bridge (`ros_gz_bridge parameter_bridge`). Do NOT start a separate `ros2_control_node` — the Gazebo plugin acts as the controller manager.
 
 Demos are recorded with `record_demo.launch.py` (separate terminal). Bags land in `~/demonstrations/<demo_name>/`.
+
+## MuJoCo Sim-to-Real Mirroring
+
+`mujoco_mirror.launch.py` runs the MuJoCo simulation and simultaneously drives the physical arm over serial, so the real arm mirrors the sim in real-time.
+
+```
+Keyboard/ESP32 → /move_to → move_server → MuJoCo sim → /joint_states
+                                                              ↓
+                                                    pose_printer (joint_states mode)
+                                                              ↓
+                                                    Arduino (/dev/ttyUSB0)
+```
+
+`pose_printer` runs with `use_sim_time: False` so its 5 Hz timer fires at wall-clock rate regardless of simulation speed. It reads the latest `/joint_states`, converts radians → degrees via `JOINT_SERVO_MAP` (all 6 servos including gripper), and writes `servoN=angle` to serial. The Arduino applies its own per-servo offset corrections (mounting offsets, inversions) to drive the physical servos.
+
+In dry-run mode, servo values display as a single updating line in the terminal instead of being sent over serial.
+
+```bash
+# Keyboard teleop + real arm mirroring:
+ros2 launch arm_bringup mujoco_mirror.launch.py
+
+# Dry run (no serial — displays servo values in terminal):
+ros2 launch arm_bringup mujoco_mirror.launch.py dry_run:=true
+
+# ESP32 wearable instead of keyboard:
+ros2 launch arm_bringup mujoco_mirror.launch.py teleop:=esp32
+
+# Headless (no MuJoCo GUI):
+ros2 launch arm_bringup mujoco_mirror.launch.py headless:=true
+```
+
+Launch arguments:
+| Argument | Default | Description |
+|---|---|---|
+| `teleop` | `keyboard` | `keyboard` or `esp32` — input method for controlling the sim |
+| `dry_run` | `false` | Log servo values instead of sending over serial |
+| `serial_port` | `/dev/ttyUSB0` | Arduino serial port |
+| `headless` | `false` | Run MuJoCo without GUI |
+| `mqtt_broker` | `localhost` | MQTT broker (esp32 mode only) |
 
 ## Serial Port Architecture
 

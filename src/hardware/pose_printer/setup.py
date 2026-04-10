@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
           'pose_printer = pose_printer.pose_printer_node:main',
+          'calibrate = pose_printer.calibrate:main',
         ],
     },
 )

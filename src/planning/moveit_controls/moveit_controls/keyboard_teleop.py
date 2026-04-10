@@ -23,10 +23,16 @@ import sys
 import termios
 import tty
 
+import math
+
 import rclpy
 from rclpy.node import Node
+from rclpy.action import ActionClient
+from control_msgs.action import FollowJointTrajectory
 from geometry_msgs.msg import Point
-from std_msgs.msg import String
+from sensor_msgs.msg import JointState
+from std_msgs.msg import String, Float64MultiArray
+from trajectory_msgs.msg import JointTrajectoryPoint
 from visualization_msgs.msg import Marker, MarkerArray
 from builtin_interfaces.msg import Duration
 
@@ -36,15 +42,35 @@ WS_X_MIN, WS_X_MAX = -0.08, 0.09
 WS_Y_MIN, WS_Y_MAX = -0.18, 0.18
 WS_Z_MIN, WS_Z_MAX = 0.05, 0.25
 
+JOINT_SERVO_NAMES = [
+    ('joint_1', 'S0'),
+    ('joint_2', 'S1'),
+    ('joint_3', 'S2'),
+    ('joint_4', 'S3'),
+    ('end_effector_joint', 'S4'),
+    ('end_effector_top_joint', 'S5'),
+]
+
+ARM_JOINTS = ['joint_1', 'joint_2', 'joint_3', 'joint_4']
+JOINT_STEP_RAD = 0.05  # ~3 degrees per keypress
+
+GRIPPER_OPEN = [-0.35, 0.35]
+GRIPPER_CLOSE = [0.09, -0.09]
+
 HELP_TEXT = """
 Keyboard Teleop — Arm Target Control
 -------------------------------------
   W/S : Y forward / backward
   A/D : X left / right
   Q/E : Z up / down
-  O   : Open gripper
-  C   : Close gripper
+  O/C : Open / Close gripper
   R   : Reset to center
+
+  Joint mode (direct joint control):
+  1-4 : Select joint (1=base .. 4=wrist)
+  0   : Deselect joint (back to XYZ mode)
+  When a joint is selected, W/S nudge it
+
   Ctrl+C : Quit
 -------------------------------------
 """
@@ -63,8 +89,19 @@ class KeyboardTeleop(Node):
         self.z = (WS_Z_MIN + WS_Z_MAX) / 2.0
 
         self.move_pub = self.create_publisher(Point, '/move_to', 10)
-        self.gripper_pub = self.create_publisher(String, '/gripper/command', 10)
+        self.finger_pub = self.create_publisher(Float64MultiArray, '/finger_controller/commands', 10)
+        self.servo_cmd_pub = self.create_publisher(String, '/arm/servo_commands', 10)
         self.marker_pub = self.create_publisher(MarkerArray, '/esp32_viz/markers', 10)
+
+        self.arm_action = ActionClient(
+            self, FollowJointTrajectory,
+            '/robotic_arm_controller/follow_joint_trajectory'
+        )
+
+        self.servo_values = {}
+        self.joint_positions = [0.0] * 4  # current arm joint positions (rad)
+        self.selected_joint = None  # None = XYZ mode, 0-3 = joint index
+        self.create_subscription(JointState, '/joint_states', self._joint_state_cb, 10)
 
         self.get_logger().info(f'Step size: {self.step}m')
         self.get_logger().info(f'Starting at [{self.x:.3f}, {self.y:.3f}, {self.z:.3f}]')
@@ -103,6 +140,36 @@ class KeyboardTeleop(Node):
         markers.markers.append(sphere)
         self.marker_pub.publish(markers)
 
+    def _joint_state_cb(self, msg: JointState):
+        positions = dict(zip(msg.name, msg.position))
+        for joint_name, label in JOINT_SERVO_NAMES:
+            if joint_name in positions:
+                self.servo_values[label] = round(math.degrees(positions[joint_name]))
+        for i, jn in enumerate(ARM_JOINTS):
+            if jn in positions:
+                self.joint_positions[i] = positions[jn]
+
+    def send_arm_joints(self, positions):
+        """Send arm joint positions (radians) via trajectory action."""
+        goal = FollowJointTrajectory.Goal()
+        goal.trajectory.joint_names = ARM_JOINTS
+        point = JointTrajectoryPoint()
+        point.positions = list(positions)
+        point.time_from_start = Duration(sec=0, nanosec=500000000)  # 0.5s
+        goal.trajectory.points = [point]
+        self.arm_action.send_goal_async(goal)
+
+    def send_gripper(self, values):
+        """Send finger positions directly."""
+        msg = Float64MultiArray()
+        msg.data = values
+        self.finger_pub.publish(msg)
+
+    def servo_display(self) -> str:
+        if not self.servo_values:
+            return ""
+        return "  ".join(f"{k}={self.servo_values[k]:>4}°" for _, k in JOINT_SERVO_NAMES if k in self.servo_values)
+
     def reset(self):
         self.x = (WS_X_MIN + WS_X_MAX) / 2.0
         self.y = (WS_Y_MIN + WS_Y_MAX) / 2.0
@@ -124,16 +191,33 @@ def main(args=None):
 
     settings = termios.tcgetattr(sys.stdin)
     print(HELP_TEXT)
+    print('\n')  # reserve two lines for target + servos
 
     try:
         while rclpy.ok():
             key = get_key(settings)
             moved = True
 
-            if key == 'w':
-                node.y += node.step
+            # Joint selection
+            if key in ('1', '2', '3', '4'):
+                node.selected_joint = int(key) - 1
+                moved = False
+            elif key == '0':
+                node.selected_joint = None
+                moved = False
+            # Movement: W/S either move Y or nudge selected joint
+            elif key == 'w':
+                if node.selected_joint is not None:
+                    node.joint_positions[node.selected_joint] += JOINT_STEP_RAD
+                    node.send_arm_joints(node.joint_positions)
+                else:
+                    node.y += node.step
             elif key == 's':
-                node.y -= node.step
+                if node.selected_joint is not None:
+                    node.joint_positions[node.selected_joint] -= JOINT_STEP_RAD
+                    node.send_arm_joints(node.joint_positions)
+                else:
+                    node.y -= node.step
             elif key == 'a':
                 node.x -= node.step
             elif key == 'd':
@@ -143,25 +227,37 @@ def main(args=None):
             elif key == 'e':
                 node.z -= node.step
             elif key == 'o':
-                msg = String(data='open')
-                node.gripper_pub.publish(msg)
-                print('\rGripper: OPEN                              ', end='', flush=True)
+                node.send_gripper(GRIPPER_OPEN)
+                node.servo_cmd_pub.publish(String(data='servo5=15'))
                 moved = False
             elif key == 'c':
-                msg = String(data='close')
-                node.gripper_pub.publish(msg)
-                print('\rGripper: CLOSE                             ', end='', flush=True)
+                node.send_gripper(GRIPPER_CLOSE)
+                node.servo_cmd_pub.publish(String(data='servo5=105'))
                 moved = False
             elif key == 'r':
                 node.reset()
+                node.selected_joint = None
             elif key == '\x03':  # Ctrl+C
                 break
             else:
                 moved = False
 
-            if moved:
+            if moved and node.selected_joint is None:
                 node.publish()
-                print(f'\rTarget: [X={node.x:.3f}, Y={node.y:.3f}, Z={node.z:.3f}]', end='', flush=True)
+
+            # Process any pending callbacks (updates servo_values)
+            rclpy.spin_once(node, timeout_sec=0)
+
+            if node.selected_joint is not None:
+                jname = ARM_JOINTS[node.selected_joint]
+                jdeg = round(math.degrees(node.joint_positions[node.selected_joint]))
+                mode_str = f'Joint: {jname} = {jdeg}°  (W/S to nudge, 0 for XYZ mode)'
+            else:
+                mode_str = f'Target: [X={node.x:.3f}, Y={node.y:.3f}, Z={node.z:.3f}]'
+            servos = node.servo_display()
+            # Move cursor up 2 lines, clear both, print fresh
+            sys.stdout.write(f'\033[2A\033[K{mode_str}\n\033[K{servos}\n')
+            sys.stdout.flush()
 
     except Exception as e:
         print(e)

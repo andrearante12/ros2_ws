@@ -4,7 +4,7 @@ from std_msgs.msg import String, Float64MultiArray
 
 
 OPEN_CMD  = [-0.35,  0.35]
-CLOSE_CMD = [-0.09, 0.09]   # slightly open — leaves gap for cube, tweak as needed
+CLOSE_CMD = [0.09, -0.09]   # fingers close inward
 
 
 class GripperControl(Node):
