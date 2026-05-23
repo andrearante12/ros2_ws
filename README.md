@@ -6,14 +6,23 @@ A 6DOF robotic arm that is able to pick and place objects. We support the abilit
 
 <table>
   <tr>
-    <td>
-      <video src="https://github.com/user-attachments/assets/1b833705-149b-485d-a584-b4955f043c07" autoplay loop muted playsinline></video>
+    <td colspan="2" align="center">
+      <video src="https://github.com/user-attachments/assets/7e5f45a8-90f1-4391-a4f5-40e4b636c5b5" autoplay loop muted playsinline width="100%"></video>
+      
+  </tr>
+  <tr>
+    <td width="50%">
+      <video src="https://github.com/user-attachments/assets/d2449af5-33b9-40b6-b529-fdc64cf5f03b" autoplay loop muted playsinline width="100%"></video>
     </td>
-    <td>
-      <video src="https://github.com/user-attachments/assets/d2449af5-33b9-40b6-b529-fdc64cf5f03b" autoplay loop muted playsinline></video>
+    <td width="50%">
+      <video src="https://github.com/user-attachments/assets/1b833705-149b-485d-a584-b4955f043c07" autoplay loop muted playsinline width="100%"></video>
     </td>
   </tr>
 </table>
+
+
+
+
 
 ## System Requirements
 
