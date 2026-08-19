@@ -1,6 +1,6 @@
 # ImitationArm
 
-A 6DOF robotic arm that is able to pick and place objects. We support the ability to train the arm for generic pick and place tasks using Reinforcement Learning or Imitation Learning algorithms. The project supports MuJoCo physics simulation, ESP32 wearable teleoperation, keyboard control, and MoveIt2 motion planning, all running on ROS2 Jazzy.
+A 6DOF robotic arm that is able to pick and place objects. The project supports MuJoCo physics simulation, ESP32 wearable teleoperation, keyboard control, and MoveIt2 motion planning, all running on ROS2 Jazzy with the intention of supporting imitation learning or reinforcement learning training pipelines in the future.
 
 # Pick and Place Demo
 
